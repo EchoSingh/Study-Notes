@@ -443,8 +443,8 @@ When a user accesses a static website, their browser simply downloads these HTML
     Ans)
 
      Version control is a critical aspect of modern software development, and Git, along with platforms like GitHub, plays a central role in this process.
-
-1. Importance of Version Control in Software Development
+     
+1.Importance of Version Control in Software Development
 
 A Version Control System (VCS) is a technique used to save different versions of a file or a set of files for future use. It helps developers track and manage modifications to a software project's code. As a project grows, version control becomes indispensable because it provides several key benefits:
 
@@ -484,7 +484,7 @@ GitHub is a cloud-based platform that complements Git by providing a website and
 
       The basic structure of an HTML document includes a document type declaration and typically consists of a head section and a body section, each serving distinct purposes in defining and presenting web content.
 
-Basic Structure of an HTML Document
+1.Basic Structure of an HTML Document
 
 A valid HTML5 document starts with a `<!DOCTYPE html>` declaration, which tells the browser what type of document it is about to process. While HTML5 does not strictly require the `<html>`, `<head>`, and `<body>` elements, most web authors continue to use them, particularly because they were required in previous versions like XHTML.
 
