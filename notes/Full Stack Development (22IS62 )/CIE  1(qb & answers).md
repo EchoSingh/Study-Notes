@@ -64,7 +64,7 @@
     * **Advantages**: Easy to maintain, update, and reuse styles across multiple pages, makes HTML code cleaner.
     * **Disadvantages**: Requires a separate file, can be slow to load if not optimized.
 
-**Comparison **
+    Comparison  :-
 
 | CSS Type | Use Case                       | Advantages                                 | Disadvantages                                                  |
 | -------- | ------------------------------ | ------------------------------------------ | -------------------------------------------------------------- |
