@@ -158,10 +158,10 @@ Here are five types of selectors, with examples:
         }
         ```
         
-(. **Class Selectors**
+(ii). **Class Selectors**
     
-    - **Definition**: A class selector allows you to simultaneously target different HTML elements regardless of their position in the document tree. If a series of HTML elements have been labeled with the same `class` attribute value, you can style them using a class selector. The syntax is a period (`.`) followed by the class name.
-    - **Example**: If you have multiple elements with `class="highlight"`, you can style them all:
+- **Definition**: A class selector allows you to simultaneously target different HTML elements regardless of their position in the document tree. If a series of HTML elements have been labeled with the same `class` attribute value, you can style them using a class selector. The syntax is a period (`.`) followed by the class name.
+- **Example**: If you have multiple elements with `class="highlight"`, you can style them all:
         
         ```
         .highlight {
@@ -169,10 +169,9 @@ Here are five types of selectors, with examples:
         }
         ```
         
-3. **ID Selectors**
+(iii). **ID Selectors**
     
-    - **Definition**: An ID selector allows you to target a specific HTML element by its `id` attribute, irrespective of its type or position. IDs must be unique within an HTML document. The syntax is a pound/hash symbol (`#`) followed by the ID name.
-    - **Example**: To style a single element with `id="main-header"`, the rule would be:
+- **Definition**: An ID selector allows you to target a specific HTML element by its `id` attribute, irrespective of its type or position. IDs must be unique within an HTML document. The syntax is a pound/hash symbol (`#`) followed by the ID name.    - **Example**: To style a single element with `id="main-header"`, the rule would be:
         
         ```
         #main-header {
@@ -181,7 +180,7 @@ Here are five types of selectors, with examples:
         }
         ```
         
-4. **Attribute Selectors**
+(iv). **Attribute Selectors**
     
     - **Definition**: An attribute selector provides a way to select HTML elements either by the presence of an element attribute or by the value of an attribute. This can be very helpful for styling hyperlinks and images, for instance, to make it obvious when a tooltip is available for a link or image.
     - **Example**: To select any element that has a `title` attribute:
@@ -193,7 +192,7 @@ Here are five types of selectors, with examples:
         ```
         
         This would match any element in the document that possesses a `title` attribute.
-5. **Pseudo-Element and Pseudo-Class Selectors**
+(v). **Pseudo-Element and Pseudo-Class Selectors**
     
     - **Definition**:
         - **Pseudo-element selectors**: Select something that does not explicitly exist as an element in the HTML document tree but is still a recognizable selectable object. For example, you can select the first line or first letter of any HTML element.
