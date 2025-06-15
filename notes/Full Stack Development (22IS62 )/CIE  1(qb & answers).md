@@ -24,10 +24,10 @@
 
 2. Explain the concept of Cascading Style Sheets and its role in web development. Compare and contrast inline, internal, and external CSS, highlighting their use cases and advantages.
 
-  Ans)
+    Ans)
 
 
-   Cascading Style Sheets (CSS) is a styling language used to control the layout and visual appearance of web pages written in HTML and other markup languages. CSS allows developers to separate presentation logic from content, making it easier to maintain and update websites.
+    Cascading Style Sheets (CSS) is a styling language used to control the layout and visual appearance of web pages written in HTML and other markup languages. CSS allows developers to separate presentation logic from content, making it easier to maintain and update websites.
    
    **Role in Web Development**
 
@@ -49,7 +49,7 @@
    * **Advantages**: Quick and easy to implement, no need to create a separate CSS file.
    * **Disadvantages**: Can make HTML code messy and difficult to maintain, not scalable for large projects.
 
- **Internal CSS**
+   **Internal CSS**
 
    * **Definition**: CSS styles defined within an HTML document using the `<style>` element.
    * **Use Case**: Small to medium-sized projects, where a separate CSS file is not necessary.
