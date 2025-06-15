@@ -182,8 +182,8 @@ Here are five types of selectors, with examples:
         
 (iv). **Attribute Selectors**
     
-    - **Definition**: An attribute selector provides a way to select HTML elements either by the presence of an element attribute or by the value of an attribute. This can be very helpful for styling hyperlinks and images, for instance, to make it obvious when a tooltip is available for a link or image.
-    - **Example**: To select any element that has a `title` attribute:
+- **Definition**: An attribute selector provides a way to select HTML elements either by the presence of an element attribute or by the value of an attribute. This can be very helpful for styling hyperlinks and images, for instance, to make it obvious when a tooltip is available for a link or image.
+- **Example**: To select any element that has a `title` attribute:
         
         ```
         [title] {
@@ -191,13 +191,13 @@ Here are five types of selectors, with examples:
         }
         ```
         
-        This would match any element in the document that possesses a `title` attribute.
+  This would match any element in the document that possesses a `title` attribute.
 (v). **Pseudo-Element and Pseudo-Class Selectors**
     
-    - **Definition**:
+- **Definition**:
         - **Pseudo-element selectors**: Select something that does not explicitly exist as an element in the HTML document tree but is still a recognizable selectable object. For example, you can select the first line or first letter of any HTML element.
         - **Pseudo-class selectors**: Apply to an HTML element but target it based on a specific state or condition.
-    - **Examples**:
+- **Examples**:
         - **Pseudo-element example**: Styling the first line of a paragraph:
             
             ```
@@ -206,7 +206,7 @@ Here are five types of selectors, with examples:
             }
             ```
             
-        - **Pseudo-class example**: Styling link states (link, visited, hover):
+    - **Pseudo-class example**: Styling link states (link, visited, hover):
             
             ```
             a:link {
