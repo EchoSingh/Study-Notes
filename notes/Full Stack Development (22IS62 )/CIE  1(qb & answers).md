@@ -228,9 +228,9 @@ The interaction between these layers is crucial. For example, the front-end (pre
    (i) `<div>`  
    (ii) `<span>`
 
-   Ans)
+  Ans)
 
- (i) `<div>` HTML Element
+(i) `<div>` HTML Element
 
 **Syntax:**
 
@@ -278,7 +278,7 @@ Here's an example demonstrating its use :
 ```
 
 In this example, only the words "important text" would appear in red and bold, because they are wrapped within the `<span>` tags. The `<span>` element allows for precise styling of inline content without disrupting the paragraph's flow.
-
+ 
 ---
 
 7. Illustrate CSS box model. Be sure to label and explain each component of the model with an example.
