@@ -50,8 +50,7 @@
    server.on('request', (req, res) => {
        // Your code here
    });
-```
-
+     ```
 5. Write a script to:
     
     - Insert a user document (`{ name: "Alice", age: 25 }`) into a `users` collection.
