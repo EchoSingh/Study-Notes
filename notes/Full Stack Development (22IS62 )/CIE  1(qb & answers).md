@@ -76,9 +76,11 @@
 
 
 3. Explain in detail Layers of Full Stack Development.
-4. 
-    Ans)
-    
+
+   Ans)
+   
+---
+
 
 4. Define WEB, URL, HTTPS, Name Resolution.
 
