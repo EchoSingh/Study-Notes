@@ -284,6 +284,7 @@ In this example, only the words "important text" would appear in red and bold, b
 7. Illustrate CSS box model. Be sure to label and explain each component of the model with an example.
    Ans)
 
+
 ---
 
 8. Understand the concept of “distributed” in the context of version control systems like Git, and outline the different states that files can exist in within the Git repository.
