@@ -369,12 +369,14 @@ The element box consists of four main components, from the innermost to the oute
     
     - A file in the modified state has been revised but has not yet been "committed".
     - In simpler terms, these are files you have changed but have not yet authorized Git to monitor or save these specific revisions.
-1. **Staged state**:
+    
+    2. **Staged state**:
     
     - Files in the staged state are modified files that have been specifically chosen in their current version.
     - They are being prepared and organized to be saved or "committed" into the `.git` repository during the next commit operation.
     - When a file is staged, it signifies that you have clearly instructed Git to monitor that particular version of the file.
-2. **Committed state**:
+    
+    3. **Committed state**:
     
     - Files in the committed state have been successfully stored in the `.git` repository.
     - A committed file means you have officially recorded its staged version into the Git directory or folder.
