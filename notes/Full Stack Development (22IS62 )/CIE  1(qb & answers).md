@@ -108,6 +108,8 @@ In addition to these core layers,
 - **Asynchronous Layers**: JavaScript can operate asynchronously, routing requests to the server in the background without causing the browser to sit in a loading state. When a response arrives, JavaScript can update a portion of the page, creating a more continuous user experience. This is considered an advanced version of presentation and validation layers and helps separate presentation and logic for more reusable and maintainable code.
 
 The interaction between these layers is crucial. For example, the front-end (presentation layer) using jQuery might make an AJAX request to the back-end (logic layer), which then processes and validates the data, potentially interacts with the database (data layer), and finally returns a JSON/XML response to the front-end to update the UI.
+
+![3-tier architecture](https://vfunction.com/wp-content/uploads/2024/05/blog-3-tier-application.webp)
    
 ---
 
