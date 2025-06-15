@@ -126,27 +126,125 @@ The interaction between these layers is crucial. For example, the front-end (pre
 
 
 6. Explain 5 types of selectors with examples.
+   Ans)
+Here are five types of selectors, with examples:
+
+1. **Element Selectors**
+    
+    - **Definition**: Element selectors select all instances of a given HTML element. You can select all elements using the universal element selector (`*`), or a group of elements by separating their names with commas. This helps reduce the size and complexity of CSS files by combining identical rules.
+    - **Example**: To style all paragraph (`<p>`) elements to have blue text, the rule would look like this:
+        
+        ```
+        p {
+            color: blue;
+        }
+        ```
+        
+        An example of a grouped selector is shown in the source as:
+        
+        ```
+        h1, h2, h3 {
+            color: purple;
+        }
+        /* This is equivalent to: */
+        h1 {
+            color: purple;
+        }
+        h2 {
+            color: purple;
+        }
+        h3 {
+            color: purple;
+        }
+        ```
+        
+2. **Class Selectors**
+    
+    - **Definition**: A class selector allows you to simultaneously target different HTML elements regardless of their position in the document tree. If a series of HTML elements have been labeled with the same `class` attribute value, you can style them using a class selector. The syntax is a period (`.`) followed by the class name.
+    - **Example**: If you have multiple elements with `class="highlight"`, you can style them all:
+        
+        ```
+        .highlight {
+            background-color: yellow;
+        }
+        ```
+        
+3. **ID Selectors**
+    
+    - **Definition**: An ID selector allows you to target a specific HTML element by its `id` attribute, irrespective of its type or position. IDs must be unique within an HTML document. The syntax is a pound/hash symbol (`#`) followed by the ID name.
+    - **Example**: To style a single element with `id="main-header"`, the rule would be:
+        
+        ```
+        #main-header {
+            font-size: 2em;
+            text-align: center;
+        }
+        ```
+        
+4. **Attribute Selectors**
+    
+    - **Definition**: An attribute selector provides a way to select HTML elements either by the presence of an element attribute or by the value of an attribute. This can be very helpful for styling hyperlinks and images, for instance, to make it obvious when a tooltip is available for a link or image.
+    - **Example**: To select any element that has a `title` attribute:
+        
+        ```
+        [title] {
+            border: 1px dotted gray;
+        }
+        ```
+        
+        This would match any element in the document that possesses a `title` attribute.
+5. **Pseudo-Element and Pseudo-Class Selectors**
+    
+    - **Definition**:
+        - **Pseudo-element selectors**: Select something that does not explicitly exist as an element in the HTML document tree but is still a recognizable selectable object. For example, you can select the first line or first letter of any HTML element.
+        - **Pseudo-class selectors**: Apply to an HTML element but target it based on a specific state or condition.
+    - **Examples**:
+        - **Pseudo-element example**: Styling the first line of a paragraph:
+            
+            ```
+            p::first-line {
+                font-weight: bold;
+            }
+            ```
+            
+        - **Pseudo-class example**: Styling link states (link, visited, hover):
+            
+            ```
+            a:link {
+                color: blue;
+            }
+            a:visited {
+                color: purple;
+            }
+            a:hover {
+                color: red; /* Color of the link when the mouse is over it */
+            }
+            ```
+            
+            The syntax for pseudo-class selectors is a colon (`:`) followed by the pseudo-class selector name, with no space after the colon. The order of `:link` and `:visited` should appear before others like `:hover`.
+
+---
 
 
-7. Write the syntax of below mentioned HTML elements and explain with an example:  
+6. Write the syntax of below mentioned HTML elements and explain with an example:  
    (i) `<div>`  
    (ii) `<span>`
 
-8. Write 5 types of selectors with examples.
+7. Write 5 types of selectors with examples.
 
-9. Illustrate CSS box model. Be sure to label and explain each component of the model with an example.
+8. Illustrate CSS box model. Be sure to label and explain each component of the model with an example.
 
-10. Understand the concept of “distributed” in the context of version control systems like Git, and outline the different states that files can exist in within the Git repository.
+9. Understand the concept of “distributed” in the context of version control systems like Git, and outline the different states that files can exist in within the Git repository.
 
-11. Differentiate between static and dynamic websites. Provide examples of use cases for each type and explain the technologies commonly used to build them.
+10. Differentiate between static and dynamic websites. Provide examples of use cases for each type and explain the technologies commonly used to build them.
 
-12. Explain the importance of version control in software development. Describe any two basic Git commands and how GitHub enhances collaboration among developers.
+11. Explain the importance of version control in software development. Describe any two basic Git commands and how GitHub enhances collaboration among developers.
 
-13. Write the basic structure of an HTML document. Explain the purpose of the `<head>` tag, `<body>` tag and other tags, and provide examples of common HTML elements.
+12. Write the basic structure of an HTML document. Explain the purpose of the `<head>` tag, `<body>` tag and other tags, and provide examples of common HTML elements.
 
-14. Discuss the importance of CSS style properties in web design. Provide examples of commonly used properties for text styling, box model, and layout, and explain their effects.
+13. Discuss the importance of CSS style properties in web design. Provide examples of commonly used properties for text styling, box model, and layout, and explain their effects.
 
-15. Create an HTML document for a blog post. The document should include:  
+14. Create an HTML document for a blog post. The document should include:  
     - A proper HTML structure with `<!DOCTYPE>`, `<html>`, `<head>`, and `<body>` tags.  
     - A heading (`<h1>`) for the blog title.  
     - A paragraph (`<p>`) for the blog content with at least 5 sentences.  
@@ -154,7 +252,7 @@ The interaction between these layers is crucial. For example, the front-end (pre
     - A hyperlink (`<a>`) to a related article with the text "Read more".  
     - Use semantic elements like `<header>`, `<main>`, and `<footer>` to structure the document.
 
-16. Design an HTML web form for a feedback submission page. The form should include:  
+15. Design an HTML web form for a feedback submission page. The form should include:  
     - A `<form>` tag with the action attribute set to "/submit".  
     - Input fields for:  
         1. Name (text input, required)  
@@ -165,14 +263,14 @@ The interaction between these layers is crucial. For example, the front-end (pre
         6. A submit button with the text "Submit Feedback"  
     - Use appropriate attributes for validation (e.g., `required`, `min`, `max`).
 
-17. Create a responsive webpage layout using CSS Flexbox and Grid. The layout should include:  
+16. Create a responsive webpage layout using CSS Flexbox and Grid. The layout should include:  
     - A header section with a centered title  
     - A main content section divided into two columns using CSS Grid  
     - A sidebar on the left and a content area on the right, styled using CSS Flexbox  
     - A footer section with three equally spaced links  
     - Ensure the layout is responsive using media queries for different screen sizes (mobile, tablet, desktop)
 
-18. Write HTML code to design the table as shown below. Add embedded CSS to the page such that:  
+17. Write HTML code to design the table as shown below. Add embedded CSS to the page such that:  
     (i) All table headings are displayed in red font  
     (ii) All other cells have blue text  
 
@@ -183,7 +281,7 @@ The interaction between these layers is crucial. For example, the front-end (pre
           |        | Game Programming | 30       | 70       | T P
     ```
 
-19. Justify your answer with proper explanation:  
+18. Justify your answer with proper explanation:  
     (i)  
     ```html
     <html>
@@ -219,4 +317,4 @@ The interaction between these layers is crucial. For example, the front-end (pre
     ```
     What is the color of the h1 element?
 
-20. Describe a scenario where you would choose to use Float, Flexbox, and CSS Grid respectively, and explain why each layout method is most appropriate for its specific scenario.
+19. Describe a scenario where you would choose to use Float, Flexbox, and CSS Grid respectively, and explain why each layout method is most appropriate for its specific scenario.
