@@ -29,29 +29,30 @@
 
     Cascading Style Sheets (CSS) is a styling language used to control the layout and visual appearance of web pages written in HTML and other markup languages. CSS allows developers to separate presentation logic from content, making it easier to maintain and update websites.
    
-   **Role in Web Development**
+    **Role in Web Development**
 
-   CSS plays a crucial role in web development by:
+     CSS plays a crucial role in web development by:
 
-   * Controlling the layout, color, font, and other visual aspects of a web page
-   * Improving user experience by creating a consistent and visually appealing design
-   * Enhancing accessibility by providing alternative styles for users with disabilities
-   * Enabling responsive design, which adapts to different screen sizes and devices
+    * Controlling the layout, color, font, and other visual aspects of a web page
+    * Improving user experience by creating a consistent and visually appealing design
+    * Enhancing accessibility by providing alternative styles for users with disabilities
+    * Enabling responsive design, which adapts to different screen sizes and devices
+ 
+    **CSS Types: Inline, Internal, and External**
 
-   **CSS Types: Inline, Internal, and External**
+  
+	 There are three types of CSS: inline, internal, and external.
 
-   There are three types of CSS: inline, internal, and external.
+     **Inline CSS**
 
-   **Inline CSS**
+    * **Definition**: CSS styles applied directly to an HTML element using the `style` attribute.
+    * **Use Case**: Small, one-time changes to a single element, such as changing font color or size.
+    * **Advantages**: Quick and easy to implement, no need to create a separate CSS file.
+    * **Disadvantages**: Can make HTML code messy and difficult to maintain, not scalable for large projects.
 
-   * **Definition**: CSS styles applied directly to an HTML element using the `style` attribute.
-   * **Use Case**: Small, one-time changes to a single element, such as changing font color or size.
-   * **Advantages**: Quick and easy to implement, no need to create a separate CSS file.
-   * **Disadvantages**: Can make HTML code messy and difficult to maintain, not scalable for large projects.
+    **Internal CSS**
 
-   **Internal CSS**
-
-   * **Definition**: CSS styles defined within an HTML document using the `<style>` element.
+    * **Definition**: CSS styles defined within an HTML document using the `<style>` element.
    * **Use Case**: Small to medium-sized projects, where a separate CSS file is not necessary.
    * **Advantages**: Easy to implement, can be used for small projects, and can be easily modified.
    * **Disadvantages**: Can make HTML code bulky, not ideal for large projects.
