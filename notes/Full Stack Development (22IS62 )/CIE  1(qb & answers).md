@@ -296,6 +296,8 @@ In this example, only the words "important text" would appear in red and bold, b
 ---
 
 10. Explain the importance of version control in software development. Describe any two basic Git commands and how GitHub enhances collaboration among developers.
+    Ans)
+---
 
 11. Write the basic structure of an HTML document. Explain the purpose of the `<head>` tag, `<body>` tag and other tags, and provide examples of common HTML elements.
 
