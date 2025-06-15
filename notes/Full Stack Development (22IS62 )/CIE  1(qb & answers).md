@@ -484,7 +484,7 @@ GitHub is a cloud-based platform that complements Git by providing a website and
 
       The basic structure of an HTML document includes a document type declaration and typically consists of a head section and a body section, each serving distinct purposes in defining and presenting web content.
 
-1. Basic Structure of an HTML Document
+Basic Structure of an HTML Document
 
 A valid HTML5 document starts with a `<!DOCTYPE html>` declaration, which tells the browser what type of document it is about to process. While HTML5 does not strictly require the `<html>`, `<head>`, and `<body>` elements, most web authors continue to use them, particularly because they were required in previous versions like XHTML.
 
