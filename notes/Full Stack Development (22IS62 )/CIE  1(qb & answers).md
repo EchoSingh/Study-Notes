@@ -770,15 +770,127 @@ While the provided sources discuss the box model and general positioning, specif
         5. A radio button for subscribing to the newsletter  
         6. A submit button with the text "Submit Feedback"  
     - Use appropriate attributes for validation (e.g., `required`, `min`, `max`).
+    Ans)
+     Here is an HTML web form designed for a feedback submission page, incorporating the specified elements and validation attributes:
 
-13. Create a responsive webpage layout using CSS Flexbox and Grid. The layout should include:  
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Submission</title>
+    <style>
+        /* Optional basic styling for better readability */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        div {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        textarea {
+            width: calc(100% - 22px); /* Account for padding and border */
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/submit" method="post">
+        <h2>Submit Your Feedback</h2>
+
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" required>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="user_email" required>
+        </div>
+
+        <div>
+            <label for="rating">Rating (1-5):</label>
+            <input type="number" id="rating" name="user_rating" min="1" max="5" required>
+        </div>
+
+        <div>
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="user_feedback" rows="5" maxlength="500" placeholder="Max 500 characters"></textarea>
+        </div>
+
+        <div>
+            <label>Subscribe to our newsletter?</label><br>
+            <input type="radio" id="subscribe_yes" name="newsletter_subscribe" value="yes">
+            <label for="subscribe_yes">Yes</label>
+            <input type="radio" id="subscribe_no" name="newsletter_subscribe" value="no" checked>
+            <label for="subscribe_no">No</label>
+        </div>
+
+        <div>
+            <button type="submit">Submit Feedback</button>
+        </div>
+    </form>
+
+</body>
+</html>
+```
+
+creates a radio button. When multiple radio buttons share the same `name` attribute, only one can be selected at a time within that group.
+        - `id` and `<label>` are used to associate the label text with the radio button for accessibility.
+        - `value` specifies the value that will be sent to the server if that radio button is selected.
+        - `checked` pre-selects "No" as the default option.
+7. **Submit Button:**
+    
+    - **`<button type="submit">Submit Feedback</button>`**
+        - `type="submit"` defines a button that, when clicked, submits the form data to the server.
+        - Using a `<button>` tag allows for richer content within the button compared to `<input type="submit">`.
+
+The form also uses `<div>` elements to logically group related form elements (label and input), which helps in organizing the layout and applying CSS styles for better visual presentation. The use of HTML5 validation attributes like `required`, `min`, `max`, and `maxlength` provides initial client-side validation, which is a best practice for reducing incorrect submissions and server load. However, it's important to remember that server-side validation must also occur, as client-side validation can be circumvented.
+
+14. Create a responsive webpage layout using CSS Flexbox and Grid. The layout should include:  
     - A header section with a centered title  
     - A main content section divided into two columns using CSS Grid  
     - A sidebar on the left and a content area on the right, styled using CSS Flexbox  
     - A footer section with three equally spaced links  
     - Ensure the layout is responsive using media queries for different screen sizes (mobile, tablet, desktop)
 
-14. Write HTML code to design the table as shown below. Add embedded CSS to the page such that:  
+15. Write HTML code to design the table as shown below. Add embedded CSS to the page such that:  
     (i) All table headings are displayed in red font  
     (ii) All other cells have blue text  
 
@@ -789,7 +901,7 @@ While the provided sources discuss the box model and general positioning, specif
           |        | Game Programming | 30       | 70       | T P
     ```
 
-15. Justify your answer with proper explanation:  
+16. Justify your answer with proper explanation:  
     (i)  
     ```html
     <html>
@@ -825,4 +937,4 @@ While the provided sources discuss the box model and general positioning, specif
     ```
     What is the color of the h1 element?
 
-16. Describe a scenario where you would choose to use Float, Flexbox, and CSS Grid respectively, and explain why each layout method is most appropriate for its specific scenario.
+17. Describe a scenario where you would choose to use Float, Flexbox, and CSS Grid respectively, and explain why each layout method is most appropriate for its specific scenario.
