@@ -1256,7 +1256,69 @@ Here's the HTML code with embedded CSS to achieve the desired layout and styling
     What is the color of the h1 element?
 
  Ans)
+ 
+ CSS (Cascading Style Sheets) is a W3C standard used to define the presentation and appearance of HTML elements, including properties like colors. When multiple CSS rules apply to the same HTML element and conflict, CSS uses a "cascade" system to determine which rule takes precedence. The cascade principles include inheritance, specificity, and location.
+
+Let's analyze each scenario:
+
+**(i) Determining the color of the `<h1>` element**
+
+```
+<html>
+<title> What is the color of the text </title>
+<link rel="stylesheet" href="./style.css">
+<h1 class="a-class" id="an-id"> Sixth Sem Students are in what color?</h1>
+</html>
+```
+
+```
+.a-class {
+  color: blue;
+}
+#an-id {
+  color: green;
+}
+```
+
+**Explanation:** In this scenario, the `<h1>` element has both a `class` attribute (`a-class`) and an `id` attribute (`an-id`). The CSS defines a `color` for elements with the class `a-class` as blue and a `color` for elements with the ID `an-id` as green.
+
+When multiple style rules conflict for the same element, CSS's "specificity" principle determines which rule takes precedence. Specificity assigns a weight to each style rule, and the rule with the greatest weight is applied. According to the sources, an ID selector (`#an-id`) allows targeting a specific element by its `id` attribute. Class selectors (`.a-class`) target elements based on their `class` attribute value. ID selectors are more specific than class selectors.
+
+Therefore, the rule associated with the ID selector `#an-id` has higher specificity than the rule associated with the class selector `.a-class`.
+
+**Conclusion for (i):** The `<h1>` element will be displayed in **green** font color.
+
+**(ii) Determining the color of the `<h1>` element**
+
+```
+<html>
+<title> What is the color of the text </title>
+<link rel="stylesheet" href="./style.css">
+<h1 class="a-class another-class"> Sixth Sem Students are in what color? </h1>
+</html>
+```
+
+```
+.a-class {
+  color: green;
+}
+.another-class {
+  color: blue;
+}
+```
+
+**Explanation:** In this scenario, the `<h1>` element has two class attributes: `a-class` and `another-class`. The CSS defines `color: green;` for `.a-class` and `color: blue;` for `.another-class`.
+
+Both `.a-class` and `.another-class` are class selectors. When different style rules have the same specificity, the "principle of location" is applied. This principle states that the latest rule is given more weight. In a single CSS block, rules defined later in the code take precedence over those defined earlier if their specificity is equal.
+
+In the provided CSS, `.another-class { color: blue; }` appears after `.a-class { color: green; }`. Since both selectors have the same specificity (they are both class selectors), the rule defined later in the stylesheet will override the earlier one.
+
+**Conclusion for (ii):** The `<h1>` element will be displayed in **blue** font color.
 
 ---
 
 18. Describe a scenario where you would choose to use Float, Flexbox, and CSS Grid respectively, and explain why each layout method is most appropriate for its specific scenario.
+
+Ans)
+    
+    
