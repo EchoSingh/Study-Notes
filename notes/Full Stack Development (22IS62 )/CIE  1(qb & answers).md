@@ -243,7 +243,7 @@ Here are five types of selectors, with examples:
 
 **Explanation and Example:** The `<div>` element is a container element used to create a logical grouping of content. It is primarily used in contemporary CSS-based layouts to mark out sections of content. The `<div>` element itself has no intrinsic visual presentation; its purpose is purely for structuring content for styling or scripting purposes.
 
-While the sources do not provide a direct code example of a `<div>` element, they describe its function clearly. For instance, you might use a `<div>` to group a header, an image, and a paragraph together as a single logical unit that can then be styled using CSS:
+ For instance, you might use a `<div>` to group a header, an image, and a paragraph together as a single logical unit that can then be styled using CSS:
 
 ```
 <div class="product-card">
@@ -269,7 +269,7 @@ In this example, the `<div>` with the class `product-card` groups related conten
 
 The `<span>` element is a generic inline container. Similar to how a `<div>` groups block-level content, a `<span>` is used to group or apply styles to a small section of text or other inline content _without_ starting a new line. It is commonly used when you want to apply CSS styles or JavaScript behavior to a specific part of a sentence or a word without affecting the overall flow of the paragraph or surrounding elements.
 
-Here's an example demonstrating its use (inferred from the general description of inline elements):
+Here's an example demonstrating its use :
 
 ```
 <p>
@@ -280,6 +280,7 @@ Here's an example demonstrating its use (inferred from the general description o
 
 In this example, only the words "important text" would appear in red and bold, because they are wrapped within the `<span>` tags. The `<span>` element allows for precise styling of inline content without disrupting the paragraph's flow.
 
+---
 8. Write 5 types of selectors with examples.
 
 9. Illustrate CSS box model. Be sure to label and explain each component of the model with an example.
