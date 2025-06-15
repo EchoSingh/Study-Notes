@@ -1255,4 +1255,8 @@ Here's the HTML code with embedded CSS to achieve the desired layout and styling
     ```
     What is the color of the h1 element?
 
+ Ans)
+
+---
+
 18. Describe a scenario where you would choose to use Float, Flexbox, and CSS Grid respectively, and explain why each layout method is most appropriate for its specific scenario.
