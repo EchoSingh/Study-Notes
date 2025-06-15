@@ -74,33 +74,35 @@
 
 ---
 
-3. Explain the concept of Cascading Style Sheets and its role in web development. Compare and contrast inline, internal, and external CSS, highlighting their use cases and advantages.
 
-4. Explain in detail Layers of Full Stack Development.
+3. Explain in detail Layers of Full Stack Development.
+4. 
+    Ans)
+    
 
-5. Define WEB, URL, HTTPS, Name Resolution.
+4. Define WEB, URL, HTTPS, Name Resolution.
 
-6. Explain 5 types of selectors with examples.
+5. Explain 5 types of selectors with examples.
 
-7. Write the syntax of below mentioned HTML elements and explain with an example:  
+6. Write the syntax of below mentioned HTML elements and explain with an example:  
    (i) `<div>`  
    (ii) `<span>`
 
-8. Write 5 types of selectors with examples.
+7. Write 5 types of selectors with examples.
 
-9. Illustrate CSS box model. Be sure to label and explain each component of the model with an example.
+8. Illustrate CSS box model. Be sure to label and explain each component of the model with an example.
 
-10. Understand the concept of “distributed” in the context of version control systems like Git, and outline the different states that files can exist in within the Git repository.
+9. Understand the concept of “distributed” in the context of version control systems like Git, and outline the different states that files can exist in within the Git repository.
 
-11. Differentiate between static and dynamic websites. Provide examples of use cases for each type and explain the technologies commonly used to build them.
+10. Differentiate between static and dynamic websites. Provide examples of use cases for each type and explain the technologies commonly used to build them.
 
-12. Explain the importance of version control in software development. Describe any two basic Git commands and how GitHub enhances collaboration among developers.
+11. Explain the importance of version control in software development. Describe any two basic Git commands and how GitHub enhances collaboration among developers.
 
-13. Write the basic structure of an HTML document. Explain the purpose of the `<head>` tag, `<body>` tag and other tags, and provide examples of common HTML elements.
+12. Write the basic structure of an HTML document. Explain the purpose of the `<head>` tag, `<body>` tag and other tags, and provide examples of common HTML elements.
 
-14. Discuss the importance of CSS style properties in web design. Provide examples of commonly used properties for text styling, box model, and layout, and explain their effects.
+13. Discuss the importance of CSS style properties in web design. Provide examples of commonly used properties for text styling, box model, and layout, and explain their effects.
 
-15. Create an HTML document for a blog post. The document should include:  
+14. Create an HTML document for a blog post. The document should include:  
     - A proper HTML structure with `<!DOCTYPE>`, `<html>`, `<head>`, and `<body>` tags.  
     - A heading (`<h1>`) for the blog title.  
     - A paragraph (`<p>`) for the blog content with at least 5 sentences.  
@@ -108,7 +110,7 @@
     - A hyperlink (`<a>`) to a related article with the text "Read more".  
     - Use semantic elements like `<header>`, `<main>`, and `<footer>` to structure the document.
 
-16. Design an HTML web form for a feedback submission page. The form should include:  
+15. Design an HTML web form for a feedback submission page. The form should include:  
     - A `<form>` tag with the action attribute set to "/submit".  
     - Input fields for:  
         1. Name (text input, required)  
@@ -119,14 +121,14 @@
         6. A submit button with the text "Submit Feedback"  
     - Use appropriate attributes for validation (e.g., `required`, `min`, `max`).
 
-17. Create a responsive webpage layout using CSS Flexbox and Grid. The layout should include:  
+16. Create a responsive webpage layout using CSS Flexbox and Grid. The layout should include:  
     - A header section with a centered title  
     - A main content section divided into two columns using CSS Grid  
     - A sidebar on the left and a content area on the right, styled using CSS Flexbox  
     - A footer section with three equally spaced links  
     - Ensure the layout is responsive using media queries for different screen sizes (mobile, tablet, desktop)
 
-18. Write HTML code to design the table as shown below. Add embedded CSS to the page such that:  
+17. Write HTML code to design the table as shown below. Add embedded CSS to the page such that:  
     (i) All table headings are displayed in red font  
     (ii) All other cells have blue text  
 
@@ -137,7 +139,7 @@
           |        | Game Programming | 30       | 70       | T P
     ```
 
-19. Justify your answer with proper explanation:  
+18. Justify your answer with proper explanation:  
     (i)  
     ```html
     <html>
@@ -173,4 +175,4 @@
     ```
     What is the color of the h1 element?
 
-20. Describe a scenario where you would choose to use Float, Flexbox, and CSS Grid respectively, and explain why each layout method is most appropriate for its specific scenario.
+19. Describe a scenario where you would choose to use Float, Flexbox, and CSS Grid respectively, and explain why each layout method is most appropriate for its specific scenario.
