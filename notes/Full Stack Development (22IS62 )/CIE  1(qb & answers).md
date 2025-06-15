@@ -24,13 +24,13 @@
 
 2. Explain the concept of Cascading Style Sheets and its role in web development. Compare and contrast inline, internal, and external CSS, highlighting their use cases and advantages.
   Ans)
-     **Cascading Style Sheets (CSS)**
 
-Cascading Style Sheets (CSS) is a styling language used to control the layout and visual appearance of web pages written in HTML and other markup languages. CSS allows developers to separate presentation logic from content, making it easier to maintain and update websites.
 
-**Role in Web Development**
+   Cascading Style Sheets (CSS) is a styling language used to control the layout and visual appearance of web pages written in HTML and other markup languages. CSS allows developers to separate presentation logic from content, making it easier to maintain and update websites.
 
-CSS plays a crucial role in web development by:
+  **Role in Web Development**
+
+   CSS plays a crucial role in web development by:
 
 * Controlling the layout, color, font, and other visual aspects of a web page
 * Improving user experience by creating a consistent and visually appealing design
@@ -62,7 +62,7 @@ There are three types of CSS: inline, internal, and external.
 * **Advantages**: Easy to maintain, update, and reuse styles across multiple pages, makes HTML code cleaner.
 * **Disadvantages**: Requires a separate file, can be slow to load if not optimized.
 
-**Comparison Summary**
+**Comparison **
 
 | CSS Type | Use Case | Advantages | Disadvantages |
 | --- | --- | --- | --- |
@@ -70,7 +70,7 @@ There are three types of CSS: inline, internal, and external.
 | Internal | Small to medium-sized projects | Easy to implement, easy to modify | Makes HTML code bulky, not ideal for large projects |
 | External | Large projects | Easy to maintain, update, and reuse styles | Requires a separate file, can be slow to load if not optimized |
 
-In conclusion, CSS is a fundamental aspect of web development, and choosing the right CSS type depends on the project's size, complexity, and requirements.
+---
 
 3. Explain the concept of Cascading Style Sheets and its role in web development. Compare and contrast inline, internal, and external CSS, highlighting their use cases and advantages.
 
