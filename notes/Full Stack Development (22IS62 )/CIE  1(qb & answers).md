@@ -384,6 +384,7 @@ The element box consists of four main components, from the innermost to the oute
 ---
 
 9. Differentiate between static and dynamic websites. Provide examples of use cases for each type and explain the technologies commonly used to build them.
+
    Ans)
 
     Websites can be broadly categorized into two main types: static and dynamic, primarily distinguished by how their content is delivered and generated.
@@ -435,10 +436,10 @@ When a user accesses a static website, their browser simply downloads these HTML
 - **APIs (Application Programming Interfaces)**: In dynamic web development, APIs (like REST/GraphQL endpoints) define how front-end and back-end components communicate to request and send data.
 - **Authentication and Authorization**: These processes are handled on the back-end to ensure secure access to resources and protect user data, often involving complex business logic.
 
-The interaction between the front-end and back-end in dynamic websites typically involves the front-end (e.g., using jQuery's AJAX capabilities) sending a request to the back-end, which then validates and processes the request, interacts with the database, and sends a response back (often in JSON or XML format) for the front-end to update the user interface.
 ---
 
 10. Explain the importance of version control in software development. Describe any two basic Git commands and how GitHub enhances collaboration among developers.
+
     Ans)
 ---
 
