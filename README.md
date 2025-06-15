@@ -26,5 +26,5 @@ All notes are kept inside the `notes/` directory and categorized by subject or t
 2. Open any `.md` file to read the notes.
 3. Clone the repo if you want a local copy:
    ```bash
-   git clone https://github.com/your-username/study-notes.git
+   git clone https://github.com/EchoSingh/study-notes.git
    ````
