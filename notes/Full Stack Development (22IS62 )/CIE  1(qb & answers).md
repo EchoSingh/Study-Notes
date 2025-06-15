@@ -46,23 +46,23 @@
    * **Definition**: CSS styles applied directly to an HTML element using the `style` attribute.
    * **Use Case**: Small, one-time changes to a single element, such as changing font color or size.
    * **Advantages**: Quick and easy to implement, no need to create a separate CSS file.
-* **Disadvantages**: Can make HTML code messy and difficult to maintain, not scalable for large projects.
+   * **Disadvantages**: Can make HTML code messy and difficult to maintain, not scalable for large projects.
 
-  **Internal CSS**
+ **Internal CSS**
 
-* **Definition**: CSS styles defined within an HTML document using the `<style>` element.
-* **Use Case**: Small to medium-sized projects, where a separate CSS file is not necessary.
-* **Advantages**: Easy to implement, can be used for small projects, and can be easily modified.
-* **Disadvantages**: Can make HTML code bulky, not ideal for large projects.
+   * **Definition**: CSS styles defined within an HTML document using the `<style>` element.
+   * **Use Case**: Small to medium-sized projects, where a separate CSS file is not necessary.
+   * **Advantages**: Easy to implement, can be used for small projects, and can be easily modified.
+   * **Disadvantages**: Can make HTML code bulky, not ideal for large projects.
 
-  **External CSS**
+   **External CSS**
 
-* **Definition**: CSS styles defined in a separate file with a `.css` extension, linked to an HTML document using the `<link>` element.
-* **Use Case**: Large projects, where a separate CSS file is necessary for organization and scalability.
-* **Advantages**: Easy to maintain, update, and reuse styles across multiple pages, makes HTML code cleaner.
-* **Disadvantages**: Requires a separate file, can be slow to load if not optimized.
+   * **Definition**: CSS styles defined in a separate file with a `.css` extension, linked to an HTML document using the `<link>` element.
+   * **Use Case**: Large projects, where a separate CSS file is necessary for organization and scalability.
+   * **Advantages**: Easy to maintain, update, and reuse styles across multiple pages, makes HTML code cleaner.
+   * **Disadvantages**: Requires a separate file, can be slow to load if not optimized.
 
-  **Comparison **
+    **Comparison **
 
 | CSS Type | Use Case | Advantages | Disadvantages |
 | --- | --- | --- | --- |
