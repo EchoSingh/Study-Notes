@@ -1325,9 +1325,7 @@ CSS as a W3C standard used to describe the appearance of HTML elements. CSS allo
 
 However, the sources do **not** specifically discuss CSS layout methods like **Float**, **Flexbox**, or **CSS Grid**. Therefore, the scenarios and explanations below are based on general web development knowledge.
 
----
-
-### 📌 **Scenario for Using `float`:**
+### **Scenario for Using `float`:**
 
 **Scenario:**  
 You have an image embedded in a paragraph and want the text to wrap around the image, aligning it to the left or right.
@@ -1335,9 +1333,9 @@ You have an image embedded in a paragraph and want the text to wrap around the i
 **Explanation:**  
 The `float` property was originally intended for this type of layout—wrapping text around media elements, much like in traditional print design. While float was once widely used for multi-column page layouts, it is now best reserved for its intended use: simple text-wrapping. It's lightweight and easy to implement in such cases but can lead to layout issues in more complex designs, where newer methods are preferred.
 
----
 
-### 📌 **Scenario for Using `flexbox` (Flexible Box Layout):**
+
+### **Scenario for Using `flexbox` (Flexible Box Layout):**
 
 **Scenario:**  
 You’re building a horizontal navigation bar, a list of product cards in a single row, or vertically aligned form elements that need even spacing and alignment.
@@ -1354,9 +1352,8 @@ Flexbox is best suited for **one-dimensional layouts**—layouts that align item
 
 This makes Flexbox ideal for components like headers, navbars, or card containers that require flexible, responsive behavior along one axis.
 
----
 
-### 📌 **Scenario for Using `CSS Grid` (Grid Layout):**
+###  **Scenario for Using `CSS Grid` (Grid Layout):**
 
 **Scenario:**  
 You are designing a complete page layout, a complex dashboard, or an image gallery that requires precise control over both rows and columns.
@@ -1377,16 +1374,11 @@ CSS Grid is the most robust and flexible option for building large-scale structu
 
 **Summary Table:**
 
-|Layout Method|Best For|Layout Type|Use Case Example|
-|---|---|---|---|
-|`float`|Text wrapping around images|Simple, inline flow|Image aligned left with surrounding text|
-|`flexbox`|Linear item alignment and spacing|One-dimensional (row or column)|Navigation bar, card list|
-|`CSS Grid`|Structured, complex layouts|Two-dimensional (rows & columns)|Full page layout, dashboard|
-
----
-
-Let me know if you'd like a visual example or a code snippet for any of the scenarios!
-
+| Layout Method | Best For                          | Layout Type                      | Use Case Example                         |
+| ------------- | --------------------------------- | -------------------------------- | ---------------------------------------- |
+| `float`       | Text wrapping around images       | Simple, inline flow              | Image aligned left with surrounding text |
+| `flexbox`     | Linear item alignment and spacing | One-dimensional (row or column)  | Navigation bar, card list                |
+| `CSS Grid`    | Structured, complex layouts       | Two-dimensional (rows & columns) | Full page layout, dashboard              |
 
 ---
 
