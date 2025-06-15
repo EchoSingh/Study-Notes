@@ -355,6 +355,29 @@ The element box consists of four main components, from the innermost to the oute
 8. Understand the concept of “distributed” in the context of version control systems like Git, and outline the different states that files can exist in within the Git repository.
 
 	Ans)
+	     In the context of version control systems like Git, the term "distributed" refers to a specific approach to managing code versions.
+
+### Understanding "Distributed" in Git
+
+Git is categorized as a Distributed Version Control System (DVCS). This means that when you share a project directory with another individual using Git, it doesn't just share the most up-to-date file version. Instead, Git distributes _every version_ it has documented for that project. This approach contrasts sharply with other version control systems that might only distribute a single version that a user has explicitly checked out from a central or local database. Therefore, "distributing" in Git implies sharing all recorded file versions of a project, not just a selected few.
+
+### Git File States
+
+Git tracks files in three primary states or conditions, which determine where Git will place them:
+
+1. **Modified state**:
+    
+    - A file in the modified state has been revised but has not yet been "committed".
+    - In simpler terms, these are files you have changed but have not yet authorized Git to monitor or save these specific revisions.
+2. **Staged state**:
+    
+    - Files in the staged state are modified files that have been specifically chosen in their current version.
+    - They are being prepared and organized to be saved or "committed" into the `.git` repository during the next commit operation.
+    - When a file is staged, it signifies that you have clearly instructed Git to monitor that particular version of the file.
+3. **Committed state**:
+    
+    - Files in the committed state have been successfully stored in the `.git` repository.
+    - A committed file means you have officially recorded its staged version into the Git directory or folder.
 ---
 
 9. Differentiate between static and dynamic websites. Provide examples of use cases for each type and explain the technologies commonly used to build them.
