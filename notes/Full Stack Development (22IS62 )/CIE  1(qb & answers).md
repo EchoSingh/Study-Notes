@@ -163,33 +163,33 @@ Here are five types of selectors, with examples:
 - **Definition**: A class selector allows you to simultaneously target different HTML elements regardless of their position in the document tree. If a series of HTML elements have been labeled with the same `class` attribute value, you can style them using a class selector. The syntax is a period (`.`) followed by the class name.
 - **Example**: If you have multiple elements with `class="highlight"`, you can style them all:
         
-        ```
+    ```
         .highlight {
             background-color: yellow;
         }
-        ```
+    ```
         
 (iii). **ID Selectors**
     
 - **Definition**: An ID selector allows you to target a specific HTML element by its `id` attribute, irrespective of its type or position. IDs must be unique within an HTML document. The syntax is a pound/hash symbol (`#`) followed by the ID name.    - **Example**: To style a single element with `id="main-header"`, the rule would be:
         
-        ```
+    ```
         #main-header {
             font-size: 2em;
             text-align: center;
         }
-        ```
+     ```
         
 (iv). **Attribute Selectors**
     
 - **Definition**: An attribute selector provides a way to select HTML elements either by the presence of an element attribute or by the value of an attribute. This can be very helpful for styling hyperlinks and images, for instance, to make it obvious when a tooltip is available for a link or image.
 - **Example**: To select any element that has a `title` attribute:
         
-        ```
+    ```
         [title] {
             border: 1px dotted gray;
         }
-        ```
+    ```
         
   This would match any element in the document that possesses a `title` attribute.
 (v). **Pseudo-Element and Pseudo-Class Selectors**
@@ -198,17 +198,17 @@ Here are five types of selectors, with examples:
         - **Pseudo-element selectors**: Select something that does not explicitly exist as an element in the HTML document tree but is still a recognizable selectable object. For example, you can select the first line or first letter of any HTML element.
         - **Pseudo-class selectors**: Apply to an HTML element but target it based on a specific state or condition.
 - **Examples**:
-        - **Pseudo-element example**: Styling the first line of a paragraph:
+    - **Pseudo-element example**: Styling the first line of a paragraph:
             
-            ```
+        ```
             p::first-line {
                 font-weight: bold;
             }
-            ```
+        ```
             
     - **Pseudo-class example**: Styling link states (link, visited, hover):
             
-            ```
+        ```
             a:link {
                 color: blue;
             }
@@ -218,9 +218,9 @@ Here are five types of selectors, with examples:
             a:hover {
                 color: red; /* Color of the link when the mouse is over it */
             }
-            ```
+        ```
             
-            The syntax for pseudo-class selectors is a colon (`:`) followed by the pseudo-class selector name, with no space after the colon. The order of `:link` and `:visited` should appear before others like `:hover`.
+    The syntax for pseudo-class selectors is a colon (`:`) followed by the pseudo-class selector name, with no space after the colon. The order of `:link` and `:visited` should appear before others like `:hover`.
 
 ---
 
