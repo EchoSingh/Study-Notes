@@ -23,6 +23,7 @@
 ---
 
 2. Explain the concept of Cascading Style Sheets and its role in web development. Compare and contrast inline, internal, and external CSS, highlighting their use cases and advantages.
+
   Ans)
 
 
