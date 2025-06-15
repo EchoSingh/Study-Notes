@@ -228,7 +228,57 @@ Here are five types of selectors, with examples:
 6. Write the syntax of below mentioned HTML elements and explain with an example:  
    (i) `<div>`  
    (ii) `<span>`
-7
+
+   Ans)
+
+ (i) `<div>` HTML Element
+
+**Syntax:**
+
+```
+<div>
+    <!-- Content to be grouped goes here -->
+</div>
+```
+
+**Explanation and Example:** The `<div>` element is a container element used to create a logical grouping of content. It is primarily used in contemporary CSS-based layouts to mark out sections of content. The `<div>` element itself has no intrinsic visual presentation; its purpose is purely for structuring content for styling or scripting purposes.
+
+While the sources do not provide a direct code example of a `<div>` element, they describe its function clearly. For instance, you might use a `<div>` to group a header, an image, and a paragraph together as a single logical unit that can then be styled using CSS:
+
+```
+<div class="product-card">
+    <h2>Product Title</h2>
+    <img src="product.jpg" alt="Product Image">
+    <p>This is a description of the product.</p>
+</div>
+```
+
+In this example, the `<div>` with the class `product-card` groups related content. CSS could then be applied to `product-card` to style its background, borders, or layout. The sources mention that "Most complex websites are absolutely packed solid with `<div>` elements" and developers often use `id` or `class` attributes with them to provide meaning for styling.
+
+ (ii) `<span>` HTML Element
+
+**Syntax:**
+
+```
+<span>
+    <!-- Inline content to be styled goes here -->
+</span>
+```
+
+**Explanation and Example:** The provided sources do not explicitly define the `<span>` HTML element by name. However, they describe the concept of "inline HTML elements" which function similarly to `<span>`. Inline elements are defined as those that "do not cause a paragraph break but are part of the regular 'flow' of the text". Examples of such inline elements given in the sources are `<strong>` and `<a>`.
+
+The `<span>` element is a generic inline container. Similar to how a `<div>` groups block-level content, a `<span>` is used to group or apply styles to a small section of text or other inline content _without_ starting a new line. It is commonly used when you want to apply CSS styles or JavaScript behavior to a specific part of a sentence or a word without affecting the overall flow of the paragraph or surrounding elements.
+
+Here's an example demonstrating its use (inferred from the general description of inline elements):
+
+```
+<p>
+    This is a sentence with some <span style="color: red; font-weight: bold;">important text</span>
+    that I want to highlight.
+</p>
+```
+
+In this example, only the words "important text" would appear in red and bold, because they are wrapped within the `<span>` tags. The `<span>` element allows for precise styling of inline content without disrupting the paragraph's flow.
 
 8. Write 5 types of selectors with examples.
 
