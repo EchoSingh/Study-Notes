@@ -282,7 +282,8 @@ In this example, only the words "important text" would appear in red and bold, b
 ---
 
 7. Illustrate CSS box model. Be sure to label and explain each component of the model with an example.
-   Ans)
+
+  Ans)
       The CSS Box Model is a fundamental concept in web design, where all HTML elements are considered to exist within an "element box". Understanding this model is crucial for becoming proficient with CSS, as it dictates how elements take up space and how spacing is added around and within them.
 
 The element box consists of four main components, from the innermost to the outermost:
