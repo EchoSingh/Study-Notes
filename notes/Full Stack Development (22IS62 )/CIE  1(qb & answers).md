@@ -1,17 +1,17 @@
 
 1. Explain the concept of Full Stack Web Development. Discuss the key layers involved in Full Stack Development and provide examples of technologies used in each layer.
+  Ans)
   
    Full Stack Web Development refers to the process of building and managing both the front-end (client-side) and back-end (server-side) elements of a web application  A full-stack developer is capable of working on all layers of the application, from the user interface to the server and database  This approach allows for a more cohesive and efficient development process, as the developer can handle all aspects of the application, leading to faster development cycles and improved collaboration 
-
+   
    The key layers involved in Full Stack Development include:
-
    1. **Frontend Development**: This layer focuses on the user interface (UI) and user experience (UX) of the web application. It involves creating the visual elements that users interact with, such as layout, colours, and animations. Technologies used in this layer include HTML, CSS, and JavaScript, along with frameworks and libraries like React, Angular, and Vue.js 
 
-  2. **Backend Development**: This layer deals with the server-side logic, database management, and application functionality. It ensures that the data is processed and stored securely. Technologies used in this layer include programming languages like Python, Ruby, PHP, Node.js, Java, and .NET, as well as backend frameworks such as Django, Spring Boot, and Express.js 
+   2. **Backend Development**: This layer deals with the server-side logic, database management, and application functionality. It ensures that the data is processed and stored securely. Technologies used in this layer include programming languages like Python, Ruby, PHP, Node.js, Java, and .NET, as well as backend frameworks such as Django, Spring Boot, and Express.js 
 
-  3. **Database Management**: This layer involves the storage and retrieval of data. It includes managing databases and ensuring data integrity and security. Technologies used in this layer include MySQL, PostgreSQL, and MongoDB 
+   3. **Database Management**: This layer involves the storage and retrieval of data. It includes managing databases and ensuring data integrity and security. Technologies used in this layer include MySQL, PostgreSQL, and MongoDB 
 
-  4. **Version Control**: This layer involves managing changes to the codebase and collaborating with other developers. Technologies used in this layer include Git, which helps in tracking changes and managing different versions of the code 
+   4. **Version Control**: This layer involves managing changes to the codebase and collaborating with other developers. Technologies used in this layer include Git, which helps in tracking changes and managing different versions of the code 
 
     Examples of technologies used in each layer include:
 
@@ -20,6 +20,7 @@
     - Databases: MySQL, PostgreSQL, MongoDB 
     - Version Control: Git 
 
+---
 
 2. Explain the concept of Cascading Style Sheets and its role in web development. Compare and contrast inline, internal, and external CSS, highlighting their use cases and advantages.
 
