@@ -281,19 +281,22 @@ In this example, only the words "important text" would appear in red and bold, b
 
 ---
 
-9. Illustrate CSS box model. Be sure to label and explain each component of the model with an example.
+7. Illustrate CSS box model. Be sure to label and explain each component of the model with an example.
+   Ans)
 
-10. Understand the concept of “distributed” in the context of version control systems like Git, and outline the different states that files can exist in within the Git repository.
+---
 
-11. Differentiate between static and dynamic websites. Provide examples of use cases for each type and explain the technologies commonly used to build them.
+8. Understand the concept of “distributed” in the context of version control systems like Git, and outline the different states that files can exist in within the Git repository.
 
-12. Explain the importance of version control in software development. Describe any two basic Git commands and how GitHub enhances collaboration among developers.
+9. Differentiate between static and dynamic websites. Provide examples of use cases for each type and explain the technologies commonly used to build them.
 
-13. Write the basic structure of an HTML document. Explain the purpose of the `<head>` tag, `<body>` tag and other tags, and provide examples of common HTML elements.
+10. Explain the importance of version control in software development. Describe any two basic Git commands and how GitHub enhances collaboration among developers.
 
-14. Discuss the importance of CSS style properties in web design. Provide examples of commonly used properties for text styling, box model, and layout, and explain their effects.
+11. Write the basic structure of an HTML document. Explain the purpose of the `<head>` tag, `<body>` tag and other tags, and provide examples of common HTML elements.
 
-15. Create an HTML document for a blog post. The document should include:  
+12. Discuss the importance of CSS style properties in web design. Provide examples of commonly used properties for text styling, box model, and layout, and explain their effects.
+
+13. Create an HTML document for a blog post. The document should include:  
     - A proper HTML structure with `<!DOCTYPE>`, `<html>`, `<head>`, and `<body>` tags.  
     - A heading (`<h1>`) for the blog title.  
     - A paragraph (`<p>`) for the blog content with at least 5 sentences.  
@@ -301,7 +304,7 @@ In this example, only the words "important text" would appear in red and bold, b
     - A hyperlink (`<a>`) to a related article with the text "Read more".  
     - Use semantic elements like `<header>`, `<main>`, and `<footer>` to structure the document.
 
-16. Design an HTML web form for a feedback submission page. The form should include:  
+14. Design an HTML web form for a feedback submission page. The form should include:  
     - A `<form>` tag with the action attribute set to "/submit".  
     - Input fields for:  
         1. Name (text input, required)  
@@ -312,14 +315,14 @@ In this example, only the words "important text" would appear in red and bold, b
         6. A submit button with the text "Submit Feedback"  
     - Use appropriate attributes for validation (e.g., `required`, `min`, `max`).
 
-17. Create a responsive webpage layout using CSS Flexbox and Grid. The layout should include:  
+15. Create a responsive webpage layout using CSS Flexbox and Grid. The layout should include:  
     - A header section with a centered title  
     - A main content section divided into two columns using CSS Grid  
     - A sidebar on the left and a content area on the right, styled using CSS Flexbox  
     - A footer section with three equally spaced links  
     - Ensure the layout is responsive using media queries for different screen sizes (mobile, tablet, desktop)
 
-18. Write HTML code to design the table as shown below. Add embedded CSS to the page such that:  
+16. Write HTML code to design the table as shown below. Add embedded CSS to the page such that:  
     (i) All table headings are displayed in red font  
     (ii) All other cells have blue text  
 
@@ -330,7 +333,7 @@ In this example, only the words "important text" would appear in red and bold, b
           |        | Game Programming | 30       | 70       | T P
     ```
 
-19. Justify your answer with proper explanation:  
+17. Justify your answer with proper explanation:  
     (i)  
     ```html
     <html>
@@ -366,4 +369,4 @@ In this example, only the words "important text" would appear in red and bold, b
     ```
     What is the color of the h1 element?
 
-20. Describe a scenario where you would choose to use Float, Flexbox, and CSS Grid respectively, and explain why each layout method is most appropriate for its specific scenario.
+18. Describe a scenario where you would choose to use Float, Flexbox, and CSS Grid respectively, and explain why each layout method is most appropriate for its specific scenario.
