@@ -78,7 +78,6 @@
 3. Explain in detail Layers of Full Stack Development.
 
    Ans)
-     Full Stack Web Development involves the complete process of application software development, encompassing both front-end and back-end development. It specifically refers to the development of both the front end and back end of web applications. Full stack developers possess the skills and knowledge to work across the entire technology stack, enabling seamless user experiences and developing robust backends.
 
 The Full Stack web development process is conceptually divided into three primary layers:
 
