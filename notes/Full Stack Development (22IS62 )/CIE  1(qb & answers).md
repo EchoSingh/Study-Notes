@@ -880,6 +880,238 @@ While the provided sources discuss the box model and general positioning, specif
     - A footer section with three equally spaced links  
     - Ensure the layout is responsive using media queries for different screen sizes (mobile, tablet, desktop)
 
+  Ans)
+
+  Here's the HTML and CSS for a responsive webpage layout using Flexbox and Grid, as requested:
+
+HTML Structure (index.html)
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Our Page</h1>
+    </header>
+
+    <main class="grid-container">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <h3>Navigation</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="sidebar-info">
+                <h4>More Info</h4>
+                <p>This is a sidebar for additional content or links.</p>
+            </div>
+        </aside>
+
+        <section class="content-area">
+            <h2>Main Content Section</h2>
+            <div class="content-items">
+                <p>This is the primary content area of the webpage. It contains detailed information and can hold various types of content such as text, images, and videos.</p>
+                <p>HTML elements, identified by tags, form the structure of a webpage [6, 7]. For example, paragraph content is often enclosed in `<p>` tags [26], and container elements like `<div>` or semantic HTML5 tags such as `<section>` can group content logically [12, 27].</p>
+                <p>CSS is used to define the presentation and appearance of these HTML elements [8]. It allows for control over aspects like fonts, colors, sizes, and positioning [8, 9]. External stylesheets are the most common method for applying styles due to better maintainability [25].</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms of Service</a>
+        <a href="#sitemap">Sitemap</a>
+    </footer>
+
+</body>
+</html>
+```
+
+CSS Styling (style.css)
+
+```
+/* General Styling & Box Sizing */
+/* CSS is a W3C standard for describing the appearance of HTML elements [8]. */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* The 'box-sizing' property is a common best practice in modern CSS, not explicitly detailed in sources. */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Header Section */
+/* The <header> element is a semantic HTML5 structure [16]. */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px 0;
+    text-align: center; /* This centers the h1 title within the header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Font properties are part of CSS text styling [28]. */
+}
+
+/* Main Content Section - CSS Grid (Information not in sources) */
+/* The <main> element typically contains the dominant content of the <body> [external information]. */
+.grid-container {
+    display: grid; /* Enables CSS Grid layout for its direct children. */
+    gap: 20px; /* Creates space between grid items. */
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Limits the overall width of the content. */
+}
+
+/* Sidebar & Content Area - CSS Flexbox (Information not in sources) */
+/* <aside> and <section> are semantic HTML5 elements [18, 27]. */
+.sidebar {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Flexbox applied internally for layout of sidebar content */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar h3, .sidebar h4 {
+    color: #0056b3;
+    margin-top: 0;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-nav a {
+    text-decoration: none;
+    color: #0056b3;
+    padding: 8px 10px;
+    background-color: #d0e0f0;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    /* Links are created using the <a> element [13]. */
+}
+
+.sidebar-nav a:hover {
+    background-color: #b0d0e0;
+}
+
+.content-area {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Flexbox applied internally for layout of content items */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content-area h2 {
+    color: #0056b3;
+    margin-top: 0;
+}
+
+.content-items p {
+    margin-bottom: 10px;
+    /* Paragraphs are the basic unit of text [26]. */
+}
+
+/* Footer Section */
+/* The <footer> element is a semantic HTML5 structure [16]. */
+footer {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+
+    /* Flexbox for equally spaced links (Information not in sources) */
+    display: flex;
+    justify-content: space-around; /* Distributes items evenly with space around them. */
+    flex-wrap: wrap; /* Allows links to wrap to the next line on smaller screens. */
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 15px; /* Adjust margin for spacing */
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #a0c0e0;
+}
+
+/* Responsive Design with Media Queries (Information not in sources) */
+
+/* Desktop layout (default, min-width: 1024px) */
+/* The 'grid-template-columns' property defines the column sizes in a grid layout. */
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 1fr 3fr; /* Sidebar takes 1 part, content 3 parts. */
+    }
+}
+
+/* Tablet layout (min-width: 768px and max-width: 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .grid-container {
+        grid-template-columns: 1fr 2fr; /* Sidebar takes 1 part, content 2 parts (slightly less wide than desktop). */
+    }
+
+    footer {
+        justify-content: space-evenly; /* Slightly different spacing for tablet. */
+    }
+}
+
+/* Mobile layout (max-width: 767px) */
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Stacks columns into a single column. */
+    }
+
+    .sidebar {
+        order: 2; /* Puts sidebar after main content on mobile, optional. */
+    }
+
+    .content-area {
+        order: 1; /* Puts content area first on mobile, optional. */
+    }
+
+    footer {
+        flex-direction: column; /* Stacks footer links vertically. */
+        align-items: center; /* Centers stacked links. */
+    }
+
+    footer a {
+        margin: 8px 0; /* Adjust vertical margin for stacked links. */
+    }
+}
+```
+---
+
 15. Write HTML code to design the table as shown below. Add embedded CSS to the page such that:  
     (i) All table headings are displayed in red font  
     (ii) All other cells have blue text  
