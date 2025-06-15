@@ -484,7 +484,7 @@ GitHub is a cloud-based platform that complements Git by providing a website and
 
       The basic structure of an HTML document includes a document type declaration and typically consists of a head section and a body section, each serving distinct purposes in defining and presenting web content.
 
-### Basic Structure of an HTML Document
+1. Basic Structure of an HTML Document
 
 A valid HTML5 document starts with a `<!DOCTYPE html>` declaration, which tells the browser what type of document it is about to process. While HTML5 does not strictly require the `<html>`, `<head>`, and `<body>` elements, most web authors continue to use them, particularly because they were required in previous versions like XHTML.
 
@@ -512,7 +512,7 @@ A more complete HTML5 document typically includes the `<html>`, `<head>`, and `<
 </html>
 ```
 
-### Purpose of the `<head>` Tag
+2. Purpose of the `<head>` Tag
 
 The `<head>` section of an HTML document contains descriptive elements about the document itself, rather than content displayed directly on the web page. These elements provide metadata and link to external resources.
 
@@ -526,11 +526,11 @@ Key purposes and elements within the `<head>` tag include:
     - Example: `<script src="js/script.js"></script>`
 - **Other Metadata (`<meta>`):** Meta information is used by search engines and other programs, such as descriptions, keywords, and viewport settings for responsive design.
 
-### Purpose of the `<body>` Tag
+3. Purpose of the `<body>` Tag
 
 The `<body>` section contains all the content—both HTML elements and regular text—that will be displayed by the browser to the user. This includes text, images, videos, interactive forms, and more.
 
-### Other Tags and Examples of Common HTML Elements
+4. Other Tags and Examples of Common HTML Elements
 
 HTML documents are composed of textual content and HTML elements. An HTML element is a broad term encompassing the element name within angle brackets (the "tag") and the content inside the tag, though some elements have no extra content. Tags identify an HTML element and typically consist of a beginning tag and a closing tag (which includes a forward slash). HTML elements can also contain attributes, which are `name="value"` pairs that provide more information about the element. In HTML5, quotes around attribute values are optional, and elements are not case-sensitive.
 
@@ -581,6 +581,8 @@ Here are examples of common HTML elements:
 ---
 
 12. Discuss the importance of CSS style properties in web design. Provide examples of commonly used properties for text styling, box model, and layout, and explain their effects.
+
+ 
 
 13. Create an HTML document for a blog post. The document should include:  
     - A proper HTML structure with `<!DOCTYPE>`, `<html>`, `<head>`, and `<body>` tags.  
