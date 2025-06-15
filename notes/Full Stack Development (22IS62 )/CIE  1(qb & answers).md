@@ -27,8 +27,8 @@
 
 
    Cascading Style Sheets (CSS) is a styling language used to control the layout and visual appearance of web pages written in HTML and other markup languages. CSS allows developers to separate presentation logic from content, making it easier to maintain and update websites.
-
-  **Role in Web Development**
+   
+   **Role in Web Development**
 
    CSS plays a crucial role in web development by:
 
@@ -43,9 +43,9 @@
 
    **Inline CSS**
 
-* **Definition**: CSS styles applied directly to an HTML element using the `style` attribute.
-* **Use Case**: Small, one-time changes to a single element, such as changing font color or size.
-* **Advantages**: Quick and easy to implement, no need to create a separate CSS file.
+   * **Definition**: CSS styles applied directly to an HTML element using the `style` attribute.
+   * **Use Case**: Small, one-time changes to a single element, such as changing font color or size.
+   * **Advantages**: Quick and easy to implement, no need to create a separate CSS file.
 * **Disadvantages**: Can make HTML code messy and difficult to maintain, not scalable for large projects.
 
   **Internal CSS**
