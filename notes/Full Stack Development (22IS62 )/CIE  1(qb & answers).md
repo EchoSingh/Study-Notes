@@ -288,7 +288,12 @@ In this example, only the words "important text" would appear in red and bold, b
 
 8. Understand the concept of “distributed” in the context of version control systems like Git, and outline the different states that files can exist in within the Git repository.
 
+	Ans)
+---
+
 9. Differentiate between static and dynamic websites. Provide examples of use cases for each type and explain the technologies commonly used to build them.
+   Ans)
+---
 
 10. Explain the importance of version control in software development. Describe any two basic Git commands and how GitHub enhances collaboration among developers.
 
