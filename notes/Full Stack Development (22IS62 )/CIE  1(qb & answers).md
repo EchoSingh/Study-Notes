@@ -595,15 +595,15 @@ The importance of CSS can be summarized by its key benefits:
 - **Improved Page Download Speed:** When presentation styles are centralized in external CSS files, individual HTML files contain less style information and markup, making them smaller. This can lead to quicker page downloads. Additionally, browsers can cache external style sheets, further improving site performance.
 - **Improved Output Flexibility (Responsive Design):** CSS can be used to adapt a page for different output media, such as varying browser and window sizes or different devices (e.g., print). This approach is often referred to as responsive design, allowing a single website to provide an optimal viewing experience across a multitude of devices.
 
-### CSS Syntax
+2. CSS Syntax
 
 A CSS document is composed of one or more style rules. Each rule consists of a **selector** that identifies the HTML element(s) to be affected, followed by a series of **property:value** pairs, also known as declarations. These declarations are enclosed within curly braces `{}` and each pair is terminated by a semicolon `;`.
 
-### Examples of Commonly Used Properties
+Examples of Commonly Used Properties
 
 CSS properties can be categorized by their typical use cases, such as text styling, defining the box model, and influencing layout.
 
-#### 1. Text Styling Properties
+1. Text Styling Properties
 
 These properties affect the font and its appearance, as well as the text independently of the font.
 
@@ -641,7 +641,7 @@ These properties affect the font and its appearance, as well as the text indepen
         
     - **Effect:** Changes the color of the text within paragraph elements to dark gray.
 
-#### 2. Box Model Properties
+2. Box Model Properties
 
 In CSS, every HTML element is treated as existing within an "element box". Understanding the box model is crucial for effective CSS layout and design. The box model consists of content, padding, border, and margin.
 
@@ -688,7 +688,7 @@ In CSS, every HTML element is treated as existing within an "element box". Under
         
     - **Effect:** Creates a 20-pixel gap between the bottom of an `<h1>` element and the next element in the document flow.
 
-#### 3. Layout Properties
+ 3. Layout Properties
 
 While the provided sources discuss the box model and general positioning, specific layout properties like `display` or `float` are not detailed, but their function can be inferred from the use of `div` elements for "marking out sections" in CSS-based layouts and the ability to "position elements on the page". The width and height properties, part of the box model, are also crucial for layout.
 
@@ -716,9 +716,7 @@ While the provided sources discuss the box model and general positioning, specif
         
     - **Effect:** If the content inside `.scroll-box` is larger than 200px wide or 150px tall, scrollbars will appear, allowing the user to view the hidden content.
 
-In summary, CSS properties are fundamental to controlling the visual design and structural layout of web pages, enabling developers to create visually appealing, maintainable, accessible, and responsive user experiences.
-
-
+---
 
 13. Create an HTML document for a blog post. The document should include:  
     - A proper HTML structure with `<!DOCTYPE>`, `<html>`, `<head>`, and `<body>` tags.  
