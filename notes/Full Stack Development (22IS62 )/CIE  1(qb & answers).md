@@ -1112,7 +1112,7 @@ footer a:hover {
 ```
 ---
 
-15. Write HTML code to design the table as shown below. Add embedded CSS to the page such that:  
+16. Write HTML code to design the table as shown below. Add embedded CSS to the page such that:  
     (i) All table headings are displayed in red font  
     (ii) All other cells have blue text  
 
@@ -1123,7 +1123,9 @@ footer a:hover {
           |        | Game Programming | 30       | 70       | T P
     ```
 
-16. Justify your answer with proper explanation:  
+
+	  
+17. Justify your answer with proper explanation:  
     (i)  
     ```html
     <html>
@@ -1159,4 +1161,4 @@ footer a:hover {
     ```
     What is the color of the h1 element?
 
-17. Describe a scenario where you would choose to use Float, Flexbox, and CSS Grid respectively, and explain why each layout method is most appropriate for its specific scenario.
+18. Describe a scenario where you would choose to use Float, Flexbox, and CSS Grid respectively, and explain why each layout method is most appropriate for its specific scenario.
