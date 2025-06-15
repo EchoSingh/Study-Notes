@@ -127,9 +127,9 @@ The interaction between these layers is crucial. For example, the front-end (pre
 
 5. Explain 5 types of selectors with examples.
    Ans)
-Here are five types of selectors, with examples:
+     Here are five types of selectors, with examples:
 
-(i). **Element Selectors**
+     (i). **Element Selectors**
     
     - **Definition**: Element selectors select all instances of a given HTML element. You can select all elements using the universal element selector (`*`), or a group of elements by separating their names with commas. This helps reduce the size and complexity of CSS files by combining identical rules.
     - **Example**: To style all paragraph (`<p>`) elements to have blue text, the rule would look like this:
@@ -158,10 +158,10 @@ Here are five types of selectors, with examples:
         }
         ```
         
-(ii). **Class Selectors**
+     (ii). **Class Selectors**
     
-- **Definition**: A class selector allows you to simultaneously target different HTML elements regardless of their position in the document tree. If a series of HTML elements have been labeled with the same `class` attribute value, you can style them using a class selector. The syntax is a period (`.`) followed by the class name.
-- **Example**: If you have multiple elements with `class="highlight"`, you can style them all:
+    - **Definition**: A class selector allows you to simultaneously target different HTML elements regardless of their position in the document tree. If a series of HTML elements have been labeled with the same `class` attribute value, you can style them using a class selector. The syntax is a period (`.`) followed by the class name.
+    - **Example**: If you have multiple elements with `class="highlight"`, you can style them all:
         
     ```
         .highlight {
@@ -169,9 +169,9 @@ Here are five types of selectors, with examples:
         }
     ```
         
-(iii). **ID Selectors**
+     (iii). **ID Selectors**
     
-- **Definition**: An ID selector allows you to target a specific HTML element by its `id` attribute, irrespective of its type or position. IDs must be unique within an HTML document. The syntax is a pound/hash symbol (`#`) followed by the ID name.    - **Example**: To style a single element with `id="main-header"`, the rule would be:
+    - **Definition**: An ID selector allows you to target a specific HTML element by its `id` attribute, irrespective of its type or position. IDs must be unique within an HTML document. The syntax is a pound/hash symbol (`#`) followed by the ID name.    - **Example**: To style a single element with `id="main-header"`, the rule would be:
         
     ```
         #main-header {
@@ -180,9 +180,9 @@ Here are five types of selectors, with examples:
         }
      ```
         
-(iv). **Attribute Selectors**
+     (iv). **Attribute Selectors**
     
-- **Definition**: An attribute selector provides a way to select HTML elements either by the presence of an element attribute or by the value of an attribute. This can be very helpful for styling hyperlinks and images, for instance, to make it obvious when a tooltip is available for a link or image.
+    - **Definition**: An attribute selector provides a way to select HTML elements either by the presence of an element attribute or by the value of an attribute. This can be very helpful for styling hyperlinks and images, for instance, to make it obvious when a tooltip is available for a link or image.
 - **Example**: To select any element that has a `title` attribute:
         
     ```
