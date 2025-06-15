@@ -1125,7 +1125,98 @@ footer a:hover {
 
 
 	  Ans)
-	  
+	To design the table as requested and apply the specified styling using embedded CSS, we will structure the HTML using `<table>`, `<thead>`, `<tbody>`, `<th>`, `<tr>`, and `<td>` elements. CSS rules will then be embedded directly within the HTML document's `<head>` section to control the font colors.
+
+HTML is defined as a markup language that uses tags and attributes to structure content. The `<table>` element is used to present tabular data, and within it, `<th>` (table heading) and `<td>` (table data) elements are used for cells. CSS is a W3C standard for describing the appearance of HTML elements, allowing control over properties like colors and fonts. Embedded style sheets are placed within the `<style>` element inside the `<head>` of an HTML document.
+
+Here's the HTML code with embedded CSS to achieve the desired layout and styling:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details Table</title>
+    <style>
+        /* Embedded CSS starts here */
+
+        /* Rule to display all table headings in red font */
+        /* 'th' is an element selector, targeting all table heading elements. */
+        th {
+            color: red; /* 'color' is a CSS property for text color. */
+            padding: 8px; /* Added for better readability, not explicitly requested */
+            text-align: left; /* Added for better readability, not explicitly requested */
+            border-bottom: 1px solid #ddd; /* Added for better readability, not explicitly requested */
+        }
+
+        /* Rule to display all other cells (table data cells) in blue text */
+        /* 'td' is an element selector, targeting all table data elements. */
+        td {
+            color: blue; /* 'color' is a CSS property for text color. */
+            padding: 8px; /* Added for better readability, not explicitly requested */
+            text-align: left; /* Added for better readability, not explicitly requested */
+            border-bottom: 1px solid #ddd; /* Added for better readability, not explicitly requested */
+        }
+
+        /* Basic table styling for better presentation, not explicitly requested but good practice */
+        table {
+            width: 50%; /* Adjusted for presentation, not explicitly requested */
+            border-collapse: collapse; /* Merges table borders */
+            margin: 20px auto; /* Centers the table */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+            background-color: white; /* Sets background color */
+        }
+
+        /* Styling for the first column to align with headers, not explicitly requested */
+        tbody tr:first-child td {
+            border-top: none;
+        }
+
+        /* Ensures the last row doesn't have a bottom border if it's the last child */
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Embedded CSS ends here */
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Sl No</th>
+                <th>Course</th>
+                <th>Subject</th>
+                <th>Internal</th>
+                <th>External</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">1</td> <!-- 'rowspan="2"' makes this cell span two rows -->
+                <td rowspan="2">B.Tech</td> <!-- 'rowspan="2"' makes this cell span two rows -->
+                <td>Game Design</td>
+                <td>30</td>
+                <td>70</td>
+                <td>(AIML)</td>
+            </tr>
+            <tr>
+                <!-- These cells are part of the second row, implicitly aligned with the rowspan cells from the row above -->
+                <td>Game Programming</td>
+                <td>30</td>
+                <td>70</td>
+                <td>T P</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+```
+
 ---
 	
 17. Justify your answer with proper explanation:  
