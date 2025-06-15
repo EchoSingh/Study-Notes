@@ -453,7 +453,7 @@ A Version Control System (VCS) is a technique used to save different versions of
 - **Safe Experimentation:** Developers can duplicate part of the source code, known as a repository, through a process called branching. This allows them to safely make modifications to that part of the code without altering the rest of the project. Once their part of the code is working correctly, they can merge it back into the main source code.
 - **Reversion Capability:** All changes tracked by the VCS can be reverted if needed, providing a safety net for developers.
 
-2Basic Git Actions
+2. Basic Git Actions
 
 Git is a Distributed Version Control System (DVCS) designed to preserve different versions of files, allowing any saved version to be retrieved at will. When Git distributes a project's directory, it shares every documented version for that project, not just the most up-to-date file version, which differs from other version control systems that only distribute a single checked-out version.
 
@@ -468,7 +468,7 @@ While the source doesn't list explicit commands like `git add` or `git commit`, 
 - **Committing:** This action involves successfully warehousing the staged version of files into the Git repository. When you "commit," you are recording the changes you have staged, creating a snapshot of your project at a particular point in time.
 - **Pushing:** This involves sharing a local Git repository with a remote repository. For instance, to host or share a Git repository on GitHub, one of the steps is to "Push a local Git repo to the remote repo". This action effectively uploads your committed changes from your local machine to the shared central repository on GitHub.
 
-### How GitHub Enhances Collaboration
+3. How GitHub Enhances Collaboration
 
 GitHub is a cloud-based platform that complements Git by providing a website and technology that helps developers store and manage their code. It significantly enhances collaboration among developers in several ways:
 
@@ -479,6 +479,10 @@ GitHub is a cloud-based platform that complements Git by providing a website and
 ---
 
 11. Write the basic structure of an HTML document. Explain the purpose of the `<head>` tag, `<body>` tag and other tags, and provide examples of common HTML elements.
+
+	Ans)
+
+---
 
 12. Discuss the importance of CSS style properties in web design. Provide examples of commonly used properties for text styling, box model, and layout, and explain their effects.
 
