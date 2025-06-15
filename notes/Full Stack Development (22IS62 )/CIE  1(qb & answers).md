@@ -871,17 +871,7 @@ While the provided sources discuss the box model and general positioning, specif
 </html>
 ```
 
-creates a radio button. When multiple radio buttons share the same `name` attribute, only one can be selected at a time within that group.
-        - `id` and `<label>` are used to associate the label text with the radio button for accessibility.
-        - `value` specifies the value that will be sent to the server if that radio button is selected.
-        - `checked` pre-selects "No" as the default option.
-7. **Submit Button:**
-    
-    - **`<button type="submit">Submit Feedback</button>`**
-        - `type="submit"` defines a button that, when clicked, submits the form data to the server.
-        - Using a `<button>` tag allows for richer content within the button compared to `<input type="submit">`.
-
-The form also uses `<div>` elements to logically group related form elements (label and input), which helps in organizing the layout and applying CSS styles for better visual presentation. The use of HTML5 validation attributes like `required`, `min`, `max`, and `maxlength` provides initial client-side validation, which is a best practice for reducing incorrect submissions and server load. However, it's important to remember that server-side validation must also occur, as client-side validation can be circumvented.
+---
 
 14. Create a responsive webpage layout using CSS Flexbox and Grid. The layout should include:  
     - A header section with a centered title  
