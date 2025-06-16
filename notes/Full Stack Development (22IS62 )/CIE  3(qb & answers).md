@@ -159,7 +159,7 @@ The **File System Module** in Node.js provides methods for interacting with the 
 
 **Non-blocking I/O operations** are a key feature of Node.js. Traditional I/O operations are often blocking, which means the program waits for the operation to finish before proceeding. In contrast, Node.js uses non-blocking I/O, where the program sends a request and continues executing other tasks. When the I/O operation completes, a callback is triggered to handle the result. This approach allows Node.js to efficiently manage multiple operations simultaneously 
 
-While there is no official diagram provided in the context, the flow can be visualized as follows: when an I/O request (e.g., reading a file) is made, Node.js sends the request and immediately moves on to other tasks. The Event Loop monitors for the completion of the request. Once the file read is complete, the Event Loop triggers the callback associated with that operation, which processes the data 
+![Node.js architecture](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*DM9fWkNd5VywUMZTRRs8Ww.jpeg)
 
 This architecture enables Node.js to deliver high performance and responsiveness, especially in applications that require handling many concurrent connections or real-time interactions 
 
