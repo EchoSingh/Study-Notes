@@ -1134,20 +1134,15 @@ JavaScript backend development involves several key components that work togethe
 15. Analyse the concept of DOM Manipulation and elaborate on how DOM tree is constructed along with its Nodes.
 
 Ans)
- # DOM Manipulation and the Structure of the DOM Tree
+ # DOM Manipulation and the Structure of the DOM Tree :-
 
 Document Object Model (DOM) manipulation is a core concept in web development that allows JavaScript to dynamically interact with and modify the content, structure, and styling of web pages. The DOM represents the structure of an HTML document as a tree of objects, where each object (or **node**) corresponds to a part of the document such as elements, text, and attributes.
-
----
 
 #### What is the DOM?
 
 The **Document Object Model (DOM)** is a programming interface (API) for HTML and XML documents. It represents the structure of a document as a tree (called the **DOM tree**), allowing programs (especially JavaScript) to access and manipulate the document’s elements, styles, and content.
 
 When a web page is loaded, the browser parses the HTML and constructs the DOM tree in memory. JavaScript can then access and modify this tree, enabling dynamic updates to the page without reloading.
-
----
-
 #### How is the DOM Tree Constructed?
 
 The DOM tree is built from the HTML document using a **hierarchical structure** of **nodes**. Each node represents a different part of the document. The structure starts with the **root node**, which is the `<html>` element, and branches out into **child nodes** like `<head>`, `<body>`, and their nested elements.
@@ -1184,8 +1179,6 @@ The DOM tree is built from the HTML document using a **hierarchical structure** 
                 └── #text ("paragraph")
 ```
 
----
-
 #### Types of DOM Nodes
 
 Each part of the document is represented as a **node** in the DOM tree. The primary node types include:
@@ -1198,13 +1191,11 @@ Each part of the document is represented as a **node** in the DOM tree. The prim
 | **Attribute Nodes** | Represent HTML attributes (e.g., `id`, `class`, `href`). These are attached to element nodes but are not part of the main tree hierarchy. |
 | **Comment Nodes**   | Represent HTML comments (`<!-- comment -->`). They are rarely used in manipulation but are part of the DOM. |
 
----
-
 ####  DOM Manipulation with JavaScript
 
 JavaScript provides methods and properties to access and manipulate the DOM dynamically:
 
-### 1. **Selecting Elements**
+##### 1. **Selecting Elements**
 
 ```javascript
 document.getElementById('id');
@@ -1212,14 +1203,14 @@ document.querySelector('CSS_SELECTOR');
 document.querySelectorAll('CSS_SELECTOR');
 ```
 
-### 2. **Creating Elements**
+##### 2. **Creating Elements**
 
 ```javascript
 const newElement = document.createElement('div');
 const newText = document.createTextNode('Hello World');
 ```
 
-### 3. **Modifying Elements**
+##### 3. **Modifying Elements**
 
 ```javascript
 element.textContent = 'New text';
@@ -1228,7 +1219,7 @@ element.setAttribute('class', 'new-class');
 element.style.color = 'red';
 ```
 
-### 4. **Adding/Removing Elements**
+##### 4. **Adding/Removing Elements**
 
 ```javascript
 parent.appendChild(newElement);
@@ -1236,7 +1227,7 @@ parent.removeChild(element);
 element.remove(); // Modern method
 ```
 
-### 5. **Traversing the DOM**
+##### 5. **Traversing the DOM**
 
 ```javascript
 element.parentNode;
@@ -1246,8 +1237,6 @@ element.lastChild;
 element.nextSibling;
 element.previousSibling;
 ```
-
----
 
 #### Why is DOM Manipulation Important?
 
