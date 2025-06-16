@@ -1312,18 +1312,18 @@ Here, the last occurrence of `"JavaScript"` starts at index **26**.
 ###### Notes:
 - Search is **case-sensitive**.
 - Optional `fromIndex` limits the search to a specific point in the string.
-## 2. `slice()`
+#### 2. `slice()`
 
-### ✂️ Purpose:
+######  Purpose:
 Extracts a **portion of a string** and returns the new string.  
 It supports **negative indices**, which count from the **end of the string**.
 
-### 🔁 Syntax:
+######  Syntax:
 ```javascript
 str.slice([start[, end]])
 ```
 
-### ✅ Example:
+###### Example:
 ```javascript
 const text = "Hello, world!";
 const result = text.slice(7, 12);
@@ -1337,24 +1337,22 @@ const result = text.slice(-6, -1);
 console.log(result); // Output: "world"
 ```
 
-### 📝 Notes:
+###### Notes:
 - Does not modify the original string.
 - If `end` is omitted, `slice()` goes to the end of the string.
 - Works with **negative indices**.
 
----
+#### 3. `substring()`
 
-## 3. `substring()`
-
-### 🔁 Purpose:
+###### Purpose:
 Also extracts a **portion of a string**, but it treats **negative indices differently** (they're treated as `0`).
 
-### 🔁 Syntax:
+###### Syntax:
 ```javascript
 str.substring(indexStart[, indexEnd])
 ```
 
-### ✅ Example:
+######  Example:
 ```javascript
 const text = "Hello, world!";
 const result = text.substring(7, 12);
@@ -1370,11 +1368,9 @@ console.log(result); // Output: "Hello, wo"
 
 Here, `-6` is treated as `0`.
 
-### 📝 Notes:
+######  Notes:
 - If `indexStart > indexEnd`, `substring()` swaps them.
 - **Negative indices are not supported** — they default to `0`.
-
----
 
 ## 🆚 Key Differences Summary
 
