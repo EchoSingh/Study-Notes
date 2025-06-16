@@ -1468,15 +1468,14 @@ If you use `input = 123`, the output will be:
 
 Ans)
 
-# The Spread Operator (`...`) in JavaScript
+#### The Spread Operator (`...`) in JavaScript
 
 The **spread operator (`...`)** is a powerful and concise feature introduced in **ES6 (ECMAScript 2015)**. It allows an iterable (like an array or object) to be **expanded** into individual elements or properties. It's widely used in modern JavaScript for **cloning**, **merging**, and **manipulating** arrays and objects.
 
----
 
-## ✅ Use of the Spread Operator in Arrays
+#### Use of the Spread Operator in Arrays
 
-### **1. Copying an Array**
+###### **1. Copying an Array**
 You can create a shallow copy of an array using the spread operator.
 
 ```javascript
@@ -1486,11 +1485,9 @@ const copy = [...original];
 console.log(copy); // [1, 2, 3]
 ```
 
-> 🔁 This is useful when you want to avoid mutating the original array.
+>  This is useful when you want to avoid mutating the original array.
 
----
-
-### **2. Merging Arrays**
+###### **2. Merging Arrays**
 You can merge multiple arrays into a new array.
 
 ```javascript
@@ -1501,9 +1498,7 @@ const merged = [...arr1, ...arr2];
 console.log(merged); // [1, 2, 3, 4]
 ```
 
----
-
-### **3. Inserting Elements in an Array**
+###### **3. Inserting Elements in an Array**
 You can insert elements at any position in a new array.
 
 ```javascript
@@ -1513,11 +1508,9 @@ const updated = [1, ...original, 5];
 console.log(updated); // [1, 2, 3, 4, 5]
 ```
 
----
+#### Use of the Spread Operator in Objects
 
-## ✅ Use of the Spread Operator in Objects
-
-#### **1. Copying an Object**
+#####  **1. Copying an Object**
 You can create a shallow copy of an object.
 
 ```javascript
