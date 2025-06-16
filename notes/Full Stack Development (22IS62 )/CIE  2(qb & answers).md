@@ -1468,6 +1468,109 @@ If you use `input = 123`, the output will be:
 
 Ans)
 
+# The Spread Operator (`...`) in JavaScript
+
+The **spread operator (`...`)** is a powerful and concise feature introduced in **ES6 (ECMAScript 2015)**. It allows an iterable (like an array or object) to be **expanded** into individual elements or properties. It's widely used in modern JavaScript for **cloning**, **merging**, and **manipulating** arrays and objects.
+
+---
+
+## ✅ Use of the Spread Operator in Arrays
+
+### **1. Copying an Array**
+You can create a shallow copy of an array using the spread operator.
+
+```javascript
+const original = [1, 2, 3];
+const copy = [...original];
+
+console.log(copy); // [1, 2, 3]
+```
+
+> 🔁 This is useful when you want to avoid mutating the original array.
+
+---
+
+### **2. Merging Arrays**
+You can merge multiple arrays into a new array.
+
+```javascript
+const arr1 = [1, 2];
+const arr2 = [3, 4];
+const merged = [...arr1, ...arr2];
+
+console.log(merged); // [1, 2, 3, 4]
+```
+
+---
+
+### **3. Inserting Elements in an Array**
+You can insert elements at any position in a new array.
+
+```javascript
+const original = [2, 3, 4];
+const updated = [1, ...original, 5];
+
+console.log(updated); // [1, 2, 3, 4, 5]
+```
+
+---
+
+## ✅ Use of the Spread Operator in Objects
+
+#### **1. Copying an Object**
+You can create a shallow copy of an object.
+
+```javascript
+const original = { name: "Alice", age: 25 };
+const copy = { ...original };
+
+console.log(copy); // { name: "Alice", age: 25 }
+```
+
+> Again, this avoids directly modifying the original object.
+
+##### **2. Merging Objects**
+You can merge multiple objects into one. If properties have the same name, the **last one wins**.
+
+```javascript
+const obj1 = { name: "Alice", age: 25 };
+const obj2 = { city: "New York", age: 30 };
+const merged = { ...obj1, ...obj2 };
+
+console.log(merged); // { name: "Alice", age: 30, city: "New York" }
+```
+
+#### **3. Adding or Overriding Properties**
+You can add new properties or override existing ones in a new object.
+
+```javascript
+const original = { name: "Alice", age: 25 };
+const updated = { ...original, city: "Paris", age: 30 };
+
+console.log(updated); // { name: "Alice", age: 30, city: "Paris" }
+```
+
+---
+
+###### Key Benefits of the Spread Operator
+
+- Makes code **cleaner and more readable**
+- Helps in **immutability** (avoids direct mutation of original arrays/objects)
+- Useful in **function calls**, **state management**, and **React component props**
+
+#### Example: Using Spread in a Function Call
+
+```javascript
+function sum(a, b, c) {
+  return a + b + c;
+}
+
+const numbers = [1, 2, 3];
+const result = sum(...numbers);
+
+console.log(result); // 6
+```
+
 ---
 
 20. Design a modular JavaScript function `validateRegistration` that takes an object containing `username`, `password`, `confirmPassword`, and `email` as input properties. This function should:
