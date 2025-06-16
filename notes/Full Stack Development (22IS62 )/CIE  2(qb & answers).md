@@ -651,7 +651,7 @@ This is a more concise and commonly preferred method for creating arrays, especi
 
 **JS Code Snippet:**
 
-```
+```javascript
 var colors = ["red", "green", "blue"];
 console.log(colors); // Output: ["red", "green", "blue"]
 
@@ -723,7 +723,161 @@ In summary, JavaScript prototypes and prototype inheritance are fundamental conc
     - Control Flow
     
     - Variable Declaration
-    
+
+Ans)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding JavaScript: Control Flow and Variable Declaration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        pre {
+            background: #eee;
+            padding: 15px;
+            border-left: 5px solid #0056b3;
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        code {
+            font-family: "Courier New", Courier, monospace;
+            display: block; /* Ensures code block occupies its own line */
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .citation {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Understanding JavaScript: Control Flow and Variable Declaration</h1>
+        <p>JavaScript is an object-oriented, dynamically typed scripting language. Almost everything in JavaScript, including functions, is an object. As a dynamically typed language, variables can easily be converted from one data type to another during runtime. This blog post will explore two fundamental concepts in JavaScript programming: Variable Declaration and Control Flow.</p>
+
+        <hr>
+
+        <h2>Variable Declaration in JavaScript</h2>
+        <p>In JavaScript, variables are declared using the `var` keyword. Unlike statically typed languages like Java, JavaScript variables do not require a predefined data type (e.g., `int`, `char`, `String`), as their type is assigned and can change at runtime.</p>
+
+        <h3>Purpose of Variable Declaration:</h3>
+        <p>Variables serve as containers for storing data values. Declaring a variable reserves a name for a piece of data that your program can then use, read, and modify. This allows for dynamic and flexible data handling within your scripts.</p>
+
+        <h3>Examples of Variable Declaration:</h3>
+        <h4>1. Declaring an Undefined Variable:</h4>
+        <p>If a variable is declared without an initial value, its default value will be `undefined`.</p>
+        <pre><code>
+var firstName;
+console.log(firstName); // Output: undefined
+        </code></pre>
+
+        <h4>2. Declaring and Initializing a Variable:</h4>
+        <p>You can assign a value to a variable at the time of its declaration.</p>
+        <pre><code>
+var greeting = "Hello, JavaScript!";
+console.log(greeting); // Output: Hello, JavaScript!
+        </code></pre>
+
+        <h4>3. Dynamic Type Assignment and Reassignment:</h4>
+        <p>A single variable can hold different data types at different points in your program due to JavaScript's dynamic typing.</p>
+        <pre><code>
+var dynamicVar = 10; // dynamicVar is a number
+console.log("Initial value:", dynamicVar, "(Type:", typeof dynamicVar + ")");
+
+dynamicVar = "Now I am a string"; // dynamicVar is now a string
+console.log("New value:", dynamicVar, "(Type:", typeof dynamicVar + ")");
+
+dynamicVar = true; // dynamicVar is now a boolean
+console.log("Another value:", dynamicVar, "(Type:", typeof dynamicVar + ")");
+        </code></pre>
+        <p class="citation">This information on variable declaration is based on the principles outlined in the sources regarding JavaScript's dynamic typing and variable declaration syntax.</p>
+
+        <hr>
+
+        <h2>Control Flow in JavaScript</h2>
+        <p>Control flow structures dictate the order in which statements are executed, allowing programs to make decisions and repeat actions. JavaScript provides various constructs for this, including conditional statements and loops.</p>
+
+        <h3>Purpose of Control Flow:</h3>
+        <p>Control flow enables programs to respond to different conditions, process collections of data efficiently, and execute specific blocks of code only when certain criteria are met. This is crucial for creating interactive and logical web applications.</p>
+
+        <h3>Examples of Control Flow:</h3>
+        <h4>1. Conditional Statements (if, else if, else):</h4>
+        <p>Conditional statements allow your code to execute different blocks based on whether a specified condition is true or false. The condition is placed within parentheses `()` and the code block within curly braces `{}`.</p>
+        <pre><code>
+var hour = 14; // Represents 2 PM
+
+if (hour < 12) {
+    console.log("Good Morning!");
+} else if (hour < 18) {
+    console.log("Good Afternoon!");
+} else {
+    console.log("Good Evening!");
+}
+// Output for hour = 14: Good Afternoon!
+        </code></pre>
+        <p>Comparison operators (e.g., `&lt;`, `&gt;`, `===`) and logical operators (`&&`, `||`, `!`) are used to build these conditions.</p>
+
+        <h4>2. Loops (for, while):</h4>
+        <p>Loops are used to repeatedly execute a block of code as long as a certain condition is met or for a specified number of times.</p>
+
+        <h5>a. `for` Loop:</h5>
+        <p>A `for` loop combines the initialization of a loop control variable, the condition for looping, and the post-loop operation (e.g., incrementing the variable) into a single statement.</p>
+        <pre><code>
+for (var i = 0; i < 3; i++) {
+    console.log("Loop iteration (for): " + i);
+}
+/*
+Output:
+Loop iteration (for): 0
+Loop iteration (for): 1
+Loop iteration (for): 2
+*/
+        </code></pre>
+
+        <h5>b. `while` Loop:</h5>
+        <p>A `while` loop continues to execute as long as its condition remains true. It's important to ensure the condition eventually becomes false to avoid an infinite loop.</p>
+        <pre><code>
+var count = 0;
+while (count < 2) {
+    console.log("Loop iteration (while): " + count);
+    count++; // Important: modifies the loop control variable
+}
+/*
+Output:
+Loop iteration (while): 0
+Loop iteration (while): 1
+*/
+        </code></pre>
+        <p class="citation">This information on control flow structures is based on the JavaScript syntax for conditionals and loops described in the sources.</p>
+
+        <p>By understanding how to declare variables and control the flow of execution, developers can build robust and interactive web experiences using JavaScript.</p>
+    </div>
+</body>
+</html>
+```
+
+---
 
  10. Write a JavaScript to print numbers 1 to 100 in an array.
 
