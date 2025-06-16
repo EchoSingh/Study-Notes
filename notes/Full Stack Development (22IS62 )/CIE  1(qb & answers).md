@@ -1136,7 +1136,7 @@ HTML is defined as a markup language that uses tags and attributes to structure 
 
 Here's the HTML code with embedded CSS to achieve the desired layout and styling:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
