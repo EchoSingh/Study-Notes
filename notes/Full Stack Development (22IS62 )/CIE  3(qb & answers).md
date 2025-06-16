@@ -544,6 +544,127 @@ Here is how the components interact in a typical request:
 9. Elaborate on MongoDB Documents and Collections. Write a Node.js code snippet to insert a document into a "users" collection and read all documents where "status" is "active".
 
 Ans)
+# MongoDB: Documents and Collections
+
+MongoDB is a **NoSQL database** that stores data in **flexible, JSON-like documents**. It is widely used in modern applications due to its scalability, flexibility, and performance.
+
+---
+
+## 🔹 MongoDB Basics: Documents and Collections
+
+### ✅ Document
+- A **document** is the basic unit of data in MongoDB.
+- It is a **key-value pair structure** similar to JSON.
+- Each document is stored in a **BSON (Binary JSON)** format for efficiency.
+
+**Example Document:**
+```json
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "age": 28,
+  "status": "active"
+}
+```
+
+### ✅ Collection
+- A **collection** is a group of MongoDB documents.
+- It is **schema-less**, meaning each document can have a different structure.
+- Similar to a **table** in relational databases.
+
+**Example Collections:**
+- `users`
+- `products`
+- `orders`
+
+---
+
+## 📌 Node.js Code to Work with MongoDB
+
+We'll use the official MongoDB Node.js driver to connect to MongoDB, insert a document into the `users` collection, and find all active users.
+
+---
+
+### ✅ Prerequisites
+
+1. Install the MongoDB Node.js driver:
+```bash
+npm install mongodb
+```
+
+2. Make sure MongoDB is running locally or have a MongoDB Atlas connection string.
+
+---
+
+#### Node.js Code: Insert and Query Documents
+
+```javascript
+const { MongoClient } = require('mongodb');
+
+// Connection URI (for local or Atlas)
+const uri = 'mongodb://localhost:27017'; // or your Atlas connection string
+const client = new MongoClient(uri);
+
+async function run() {
+  try {
+    // Connect to the MongoDB server
+    await client.connect();
+    console.log("Connected to MongoDB");
+
+    const database = client.db('mydb'); // Use or create a database
+    const collection = database.collection('users'); // Use or create a collection
+
+    // ✅ Insert a document into the "users" collection
+    const userDocument = {
+      name: "Alice Smith",
+      email: "alice@example.com",
+      age: 32,
+      status: "active"
+    };
+
+    const insertResult = await collection.insertOne(userDocument);
+    console.log("Inserted document with ID:", insertResult.insertedId);
+
+    // 🔍 Query all documents where "status" is "active"
+    const query = { status: "active" };
+    const activeUsers = await collection.find(query).toArray();
+
+    console.log("Active Users:");
+    console.log(activeUsers);
+  } finally {
+    // Close the connection
+    await client.close();
+  }
+}
+
+run().catch(console.dir);
+```
+
+####  Output (Example)
+
+If you run this script after inserting one or more users with `"status": "active"`, the output will look like:
+
+```
+Connected to MongoDB
+Inserted document with ID: 64a1b2c3d4e5f6g7h8i9j0k1
+Active Users:
+[
+  {
+    _id: ObjectId("64a1b2c3d4e5f6g7h8i9j0k1"),
+    name: "Alice Smith",
+    email: "alice@example.com",
+    age: 32,
+    status: "active"
+  },
+  {
+    _id: ObjectId("64a1b2c3d4e5f6g7h8i9j0k2"),
+    name: "Bob Johnson",
+    email: "bob@example.com",
+    age: 29,
+    status: "active"
+  }
+]
+```
 
 
 ---
