@@ -1409,6 +1409,59 @@ console.log(extracted); // "JavaScript is powerful."
 
 Ans)
 
+# JavaScript Program to Check for an Armstrong Number
+
+An **Armstrong number** (also known as a **narcissistic number**) is a number that is equal to the sum of its own digits each raised to the power of the number of digits. For example, in the case of 3-digit numbers:
+
+- **153** is an Armstrong number because:  
+  $ 1^3 + 5^3 + 3^3 = 153 $
+
+Here is a **JavaScript program** that checks if a given number is an Armstrong number:
+
+```javascript
+function isArmstrongNumber(number) {
+    // Convert the number to a string to get individual digits
+    const numStr = number.toString();
+    const numDigits = numStr.length;
+
+    let sum = 0;
+
+    // Loop through each digit, convert to number, raise to power of digits, and add to sum
+    for (let i = 0; i < numDigits; i++) {
+        const digit = parseInt(numStr[i]);
+        sum += Math.pow(digit, numDigits);
+    }
+
+    // Return true if sum equals original number
+    return sum === number;
+}
+
+// Example usage
+const input = 153;
+
+if (isArmstrongNumber(input)) {
+    console.log(`${input} is an Armstrong number.`);
+} else {
+    console.log(`${input} is not an Armstrong number.`);
+}
+```
+
+---
+
+#### Sample Output
+
+If you run the program with `input = 153`, the output will be:
+
+```
+153 is an Armstrong number.
+```
+
+If you use `input = 123`, the output will be:
+
+```
+123 is not an Armstrong number.
+```
+
 ---
 
 19. Describe use of the spread operator in arrays and objects with an example.
