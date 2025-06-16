@@ -127,6 +127,7 @@ The interaction between these layers is crucial. For example, the front-end (pre
 
 
 5. Explain 5 types of selectors with examples.
+
    Ans)
      Here are five types of selectors, with examples:
 
