@@ -390,7 +390,7 @@ $('#main-header')
 
 **HTML Snippet:**
 
-```
+```html
 <body>
     <header id="main-header">
         <h1>Welcome to My Website</h1>
@@ -415,7 +415,7 @@ $('.highlight')
 
 **HTML Snippet:**
 
-```
+```html
 <body>
     <p class="normal-text">This is a regular paragraph.</p>
     <div class="highlight">
@@ -448,7 +448,7 @@ $('div p')
 
 **HTML Snippet:**
 
-```
+```html
 <body>
     <section>
         <p>This paragraph is inside a section.</p>
@@ -491,7 +491,7 @@ Array destructuring allows you to "unpack" values from arrays into distinct vari
 
 **Code Snippet:**
 
-```
+```javascript
 function processStudentScores(scores) {
     // Array destructuring to assign values from the 'scores' array
     // to distinct variables: firstScore, secondScore, and restOfScores
@@ -528,7 +528,7 @@ Object destructuring allows you to extract properties from objects into distinct
 
 **Code Snippet:**
 
-```
+```javascript
 function displayStudentInfo(student) {
     // Object destructuring to extract 'Name' and 'Grade' properties
     // into variables with the same names.
@@ -569,7 +569,7 @@ Parameter destructuring combines destructuring with function parameters. Instead
 
 **Code Snippet:**
 
-```
+```javascript
 // Using object destructuring directly in the function parameter
 function introducePerson({ firstName, lastName, age, city = "Unknown" }) {
     console.log(`Hello, my name is ${firstName} ${lastName}.`);
@@ -623,7 +623,7 @@ You can create a new, empty array using the `new` keyword followed by the `Array
 
 **JS Code Snippet:**
 
-```
+```javascript
 var greetings = new Array();
 console.log(greetings); // Output: []
 console.log(greetings.length); // Output: 0
@@ -637,7 +637,7 @@ The `Array` constructor can also take arguments which become the initial element
 
 **JS Code Snippet:**
 
-```
+```javascript
 var studentNames = new Array("Alice", "Bob", "Charlie");
 console.log(studentNames); // Output: ["Alice", "Bob", "Charlie"]
 console.log(studentNames); // Output: "Alice" (accessing elements by index)
