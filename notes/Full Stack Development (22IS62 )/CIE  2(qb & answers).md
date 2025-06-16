@@ -888,6 +888,50 @@ Loop iteration (while): 1
     - If divisible by 5, print `Fizz`
     
      - If divisible by both, print `BizzFizz`
+
+Ans)
+
+Here's a JavaScript snippet that creates an array containing numbers from 1 to 100, replacing numbers divisible by **3** with `"Bizz"`, by **5** with `"Fizz"`, and by both **3 and 5** (i.e., 15) with `"BizzFizz"`:
+
+```javascript
+const result = [];
+
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    result.push("BizzFizz");
+  } else if (i % 3 === 0) {
+    result.push("Bizz");
+  } else if (i % 5 === 0) {
+    result.push("Fizz");
+  } else {
+    result.push(i);
+  }
+}
+
+console.log(result);
+```
+
+### Output Example:
+```javascript
+[
+  1, 2, 'Bizz', 4, 'Fizz', 'Bizz',
+  7, 8, 'Bizz', 'Fizz', 11, 'Bizz',
+  13, 14, 'BizzFizz', 16, 17, 'Bizz',
+  19, 'Fizz', 'Bizz', 22, 23, 'Bizz',
+  'Fizz', 26, 'Bizz', 28, 29, 'BizzFizz',
+  ...
+]
+```
+
+### Explanation:
+- The `for` loop iterates from 1 to 100.
+- The `%` operator checks divisibility.
+- The `push()` method adds elements to the array.
+- The final array is logged to the console.
+
+You can embed this script in an HTML file or run it directly in a browser console or Node.js environment.
+ 
+
 ---
 
 12. Describe Arrow Functions, Hoisting, and Callback Functions in detail.
