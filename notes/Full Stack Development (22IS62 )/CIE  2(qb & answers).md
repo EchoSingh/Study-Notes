@@ -144,7 +144,7 @@ Historically, JavaScript's uses were limited to simple interactive elements like
     
 - **DOM (Document Object Model) Manipulation:** JavaScript interacts with the HTML document through the DOM, which represents the page's structure as a tree of nodes.
     
-    ```
+    ```javascrip
     // Getting an element by its ID
     var myElement = document.getElementById("myDiv");
     // Modifying its content
@@ -159,7 +159,7 @@ Historically, JavaScript's uses were limited to simple interactive elements like
     
 - **Event Handling:** JavaScript detects actions (events) like clicks or key presses. The listener approach is the recommended method to attach event handlers, separating JavaScript from HTML.
     
-    ```
+    ```javascript
     var myButton = document.getElementById("myButton");
     if (myButton) {
         // Attaching an event listener (modern approach)
@@ -189,7 +189,7 @@ jQuery is cross-platform and supports different types of browsers, addressing so
 
 - **DOM Manipulation:** jQuery uses CSS-like selectors to target elements and provides intuitive methods for manipulation.
     
-    ```
+    ```css
     // Selects elements with class 'item-list' and finds all 'li' descendants
     // then adds a class, changes CSS, and fades them in
     $('.item-list')
@@ -201,7 +201,7 @@ jQuery is cross-platform and supports different types of browsers, addressing so
     
 - **Event Handling:** Attaching event handlers is streamlined.
     
-    ```
+    ```css
     // Attaches a click event handler to all elements with class 'my-button'
     $('.my-button').on('click', function() {
         alert("jQuery button was clicked!");
@@ -210,7 +210,7 @@ jQuery is cross-platform and supports different types of browsers, addressing so
     
 - **AJAX:** Making asynchronous requests is much simpler compared to native `XMLHttpRequest`.
     
-    ```
+    ```css
     // Makes a GET request and handles success or failure
     $.ajax({
         url: 'api/products',
@@ -226,7 +226,7 @@ jQuery is cross-platform and supports different types of browsers, addressing so
     
 - **Animations:** Provides easy-to-use methods for animations.
     
-    ```
+    ```css
     // Animates width, adds a delay, then fades out an element with class 'animated-box'
     $('.animated-box')
         .animate({width: '300px'}, 800)
@@ -303,7 +303,7 @@ For new projects, the source suggests considering a Vertical Slice Architecture 
 
 Ans)
 
-```
+```javascript
 /**
  * Calculates the count of students within specific grade ranges.
  *
