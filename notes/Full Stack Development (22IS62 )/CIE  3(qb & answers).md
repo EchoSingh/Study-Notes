@@ -38,14 +38,16 @@
 
 ---
 
-1. Explain state and props in React with examples. List the lifecycle methods for mounting, updating, and unmounting phases in class components.
+11. Explain state and props in React with examples. List the lifecycle methods for mounting, updating, and unmounting phases in class components.
 ---
 
-1. Implement a Mount Event function using Express.js with the following messages:  
+12. Implement a Mount Event function using Express.js with the following messages:  
     - "Teacher is ready to teach" — First message  
     - "Students are not ready to come to the class" — Second message  
     - Display "Server listening on PORT 3000"
 
 ---
 
-1. Explain conditional rendering using `&&` and ternary operators with code snippets.
+13. Explain conditional rendering using `&&` and ternary operators with code snippets.
+
+---
