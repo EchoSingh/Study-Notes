@@ -925,13 +925,3 @@ function Greeting(props) {
 If `isLoggedIn` is `true`, it displays "Welcome back!". Otherwise, it shows "Please log in."
 
 ---
-
-### Summary:
-
-|Operator|Use Case|Behavior|
-|---|---|---|
-|`&&`|When you only want to render something if a condition is true|Renders the right-hand element if true|
-|`? :`|When you want to render one of two elements|Renders one of two values based on the condition|
-
-These operators are commonly used for rendering UI conditionally in a clean and readable way.
----
