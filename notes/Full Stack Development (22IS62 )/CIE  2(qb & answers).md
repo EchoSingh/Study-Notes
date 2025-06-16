@@ -1,4 +1,5 @@
 1. Explain the concept of JavaScript (JS) in Web Development. Discuss the History and Uses of JS.
+
   Ans)
     JavaScript (JS) is defined as an object-oriented, dynamically typed scripting language. While its name contains "Java," JavaScript and Java are distinct programming languages with different uses; Java is a compiled, object-oriented language that runs on a Java Virtual Machine, whereas JavaScript runs directly in the browser and has fewer object-oriented features. Almost everything in JavaScript, including variables and functions, is an object. JavaScript is dynamically typed, meaning variables can change their data type during runtime, unlike statically typed languages like Java where types are defined and enforced by the programmer and compiler.
 
@@ -127,7 +128,7 @@ Historically, JavaScript's uses were limited to simple interactive elements like
 
 - **Variable Declaration and Assignment:** JavaScript uses the `var` keyword for variable declaration.
     
-    ```
+    ```javascript
     var myNumber; // Declares a variable 'myNumber', default value is 'undefined'
     myNumber = 10; // Assigns a number value
     myNumber = "Hello"; // Dynamically reassigns a string value
@@ -135,7 +136,7 @@ Historically, JavaScript's uses were limited to simple interactive elements like
     
 - **Function Definition:** Functions are fundamental building blocks for modular code.
     
-    ```
+    ```java
     function greet(name) {
         return "Hello, " + name + "!";
     }
@@ -144,7 +145,7 @@ Historically, JavaScript's uses were limited to simple interactive elements like
     
 - **DOM (Document Object Model) Manipulation:** JavaScript interacts with the HTML document through the DOM, which represents the page's structure as a tree of nodes.
     
-    ```javascrip
+    ```javascript
     // Getting an element by its ID
     var myElement = document.getElementById("myDiv");
     // Modifying its content
