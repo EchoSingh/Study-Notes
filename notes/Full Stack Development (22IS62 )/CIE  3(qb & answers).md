@@ -452,8 +452,98 @@ export default App;
 Ans)
 
 #### MVC architecture :-
-![MV](https://imgs.search.brave.com/pBkRlv7IUjiGEcgjD7wZI6PvNfk_dAsgRN3yjBDxAYo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y3Jpby5kby9ibG9n/L2NvbnRlbnQvaW1h/Z2VzLzIwMjEvMDcv/Q29tcG9uZW50cy1v/Zi1NVkMtQXJjaGl0/ZWN0dXJlLVBhdHRl/cm4ucG5n)
+
+![MVC archi](https://imgs.search.brave.com/pBkRlv7IUjiGEcgjD7wZI6PvNfk_dAsgRN3yjBDxAYo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y3Jpby5kby9ibG9n/L2NvbnRlbnQvaW1h/Z2VzLzIwMjEvMDcv/Q29tcG9uZW50cy1v/Zi1NVkMtQXJjaGl0/ZWN0dXJlLVBhdHRl/cm4ucG5n)
 ![]()
+# MVC (Model-View-Controller) Architecture
+
+**MVC (Model-View-Controller)** is a **software architectural pattern** used for organizing code in applications, especially in **web development**. It separates the application into three interconnected components:
+
+---
+
+## 🔹 1. **Model**
+
+- **What it does**: Manages the **data**, business logic, and rules of the application.
+- **Responsibilities**:
+  - Handles data retrieval and storage (e.g., from a database or API).
+  - Validates data before it is used.
+  - Notifies the View when data changes.
+
+- **Example**: A `User` model might handle user registration, login, and data persistence.
+
+---
+
+## 🔹 2. **View**
+
+- **What it does**: Handles the **presentation layer** – how data is displayed to the user.
+- **Responsibilities**:
+  - Renders the UI using data from the Model.
+  - Sends user actions (like clicks or form submissions) to the Controller.
+  - Does **not contain business logic**.
+
+- **Example**: A webpage showing a list of users or a form to create a new user.
+
+---
+
+## 🔹 3. **Controller**
+
+- **What it does**: Acts as an **intermediary** between Model and View.
+- **Responsibilities**:
+  - Handles user input (e.g., HTTP requests).
+  - Updates the Model based on user actions.
+  - Selects the appropriate View to render.
+
+- **Example**: When a user submits a form, the Controller processes the data, updates the Model, and tells the View to update.
+
+---
+
+## 🔄 Flow of Control in MVC
+
+Here is how the components interact in a typical request:
+
+1. **User interacts** with the View (e.g., clicks a button or submits a form).
+2. The **View sends the input** (e.g., form data) to the **Controller**.
+3. The **Controller processes** the input:
+   - It may update the **Model** or request data from it.
+4. The **Model updates or retrieves data** and notifies the Controller.
+5. The **Controller selects a View** and passes it the updated data.
+6. The **View renders** the updated UI to the user.
+
+---
+
+#### Advantages of MVC
+
+| Benefit | Description |
+|--------|-------------|
+| **Separation of Concerns** | Each component has a clear role, making code easier to maintain and scale. |
+| **Reusability** | The same Model can be used with different Views or Controllers. |
+| **Parallel Development** | Developers can work on different parts (Model, View, Controller) simultaneously. |
+| **Testability** | Easier to write unit tests due to decoupled components. |
+| **Flexibility** | UI can change without affecting business logic. |
+
+---
+
+####  Example Use Case (Web Application)
+
+**Scenario**: User requests a list of products.
+
+1. **View**: User clicks on "View Products".
+2. **Controller**: Receives request, calls the Model to fetch data.
+3. **Model**: Fetches products from the database.
+4. **Controller**: Receives data and selects the appropriate View.
+5. **View**: Displays the list of products to the user.
+
+####  Technologies Using MVC Architecture
+
+- **Backend Frameworks**:
+  - **ASP.NET MVC**
+  - **Ruby on Rails**
+  - **Django (MTV – similar to MVC)**
+  - **Spring MVC (Java)**
+- **Frontend Frameworks**:
+  - **AngularJS** (follows a variation of MVC)
+  - **Backbone.js** (more event-driven, but inspired by MVC)
+
 
 ---
 
