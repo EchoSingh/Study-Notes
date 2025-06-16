@@ -147,6 +147,22 @@ Ans)
 
 3. Explain the role of the following components in Node.js architecture with a neat diagram: Event Loop, Callbacks, File System Module. How do they enable non-blocking I/O operations?
 
+Ans)
+
+Node.js architecture is built around several key components that work together to enable its high-performance, scalable nature. The main components include the Event Loop, Callbacks, the File System Module, and non-blocking I/O operations.
+
+The **Event Loop** is the core of Node.js's event-driven architecture. It continuously checks for events and executes their associated callbacks. When an event occurs—such as an HTTP request or a timer firing—the Event Loop picks it up and runs the corresponding callback function. This loop allows Node.js to handle many operations concurrently without blocking the main thread 
+
+**Callbacks** are functions that are executed in response to specific events. In Node.js, when an asynchronous operation like reading a file or making a network request is initiated, a callback is registered to be executed once the operation completes. This allows the program to continue executing other tasks while waiting for the asynchronous operation to finish 
+
+The **File System Module** in Node.js provides methods for interacting with the file system. These methods can be either synchronous or asynchronous. Asynchronous file operations are non-blocking, meaning that Node.js can continue executing other code while waiting for the file operation to complete. Once the operation is done, the registered callback is executed with the result 
+
+**Non-blocking I/O operations** are a key feature of Node.js. Traditional I/O operations are often blocking, which means the program waits for the operation to finish before proceeding. In contrast, Node.js uses non-blocking I/O, where the program sends a request and continues executing other tasks. When the I/O operation completes, a callback is triggered to handle the result. This approach allows Node.js to efficiently manage multiple operations simultaneously 
+
+While there is no official diagram provided in the context, the flow can be visualized as follows: when an I/O request (e.g., reading a file) is made, Node.js sends the request and immediately moves on to other tasks. The Event Loop monitors for the completion of the request. Once the file read is complete, the Event Loop triggers the callback associated with that operation, which processes the data 
+
+This architecture enables Node.js to deliver high performance and responsiveness, especially in applications that require handling many concurrent connections or real-time interactions 
+
 ---
 
 4. State 5 differences between Angular and React.
