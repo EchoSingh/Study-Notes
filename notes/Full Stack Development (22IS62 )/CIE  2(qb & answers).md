@@ -480,6 +480,137 @@ It would **not** select the `<p>` inside the `<section>` or the `<p>` directly i
 6. Demonstrate your understanding of Array Destructuring, Object Destructuring, and Parameter Destructuring in JavaScript by writing three distinct code snippets.
 
 Ans)
+  
+ These are features introduced in ECMAScript 2015 (ES6) that simplify working with arrays and objects.
+
+Below are distinct code snippets demonstrating these concepts, along with explanations. Please note that this information is beyond the scope of the provided sources and you may want to independently verify it.
+
+####  1. Array Destructuring
+
+Array destructuring allows you to "unpack" values from arrays into distinct variables. It provides a more concise way to extract values from an array than accessing them by their index one by one.
+
+**Code Snippet:**
+
+```
+function processStudentScores(scores) {
+    // Array destructuring to assign values from the 'scores' array
+    // to distinct variables: firstScore, secondScore, and restOfScores
+    const [firstScore, secondScore, ...restOfScores] = scores; // The ...restOfScores captures remaining elements into a new array
+
+    console.log(`First Score: ${firstScore}`);
+    console.log(`Second Score: ${secondScore}`);
+    console.log(`Other Scores: ${restOfScores}`); // This will be an array
+}
+
+// Example Usage:
+const studentScores =;
+processStudentScores(studentScores);
+
+// Another example illustrating skipping elements
+const colors = ["red", "green", "blue", "yellow"];
+const [primaryColor, , secondaryColor] = colors; // Skips "green"
+
+console.log(`Primary Color: ${primaryColor}`);   // Output: Primary Color: red
+console.log(`Secondary Color: ${secondaryColor}`); // Output: Secondary Color: blue
+```
+
+**Explanation:** In the `processStudentScores` function, `const [firstScore, secondScore, ...restOfScores] = scores;` is an example of array destructuring.
+
+- `firstScore` will be assigned the value `85` (the first element of `studentScores`).
+- `secondScore` will be assigned the value `92` (the second element).
+- `...restOfScores` uses the rest syntax to collect the remaining elements (`78`, `65`, `90`) into a new array called `restOfScores`.
+
+The second example, `const [primaryColor, , secondaryColor] = colors;`, demonstrates how to skip elements in the array by leaving a comma in the position of the element you want to ignore.
+
+####  2. Object Destructuring
+
+Object destructuring allows you to extract properties from objects into distinct variables. It is a powerful feature for extracting specific pieces of data from an object without having to use dot or bracket notation repeatedly.
+
+**Code Snippet:**
+
+```
+function displayStudentInfo(student) {
+    // Object destructuring to extract 'Name' and 'Grade' properties
+    // into variables with the same names.
+    const { Name, Grade, "USN No": studentId } = student; // Renames "USN No" to studentId
+
+    console.log(`Student Name: ${Name}`);
+    console.log(`Student Grade: ${Grade}`);
+    console.log(`Student ID: ${studentId}`); // Using the renamed variable
+}
+
+// Example Usage:
+const studentObject = {
+    "USN No": "USN001",
+    Name: "Alice",
+    Grade: 88
+};
+displayStudentInfo(studentObject);
+
+// Another example with default values
+const book = { title: "The Great Novel", author: "Jane Doe" };
+const { title, year = 2023 } = book; // 'year' will default to 2023 if not present in 'book'
+
+console.log(`Book Title: ${title}`);   // Output: Book Title: The Great Novel
+console.log(`Publication Year: ${year}`); // Output: Publication Year: 2023
+```
+
+**Explanation:** In the `displayStudentInfo` function, `const { Name, Grade, "USN No": studentId } = student;` uses object destructuring.
+
+- `Name` directly extracts the value of the `Name` property into a variable named `Name`.
+- `Grade` directly extracts the value of the `Grade` property into a variable named `Grade`.
+- `"USN No": studentId` extracts the value of the `USN No` property but assigns it to a new variable named `studentId` (useful when property names contain spaces or you want a different variable name).
+
+The second example shows how to set a default value (`year = 2023`) for a property if it's not found in the destructured object.
+
+####  3. Parameter Destructuring (within a Function Signature)
+
+Parameter destructuring combines destructuring with function parameters. Instead of passing an entire object or array and then destructuring it inside the function body, you can destructure the parameters directly in the function's signature.
+
+**Code Snippet:**
+
+```
+// Using object destructuring directly in the function parameter
+function introducePerson({ firstName, lastName, age, city = "Unknown" }) {
+    console.log(`Hello, my name is ${firstName} ${lastName}.`);
+    console.log(`I am ${age} years old and I live in ${city}.`);
+}
+
+// Using array destructuring directly in the function parameter
+function calculateSumAndProduct([num1, num2, num3]) {
+    const sum = num1 + num2 + num3;
+    const product = num1 * num2 * num3;
+    console.log(`Numbers: ${num1}, ${num2}, ${num3}`);
+    console.log(`Sum: ${sum}`);
+    console.log(`Product: ${product}`);
+}
+
+// Example Usage:
+const personInfo = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30,
+    city: "New York"
+};
+introducePerson(personInfo);
+
+const anotherPerson = {
+    firstName: "Jane",
+    lastName: "Smith",
+    age: 25
+};
+introducePerson(anotherPerson); // 'city' will use the default value "Unknown"
+
+const numbersArray =;
+calculateSumAndProduct(numbersArray);
+```
+
+**Explanation:**
+
+- In `function introducePerson({ firstName, lastName, age, city = "Unknown" })`, the curly braces `{}` within the parameter list indicate that an object is expected as an argument, and its `firstName`, `lastName`, `age`, and `city` properties will be extracted directly into local variables of the same name. `city = "Unknown"` also provides a default value if the `city` property is not present in the passed object. This cleans up the function body by avoiding repetitive access to `person.firstName`, etc.
+- In `function calculateSumAndProduct([num1, num2, num3])`, the square brackets `[]` in the parameter list indicate that an array is expected, and its first three elements will be directly assigned to `num1`, `num2`, and `num3` variables respectively.
+
+These destructuring assignments simplify code, improve readability, and are commonly used in modern JavaScript development.
 
 
 7. Write a JS code snippet to explain how Arrays are created. Explain the purpose of the Array along with its different types of representation.
