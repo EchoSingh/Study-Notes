@@ -373,6 +373,107 @@ console.log("Student counts per grade range (0-20, 21-30, 31-40, 41-50):", resul
 ---
 
  5. Illustrate with distinct code examples how you would use at least three different types of jQuery selectors to target and identify specific HTML elements within a web page. For each example, clearly describe which elements would be selected.
+ Ans)
+jQuery is a lightweight JavaScript library designed to simplify common tasks in web development, including HTML/DOM manipulation. Its purpose is to make it much easier to use JavaScript on your website, by wrapping many lines of JavaScript code into methods callable with a single line. At its core, jQuery uses a powerful selector engine, Sizzle.js, to efficiently target and identify specific HTML elements within a web page.
+
+Below are illustrations using at least three different types of jQuery selectors, with distinct code examples and descriptions of the elements they select.
+
+### 1. ID Selector
+
+An ID selector allows you to target a specific HTML element by its unique `id` attribute, regardless of its type or position in the document tree. Since `id` attributes must be unique within an HTML document, this selector will always return a single element.
+
+**jQuery Code Example:**
+
+```
+$('#main-header')
+```
+
+**HTML Snippet:**
+
+```
+<body>
+    <header id="main-header">
+        <h1>Welcome to My Website</h1>
+    </header>
+    <div id="content-area">
+        <p>Some content here.</p>
+    </div>
+</body>
+```
+
+**Description of Selected Elements:** This selector will target and identify **only the `<header>` element** that has the `id` attribute set to `"main-header"`.
+
+### 2. Class Selector
+
+A class selector enables you to target multiple HTML elements simultaneously, regardless of their position in the document tree, as long as they share the same `class` attribute value.
+
+**jQuery Code Example:**
+
+```
+$('.highlight')
+```
+
+**HTML Snippet:**
+
+```
+<body>
+    <p class="normal-text">This is a regular paragraph.</p>
+    <div class="highlight">
+        <h3>Important Notice</h3>
+        <p>This information is highlighted.</p>
+    </div>
+    <span class="highlight">Read carefully!</span>
+    <article class="news-item">
+        <h2 class="highlight">Breaking News</h2>
+        <p>More news content.</p>
+    </article>
+</body>
+```
+
+**Description of Selected Elements:** This selector will target and identify **all elements that have the `class` attribute set to `"highlight"`**. In the example above, this includes:
+
+- The `<div>` element containing "Important Notice".
+- The `<span>` element with "Read carefully!".
+- The `<h2>` element inside the `<article>` tag.
+
+### 3. Descendant Selector (Contextual Selector)
+
+A descendant selector is a type of contextual selector that allows you to select elements based on their hierarchical relationship to other elements. Specifically, it matches all elements that are contained within another element, using a space character to indicate the descendant relationship.
+
+**jQuery Code Example:**
+
+```
+$('div p')
+```
+
+**HTML Snippet:**
+
+```
+<body>
+    <section>
+        <p>This paragraph is inside a section.</p>
+    </section>
+    <div class="container">
+        <p>This is the first paragraph inside a div.</p>
+        <span>
+            <p>This paragraph is inside a span, which is inside a div.</p>
+        </span>
+        <ul>
+            <li>Item 1</li>
+            <li><p>Paragraph inside a list item, inside a div.</p></li>
+        </ul>
+    </div>
+    <p>This paragraph is directly in the body.</p>
+</body>
+```
+
+**Description of Selected Elements:** This selector will target and identify **all `<p>` (paragraph) elements that are descendants of any `<div>` element**, regardless of how many levels deep they are. In this example, it would select:
+
+- The first `<p>` inside `.container`.
+- The `<p>` inside the `<span>` (which is inside `.container`).
+- The `<p>` inside the `<li>` (which is inside `<ul>`, which is inside `.container`).
+
+It would **not** select the `<p>` inside the `<section>` or the `<p>` directly in the `<body>`, as they are not descendants of a `<div>`. 
 
 6. Demonstrate your understanding of Array Destructuring, Object Destructuring, and Parameter Destructuring in JavaScript by writing three distinct code snippets.
 
@@ -394,7 +495,7 @@ console.log("Student counts per grade range (0-20, 21-30, 31-40, 41-50):", resul
     - If divisible by 5, print `Fizz`
     
      - If divisible by both, print `BizzFizz`
-    
+---
 
 11. Describe Arrow Functions, Hoisting, and Callback Functions in detail.
 
