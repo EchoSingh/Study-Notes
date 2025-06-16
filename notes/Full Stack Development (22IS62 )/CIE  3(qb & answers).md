@@ -276,9 +276,7 @@ So, **"superprops" is not a standard term**, but it might refer to how props are
 - `useContext` — for accessing React context.
 - `useReducer` — for managing complex state logic.
 
----
-
-### ✅ Example with `useState`:
+#### Example with `useState`:
 
 ```jsx
 import React, { useState } from 'react';
@@ -299,9 +297,7 @@ export default Counter;
 
 Here, `useState` allows the functional component to keep track of the `count` state.
 
----
-
-### ✅ Example with `useEffect`:
+#### Example with `useEffect`:
 
 ```jsx
 import React, { useEffect, useState } from 'react';
@@ -328,26 +324,12 @@ export default DataFetcher;
 
 `useEffect` is used to perform side effects like fetching data from an API.
 
----
-
-## ✅ Summary Table
-
-| Concept     | Description                                                            | Usage Example               |
-| ----------- | ---------------------------------------------------------------------- | --------------------------- |
-| **Props**   | Pass data from parent to child component                               | `<Greeting name="Alice" />` |
-| **Super()** | Used in class components to call the parent class constructor          | `super(props)`              |
-| **Hooks**   | Functions to use state and lifecycle features in functional components | `useState`, `useEffect`     |
-|             |                                                                        |                             |
-
----
-
-## ✅ Conclusion
+#### Conclusion
 
 - **Props** allow data to flow from parent to child.
 - There is no such thing as **"superprops"**, but it could be a confusion with `props` or `super(props)` in class components.
 - **Hooks** like `useState` and `useEffect` allow functional components to manage **state** and perform **side effects**, making them a powerful alternative to class components.
 
-These concepts are fundamental to
 
 ---
 
