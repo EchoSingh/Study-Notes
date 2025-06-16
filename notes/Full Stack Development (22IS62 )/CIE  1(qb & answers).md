@@ -1,5 +1,6 @@
 
 1. Explain the concept of Full Stack Web Development. Discuss the key layers involved in Full Stack Development and provide examples of technologies used in each layer.
+
   Ans)
   
    Full Stack Web Development refers to the process of building and managing both the front-end (client-side) and back-end (server-side) elements of a web application  A full-stack developer is capable of working on all layers of the application, from the user interface to the server and database  This approach allows for a more cohesive and efficient development process, as the developer can handle all aspects of the application, leading to faster development cycles and improved collaboration 
