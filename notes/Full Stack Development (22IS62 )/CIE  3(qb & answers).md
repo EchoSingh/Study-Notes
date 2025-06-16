@@ -834,8 +834,104 @@ Occurs when the component is being removed from the DOM.
     - "Students are not ready to come to the class" — Second message  
     - Display "Server listening on PORT 3000"
 
+Ans)
+
+```javascript
+const express = require('express');
+const app = express();
+
+// Mount event logic
+app.use((req, res, next) => {
+  console.log("Teacher is ready to teach");
+  console.log("Students are not ready to come to the class");
+  next();
+});
+
+// Sample route
+app.get('/', (req, res) => {
+  res.send('Classroom is not ready yet.');
+});
+
+// Start server
+app.listen(3000, () => {
+  console.log('Server listening on PORT 3000');
+});
+```
+
+**Explanation:**
+
+- `app.use()` defines middleware that runs for every incoming request, simulating a "mount" behavior.
+    
+- `console.log()` statements simulate the sequence of classroom messages.
+    
+- `app.listen()` starts the Express server on port 3000 and logs the confirmation message.
 ---
 
 13. Explain conditional rendering using `&&` and ternary operators with code snippets.
 
+Ans)
+### Conditional Rendering in React:
+
+Conditional rendering allows components to render different UI elements based on specific conditions. In React, this can be achieved using JavaScript operators such as `&&` and the ternary (`? :`) operator.
+
+---
+
+### 1. Using `&&` Operator:
+
+The `&&` operator renders the right-hand side only if the condition on the left-hand side is true.
+
+**Example:**
+
+```jsx
+function Greeting(props) {
+  const isLoggedIn = props.isLoggedIn;
+  return (
+    <div>
+      {isLoggedIn && <h1>Welcome back!</h1>}
+    </div>
+  );
+}
+
+// Usage
+<Greeting isLoggedIn={true} />
+```
+
+**Explanation:**  
+If `isLoggedIn` is `true`, the message "Welcome back!" is displayed. If `false`, nothing is rendered.
+
+---
+
+### 2. Using Ternary Operator:
+
+The ternary operator allows rendering one of two elements based on a condition.
+
+**Example:**
+
+```jsx
+function Greeting(props) {
+  const isLoggedIn = props.isLoggedIn;
+  return (
+    <div>
+      {isLoggedIn ? <h1>Welcome back!</h1> : <h1>Please log in.</h1>}
+    </div>
+  );
+}
+
+// Usage
+<Greeting isLoggedIn={false} />
+```
+
+**Explanation:**  
+If `isLoggedIn` is `true`, it displays "Welcome back!". Otherwise, it shows "Please log in."
+
+---
+
+### Summary:
+
+|Operator|Use Case|Behavior|
+|---|---|---|
+|`&&`|When you only want to render something if a condition is true|Renders the right-hand element if true|
+|`? :`|When you want to render one of two elements|Renders one of two values based on the condition|
+
+These operators are commonly used for rendering UI conditionally in a clean and readable way.
 ---
