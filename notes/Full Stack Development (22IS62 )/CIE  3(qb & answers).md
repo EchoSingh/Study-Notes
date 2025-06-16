@@ -733,6 +733,100 @@ REST (Representational State Transfer) is an architectural style for designing n
 ---
 
 11. Explain state and props in React with examples. List the lifecycle methods for mounting, updating, and unmounting phases in class components.
+
+Ans)
+
+### Props in React:
+
+Props (short for "properties") are used to pass data from one component to another, typically from a parent component to a child component. Props are read-only, meaning a child component cannot modify the props it receives. Props help make components reusable by allowing them to operate with different data.
+
+**Example:**
+
+```jsx
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+function App() {
+  return <Welcome name="Alice" />;
+}
+```
+
+In this example, the `App` component passes the value `"Alice"` to the `Welcome` component using the `name` prop. The `Welcome` component uses `props.name` to display the message.
+
+---
+
+### State in React:
+
+State is a built-in object in React components that is used to store dynamic data that affects the rendering of the component. Unlike props, the state is managed within the component and can be modified using the `setState()` method in class components. Changes to state trigger re-rendering of the component.
+
+**Example:**
+
+```jsx
+class Counter extends React.Component {
+  constructor() {
+    super();
+    this.state = { count: 0 };
+  }
+
+  increment = () => {
+    this.setState({ count: this.state.count + 1 });
+  }
+
+  render() {
+    return (
+      <div>
+        <p>Count: {this.state.count}</p>
+        <button onClick={this.increment}>Increment</button>
+      </div>
+    );
+  }
+}
+```
+
+In this example, the `Counter` component maintains its own internal state using the `count` property and updates it when the button is clicked.
+
+---
+
+### Lifecycle Methods in Class Components:
+
+React class components follow a defined set of lifecycle methods that are grouped into three main phases: mounting, updating, and unmounting.
+
+#### Mounting Phase:
+
+Occurs when a component is being created and inserted into the DOM.
+
+- `constructor()` – Initializes state and binds methods.
+    
+- `static getDerivedStateFromProps()` – Invoked before rendering, used to derive state from props.
+    
+- `render()` – Renders the component’s UI.
+    
+- `componentDidMount()` – Invoked once after the component is mounted; often used for data fetching.
+    
+
+#### Updating Phase:
+
+Occurs when the component is being re-rendered due to changes in props or state.
+
+- `static getDerivedStateFromProps()` – Called again before every render.
+    
+- `shouldComponentUpdate()` – Determines whether the component should re-render.
+    
+- `render()` – Renders the updated UI.
+    
+- `getSnapshotBeforeUpdate()` – Captures information (e.g., scroll position) before the DOM is updated.
+    
+- `componentDidUpdate()` – Invoked after the component updates; useful for performing operations after the DOM has been updated.
+    
+
+#### Unmounting Phase:
+
+Occurs when the component is being removed from the DOM.
+
+- `componentWillUnmount()` – Used to perform cleanup tasks such as aborting network requests or clearing timers.
+    
+
 ---
 
 12. Implement a Mount Event function using Express.js with the following messages:  
