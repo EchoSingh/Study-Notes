@@ -451,6 +451,9 @@ export default App;
 
 Ans)
 
+#### MVC architecture :-
+![MV](https://imgs.search.brave.com/pBkRlv7IUjiGEcgjD7wZI6PvNfk_dAsgRN3yjBDxAYo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y3Jpby5kby9ibG9n/L2NvbnRlbnQvaW1h/Z2VzLzIwMjEvMDcv/Q29tcG9uZW50cy1v/Zi1NVkMtQXJjaGl0/ZWN0dXJlLVBhdHRl/cm4ucG5n)
+![]()
 
 ---
 
