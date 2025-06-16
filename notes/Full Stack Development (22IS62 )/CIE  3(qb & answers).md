@@ -385,7 +385,68 @@ In this case:
 7. Build a React application to display product defect issues. Display a list of issues using static data. Each issue should have an ID, product name, title, description, test case ID, and status (e.g., Open, In Progress, Closed).
 
 Ans)
+## **7. Build a React application to display product defect issues. Display a list of issues using static data. Each issue should have an ID, product name, title, description, test case ID, and status (e.g., Open, In Progress, Closed).**  
+ans)
 
+```jsx
+// App.js
+import React from "react";
+
+const issues = [
+  {
+    id: 1,
+    productName: "Product A",
+    title: "Login Button Not Working",
+    description: "The login button does not respond to clicks.",
+    testCaseId: "TC101",
+    status: "Open",
+  },
+  {
+    id: 2,
+    productName: "Product B",
+    title: "Image Not Loading",
+    description: "Product images fail to load on Safari browser.",
+    testCaseId: "TC202",
+    status: "In Progress",
+  },
+  {
+    id: 3,
+    productName: "Product C",
+    title: "Crash on Launch",
+    description: "App crashes on startup for Android 11 devices.",
+    testCaseId: "TC303",
+    status: "Closed",
+  },
+];
+
+function Issue({ issue }) {
+  return (
+    <div className="border p-4 mb-4 rounded shadow">
+      <h2 className="text-xl font-bold">{issue.title}</h2>
+      <p><strong>ID:</strong> {issue.id}</p>
+      <p><strong>Product Name:</strong> {issue.productName}</p>
+      <p><strong>Description:</strong> {issue.description}</p>
+      <p><strong>Test Case ID:</strong> {issue.testCaseId}</p>
+      <p><strong>Status:</strong> {issue.status}</p>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div className="max-w-3xl mx-auto p-4">
+      <h1 className="text-2xl font-bold mb-4">Product Defect Issues</h1>
+      {issues.map((issue) => (
+        <Issue key={issue.id} issue={issue} />
+      ))}
+    </div>
+  );
+}
+
+export default App;
+```
+
+> 💡 You can add **Tailwind CSS** or use basic CSS to style the components if you're not using utility-first classes. Let me know if you'd like a version without Tailwind or want it displayed in a specific layout (like a table).
 ---
 
 8. Describe MVC architecture with a diagram.
