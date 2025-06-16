@@ -373,7 +373,8 @@ console.log("Student counts per grade range (0-20, 21-30, 31-40, 41-50):", resul
 
 ---
 
- 5. Illustrate with distinct code examples how you would use at least three different types of jQuery selectors to target and identify specific HTML elements within a web page. For each example, clearly describe which elements would be selected.
+ 6. Illustrate with distinct code examples how you would use at least three different types of jQuery selectors to target and identify specific HTML elements within a web page. For each example, clearly describe which elements would be selected.
+ 
  Ans)
 jQuery is a lightweight JavaScript library designed to simplify common tasks in web development, including HTML/DOM manipulation. Its purpose is to make it much easier to use JavaScript on your website, by wrapping many lines of JavaScript code into methods callable with a single line. At its core, jQuery uses a powerful selector engine, Sizzle.js, to efficiently target and identify specific HTML elements within a web page.
 
@@ -478,7 +479,7 @@ It would **not** select the `<p>` inside the `<section>` or the `<p>` directly i
 
 ---
 
-6. Demonstrate your understanding of Array Destructuring, Object Destructuring, and Parameter Destructuring in JavaScript by writing three distinct code snippets.
+7. Demonstrate your understanding of Array Destructuring, Object Destructuring, and Parameter Destructuring in JavaScript by writing three distinct code snippets.
 
 Ans)
   
@@ -613,7 +614,7 @@ calculateSumAndProduct(numbersArray);
 
 ---
 
-7. Write a JS code snippet to explain how Arrays are created. Explain the purpose of the Array along with its different types of representation.
+8. Write a JS code snippet to explain how Arrays are created. Explain the purpose of the Array along with its different types of representation.
 
 Ans)
 Here are distinct ways to create or represent arrays in JavaScript:
@@ -666,7 +667,7 @@ Regardless of the creation method, elements within an array can be accessed usin
 
 ---
 
-8. Discuss the importance of JS Prototype and Prototype Inheritance in web design. Provide examples of commonly used properties.
+9. Discuss the importance of JS Prototype and Prototype Inheritance in web design. Provide examples of commonly used properties.
 
 Ans)
   JS Prototype Inheritance
@@ -719,7 +720,7 @@ In summary, JavaScript prototypes and prototype inheritance are fundamental conc
  
 ---
 
-9. Create an HTML document for a blog post. The document should include:
+10. Create an HTML document for a blog post. The document should include:
 
     - Control Flow
     
@@ -880,7 +881,7 @@ Loop iteration (while): 1
 
 ---
 
- 10. Write a JavaScript to print numbers 1 to 100 in an array.
+ 11. Write a JavaScript to print numbers 1 to 100 in an array.
 
     - If number is divisible by 3, print `Bizz`
     
@@ -889,27 +890,27 @@ Loop iteration (while): 1
      - If divisible by both, print `BizzFizz`
 ---
 
-11. Describe Arrow Functions, Hoisting, and Callback Functions in detail.
+12. Describe Arrow Functions, Hoisting, and Callback Functions in detail.
 
-12. Create an HTML document for a blog post. The document should include:
+13. Create an HTML document for a blog post. The document should include:
 
      - JS Functions
     
      - Callback Functions
     
 
-13. Analyse the Components of Back-End Development in JS and elaborate the need and usage of each component.
+14. Analyse the Components of Back-End Development in JS and elaborate the need and usage of each component.
 
-14. Analyse the concept of DOM Manipulation and elaborate on how DOM tree is constructed along with its Nodes.
+15. Analyse the concept of DOM Manipulation and elaborate on how DOM tree is constructed along with its Nodes.
 
- 15. Name and explain, in your own words, the key difference between how primitive and non-primitive data types are represented in JavaScript.
- 16. Describe the purpose and demonstrate with distinct examples how the string operations `lastIndexOf()`, `slice()`, and `substring()` can be used to extract or locate specific parts of a given text. Explain the key differences in their behaviour and output.
+ 16. Name and explain, in your own words, the key difference between how primitive and non-primitive data types are represented in JavaScript.
+ 17. Describe the purpose and demonstrate with distinct examples how the string operations `lastIndexOf()`, `slice()`, and `substring()` can be used to extract or locate specific parts of a given text. Explain the key differences in their behaviour and output.
 
-17. Develop a JavaScript program to check if a given number is an Armstrong number (sum of cubes is equal to the given number) or not.
+18. Develop a JavaScript program to check if a given number is an Armstrong number (sum of cubes is equal to the given number) or not.
 
-18. Describe use of the spread operator in arrays and objects with an example.
+19. Describe use of the spread operator in arrays and objects with an example.
 
-19. Design a modular JavaScript function `validateRegistration` that takes an object containing `username`, `password`, `confirmPassword`, and `email` as input properties. This function should:
+20. Design a modular JavaScript function `validateRegistration` that takes an object containing `username`, `password`, `confirmPassword`, and `email` as input properties. This function should:
      -  Analyse the provided input to determine if each field meets the following criteria:
     
          - **Username**: Not empty
