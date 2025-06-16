@@ -197,20 +197,13 @@ Ans)
 5. Explain Props, Superprops, and Hooks with examples.
 
 Ans)
+#### 1. **Props (Properties)**
 
-In modern **React development**, **props**, **state**, and **hooks** are essential concepts that allow components to communicate, manage internal data, and handle side effects in a functional programming model.
-
-Below is a clear explanation of **props**, and **hooks**, and a clarification on **"superprops"** (which is not a standard React term, but possibly a confusion with `props` or `super()` in class components). We'll also include examples.
-
----
-
-## 1. **Props (Properties)**
-
-### ✅ What are Props?
+#### What are Props?
 
 **Props** are used to pass data from a **parent component** to a **child component**. They are **read-only**, meaning that the child component **cannot modify** them directly.
 
-### 📦 Example:
+####  Example:
 
 ```jsx
 // ParentComponent.jsx
@@ -237,14 +230,14 @@ In this example, the `ParentComponent` passes the `name` prop to the `Greeting` 
 
 ---
 
-## 2. **"Superprops" (Clarification)**
+#### 2. **"Superprops" (Clarification)**
 
 There is **no official concept called "superprops" in React**. However, it may be a confusion between:
 
 - `props` — the data passed to a component.
 - `super()` — a method used in **class components** to call the constructor of the parent class.
 
-### 🔁 Example of `super()` in Class Components:
+#### Example of `super()` in Class Components:
 
 ```jsx
 class MyComponent extends React.Component {
@@ -261,15 +254,13 @@ class MyComponent extends React.Component {
 
 So, **"superprops" is not a standard term**, but it might refer to how props are passed up or down a component tree in a more complex application.
 
----
+#### 3. **Hooks**
 
-## 3. **Hooks**
-
-### 🎣 What are Hooks?
+#### What are Hooks?
 
 **Hooks** are functions that let you use **state and other React features** in **functional components**. They were introduced in React 16.8 to simplify state management and reduce the need for class components.
 
-### ⚙️ Commonly Used Hooks:
+#### Commonly Used Hooks:
 
 - `useState` — for managing state.
 - `useEffect` — for handling side effects (like lifecycle methods in class components).
