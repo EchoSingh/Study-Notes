@@ -59,11 +59,57 @@ JavaScript was introduced by Netscape in their Navigator browser in 1996, initia
 2. Explain the concept of variable declaration. Compare all different types of variable declaration with syntax.
 
 Ans)
- 
- 
-   
+  In JavaScript, variable declaration involves reserving a name to hold data. The sources define JavaScript as a dynamically typed scripting language, meaning that variables can easily (or implicitly) convert from one data type to another during runtime. Unlike statically typed languages, JavaScript does not require you to define a variable's data type when it is declared; instead, the type of data a variable can hold is assigned at runtime and can change. Almost everything in JavaScript, including variables and functions, is considered an object.
 
+#### Comparison of Variable Declaration
+
+**1. JavaScript Variable Declaration (using `var` keyword)** Based on the provided sources, JavaScript variables are declared using the `var` keyword. The sources do not mention other declaration keywords like `let` or `const`, which are part of newer JavaScript standards.
+
+- **Declaration without Initial Value:** To declare a variable `x` without assigning an initial value, you use the `var` keyword followed by the variable name and a semicolon.
+    
+    ```
+    var x;
+    ```
+    
+    In this case, since no value is specified, the default value of the variable will be `undefined`.
+    
+- **Declaration with Initial Value (at declaration-time):** You can assign a value to a variable at the time of its declaration by appending the value to the declaration.
+    
+    ```
+    var myVariable = "Hello";
+    ```
+    
+- **Assignment at Runtime (after declaration):** After a variable has been declared, you can assign or reassign a value to it at any point during the program's execution using a simple right-to-left assignment. Due to JavaScript's dynamic typing, the data type of the variable can change with reassignment.
+    
+    ```
+    var num;
+    num = 10; // 'num' is now a number
+    num = "ten"; // 'num' can now be a string
+    ```
+    
+- **Conditional Assignment:** JavaScript also supports a conditional assignment operator.
+    
+    ```
+    // Example from sources' description (Figure 6.14 is not provided, but concept is mentioned)
+    var greeting = (hour < 12) ? "Good Morning" : "Good Afternoon";
+    ```
+    
+
+**2. Comparison with Statically Typed Languages (e.g., Java)** :
+- **Java (Statically Typed):** In Java, the data type of a variable must be explicitly defined by the programmer (e.g., `int abc`) and is enforced by the compiler. This means a variable declared as an integer can only hold integer values, and its type cannot change during runtime.
+    
+    ```
+    int count; // 'count' is declared as an integer and will remain so.
+    String name = "Alice"; // 'name' is declared as a String and will remain so.
+    ```
+    
+- **JavaScript (Dynamically Typed):** In contrast, JavaScript's dynamic typing allows a variable to hold different data types at different times during runtime. For instance, a variable initially holding an integer can later be assigned a string, and JavaScript will implicitly convert its type.
+ 
+   ---
+   
 3. Differentiate between JavaScript and jQuery. Provide examples for each type and explain the technologies commonly used to build them.
+Ans)
+
 
 4. Explain the importance of Model View Control (MVC) in Web Development. Describe a very popularly used MVC framework.
 
