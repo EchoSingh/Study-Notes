@@ -116,12 +116,13 @@ The interaction between these layers is crucial. For example, the front-end (pre
 
 
 4. Define WEB, URL, HTTPS, Name Resolution.
+   
    Ans)
 
 - **WEB**: The Web, also known as the World Wide Web (WWW) or W3, is an interconnected system of public webpages, typically residing on servers. It is a web technology that links web resources together over the internet. It is important to note that the Web is distinct from the Internet; the Web is one of many applications built on top of the Internet, which houses the Web.
 - **URL**: A Uniform Resource Locator (URL), also referred to as a Web address, is a reference to a web resource. It specifies the resource's location on a computer network and acts as a gateway for retrieving it. An example is `https://www.google.com`, where `Https` indicates the Transfer Control Protocol and `Google.com` is the URL for Google.
 - **HTTPS**: Hypertext Transfer Protocol Secured (HTTPS) is a secured protocol that governs the transfer of Web resources. It is a more secure version of Hypertext Transfer Protocol (HTTP), which is a non-secured protocol for resource transfer. You can typically identify a secured protocol by a visible padlock icon appearing before the address bar in a web browser, whereas a non-secured protocol does not display this icon.
-- **Name Resolution**: While the term "Name Resolution" is not explicitly defined in the sources, the concept is strongly related to how web servers handle requests for domain names. A web server, once configured, has its IP address associated through a DNS (Domain Name System) server. This association allows the server to listen for and respond to HTTP requests for that specific domain. A domain name itself is a unique name that identifies resources stored on a website and serves as the website's address. Therefore, "name resolution" implicitly refers to the process (often handled by a DNS server) of translating a human-readable domain name into an IP address that computers use to locate each other on a network.
+- **Name resolution** refers to the process of translating names into their corresponding numeric values, such as IP addresses, to facilitate communication between computers. This process allows users to connect to resources on a network or the Internet using user-friendly names instead of complex numeric identifiers  In computer systems, name resolution can involve retrieving numeric values for hostnames, user names, group names, and other named entities  In networking, it specifically refers to obtaining IP addresses for known host or domain names, with examples including the Domain Name System (DNS), Network Information Service, and Multicast DNS (mDNS) 
 
 ---
 
