@@ -961,11 +961,28 @@ Ans)
 ---
 
  16. Name and explain, in your own words, the key difference between how primitive and non-primitive data types are represented in JavaScript.
+
+Ans)
+
+---
+
  17. Describe the purpose and demonstrate with distinct examples how the string operations `lastIndexOf()`, `slice()`, and `substring()` can be used to extract or locate specific parts of a given text. Explain the key differences in their behaviour and output.
+
+ Ans)
+
+----
 
 18. Develop a JavaScript program to check if a given number is an Armstrong number (sum of cubes is equal to the given number) or not.
 
+Ans)
+
+---
+
 19. Describe use of the spread operator in arrays and objects with an example.
+
+Ans)
+
+---
 
 20. Design a modular JavaScript function `validateRegistration` that takes an object containing `username`, `password`, `confirmPassword`, and `email` as input properties. This function should:
      -  Analyse the provided input to determine if each field meets the following criteria:
