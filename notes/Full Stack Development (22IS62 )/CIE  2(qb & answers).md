@@ -2,11 +2,11 @@
   Ans)
     JavaScript (JS) is defined as an object-oriented, dynamically typed scripting language. While its name contains "Java," JavaScript and Java are distinct programming languages with different uses; Java is a compiled, object-oriented language that runs on a Java Virtual Machine, whereas JavaScript runs directly in the browser and has fewer object-oriented features. Almost everything in JavaScript, including variables and functions, is an object. JavaScript is dynamically typed, meaning variables can change their data type during runtime, unlike statically typed languages like Java where types are defined and enforced by the programmer and compiler.
 
-### History of JavaScript
+#### History of JavaScript
 
 JavaScript was introduced by Netscape in their Navigator browser in 1996, initially named LiveScript. It was renamed in part to reflect its purpose of providing control over Java applets within the browser. JavaScript is an implementation of a standardized scripting language known as ECMAScript. Initially, Microsoft's Internet Explorer did not support JavaScript, instead using its own browser-based scripting language called VBScript, though IE now supports JavaScript, sometimes referring to it as JScript for trademark reasons.
 
-### Uses of JavaScript in Web Development
+#### Uses of JavaScript in Web Development
 
 **Early Uses:** In its early days, JavaScript was less dynamic and sometimes annoying to users. Its common uses included:
 
@@ -57,6 +57,9 @@ JavaScript was introduced by Netscape in their Navigator browser in 1996, initia
 
 
 2. Explain the concept of variable declaration. Compare all different types of variable declaration with syntax.
+
+Ans)
+   
 
 3. Differentiate between JavaScript and jQuery. Provide examples for each type and explain the technologies commonly used to build them.
 
