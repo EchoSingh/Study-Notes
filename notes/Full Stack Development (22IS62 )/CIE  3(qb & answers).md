@@ -1,5 +1,130 @@
 1. Describe the essential steps involved in setting up a basic Node.js application, including any necessary software installations and initial file creation.
 
+Ans)
+
+#### Setting Up a Basic Node.js Application
+
+Node.js allows developers to write server-side applications using JavaScript. To begin building a Node.js application, you need to follow a few essential steps to set up the environment and create the necessary files.
+
+---
+
+#### Step 1: Install Node.js and npm
+
+Node.js is a JavaScript runtime built on Chrome's V8 engine. It comes bundled with npm (Node Package Manager), which is used to install libraries and manage dependencies.
+
+#### Installation Steps:
+
+1. Visit [https://nodejs.org](https://nodejs.org).
+2. Download and install the **LTS (Long Term Support)** version for your operating system.
+3. Follow the installation instructions.
+
+#### Verify Installation:
+
+Open a terminal or command prompt and run:
+
+```bash
+node -v
+npm -v
+```
+
+These commands will display the installed versions of Node.js and npm. If version numbers appear, the installation was successful.
+
+---
+
+#### Step 2: Create a Project Directory
+
+Create a folder for your Node.js project:
+
+```bash
+mkdir my-node-app
+cd my-node-app
+```
+
+This creates a new directory called `my-node-app` and navigates into it.
+
+---
+
+## Step 3: Initialize the Project
+
+Run the following command to generate a `package.json` file:
+
+```bash
+npm init -y
+```
+
+This file holds metadata about your project and lists dependencies. The `-y` flag uses default values to quickly create the file.
+
+---
+
+## Step 4: Create the Entry Point File
+
+Create the main JavaScript file for your application:
+
+```bash
+touch app.js
+```
+
+Open `app.js` in a code editor and add a simple log statement:
+
+```javascript
+// app.js
+console.log("Hello, this is my first Node.js app!");
+```
+
+Run the file using Node.js:
+
+```bash
+node app.js
+```
+
+You should see the message printed in the console.
+
+---
+
+## Step 5 (Optional): Install npm Packages
+
+You can install external libraries to extend the functionality of your app. For example, to install `dotenv` for managing environment variables:
+
+```bash
+npm install dotenv
+```
+
+Then, use it in your code:
+
+```javascript
+require('dotenv').config();
+console.log(process.env);
+```
+
+---
+
+## Step 6 (Optional): Create a Basic HTTP Server
+
+You can build a simple server using Node.js built-in modules. Update `app.js` with the following code:
+
+```javascript
+// app.js
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Hello from the Node.js server!\n');
+});
+
+const PORT = 3000;
+server.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}/`);
+});
+```
+
+Run the server:
+
+```bash
+node app.js
+```
+
+Open a browser and navigate to `http://localhost:3000`. You should see the message displayed in the browser.
+
 ---
 
 2. Identify and briefly describe two common types of APIs, highlighting a key characteristic of each type.
