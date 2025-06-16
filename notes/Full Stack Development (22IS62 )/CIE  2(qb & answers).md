@@ -289,8 +289,6 @@ For new projects, the source suggests considering a Vertical Slice Architecture 
 ---
 
 5. Given an array of objects, where each object represents a student with properties like USN No, Name (string) and Grade (number).  Develop a JavaScript function `rangeOfStudents` that takes this array and returns a new array containing count of students who have a grade in ranges:  0–20, 21–30, 31–40, 41–50.
-
- 
    ```javascript
    const students = [
       { usnno: "1BS23023", name: "swachha", grade: 45 },
@@ -303,22 +301,93 @@ For new projects, the source suggests considering a Vertical Slice Architecture 
    ];
    ````
 
- 6. Illustrate with distinct code examples how you would use at least three different types of jQuery selectors to target and identify specific HTML elements within a web page. For each example, clearly describe which elements would be selected.
+Ans)
 
-7. Demonstrate your understanding of Array Destructuring, Object Destructuring, and Parameter Destructuring in JavaScript by writing three distinct code snippets.
+```
+/**
+ * Calculates the count of students within specific grade ranges.
+ *
+ * @param {Array<Object>} students An array of student objects, each with properties:
+ *   - USN No (any type, but not used in logic)
+ *   - Name (string, but not used in logic)
+ *   - Grade (number, used for range calculation)
+ * @returns {Array<number>} A new array containing the counts of students in the following ranges:
+ *   - Index 0: 0-20
+ *   - Index 1: 21-30
+ *   - Index 2: 31-40
+ *   - Index 3: 41-50
+ */
+function rangeOfStudents(students) {
+    // Initialize an array to store the counts for each range.
+    // The order corresponds to the specified ranges:
+    let gradeCounts = ; // This initializes an array of numbers with a length of 4
 
-8. Write a JS code snippet to explain how Arrays are created. Explain the purpose of the Array along with its different types of representation.
+    // Check if the input is an array and not empty
+    if (!Array.isArray(students) || students.length === 0) {
+        console.warn("Input is not a valid array or is empty. Returning all zeros.");
+        return gradeCounts;
+    }
 
-9. Discuss the importance of JS Prototype and Prototype Inheritance in web design. Provide examples of commonly used properties.
+    // Iterate through each student object in the provided array
+    for (let i = 0; i < students.length; i++) {
+        const student = students[i]; // Accessing an element in an array
+        const grade = student.Grade; // Accessing a property of an object
 
-10. Create an HTML document for a blog post. The document should include:
+        // Use conditional statements (if-else if-else) to check the grade range
+        if (grade >= 0 && grade <= 20) {
+            gradeCounts++; // Increment the count for the 0-20 range
+        } else if (grade >= 21 && grade <= 30) {
+            gradeCounts++; // Increment the count for the 21-30 range
+        } else if (grade >= 31 && grade <= 40) {
+            gradeCounts++; // Increment the count for the 31-40 range
+        } else if (grade >= 41 && grade <= 50) {
+            gradeCounts++; // Increment the count for the 41-50 range
+        }
+        // Note: Students with grades outside 0-50 will not be counted in any of these ranges.
+    }
+
+    return gradeCounts;
+}
+
+// Example Usage (for demonstration, not part of the function itself):
+const studentData = [
+    { "USN No": "USN001", "Name": "Alice", "Grade": 15 },
+    { "USN No": "USN002", "Name": "Bob", "Grade": 25 },
+    { "USN No": "USN003", "Name": "Charlie", "Grade": 35 },
+    { "USN No": "USN004", "Name": "David", "Grade": 45 },
+    { "USN No": "USN005", "Name": "Eve", "Grade": 10 },
+    { "USN No": "USN006", "Name": "Frank", "Grade": 21 },
+    { "USN No": "USN007", "Name": "Grace", "Grade": 30 },
+    { "USN No": "USN008", "Name": "Heidi", "Grade": 40 },
+    { "USN No": "USN009", "Name": "Ivan", "Grade": 50 },
+    { "USN No": "USN010", "Name": "Judy", "Grade": 0 },
+    { "USN No": "USN011", "Name": "Ken", "Grade": 55 }, // Will not be counted in specified ranges
+    { "USN No": "USN012", "Name": "Liam", "Grade": -5 }  // Will not be counted in specified ranges
+];
+
+const results = rangeOfStudents(studentData);
+console.log("Student counts per grade range (0-20, 21-30, 31-40, 41-50):", results);
+// Expected output:[13, 13, 13, 14]
+```
+
+---
+
+ 5. Illustrate with distinct code examples how you would use at least three different types of jQuery selectors to target and identify specific HTML elements within a web page. For each example, clearly describe which elements would be selected.
+
+6. Demonstrate your understanding of Array Destructuring, Object Destructuring, and Parameter Destructuring in JavaScript by writing three distinct code snippets.
+
+7. Write a JS code snippet to explain how Arrays are created. Explain the purpose of the Array along with its different types of representation.
+
+8. Discuss the importance of JS Prototype and Prototype Inheritance in web design. Provide examples of commonly used properties.
+
+9. Create an HTML document for a blog post. The document should include:
 
     - Control Flow
     
     - Variable Declaration
     
 
- 11. Write a JavaScript to print numbers 1 to 100 in an array.
+ 10. Write a JavaScript to print numbers 1 to 100 in an array.
 
     - If number is divisible by 3, print `Bizz`
     
@@ -327,27 +396,27 @@ For new projects, the source suggests considering a Vertical Slice Architecture 
      - If divisible by both, print `BizzFizz`
     
 
-12. Describe Arrow Functions, Hoisting, and Callback Functions in detail.
+11. Describe Arrow Functions, Hoisting, and Callback Functions in detail.
 
-13. Create an HTML document for a blog post. The document should include:
+12. Create an HTML document for a blog post. The document should include:
 
      - JS Functions
     
      - Callback Functions
     
 
-14. Analyse the Components of Back-End Development in JS and elaborate the need and usage of each component.
+13. Analyse the Components of Back-End Development in JS and elaborate the need and usage of each component.
 
-15. Analyse the concept of DOM Manipulation and elaborate on how DOM tree is constructed along with its Nodes.
+14. Analyse the concept of DOM Manipulation and elaborate on how DOM tree is constructed along with its Nodes.
 
- 16. Name and explain, in your own words, the key difference between how primitive and non-primitive data types are represented in JavaScript.
- 17. Describe the purpose and demonstrate with distinct examples how the string operations `lastIndexOf()`, `slice()`, and `substring()` can be used to extract or locate specific parts of a given text. Explain the key differences in their behaviour and output.
+ 15. Name and explain, in your own words, the key difference between how primitive and non-primitive data types are represented in JavaScript.
+ 16. Describe the purpose and demonstrate with distinct examples how the string operations `lastIndexOf()`, `slice()`, and `substring()` can be used to extract or locate specific parts of a given text. Explain the key differences in their behaviour and output.
 
-18. Develop a JavaScript program to check if a given number is an Armstrong number (sum of cubes is equal to the given number) or not.
+17. Develop a JavaScript program to check if a given number is an Armstrong number (sum of cubes is equal to the given number) or not.
 
-19. Describe use of the spread operator in arrays and objects with an example.
+18. Describe use of the spread operator in arrays and objects with an example.
 
-20. Design a modular JavaScript function `validateRegistration` that takes an object containing `username`, `password`, `confirmPassword`, and `email` as input properties. This function should:
+19. Design a modular JavaScript function `validateRegistration` that takes an object containing `username`, `password`, `confirmPassword`, and `email` as input properties. This function should:
      -  Analyse the provided input to determine if each field meets the following criteria:
     
          - **Username**: Not empty
