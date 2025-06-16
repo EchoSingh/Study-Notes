@@ -286,8 +286,10 @@ Among the modern MVC frameworks, **.NET Core MVC** is a prominent choice. It is 
 
 For new projects, the source suggests considering a Vertical Slice Architecture (VSA) within MVC frameworks to strike a balance between structure and flexibility.
      
+---
 
 5. Given an array of objects, where each object represents a student with properties like USN No, Name (string) and Grade (number).  Develop a JavaScript function `rangeOfStudents` that takes this array and returns a new array containing count of students who have a grade in ranges:  0–20, 21–30, 31–40, 41–50.
+
  
    ```javascript
    const students = [
