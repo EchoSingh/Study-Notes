@@ -1579,8 +1579,7 @@ console.log(result); // 6
 
 
 Ans)
-
-# Modular JavaScript Function: `validateRegistration`
+#### Modular JavaScript Function: `validateRegistration`
 
 Below is a **modular JavaScript function** named `validateRegistration` that takes a registration object with fields `username`, `password`, `confirmPassword`, and `email`. It validates each field against specific rules and returns an object containing any **validation errors**.
 
@@ -1627,7 +1626,7 @@ function validateRegistration({ username, password, confirmPassword, email }) {
 }
 ```
 
-##  Example Usage
+####  Example Usage
 
 ```javascript
 const formData = {
@@ -1646,11 +1645,9 @@ if (Object.keys(validationErrors).length === 0) {
 }
 ```
 
----
+####  Sample Outputs
 
-## 🧪 Sample Outputs
-
-### Valid Input
+#### Valid Input
 ```javascript
 {
   username: 'user123',
@@ -1664,7 +1661,7 @@ if (Object.keys(validationErrors).length === 0) {
 Registration is valid!
 ```
 
-### Invalid Input
+#### Invalid Input
 ```javascript
 {
   username: '',
@@ -1683,15 +1680,5 @@ Registration is valid!
 }
 ```
 
----
 
-## 🧠 Why Modular?
-
-- **Reusability**: Validation logic is broken into small helper functions.
-- **Maintainability**: Easy to update rules or add new validations.
-- **Separation of Concerns**: Each function does one thing well.
-
----
-
-Let me know if you'd like to expand this with more advanced validation (like password strength, username uniqueness checks, etc.) or integrate it with a UI framework!
 ---
