@@ -544,15 +544,12 @@ Here is how the components interact in a typical request:
 9. Elaborate on MongoDB Documents and Collections. Write a Node.js code snippet to insert a document into a "users" collection and read all documents where "status" is "active".
 
 Ans)
-# MongoDB: Documents and Collections
 
 MongoDB is a **NoSQL database** that stores data in **flexible, JSON-like documents**. It is widely used in modern applications due to its scalability, flexibility, and performance.
 
----
+#### 🔹 MongoDB Basics: Documents and Collections
 
-## 🔹 MongoDB Basics: Documents and Collections
-
-### ✅ Document
+####  Document
 - A **document** is the basic unit of data in MongoDB.
 - It is a **key-value pair structure** similar to JSON.
 - Each document is stored in a **BSON (Binary JSON)** format for efficiency.
@@ -567,7 +564,7 @@ MongoDB is a **NoSQL database** that stores data in **flexible, JSON-like docume
 }
 ```
 
-### ✅ Collection
+#### Collection
 - A **collection** is a group of MongoDB documents.
 - It is **schema-less**, meaning each document can have a different structure.
 - Similar to a **table** in relational databases.
@@ -577,15 +574,11 @@ MongoDB is a **NoSQL database** that stores data in **flexible, JSON-like docume
 - `products`
 - `orders`
 
----
-
-## 📌 Node.js Code to Work with MongoDB
+#### Node.js Code to Work with MongoDB
 
 We'll use the official MongoDB Node.js driver to connect to MongoDB, insert a document into the `users` collection, and find all active users.
 
----
-
-### ✅ Prerequisites
+#### Prerequisites
 
 1. Install the MongoDB Node.js driver:
 ```bash
@@ -593,8 +586,6 @@ npm install mongodb
 ```
 
 2. Make sure MongoDB is running locally or have a MongoDB Atlas connection string.
-
----
 
 #### Node.js Code: Insert and Query Documents
 
