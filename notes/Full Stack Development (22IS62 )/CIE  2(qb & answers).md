@@ -378,7 +378,7 @@ jQuery is a lightweight JavaScript library designed to simplify common tasks in 
 
 Below are illustrations using at least three different types of jQuery selectors, with distinct code examples and descriptions of the elements they select.
 
-### 1. ID Selector
+#### 1. ID Selector
 
 An ID selector allows you to target a specific HTML element by its unique `id` attribute, regardless of its type or position in the document tree. Since `id` attributes must be unique within an HTML document, this selector will always return a single element.
 
@@ -403,7 +403,7 @@ $('#main-header')
 
 **Description of Selected Elements:** This selector will target and identify **only the `<header>` element** that has the `id` attribute set to `"main-header"`.
 
-### 2. Class Selector
+#### 2. Class Selector
 
 A class selector enables you to target multiple HTML elements simultaneously, regardless of their position in the document tree, as long as they share the same `class` attribute value.
 
@@ -436,7 +436,7 @@ $('.highlight')
 - The `<span>` element with "Read carefully!".
 - The `<h2>` element inside the `<article>` tag.
 
-### 3. Descendant Selector (Contextual Selector)
+#### 3. Descendant Selector (Contextual Selector)
 
 A descendant selector is a type of contextual selector that allows you to select elements based on their hierarchical relationship to other elements. Specifically, it matches all elements that are contained within another element, using a space character to indicate the descendant relationship.
 
@@ -475,7 +475,12 @@ $('div p')
 
 It would **not** select the `<p>` inside the `<section>` or the `<p>` directly in the `<body>`, as they are not descendants of a `<div>`. 
 
+---
+
 6. Demonstrate your understanding of Array Destructuring, Object Destructuring, and Parameter Destructuring in JavaScript by writing three distinct code snippets.
+
+Ans)
+
 
 7. Write a JS code snippet to explain how Arrays are created. Explain the purpose of the Array along with its different types of representation.
 
