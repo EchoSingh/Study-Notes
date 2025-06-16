@@ -1288,6 +1288,131 @@ Ans)
 
  Ans)
 
+#### 1. `lastIndexOf()`
+
+###### Purpose:
+Finds the **last occurrence** of a specified substring within a string and returns its **index**.  
+If not found, it returns `-1`.
+
+###### Syntax:
+```javascript
+str.lastIndexOf(searchValue[, fromIndex])
+```
+
+###### Example:
+```javascript
+const text = "JavaScript is powerful, and JavaScript is fun!";
+const lastIndex = text.lastIndexOf("JavaScript");
+
+console.log(lastIndex); // Output: 26
+```
+
+Here, the last occurrence of `"JavaScript"` starts at index **26**.
+
+###### Notes:
+- Search is **case-sensitive**.
+- Optional `fromIndex` limits the search to a specific point in the string.
+## 2. `slice()`
+
+### ✂️ Purpose:
+Extracts a **portion of a string** and returns the new string.  
+It supports **negative indices**, which count from the **end of the string**.
+
+### 🔁 Syntax:
+```javascript
+str.slice([start[, end]])
+```
+
+### ✅ Example:
+```javascript
+const text = "Hello, world!";
+const result = text.slice(7, 12);
+
+console.log(result); // Output: "world"
+```
+
+You can also use negative values:
+```javascript
+const result = text.slice(-6, -1);
+console.log(result); // Output: "world"
+```
+
+### 📝 Notes:
+- Does not modify the original string.
+- If `end` is omitted, `slice()` goes to the end of the string.
+- Works with **negative indices**.
+
+---
+
+## 3. `substring()`
+
+### 🔁 Purpose:
+Also extracts a **portion of a string**, but it treats **negative indices differently** (they're treated as `0`).
+
+### 🔁 Syntax:
+```javascript
+str.substring(indexStart[, indexEnd])
+```
+
+### ✅ Example:
+```javascript
+const text = "Hello, world!";
+const result = text.substring(7, 12);
+
+console.log(result); // Output: "world"
+```
+
+Try with negative values:
+```javascript
+const result = text.substring(-6, 12);
+console.log(result); // Output: "Hello, wo"
+```
+
+Here, `-6` is treated as `0`.
+
+### 📝 Notes:
+- If `indexStart > indexEnd`, `substring()` swaps them.
+- **Negative indices are not supported** — they default to `0`.
+
+---
+
+## 🆚 Key Differences Summary
+
+| Feature            | `lastIndexOf()` | `slice()`                      | `substring()`                      |
+|--------------------|------------------|---------------------------------|------------------------------------|
+| Purpose            | Locate substring | Extract part of string         | Extract part of string             |
+| Returns            | Index (number)   | Substring                      | Substring                          |
+| Negative indices?  | No               | ✅ Yes                          | ❌ No (treated as `0`)             |
+| Swaps indices?     | N/A              | No                             | ✅ Yes                             |
+| Case-sensitive     | ✅ Yes           | ✅ Yes                          | ✅ Yes                             |
+| Original modified? | ❌ No            | ❌ No                           | ❌ No                              |
+
+---
+
+## 🧩 Combined Example
+
+```javascript
+const text = "JavaScript is fun and JavaScript is powerful.";
+
+// Locate the last occurrence
+const lastJsIndex = text.lastIndexOf("JavaScript");
+
+// Extract the second part of the string
+const extracted = text.slice(lastJsIndex);
+
+console.log(extracted); // "JavaScript is powerful."
+```
+
+---
+
+## ✅ Use Cases
+
+- **`lastIndexOf()`** – Great for checking if a substring exists and finding its last position.
+- **`slice()`** – Ideal for extracting parts using relative positions, including from the end of the string.
+- **`substring()`** – Useful when working strictly with positive indices and you want automatic swapping.
+
+By understanding how these string methods behave differently, you can choose the right one based on your use case and avoid common bugs in string manipulation.
+
 ----
 
 18. Develop a JavaScript program to check if a given number is an Armstrong number (sum of cubes is equal to the given number) or not.
