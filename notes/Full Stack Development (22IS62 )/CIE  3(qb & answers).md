@@ -44,7 +44,7 @@ This creates a new directory called `my-node-app` and navigates into it.
 
 ---
 
-## Step 3: Initialize the Project
+#### Step 3: Initialize the Project
 
 Run the following command to generate a `package.json` file:
 
@@ -56,7 +56,7 @@ This file holds metadata about your project and lists dependencies. The `-y` fla
 
 ---
 
-## Step 4: Create the Entry Point File
+#### Step 4: Create the Entry Point File
 
 Create the main JavaScript file for your application:
 
@@ -81,7 +81,7 @@ You should see the message printed in the console.
 
 ---
 
-## Step 5 (Optional): Install npm Packages
+#### Step 5 (Optional): Install npm Packages
 
 You can install external libraries to extend the functionality of your app. For example, to install `dotenv` for managing environment variables:
 
@@ -98,7 +98,7 @@ console.log(process.env);
 
 ---
 
-## Step 6 (Optional): Create a Basic HTTP Server
+#### Step 6 (Optional): Create a Basic HTTP Server
 
 You can build a simple server using Node.js built-in modules. Update `app.js` with the following code:
 
@@ -128,6 +128,9 @@ Open a browser and navigate to `http://localhost:3000`. You should see the messa
 ---
 
 2. Identify and briefly describe two common types of APIs, highlighting a key characteristic of each type.
+
+Ans)
+
 
 ---
 
