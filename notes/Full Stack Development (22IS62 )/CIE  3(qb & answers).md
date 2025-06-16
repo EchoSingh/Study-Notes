@@ -662,6 +662,78 @@ Active Users:
 
 10. Describe key concepts of REST APIs.
 
+Ans)
+
+REST (Representational State Transfer) is an architectural style for designing networked applications, particularly web services. It uses standard HTTP methods and is stateless, scalable, and simple.
+
+####  Key Concepts of REST APIs:
+
+1. **Resource-Based**
+    
+    - Everything in REST is considered a **resource** (e.g., users, products, orders).
+        
+    - Resources are accessed via **URIs** (Uniform Resource Identifiers).
+        
+    - Example: `/api/users/1` refers to the user with ID 1.
+        
+2. **HTTP Methods**  
+    REST uses standard HTTP verbs to perform actions on resources:
+    
+    - `GET`: Retrieve data
+        
+    - `POST`: Create a new resource
+        
+    - `PUT`: Update an existing resource
+        
+    - `DELETE`: Remove a resource
+        
+    - `PATCH`: Partially update a resource
+        
+3. **Statelessness**
+    
+    - Each request from a client must contain all the information needed to understand and process it.
+        
+    - No session or context is stored on the server between requests.
+        
+4. **Client-Server Architecture**
+    
+    - Separation of concerns: the client handles the UI, and the server handles data and business logic.
+        
+5. **JSON or XML Format**
+    
+    - Data is typically exchanged in **JSON** format for simplicity and readability, though XML is also supported.
+        
+6. **Uniform Interface**
+    
+    - A consistent, standardized way of interacting with resources across the API.
+        
+7. **Representations**
+    
+    - Resources can have different representations (e.g., JSON, XML), and clients can request specific formats using headers like `Accept`.
+        
+8. **Stateless Communication**
+    
+    - Every request is independent; the server does not retain client information.
+        
+9. **Code on Demand (Optional)**
+    
+    - Servers can return executable code (e.g., JavaScript) to be run on the client.
+        
+
+####  Example REST API Endpoints:
+
+|HTTP Method|Endpoint|Description|
+|---|---|---|
+|GET|`/api/users`|Get all users|
+|POST|`/api/users`|Create a new user|
+|GET|`/api/users/1`|Get user with ID 1|
+|PUT|`/api/users/1`|Update user with ID 1|
+|DELETE|`/api/users/1`|Delete user with ID 1|
+
+---
+
+REST APIs are widely used due to their simplicity, scalability, and compatibility with web standards.
+
 ---
 
 11. Explain state and props in React with examples. List the lifecycle methods for mounting, updating, and unmounting phases in class components.
