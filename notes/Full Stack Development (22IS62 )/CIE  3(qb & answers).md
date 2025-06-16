@@ -732,10 +732,6 @@ REST (Representational State Transfer) is an architectural style for designing n
 
 ---
 
-REST APIs are widely used due to their simplicity, scalability, and compatibility with web standards.
-
----
-
 11. Explain state and props in React with examples. List the lifecycle methods for mounting, updating, and unmounting phases in class components.
 ---
 
