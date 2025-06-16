@@ -1140,7 +1140,7 @@ Document Object Model (DOM) manipulation is a core concept in web development th
 
 ---
 
-## 🌳 What is the DOM?
+#### What is the DOM?
 
 The **Document Object Model (DOM)** is a programming interface (API) for HTML and XML documents. It represents the structure of a document as a tree (called the **DOM tree**), allowing programs (especially JavaScript) to access and manipulate the document’s elements, styles, and content.
 
@@ -1148,7 +1148,7 @@ When a web page is loaded, the browser parses the HTML and constructs the DOM tr
 
 ---
 
-## 🧱 How is the DOM Tree Constructed?
+#### How is the DOM Tree Constructed?
 
 The DOM tree is built from the HTML document using a **hierarchical structure** of **nodes**. Each node represents a different part of the document. The structure starts with the **root node**, which is the `<html>` element, and branches out into **child nodes** like `<head>`, `<body>`, and their nested elements.
 
@@ -1186,7 +1186,7 @@ The DOM tree is built from the HTML document using a **hierarchical structure** 
 
 ---
 
-## 🧩 Types of DOM Nodes
+#### Types of DOM Nodes
 
 Each part of the document is represented as a **node** in the DOM tree. The primary node types include:
 
@@ -1200,7 +1200,7 @@ Each part of the document is represented as a **node** in the DOM tree. The prim
 
 ---
 
-## 🛠️ DOM Manipulation with JavaScript
+####  DOM Manipulation with JavaScript
 
 JavaScript provides methods and properties to access and manipulate the DOM dynamically:
 
@@ -1249,16 +1249,14 @@ element.previousSibling;
 
 ---
 
-## 🧠 Why is DOM Manipulation Important?
+#### Why is DOM Manipulation Important?
 
 - **Dynamic Content Updates**: Allows content to change in response to user actions (e.g., form validation, AJAX updates).
 - **User Interactivity**: Enables features like animations, drag-and-drop, and real-time data updates.
 - **Single Page Applications (SPAs)**: Frameworks like React, Vue, and Angular heavily rely on DOM manipulation to update the UI efficiently without full page reloads.
 - **Responsive Design**: JavaScript can modify styles and layout dynamically based on screen size or user preferences.
 
----
-
-## 🧪 Example: DOM Manipulation in Action
+#### Example: DOM Manipulation in Action
 
 ```html
 <div id="content"></div>
@@ -1271,6 +1269,7 @@ element.previousSibling;
   container.appendChild(heading);
 
   const paragraph =
+```
 
 ---
 
