@@ -385,8 +385,6 @@ In this case:
 7. Build a React application to display product defect issues. Display a list of issues using static data. Each issue should have an ID, product name, title, description, test case ID, and status (e.g., Open, In Progress, Closed).
 
 Ans)
-## **7. Build a React application to display product defect issues. Display a list of issues using static data. Each issue should have an ID, product name, title, description, test case ID, and status (e.g., Open, In Progress, Closed).**  
-ans)
 
 ```jsx
 // App.js
@@ -446,10 +444,13 @@ function App() {
 export default App;
 ```
 
-> 💡 You can add **Tailwind CSS** or use basic CSS to style the components if you're not using utility-first classes. Let me know if you'd like a version without Tailwind or want it displayed in a specific layout (like a table).
+> You can add **Tailwind CSS** or use basic CSS to style the components if you're not using utility-first classes.
 ---
 
 8. Describe MVC architecture with a diagram.
+
+Ans)
+
 
 ---
 
