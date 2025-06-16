@@ -645,7 +645,7 @@ console.log(studentNames); // Output: "Alice" (accessing elements by index)
 
 **Explanation:** In this example, `studentNames` is created with three string elements directly provided as arguments to the `Array` constructor. Each element is automatically assigned an index, starting from 0, allowing for access using square bracket notation.
 
-### 3. Initializing an Array using Square Bracket Notation (Array Literal)
+#### 3. Initializing an Array using Square Bracket Notation (Array Literal)
 
 This is a more concise and commonly preferred method for creating arrays, especially when they are initialized with values. It uses square brackets `[]` to enclose the elements.
 
@@ -666,6 +666,9 @@ Regardless of the creation method, elements within an array can be accessed usin
 ---
 
 8. Discuss the importance of JS Prototype and Prototype Inheritance in web design. Provide examples of commonly used properties.
+
+Ans)
+ 
 
 9. Create an HTML document for a blog post. The document should include:
 
