@@ -354,6 +354,8 @@ The element box consists of four main components, from the innermost to the oute
 
 **Conceptual Illustration:** The total space an element occupies on a page is equal to the size of its content area plus the sum of its padding, borders, and margins.
 
+  ![css box model](https://www.simplilearn.com/ice9/free_resources_article_thumb/CSS-Box-Model.png)
+
 ---
 
 8. Understand the concept of “distributed” in the context of version control systems like Git, and outline the different states that files can exist in within the Git repository.
