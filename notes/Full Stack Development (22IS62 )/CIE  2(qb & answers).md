@@ -1372,20 +1372,18 @@ Here, `-6` is treated as `0`.
 - If `indexStart > indexEnd`, `substring()` swaps them.
 - **Negative indices are not supported** — they default to `0`.
 
-## 🆚 Key Differences Summary
+#####  Key Differences Summary
 
-| Feature            | `lastIndexOf()` | `slice()`                      | `substring()`                      |
-|--------------------|------------------|---------------------------------|------------------------------------|
-| Purpose            | Locate substring | Extract part of string         | Extract part of string             |
-| Returns            | Index (number)   | Substring                      | Substring                          |
-| Negative indices?  | No               | ✅ Yes                          | ❌ No (treated as `0`)             |
-| Swaps indices?     | N/A              | No                             | ✅ Yes                             |
-| Case-sensitive     | ✅ Yes           | ✅ Yes                          | ✅ Yes                             |
-| Original modified? | ❌ No            | ❌ No                           | ❌ No                              |
+| Feature            | `lastIndexOf()`  | `slice()`              | `substring()`          |
+| ------------------ | ---------------- | ---------------------- | ---------------------- |
+| Purpose            | Locate substring | Extract part of string | Extract part of string |
+| Returns            | Index (number)   | Substring              | Substring              |
+| Negative indices?  | No               | Yes                    | No (treated as `0`)    |
+| Swaps indices?     | N/A              | No                     | Yes                    |
+| Case-sensitive     | Yes              | Yes                    | Yes                    |
+| Original modified? | No               | No                     | No                     |
 
----
-
-## 🧩 Combined Example
+####  Combined Example
 
 ```javascript
 const text = "JavaScript is fun and JavaScript is powerful.";
@@ -1399,15 +1397,11 @@ const extracted = text.slice(lastJsIndex);
 console.log(extracted); // "JavaScript is powerful."
 ```
 
----
-
-## ✅ Use Cases
+#### Use Cases
 
 - **`lastIndexOf()`** – Great for checking if a substring exists and finding its last position.
 - **`slice()`** – Ideal for extracting parts using relative positions, including from the end of the string.
 - **`substring()`** – Useful when working strictly with positive indices and you want automatic swapping.
-
-By understanding how these string methods behave differently, you can choose the right one based on your use case and avoid common bugs in string manipulation.
 
 ----
 
