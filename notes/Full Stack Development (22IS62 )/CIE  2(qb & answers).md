@@ -936,16 +936,29 @@ You can embed this script in an HTML file or run it directly in a browser consol
 
 12. Describe Arrow Functions, Hoisting, and Callback Functions in detail.
 
+Ans)
+
+---
+
 13. Create an HTML document for a blog post. The document should include:
 
      - JS Functions
     
      - Callback Functions
-    
+Ans)
+
+---
 
 14. Analyse the Components of Back-End Development in JS and elaborate the need and usage of each component.
 
+Ans)
+
+---
 15. Analyse the concept of DOM Manipulation and elaborate on how DOM tree is constructed along with its Nodes.
+
+Ans)
+
+---
 
  16. Name and explain, in your own words, the key difference between how primitive and non-primitive data types are represented in JavaScript.
  17. Describe the purpose and demonstrate with distinct examples how the string operations `lastIndexOf()`, `slice()`, and `substring()` can be used to extract or locate specific parts of a given text. Explain the key differences in their behaviour and output.
