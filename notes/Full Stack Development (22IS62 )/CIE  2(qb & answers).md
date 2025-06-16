@@ -59,6 +59,8 @@ JavaScript was introduced by Netscape in their Navigator browser in 1996, initia
 2. Explain the concept of variable declaration. Compare all different types of variable declaration with syntax.
 
 Ans)
+ 
+ 
    
 
 3. Differentiate between JavaScript and jQuery. Provide examples for each type and explain the technologies commonly used to build them.
