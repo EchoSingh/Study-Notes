@@ -459,8 +459,6 @@ Ans)
 
 **MVC (Model-View-Controller)** is a **software architectural pattern** used for organizing code in applications, especially in **web development**. It separates the application into three interconnected components:
 
----
-
 ## 🔹 1. **Model**
 
 - **What it does**: Manages the **data**, business logic, and rules of the application.
@@ -471,8 +469,6 @@ Ans)
 
 - **Example**: A `User` model might handle user registration, login, and data persistence.
 
----
-
 ## 🔹 2. **View**
 
 - **What it does**: Handles the **presentation layer** – how data is displayed to the user.
@@ -482,8 +478,6 @@ Ans)
   - Does **not contain business logic**.
 
 - **Example**: A webpage showing a list of users or a form to create a new user.
-
----
 
 ## 🔹 3. **Controller**
 
@@ -497,7 +491,7 @@ Ans)
 
 ---
 
-## 🔄 Flow of Control in MVC
+####  Flow of Control in MVC
 
 Here is how the components interact in a typical request:
 
@@ -548,6 +542,9 @@ Here is how the components interact in a typical request:
 ---
 
 9. Elaborate on MongoDB Documents and Collections. Write a Node.js code snippet to insert a document into a "users" collection and read all documents where "status" is "active".
+
+Ans)
+
 
 ---
 
