@@ -1580,4 +1580,118 @@ console.log(result); // 6
 
 Ans)
 
+# Modular JavaScript Function: `validateRegistration`
+
+Below is a **modular JavaScript function** named `validateRegistration` that takes a registration object with fields `username`, `password`, `confirmPassword`, and `email`. It validates each field against specific rules and returns an object containing any **validation errors**.
+
+
+#### Function: `validateRegistration`
+
+```javascript
+// Helper: Check if a string is empty or whitespace
+function isEmpty(str) {
+  return typeof str !== 'string' || !str.trim();
+}
+
+// Helper: Validate email format
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+// Main Validation Function
+function validateRegistration({ username, password, confirmPassword, email }) {
+  const errors = {};
+
+  // Validate username
+  if (isEmpty(username)) {
+    errors.username = 'Username is required.';
+  }
+
+  // Validate password
+  if (typeof password !== 'string' || password.length < 6) {
+    errors.password = 'Password must be at least 6 characters long.';
+  }
+
+  // Validate confirm password
+  if (password !== confirmPassword) {
+    errors.confirmPassword = 'Passwords do not match.';
+  }
+
+  // Validate email
+  if (!isValidEmail(email)) {
+    errors.email = 'Please enter a valid email address.';
+  }
+
+  return errors;
+}
+```
+
+##  Example Usage
+
+```javascript
+const formData = {
+  username: 'user123',
+  password: 'pass12',
+  confirmPassword: 'pass12',
+  email: 'user@example.com'
+};
+
+const validationErrors = validateRegistration(formData);
+
+if (Object.keys(validationErrors).length === 0) {
+  console.log('Registration is valid!');
+} else {
+  console.log('Validation Errors:', validationErrors);
+}
+```
+
+---
+
+## 🧪 Sample Outputs
+
+### Valid Input
+```javascript
+{
+  username: 'user123',
+  password: 'pass12',
+  confirmPassword: 'pass12',
+  email: 'user@example.com'
+}
+```
+**Output:**
+```
+Registration is valid!
+```
+
+### Invalid Input
+```javascript
+{
+  username: '',
+  password: 'pass',
+  confirmPassword: 'pass12',
+  email: 'invalid-email'
+}
+```
+**Output:**
+```javascript
+{
+  username: 'Username is required.',
+  password: 'Password must be at least 6 characters long.',
+  confirmPassword: 'Passwords do not match.',
+  email: 'Please enter a valid email address.'
+}
+```
+
+---
+
+## 🧠 Why Modular?
+
+- **Reusability**: Validation logic is broken into small helper functions.
+- **Maintainability**: Easy to update rules or add new validations.
+- **Separation of Concerns**: Each function does one thing well.
+
+---
+
+Let me know if you'd like to expand this with more advanced validation (like password strength, username uniqueness checks, etc.) or integrate it with a UI framework!
 ---
