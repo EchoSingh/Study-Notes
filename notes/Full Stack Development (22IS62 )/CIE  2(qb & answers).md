@@ -1265,7 +1265,23 @@ element.previousSibling;
  16. Name and explain, in your own words, the key difference between how primitive and non-primitive data types are represented in JavaScript.
 
 Ans)
+#### Primitive Data Types
+- These are predefined and include types like **number**, **string**, **boolean**, **null**, **undefined**, **symbol**, and **bigint**
+- Primitive types are immutable, meaning their values cannot be changed once created. When a primitive value is assigned to a variable, it is stored directly in memory
+- They have fixed sizes and default values. For example, a number defaults to `0`, and a boolean defaults to `false`
+- Comparison of primitive types is done by value. For instance, two numbers are equal if they hold the same numeric value
 
+#### Non-Primitive Data Types
+- These are created by the programmer and include **objects**, **arrays**, and **functions**
+- Non-primitive types are mutable, allowing their properties to be modified after creation. They are stored as references in memory rather than directly
+- Their size is not fixed, and they can be initialized to `null` or require explicit initialization
+- Comparison of non-primitive types is done by reference. Two objects are equal only if they reference the same location in memory
+
+#### Key Differences
+- **Storage**: Primitive types are stored directly in memory, while non-primitive types are stored as references
+- **Mutability**: Primitive types are immutable, whereas non-primitive types are mutable
+- **Default Values**: Primitive types have default values, while non-primitive types are often initialized to `null`
+- **Comparison**: Primitives are compared by value, and non-primitives by reference
 ---
 
  17. Describe the purpose and demonstrate with distinct examples how the string operations `lastIndexOf()`, `slice()`, and `substring()` can be used to extract or locate specific parts of a given text. Explain the key differences in their behaviour and output.
