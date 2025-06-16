@@ -965,6 +965,144 @@ In this example, the arrow function `num => num * num` is used as a callback to 
      - Callback Functions
 Ans)
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Understanding JavaScript Functions and Callbacks</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    article {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    pre {
+      background: #2d2d2d;
+      color: #f8f8f2;
+      padding: 1rem;
+      overflow-x: auto;
+      border-radius: 5px;
+    }
+
+    code {
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>JavaScript Functions and Callback Functions</h1>
+    <p>Posted on June 16, 2025</p>
+  </header>
+
+  <article>
+    <h2>JavaScript Functions</h2>
+    <p>
+      Functions in JavaScript are reusable blocks of code that can be defined once and executed multiple times. They help in structuring and organizing code, making it more readable and maintainable.
+    </p>
+
+    <p>
+      There are several ways to define a function in JavaScript:
+    </p>
+
+    <ul>
+      <li><strong>Function Declaration:</strong> Hoisted and can be called before definition.</li>
+      <li><strong>Function Expression:</strong> Assigned to a variable, not hoisted.</li>
+      <li><strong>Arrow Function:</strong> Introduced in ES6, with a concise syntax and lexical <code>this</code>.</li>
+    </ul>
+
+    <p>Example:</p>
+    <pre>
+<code>
+// Function Declaration
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+
+// Function Expression
+const add = function(a, b) {
+  return a + b;
+};
+
+// Arrow Function
+const multiply = (a, b) => a * b;
+
+console.log(greet("Alice"));     // Output: Hello, Alice!
+console.log(add(3, 4));          // Output: 7
+console.log(multiply(2, 5));     // Output: 10
+</code>
+    </pre>
+
+    <h2>Callback Functions</h2>
+    <p>
+      A <strong>callback function</strong> is a function passed as an argument to another function and is executed after a particular action or event. Callbacks are essential in JavaScript, especially for handling asynchronous operations like event listeners or AJAX requests.
+    </p>
+
+    <p>
+      They allow you to control the flow of execution and ensure that certain code runs only after other code has completed.
+    </p>
+
+    <p>Example:</p>
+    <pre>
+<code>
+function fetchData(callback) {
+  setTimeout(() => {
+    const data = { name: "John Doe", age: 30 };
+    callback(data);
+  }, 1000);
+}
+
+fetchData((userData) => {
+  console.log("User data received:", userData);
+});
+</code>
+    </pre>
+
+    <p>
+      In this example, the <code>fetchData</code> function simulates fetching data asynchronously using <code>setTimeout</code>, and a callback is used to process the result once it's available.
+    </p>
+  </article>
+</body>
+</html>
+```
+
+#### Features:
+- **Semantic HTML5 markup** for accessibility and SEO.
+- **Styling** using embedded CSS for a clean layout.
+- **Code examples** demonstrating:
+  - Function declaration vs expression vs arrow functions.
+  - Use of callback functions with asynchronous behavior.
+
+####  How to Use:
+- Save this code as `functions-blog.html`.
+- Open the file in a web browser to view the formatted blog post.
+
 ---
 
 14. Analyse the Components of Back-End Development in JS and elaborate the need and usage of each component.
