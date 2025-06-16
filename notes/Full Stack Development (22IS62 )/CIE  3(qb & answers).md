@@ -131,6 +131,17 @@ Open a browser and navigate to `http://localhost:3000`. You should see the messa
 
 Ans)
 
+1. **REST API (Representational State Transfer):**
+    
+    - **Description:** REST is an architectural style that uses HTTP methods (GET, POST, PUT, DELETE) to interact with resources represented in formats like JSON or XML.
+        
+    - **Key Characteristic:** **Statelessness** – each request from the client to the server must contain all the information needed to understand and process the request.
+        
+2. **SOAP API (Simple Object Access Protocol):**
+    
+    - **Description:** SOAP is a protocol for exchanging structured information using XML over HTTP or SMTP. It is often used in enterprise-level web services.
+        
+    - **Key Characteristic:** **Strict standards and formal contracts** – SOAP uses WSDL (Web Services Description Language) to define the service interface and operations.
 
 ---
 
