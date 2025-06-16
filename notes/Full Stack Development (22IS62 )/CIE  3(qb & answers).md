@@ -326,6 +326,81 @@ export default DataFetcher;
 
 6. Explain JSX in React with an example. How does it differ from traditional HTML? Also compare React.js with Angular with 3 key differences.
 
+Ans)
+#### JSX in React and Its Differences from HTML
+
+**JSX** (JavaScript XML) is a syntax extension used in **React** that allows developers to write HTML-like code directly in JavaScript. It makes it easier to build and visualize user interfaces by enabling a declarative and component-based approach.
+
+Although JSX looks like HTML, it is **not actual HTML**. Instead, it gets **compiled into JavaScript** using tools like **Babel** before the browser can execute it.
+
+---
+
+#### Example of JSX
+
+```jsx
+const element = <h1>Hello, JSX!</h1>;
+```
+
+This JSX expression is transformed into a standard JavaScript call:
+
+```js
+const element = React.createElement('h1', null, 'Hello, JSX!');
+```
+
+Here’s a more complex example using a component:
+
+```jsx
+function Welcome(props) {
+  return <h1>Welcome, {props.name}</h1>;
+}
+
+const element = <Welcome name="Alice" />;
+ReactDOM.render(element, document.getElementById('root'));
+```
+
+In this case:
+- `<Welcome name="Alice" />` is JSX.
+- It gets compiled into a call to `React.createElement`.
+- `{props.name}` allows dynamic data to be injected into the JSX.
+
+---
+
+## 💡 JSX vs Traditional HTML
+
+| Feature                     | JSX in React                                      | Traditional HTML                           |
+|----------------------------|--------------------------------------------------|---------------------------------------------|
+| **Syntax**                 | Looks similar to HTML but embedded in JavaScript | Pure markup language                       |
+| **Execution**              | Compiled into JavaScript using Babel or similar | Rendered directly by the browser           |
+| **Logic Integration**      | Can include JavaScript expressions using `{}`  | Static — no logic inside HTML              |
+| **Custom Components**      | Supports custom elements (e.g., `<MyComponent />`) | Only supports built-in HTML tags           |
+| **Type Safety**            | Works well with TypeScript for better type checking | No type system                             |
+
+---
+
+## 🆚 React.js vs Angular: 3 Key Differences
+
+| Feature                     | React.js                                         | Angular                                      |
+|----------------------------|--------------------------------------------------|----------------------------------------------|
+| **Type**                   | A **library** focused on the **view layer**     | A **full-featured framework**               |
+| **Language**               | Primarily uses JavaScript, supports TypeScript  | Built with and requires **TypeScript**      |
+| **Data Binding**           | Uses **one-way data binding** (from parent to child) | Uses **two-way data binding** (model ↔ view) |
+
+---
+
+## 🧠 When to Use React or Angular?
+
+- **React** is ideal for **single-page applications (SPAs)**, **component-driven UIs**, and when you prefer **flexibility** and **modularity**.
+- **Angular** is better suited for **enterprise-level applications** where a **structured framework**, **dependency injection**, and **built-in tools** are beneficial.
+
+---
+
+## ✅ Summary
+
+- **JSX** is a syntax extension in React that lets you write HTML-like code inside JavaScript.
+- It is **compiled into JavaScript** and allows **dynamic content**, **custom components**, and **embedded logic**.
+- Unlike HTML, JSX is **not rendered directly** and requires a build process.
+- **React** is a **flexible library**, while **Angular** is a **comprehensive framework** with a steeper learning curve but more built-in features.
+
 ---
 
 7. Build a React application to display product defect issues. Display a list of issues using static data. Each issue should have an ID, product name, title, description, test case ID, and status (e.g., Open, In Progress, Closed).
