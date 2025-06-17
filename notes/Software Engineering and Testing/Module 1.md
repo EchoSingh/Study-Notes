@@ -382,58 +382,7 @@ This approach allows customers to gain value from the system early by receiving 
 
 The incremental delivery process is a cyclical activity designed to iteratively build and deploy a software system. Its key stages are outlined below:
 
-```
-+-----------------------------------+
-|   Define Outline Requirements     |
-|   (Customer prioritizes services) |
-+------------+----------------------+
-             |
-             v
-+-----------------------------------+
-|   Design System Architecture      |
-+------------+----------------------+
-             |
-             v
-+-----------------------------------+
-|   Assign Requirements             |
-|   to Increments                   |
-+------------+----------------------+
-             |
-             v
-+-----------------------------------+
-|   Develop System Increment        |
-+------------+----------------------+
-             |
-             v
-+-----------------------------------+
-|   Validate Increment              |
-+------------+----------------------+
-             |
-             v
-+-----------------------------------+
-|   Integrate Increment             |
-+------------+----------------------+
-             |
-             v
-+-----------------------------------+
-|   Deploy Increment                |
-+------------+----------------------+
-             |
-             v
-+-----------------------------------+
-|   System Incomplete?              |
-|   (Yes) ---+                      |
-|            |                      |
-+------------+--+-------------------+
-             |  | (No)
-             |  v
-             +----->  Final System
-             ^
-             |
-             +-----------------------
-             |   (Loop back for next
-             |    increment if incomplete)
-```
+![](images/11.jpeg)
 
 ### Explanation of Stages:
 
@@ -456,3 +405,7 @@ The incremental delivery process is a cyclical activity designed to iteratively 
 ### Disadvantages of Incremental Delivery:
 
 - **Challenges in Replacing Existing Systems**: This model can be problematic when the new system is intended to replace an existing one. Users may require all functionalities of the old system immediately and might be unwilling to work with an incomplete new system. Running both old and new systems concurrently can also be impractical due to differences in databases and user interfaces.
+
+---
+
+12. Explain the principles of agile methods.
