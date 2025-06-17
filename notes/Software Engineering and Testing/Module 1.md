@@ -263,4 +263,6 @@ The entire Requirements Engineering process is influenced by the inevitable chan
 
 ---
 
-7. 
+7. With a neat diagram, explain the general model of the design process.
+
+ 
