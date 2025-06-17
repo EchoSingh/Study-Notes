@@ -732,3 +732,5 @@ The diagram below illustrates the iterative nature of the requirements change ma
 - The outcome of "Change implementation" is "Revised requirements," which then feeds back into the system's evolving requirements.
 
 This systematic approach ensures that changes are managed effectively, especially for large software systems where requirements are constantly evolving due to various factors like business environment shifts, new hardware, and changing legislation.
+
+---
