@@ -39,6 +39,9 @@ Below are the principal stages of systems engineering:
 These stages are not strictly sequential but overlap and involve continuous feedback, with changes and updates occurring throughout the system's lifetime.
 
 ---
-3. 
+3. With a neat diagram, explain the working of a waterfall model. List its advantages and
+disadvantages.
+
+
 
   
