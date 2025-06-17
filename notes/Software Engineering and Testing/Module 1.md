@@ -300,4 +300,5 @@ The development of a program typically follows system design. For some safety-cr
 
 ---
 
-8. 
+8. With a neat diagram, explain the testing phases in a plan-driven software process.
+
