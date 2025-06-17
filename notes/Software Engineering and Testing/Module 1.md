@@ -470,3 +470,4 @@ XP introduced several practices that reflect the principles of the agile manifes
 9. **Sustainable Pace:** Excessive overtime is discouraged as it often reduces code quality and medium-term productivity. The goal is to maintain a pace that is sustainable for the development team.
 10. **Test-First Development:** Tests for new functionality are written using an automated unit test framework _before_ the actual code is implemented. This approach clarifies requirements, supports early defect detection, and simplifies fault isolation because a failing test points directly to the most recently added code.
 ---
+14. 
