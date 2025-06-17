@@ -343,9 +343,13 @@ The entire process then iterates, with the new release often generating further 
 
 The diagram below illustrates the general model of the software evolution process:
 
-
-
+![](images/9.jpeg)
 
 **Figure: A general model of the software evolution process**
 
 This diagram shows how change requests lead to an analysis of their impact, which then informs the planning and implementation of a new system release. The released system, in turn, generates further change requests, completing the continuous cycle of software evolution.
+
+---
+
+10. With a neat diagram, explain the process model for prototype development.
+
