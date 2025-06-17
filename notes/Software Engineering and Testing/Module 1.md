@@ -216,3 +216,47 @@ According to Figure 2.3 , the general process model for reuse-based development 
 
 6. With a neat diagram, explain the Requirements Engineering process
 
+Requirements engineering (RE) is the process of understanding and defining what services a system is required to provide, as well as identifying the constraints on its operation and development. It is a critical stage in the software process, as errors made here can lead to significant problems in later design and implementation stages.
+
+The Requirements Engineering process involves three key, interleaved activities:
+
+1. **Requirements elicitation and analysis**: This involves discovering requirements by interacting with system stakeholders.
+2. **Requirements specification**: This is the process of converting these discovered requirements into a standard, documented form.
+3. **Requirements validation**: This activity checks that the requirements accurately define the system the customer truly desires.
+
+While these activities are often shown sequentially, in practice, requirements engineering is an iterative process where these activities are interleaved.
+
+The general process model for Requirements Engineering is illustrated in the following diagram:
+
+![]()
+
+Figure 2.4 The requirements engineering process.
+
+Here's a more detailed explanation of each activity:
+
+- **Requirements Elicitation and Analysis** This process aims to understand the work that stakeholders do and how a new system might support that work. Software engineers work with stakeholders to gather information about the application domain, work activities, desired services and features, performance needs, and hardware constraints. This stage is difficult because stakeholders may not clearly articulate their needs, express requirements in their own implicit terms, or have conflicting views.
+    
+    This activity includes several sub-activities:
+    
+    - **Requirements discovery and understanding**: Interacting with stakeholders to uncover their requirements, including domain requirements from documentation and existing systems. Techniques include interviews (closed or open) and observation (ethnography).
+    - **Requirements classification and organization**: Taking the unstructured collection of requirements and grouping related ones into coherent clusters. Viewpoints, which group requirements from specific stakeholder groups, can be used for this.
+    - **Requirements prioritization and negotiation**: Resolving conflicts among requirements from multiple stakeholders through negotiation and compromise.
+    - **Requirements documentation**: Documenting the requirements, which may involve creating an early draft of the requirements document or maintaining them informally on shared spaces. The analyst's understanding of the requirements improves with each cycle of this iterative process.
+- **Requirements Specification** This is the process of formally writing down the user and system requirements in a requirements document. User requirements are high-level, abstract statements, usually in natural language with diagrams, describing what the system should provide to users and its operating constraints. System requirements are more detailed descriptions of the software system's functions, services, and operational constraints, intended for system developers and potentially forming part of a contract.
+    
+    Ideally, requirements should be clear, unambiguous, complete, and consistent, although this is rarely fully achievable due to inherent conflicts and varying interpretations. Natural language is commonly used, often supplemented with tables, forms, graphical models (like UML diagrams), or even mathematical specifications for critical systems. A standard format, consistent language, highlighting of key parts, avoidance of jargon, and inclusion of a rationale for each requirement are recommended to minimize misunderstandings.
+    
+- **Requirements Validation** This process checks that the requirements truly define the system the customer wants, overlapping with elicitation and analysis as it aims to find problems with the requirements. It is crucial because errors in the requirements document can lead to extensive and costly rework if discovered later in the development cycle or after system deployment.
+    
+    Validation involves several types of checks:
+    
+    - **Validity checks**: Ensuring the system meets the customer's real needs.
+    - **Consistency checks**: Confirming no conflicts or contradictory descriptions exist within the requirements.
+    - **Completeness checks**: Verifying that all intended functions and constraints are defined.
+    - **Realism checks**: Assessing whether requirements can be implemented within the proposed budget and schedule, considering existing technologies.
+    - **Verifiability**: Ensuring requirements are written such that a set of tests can demonstrate the delivered system meets each specified requirement.
+    
+    Validation techniques include requirements reviews (systematic analysis by a team), prototyping (developing an executable model for user feedback), and test-case generation (designing tests from requirements to reveal problems). Developing tests from user requirements before code is written is an integral part of test-driven development.
+    
+
+The entire Requirements Engineering process is influenced by the inevitable changes to requirements due to evolving stakeholder understanding, organizational shifts, and changes in the system's environment. This necessitates **Requirements Change Management**, a formal process for handling change proposals, assessing their impact and cost, and maintaining consistency between the requirements document and the system implementation.
