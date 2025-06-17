@@ -538,4 +538,39 @@ These metrics allow for quantitative assessment of quality attributes, though fo
 
 15. With a neat block diagram, explain the various types of non-functional requirements.
 
-   
+   Non-functional requirements (NFRs) are constraints on the services or functions provided by a software system, often relating to its overall characteristics rather than specific features. These requirements are crucial because failing to meet them can render an entire system unusable, even if all functional requirements are met. Their implementation often spans across the system and can influence its overall architecture. NFRs generally originate from user needs, budgetary limitations, organizational policies, interoperability demands, or external factors such as safety regulations or privacy laws.
+
+Non-functional requirements are typically classified into three main types:
+
+1. **Product Requirements:** These define or constrain the runtime behavior of the software itself. They specify attributes like performance, reliability, security, and usability.
+    
+    - **Example:** For the Mentcare system, a product requirement might state: "The Mentcare system shall be available to all clinics during normal working hours (Mon–Fri, 08:30–17:30). Downtime within normal working hours shall not exceed 5 seconds in any one day". This focuses on the system's operational availability. Other product requirements could specify required speed (e.g., transactions per second), size (e.g., memory usage), or ease of use (e.g., training time).
+2. **Organizational Requirements:** These are derived from the policies and procedures within the customer's or developer's organizations. They can dictate operational processes, development methodologies (e.g., specific programming languages, development environments, or process standards), and environmental specifications for the system.
+    
+    - **Example:** An organizational requirement for the Mentcare system could be: "Users of the Mentcare system shall identify themselves using their health authority identity card". This mandates a specific authentication method due to organizational policy.
+3. **External Requirements:** These originate from factors external to the system and its development process. This broad category includes regulatory requirements (e.g., needing approval from a nuclear safety authority), legislative requirements (e.g., compliance with privacy laws), and ethical requirements ensuring public or user acceptance.
+    
+    - **Example:** An external requirement for the Mentcare system, stemming from legal obligations, might be: "The system shall implement patient privacy provisions as set out in HStan-03-2006-priv". This requires the system to adhere to a national privacy standard.
+
+### Block Diagram Representation of Non-Functional Requirements
+
+A block diagram illustrating the types of non-functional requirements would conceptually organize them as follows, echoing the structure presented in Figure 4.3 of the source:
+
+![](images/)
+
+- **Main Block:** "Non-functional Requirements" at the top represents the overarching category.
+- **First Layer of Blocks:** Branching down, three distinct blocks (Product, Organizational, External) represent the primary classifications, indicating that all non-functional requirements fall into one of these categories.
+- **Second Layer of Blocks (Sub-types/Examples):** Below each primary type, smaller blocks or lists enumerate specific examples or sub-categories that fall under that type. For instance, under "Product Requirements," you would find performance, usability, reliability, and security, which are common quality attributes of a software product. Similarly, organizational requirements might include development or environmental aspects, while external requirements would cover legislative or ethical considerations.
+
+### Metrics for Specifying Non-Functional Requirements
+
+To make non-functional requirements objectively testable, they should be defined quantitatively whenever possible. Metrics are used to specify these properties. Examples of such metrics include:
+
+- **Speed:** Processed transactions per second, user/event response time, screen refresh time.
+- **Size:** Megabytes of memory, number of ROM chips.
+- **Ease of use:** Training time required, number of help frames provided.
+- **Reliability:** Mean time to failure (MTTF), probability of unavailability, rate of failure occurrence (ROCOF), availability (AVAIL).
+- **Robustness:** Time to restart after failure, percentage of events causing failure, probability of data corruption on failure.
+- **Portability:** Percentage of target-dependent statements, number of target systems supported.
+
+These metrics allow for objective verification during testing, distinguishing a measurable requirement (e.g., "average number of errors made by experienced users shall not exceed two per hour") from a general goal (e.g., "the system should be easy to use").
