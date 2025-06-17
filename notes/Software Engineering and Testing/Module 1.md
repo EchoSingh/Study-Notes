@@ -214,4 +214,5 @@ According to Figure 2.3 , the general process model for reuse-based development 
 
 ---
 
-6. 
+6. With a neat diagram, explain the Requirements Engineering process
+
