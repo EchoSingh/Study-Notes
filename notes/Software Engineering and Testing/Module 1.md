@@ -708,4 +708,29 @@ A number of techniques can be used for requirements validation, either alone or 
 
 20. With a neat diagram, explain the Requirements Change Management.
 
-  
+  Requirements change management is a formal process essential for controlling modifications to a system's requirements after the requirements document has been approved. It helps determine if the benefits of implementing new requirements outweigh the costs of their implementation, ensuring that all change proposals are handled consistently and that changes to the requirements document are made in a controlled manner.
+
+This process typically involves three principal stages:
+
+1. **Problem analysis and change specification**: The process begins with an identified requirements problem or a specific change proposal. This initial problem or proposal is analyzed to validate it. The findings from this analysis are then communicated back to the change requestor, who may then refine the proposal or decide to withdraw the request.
+2. **Change analysis and costing**: In this stage, the potential impact of the proposed change is assessed. This assessment uses traceability information (links between requirements and other system elements) and general knowledge of the system. The cost of implementing the change is estimated, considering modifications needed for the requirements document, and, if applicable, the system design and implementation. Based on this analysis, a decision is made whether to proceed with the change.
+3. **Change implementation**: If the change is approved, the requirements document (and potentially the system design and implementation) are modified. The requirements document should be structured to facilitate changes without extensive rewriting or reorganization, promoting modularity so that individual sections can be altered or replaced without impacting other parts of the document.
+
+**Diagram: Requirements Change Management Process**
+
+The diagram below illustrates the iterative nature of the requirements change management process:
+
+```
+
+```
+
+**Explanation of the diagram:**
+
+- The process starts with an "Identified problem".
+- This leads to "Problem analysis and change specification," where the problem is evaluated for validity.
+- If the problem/change request is "Invalid," it leads to "Close CR" (Change Request), indicating it's rejected or resolved without further action.
+- If "Valid," the process moves to "Change analysis and costing," where the impact and cost are determined.
+- Following the analysis, the decision leads to "Change implementation" if approved.
+- The outcome of "Change implementation" is "Revised requirements," which then feeds back into the system's evolving requirements.
+
+This systematic approach ensures that changes are managed effectively, especially for large software systems where requirements are constantly evolving due to various factors like business environment shifts, new hardware, and changing legislation.
