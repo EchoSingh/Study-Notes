@@ -556,7 +556,7 @@ Non-functional requirements are typically classified into three main types:
 
 A block diagram illustrating the types of non-functional requirements would conceptually organize them as follows, echoing the structure presented in Figure 4.3 of the source:
 
-![](images/)
+![](images/15.jpeg)
 
 - **Main Block:** "Non-functional Requirements" at the top represents the overarching category.
 - **First Layer of Blocks:** Branching down, three distinct blocks (Product, Organizational, External) represent the primary classifications, indicating that all non-functional requirements fall into one of these categories.
@@ -574,3 +574,6 @@ To make non-functional requirements objectively testable, they should be defined
 - **Portability:** Percentage of target-dependent statements, number of target systems supported.
 
 These metrics allow for objective verification during testing, distinguishing a measurable requirement (e.g., "average number of errors made by experienced users shall not exceed two per hour") from a general goal (e.g., "the system should be easy to use").
+
+---
+16. 
