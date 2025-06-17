@@ -139,7 +139,7 @@ The diagram below illustrates the general process model for incremental developm
 ```
 
   ---
-  5. Certainly! Here's a **university exam-ready answer** to the question:
+  5. With a neat diagram, explain the reuse-oriented software engineering.
 
 
 ### **Reuse-Oriented Software Engineering**
@@ -152,7 +152,7 @@ This approach helps in reducing development time, cost, and risks while improvin
 
 ### **Phases of Reuse-Oriented Software Engineering**
 
-According to Figure 2.3 (from standard texts like Sommerville), the general process model for reuse-based development includes the following stages:
+According to Figure 2.3 , the general process model for reuse-based development includes the following stages:
 
 1. **Requirements Specification:**
     
