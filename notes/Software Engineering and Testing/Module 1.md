@@ -81,6 +81,9 @@ A common representation of the waterfall model is shown below:
 
 ---
 
-4. 
+4. Briefly explain the two types of Evolutionary Development model. Explain the
+various activities of Evolutionary Development Model with a neat diagram.
+
+
 
   
