@@ -186,7 +186,7 @@ According to Figure 2.3 , the general process model for reuse-based development 
 
 ### **Diagram: Reuse-Oriented Software Engineering Process**
 
-
+![](images/5.jpeg)
 
 
 ### **Advantages of Reuse-Oriented Software Engineering**
