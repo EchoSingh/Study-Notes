@@ -60,7 +60,7 @@ The principal stages are:
 
 A common representation of the waterfall model is shown below:
 
-![]()
+![](images/3.jpeg)
 
 ### Advantages
 
@@ -78,5 +78,9 @@ A common representation of the waterfall model is shown below:
 - **Unrealistic Linear Progression**: In practice, software development is rarely a simple linear process; phases often overlap, and feedback loops are necessary (e.g., design problems might be found during coding).
 - **Need for "Perfect Foresight"**: It assumes that the system can be completely understood and functionally decomposed from the outset. This reliance on "perfect foresight" can be perilous if requirements are unstable or not fully known, leading to potential rework.
 - **Limited Applicability**: The model is primarily appropriate for systems with well-understood and stable requirements, such as certain higher-level systems engineering processes, but it is generally considered inappropriate for most types of modern software development where flexibility and responsiveness to change are crucial.
+
+---
+
+4. 
 
   
