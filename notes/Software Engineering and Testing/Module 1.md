@@ -228,7 +228,7 @@ While these activities are often shown sequentially, in practice, requirements e
 
 The general process model for Requirements Engineering is illustrated in the following diagram:
 
-![]()
+![](images/6.jpeg)
 
 Figure 2.4 The requirements engineering process.
 
@@ -260,3 +260,7 @@ Here's a more detailed explanation of each activity:
     
 
 The entire Requirements Engineering process is influenced by the inevitable changes to requirements due to evolving stakeholder understanding, organizational shifts, and changes in the system's environment. This necessitates **Requirements Change Management**, a formal process for handling change proposals, assessing their impact and cost, and maintaining consistency between the requirements document and the system implementation.
+
+---
+
+7. 
