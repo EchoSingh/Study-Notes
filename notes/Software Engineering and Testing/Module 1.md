@@ -60,13 +60,7 @@ The principal stages are:
 
 A common representation of the waterfall model is shown below:
 
-```
-graph TD
-    A[Requirements Analysis and Definition] --> B{System and Software Design}
-    B --> C{Implementation and Unit Testing}
-    C --> D{Integration and System Testing}
-    D --> E{Operation and Maintenance}
-```
+![]()
 
 ### Advantages
 
