@@ -680,4 +680,32 @@ Here are the key reasons why this process is difficult:
 
 ---
 
-19. 
+19. During the requirements validation process, what are the different types of checks to
+be carried out on the requirements in the Requirements Document. Also, what are the
+validation techniques which can be used in conjunction or individually.
+
+During the requirements validation process, several types of checks are carried out on the requirements in the Requirements Document, and various techniques can be employed, either individually or in conjunction, to perform this validation. This process is crucial because errors in requirements can lead to significant rework costs if discovered later in the development cycle or after system deployment.
+
+### Types of Checks on Requirements
+
+The requirements validation process involves the following types of checks to ensure the quality and accuracy of the requirements document:
+
+1. **Validity checks**: These checks ensure that the requirements truly reflect the actual needs of the system users. They account for the possibility that user requirements might have evolved or changed since their initial elicitation.
+2. **Consistency checks**: This involves verifying that the requirements within the document do not conflict with one another. There should be no contradictory constraints or differing descriptions of the same system function.
+3. **Completeness checks**: These checks aim to confirm that the requirements document includes all functions and constraints that the system user intends.
+4. **Realism checks**: Requirements are assessed against existing technologies to ensure they can be implemented within the proposed budget and schedule for the system development.
+5. **Verifiability**: To minimize potential disputes between customers and contractors, system requirements should be written in a verifiable manner. This means that it should be possible to design a set of tests that can definitively demonstrate whether the delivered system meets each specified requirement.
+
+### Requirements Validation Techniques
+
+A number of techniques can be used for requirements validation, either alone or in combination:
+
+1. **Requirements reviews**: This technique involves a systematic analysis of the requirements by a team of reviewers. This team, typically comprising individuals from both the system customer and the system developer, meticulously reads the requirements document to identify errors, anomalies, and inconsistencies. The findings from these reviews are formally recorded, and comments are then passed to the author of the requirements or the responsible party for correction. These reviews are based on various project documents, including specifications, designs, code, and test plans, and they ensure consistency, completeness, and adherence to established standards.
+2. **Prototyping**: This technique involves the rapid development of an executable model or a part of the system. This prototype is then used by end-users and customers to interact with and evaluate the system, allowing them to provide feedback on its functionality and confirm if it meets their needs and expectations. Prototyping helps users visualize how the system will support their work, which can lead to new requirement ideas or uncover errors and omissions. It serves as a method of anticipating changes, potentially reducing the number of change proposals after the system's final delivery. Executable specifications are an advanced form of this approach, where requirements are specified in an executable format, and the customer executes the specification to observe intended behavior and provide feedback.
+3. **Test-case generation**: Requirements should inherently be testable. By devising tests for the requirements as part of the validation process, potential problems with the requirements themselves often become apparent. If a test is difficult or impossible to design, it usually indicates that the corresponding requirement may be challenging to implement and should be reconsidered. Developing tests from user requirements before any code is written is an integral aspect of test-driven development (TDD). In TDD, tests are developed concurrently with requirements, helping both testers and developers to understand the requirements better and preventing delays in test case creation. This systematic approach involves deriving a set of tests for each requirement to demonstrate its satisfaction, often requiring multiple tests per requirement for comprehensive coverage.
+
+---
+
+20. With a neat diagram, explain the Requirements Change Management.
+
+  
