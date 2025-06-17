@@ -265,4 +265,39 @@ The entire Requirements Engineering process is influenced by the inevitable chan
 
 7. With a neat diagram, explain the general model of the design process.
 
- 
+ The software design and implementation stage is where an executable software system is developed. Software design is a creative process focused on identifying software components and their relationships based on customer requirements. It's not a clear-cut, sequential process; designers develop the design in stages, iteratively refining solutions and backtracking as needed.
+
+A software design outlines the software's structure, data models and structures, interfaces between components, and sometimes the algorithms used. While design is always present, it's not always formally documented; sometimes it resides in a programmer's mind or is sketched informally. Implementation is the process of realizing this design as a program. Design decisions should consider implementation issues.
+
+The general model of the design process involves inputs, activities, and outputs, as illustrated in the abstract model below:
+
+![](images/7.jpeg)
+
+Figure 2.5 A general model of the design process
+
+Here's a breakdown of each part of the process:
+
+**1. Design Inputs**
+
+- **Platform information**: This includes details about the software platform (e.g., operating system, database, middleware) where the software will execute. It's crucial for designers to integrate the system with its environment.
+- **Software requirements**: These are the specifications defining what the system needs to do.
+- **Data descriptions**: If the system processes existing data, descriptions of that data are included as inputs to define the system's data organization.
+
+**2. Design Activities** The activities in the design process are interleaved and interdependent. New information constantly influences previous design decisions, making rework inevitable. These activities vary depending on the system type (e.g., real-time systems might require timing design but not a database design):
+
+- **Architectural design**: This involves identifying the system's overall structure, including its principal components (subsystems or modules), their relationships, and how they are distributed.
+- **Database design**: This activity focuses on designing the system's data structures and their representation in a database, considering whether an existing database is reused or a new one is created.
+- **Interface design**: This defines the interfaces between system components clearly and unambiguously. Precise interfaces allow components to be designed and developed in parallel without needing to know implementation details.
+- **Component selection and design**: This involves searching for reusable components and, if none are suitable, designing new software components. The design at this stage can be a simple description or a detailed UML model that can generate an implementation.
+
+**3. Design Outputs** The outputs of the design process vary based on the development approach:
+
+- For **critical systems**, outputs are detailed design documents with precise descriptions of the system.
+- For **model-driven approaches**, the design outputs are design diagrams.
+- For **agile methods**, the outputs may not be separate specification documents but might be represented directly in the program's code.
+
+The development of a program typically follows system design. For some safety-critical systems, detailed design precedes implementation. However, it's more common for design and program development to be interleaved. Software development tools can also generate a skeleton program from a design, defining and implementing interfaces, leaving developers to add operational details.
+
+---
+
+8. 
