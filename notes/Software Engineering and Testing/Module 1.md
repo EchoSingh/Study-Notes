@@ -470,4 +470,66 @@ XP introduced several practices that reflect the principles of the agile manifes
 9. **Sustainable Pace:** Excessive overtime is discouraged as it often reduces code quality and medium-term productivity. The goal is to maintain a pace that is sustainable for the development team.
 10. **Test-First Development:** Tests for new functionality are written using an automated unit test framework _before_ the actual code is implemented. This approach clarifies requirements, supports early defect detection, and simplifies fault isolation because a failing test points directly to the most recently added code.
 ---
-14. 
+14. Describe the functional and non-functional requirements with examples. What are the
+various metrics used for specifying non-functional requirements.
+
+Software system requirements are descriptions of the services a system should provide and the constraints on its operation. These requirements reflect the needs of customers for a system that serves a specific purpose, such as controlling a device, placing an order, or finding information. They are critical to software development, as mistakes in this stage can lead to significant problems later.
+
+System requirements are broadly classified into two main types: functional requirements and non-functional requirements.
+
+### Functional Requirements
+
+Functional requirements define the services a system is expected to provide, how it should react to specific inputs, and its behavior in particular situations. They describe "what the system should do". In some cases, functional requirements may also explicitly state what the system should _not_ do.
+
+When functional requirements are expressed as user requirements, they are typically written in natural language to be understandable by system users and managers. Functional system requirements, which expand upon user requirements, are written for system developers and describe functions, inputs, outputs, and exceptions in detail. Functional requirements for a product are determined by the tester's understanding of the requirements during testing.
+
+**Examples of Functional Requirements:**
+
+- **General examples:**
+    - A program that inputs two integers and outputs their maximum.
+    - A program that inputs a sequence of integers and outputs its sorted version.
+- **Mentcare System examples**:
+    - A user shall be able to search the appointments lists for all clinics.
+    - The system shall generate, each day for each clinic, a list of patients who are expected to attend appointments that day.
+    - Each staff member using the system shall be uniquely identified by his or her eight-digit employee number.
+- **Information requirements** specify the information needed and how it is to be delivered and organized.
+- **Domain requirements** are derived from the application domain and can be new functional requirements, constrain existing ones, or specify computations.
+
+Ideally, functional requirements should be both complete (all services and information needed by the user are defined) and consistent (requirements are not contradictory).
+
+### Non-Functional Requirements
+
+Non-functional requirements are constraints on the services or functions offered by the system, often relating to its overall characteristics rather than individual features. These can include timing constraints, development process constraints, or standards. They may pertain to "emergent system properties" such as reliability, response time, or memory usage, or they may define constraints on system implementation, like I/O device capabilities or data representations.
+
+Non-functional requirements are often more critical than individual functional requirements, as failing to meet them can render the entire system unusable. Their implementation may be spread throughout the system, affecting its overall architecture and potentially generating related functional requirements or constraining existing ones. Non-functional requirements contribute to the "quality" of software, encompassing its behavior during execution, structure, and associated documentation.
+
+**Types of Non-Functional Requirements:**
+
+Non-functional requirements generally arise from user needs, budget constraints, organizational policies, interoperability needs, or external factors like safety regulations or privacy legislation. They are classified into three main types:
+
+1. **Product requirements:** These specify or constrain the runtime behavior of the software.
+    - **Example (Mentcare System):** "The Mentcare system shall be available to all clinics during normal working hours (Mon–Fri, 08:30–17:30). Downtime within normal working hours shall not exceed 5 seconds in any one day". This type of requirement could also include performance, reliability, security, and usability.
+2. **Organizational requirements:** These are derived from policies and procedures within the customer's and developer's organizations.
+    - **Example (Mentcare System):** "Users of the Mentcare system shall identify themselves using their health authority identity card". Other examples include development process requirements (e.g., programming language, development environment, process standards) and operational/environmental requirements.
+3. **External requirements:** These stem from factors external to the system and its development process.
+    - **Example (Mentcare System):** "The system shall implement patient privacy provisions as set out in HStan-03-2006-priv". This category includes regulatory, legislative, and ethical requirements.
+
+A common challenge is that stakeholders often propose non-functional requirements as general goals (e.g., "ease of use") which are difficult to objectively verify. Therefore, whenever possible, non-functional requirements should be written quantitatively to make them testable.
+
+### Metrics for Specifying Non-Functional Requirements
+
+Metrics can be used to quantitatively specify non-functional system properties, allowing for objective testing to check if the system meets its requirements.
+
+**Key Metrics for Non-Functional Requirements:**
+
+- **Speed:** Measured by processed transactions per second, user/event response time, or screen refresh time.
+- **Size:** Measured in megabytes or number of ROM chips.
+- **Ease of use:** Measured by training time or the number of help frames.
+- **Reliability:** Can be specified as a probability of system failure in a given operating environment. Common metrics include:
+    - **Probability of Failure On Demand (POFOD):** Defines the probability that a demand for service will result in a system failure (e.g., 0.001 for a 1/1000 chance of failure per demand).
+    - **Rate of Occurrence of Failures (ROCOF):** Sets out the probable number of system failures observed relative to a time period (e.g., two failures per hour) or number of executions. The reciprocal of ROCOF is the Mean Time To Failure (MTTF).
+    - **Availability (AVAIL):** The probability that the system is available for use when required. This is affected by both the time between failures and the time needed to restart the system after a failure.
+- **Robustness:** Measured by time to restart after failure, percentage of events causing failure, or probability of data corruption on failure.
+- **Portability:** Measured by the percentage of target-dependent statements or the number of target systems.
+
+These metrics allow for quantitative assessment of quality attributes, though for some (like maintainability), simple metrics may not exist. The time units for reliability metrics can be calendar time or discrete units like the number of transactions.
