@@ -372,4 +372,4 @@ The process continues in a cycle, allowing for refinement and evolution based on
 
 ---
 
-11. 
+11. With a neat diagram, explain the incremental delivery model.
