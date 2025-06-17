@@ -720,9 +720,7 @@ This process typically involves three principal stages:
 
 The diagram below illustrates the iterative nature of the requirements change management process:
 
-```
-
-```
+![](images/20.jpeg)
 
 **Explanation of the diagram:**
 
