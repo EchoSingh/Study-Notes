@@ -15,6 +15,7 @@ Key aspects of software engineering include:
 
 The discipline emerged in 1968 in response to the "software crisis," where individual programming approaches did not scale effectively for large and complex systems, leading to unreliability, cost overruns, and late deliveries.
 
+---
 
 2. Define Systems Engineering. Explain the different phases of Systems Engineering
 with block diagrams.
@@ -23,7 +24,7 @@ Systems engineering is an engineering discipline focused on the comprehensive de
 
 The lifetime of large, complex systems is typically structured into four overlapping stages, as illustrated by a general process model:
 
-![](images/2)
+![](images/2.jpeg)
 
 Below are the principal stages of systems engineering:
 
@@ -35,7 +36,9 @@ Below are the principal stages of systems engineering:
     
 4. **Operation** In this final stage, the system is deployed, users are trained, and the system is put into practical use. Operational processes, as defined during development, often need to change to reflect the real working environment where the system is used. The system continuously evolves as new requirements are identified and implemented. This evolution may involve further development and additional hardware/software procurement. Eventually, the system's value may decline, leading to its decommissioning and replacement.
     
-
 These stages are not strictly sequential but overlap and involve continuous feedback, with changes and updates occurring throughout the system's lifetime.
+
+---
+3. 
 
   
