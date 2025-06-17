@@ -359,7 +359,7 @@ The key stages in the prototype development process, as illustrated in the model
 
 **Process Model for Prototype Development**
 
-```
+![](images/10.jpeg)
 
 **Explanation of the Stages:**
 
@@ -369,3 +369,7 @@ The key stages in the prototype development process, as illustrated in the model
 4. **Evaluate Prototype:** This is the final stage where the prototype is assessed. It requires providing user training and developing an evaluation plan based on the prototype's initial objectives. Users need time to become comfortable with the system and use it naturally to discover requirements errors or omissions. A common issue is that users might adapt their usage patterns to accommodate a slow prototype, which may not reflect how they would use the final system. The outcome of this stage is an evaluation report.
 
 The process continues in a cycle, allowing for refinement and evolution based on feedback until the desired system understanding or requirements are achieved.
+
+---
+
+11. 
