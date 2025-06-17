@@ -434,3 +434,85 @@ While acknowledging the value of items on the right, agile principles place grea
 13. With a neat diagram, explain extreme programming release cycle. Also, discuss the
 extreme programming practices.
 
+Extreme Programming (XP) is a prominent agile method that emphasizes producing useful software quickly through a set of specific practices. Its development approach is highly iterative, with requirements expressed as "user stories" that are directly implemented as a series of tasks.
+
+### Extreme Programming Release Cycle
+
+The XP release cycle illustrates the iterative and continuous nature of this development methodology. It focuses on delivering small, working components through a sequence of iterations.
+
+**XP Release Cycle Diagram:**
+
+```
+               +-----------------------+
+               |     User Stories      |
+               +-----------+-----------+
+                           |
+                           v
+               +-----------------------+
+               |      Release Plan     |
+               | (Sequence of Iterations) |
+               +-----------+-----------+
+                           |
+                           v
+               +-----------------------+
+               |       Iteration       |
+               +-----------+-----------+
+                           |
+                           v
+               +-----------------------+
+               |     Iteration Plan    |
+               +-----------+-----------+
+                           |
+                           v
+               +-----------------------+
+               |      Pair Coding      |
+               +-----------+-----------+
+                           |
+                           v
+               +-----------------------+
+               |       Unit Test       |
+               +-----------+-----------+
+                           |
+                           v
+               +-----------------------+
+               |    Acceptance Test    |
+               +-----------+-----------+
+                           |
+                           v
+               +-----------------------+
+               |      Small Release    |
+               +-----------+-----------+
+                           |
+                           v
+               +-----------------------+
+               |      (Repeat for      |
+               |     Next Iteration)   |
+               +-----------------------+
+```
+
+**Explanation of the Cycle:**
+
+1. **User Stories:** The process begins with customer expectations captured as "user stories". These are high-level requirements that drive the development process.
+2. **Release Plan:** User stories inform the "release plan," which defines a sequence of iterations. Each iteration aims to deliver a small, working component.
+3. **Iteration / Iteration Plan:** Within each release, there are multiple iterations. An "iteration plan" outlines the specific user stories (broken down into tasks) to be implemented in that short iteration, typically lasting 2 to 4 weeks.
+4. **Pair Coding:** Developers work in pairs, often sharing a single computer, continuously reviewing each other's work and supporting each other.
+5. **Unit Test:** A core XP practice is "test-first development," where automated unit tests are written for a new piece of functionality _before_ the code itself is implemented. All existing unit tests must pass before new code is integrated.
+6. **Acceptance Test:** User stories also define "acceptance tests". These tests are run to ensure the developed software supports the user stories and meets the customer's real needs. Development cannot proceed until these tests are successfully executed.
+7. **Small Release:** Upon successful testing, a "small release" of the working component is delivered. New releases of the system are typically made available to customers every two or three weeks. The customer has no more user stories, indicating the project's completion.
+8. **Repeat:** The cycle repeats for subsequent iterations until all required user stories are implemented and the customer has no more needs.
+
+### Extreme Programming Practices
+
+XP introduced several practices that reflect the principles of the agile manifesto, emphasizing adaptability, customer collaboration, and efficient delivery.
+
+1. **Collective Ownership:** All developers work on all areas of the system, fostering a shared responsibility for the entire codebase. This prevents "islands of expertise" and allows anyone to change anything, promoting flexibility.
+2. **Continuous Integration:** As soon as work on a task is completed, it is integrated into the whole system. After each integration, all unit tests must pass. This practice helps catch integration problems early and ensures the system always remains functional.
+3. **Incremental Planning:** Requirements are recorded as "story cards," and the stories for a release are determined by available time and their priority. Developers break these stories into smaller "tasks". This allows for flexible planning that accommodates changing customer priorities.
+4. **On-site Customer:** A representative of the end-user (the customer) is expected to be available full-time as a member of the XP team. This ensures continuous engagement and rapid feedback on changing requirements, and the customer is responsible for defining acceptance tests.
+5. **Pair Programming:** Two programmers work together on the same computer, checking each other's work and providing mutual support. This continuous review helps improve code quality and reduces defects. Pairings are often dynamic, so all team members work together.
+6. **Refactoring:** Developers are expected to continuously refactor (improve and restructure) the code as soon as potential improvements are found, even if there's no immediate need. This maintains code simplicity, readability, and maintainability, preventing structural deterioration that can occur with frequent changes.
+7. **Simple Design:** Only enough design is carried out to meet the current requirements, avoiding unnecessary anticipation of future changes. This supports simplicity and reduces wasted effort.
+8. **Small Releases:** The minimal useful set of functionality that provides business value is developed first. Subsequent releases are frequent and incrementally add functionality. This provides early value to the customer and rapid feedback.
+9. **Sustainable Pace:** Excessive overtime is discouraged as it often reduces code quality and medium-term productivity. The goal is to maintain a pace that is sustainable for the development team.
+10. **Test-First Development:** Tests for new functionality are written using an automated unit test framework _before_ the actual code is implemented. This approach clarifies requirements, supports early defect detection, and simplifies fault isolation because a failing test points directly to the most recently added code.
+---
