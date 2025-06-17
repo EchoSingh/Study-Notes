@@ -610,3 +610,59 @@ As this example illustrates, a single user requirement can lead to multiple, mor
 ---
 17. Give the IEEE standard format for Requirements Document.
 
+The IEEE standard format for a Requirements Document, as described in the sources and based on an IEEE standard for requirements documents (IEEE 1998), provides a comprehensive structure for detailing software system requirements. This standard is generic and can be adapted for specific uses, often extended to include information about predicted system evolution to help maintainers and designers.
+
+The typical structure for a requirements document following this standard includes the following chapters:
+
+- **Preface**:
+    
+    - Defines the expected readership of the document.
+    - Describes its version history, including a rationale for new versions and a summary of changes.
+- **Introduction**:
+    
+    - Describes the need for the system.
+    - Briefly outlines the system's functions and how it will interact with other systems.
+    - Explains how the system fits into the overall business or strategic objectives of the commissioning organization.
+- **Glossary**:
+    
+    - Defines technical terms used in the document, assuming no prior experience or expertise of the reader.
+- **User Requirements Definition**:
+    
+    - Describes the services provided for the user.
+    - Includes non-functional system requirements.
+    - May use natural language, diagrams, or other notations understandable to customers.
+    - Specifies product and process standards that must be followed.
+- **System Architecture**:
+    
+    - Presents a high-level overview of the anticipated system architecture.
+    - Shows the distribution of functions across system modules.
+    - Highlights architectural components that are reused.
+- **System Requirements Specification**:
+    
+    - Details the functional and non-functional requirements.
+    - Allows for further detail to be added to non-functional requirements if necessary.
+    - May define interfaces to other systems.
+- **System Models**:
+    
+    - Includes graphical system models that illustrate relationships between system components and between the system and its environment.
+    - Examples include object models, data-flow models, or semantic data models.
+- **System Evolution**:
+    
+    - Describes the fundamental assumptions underpinning the system.
+    - Outlines any anticipated changes due to hardware evolution, shifting user needs, etc.. This section is valuable for system designers, helping them avoid design choices that might hinder future system modifications.
+- **Appendices**:
+    
+    - Provides detailed, specific information related to the application.
+    - May include hardware and database descriptions.
+    - Hardware requirements define minimal and optimal system configurations.
+    - Database requirements define the logical organization and relationships of data used by the system.
+- **Index**:
+    
+    - Multiple indexes may be included, such as an alphabetic index, an index of diagrams, or an index of functions.
+
+This structured approach ensures that the requirements document serves a diverse set of users, from senior management to software engineers and testers, providing appropriate levels of detail for each. For complex engineering systems involving hardware and software from different companies, the document tends to be long and detailed, requiring comprehensive indexes. For in-house software products, a less detailed document focusing on user and high-level non-functional requirements may suffice.
+
+---
+
+18. Explain why elicitation and analysis is a difficult process. Give reasons.
+
