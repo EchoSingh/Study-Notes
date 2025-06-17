@@ -353,3 +353,19 @@ This diagram shows how change requests lead to an analysis of their impact, whic
 
 10. With a neat diagram, explain the process model for prototype development.
 
+The process model for prototype development is a cyclical approach used to create an early version of a software system to explore concepts, test design options, and gain a better understanding of a problem and its potential solutions. This iterative development is crucial for controlling costs and allowing stakeholders to experiment with the system early in the software process.
+
+The key stages in the prototype development process, as illustrated in the model below, are:
+
+**Process Model for Prototype Development**
+
+```
+
+**Explanation of the Stages:**
+
+1. **Establish Prototype Objectives:** This initial step involves clearly defining the goals for the prototype. The objectives might include developing a user interface, validating functional requirements, or demonstrating the application to managers. It's important to state these objectives explicitly from the outset to prevent misunderstandings about the prototype's purpose.
+2. **Define Prototype Functionality:** In this stage, decisions are made about what functionality to include in the prototype and, crucially, what to omit. To reduce costs and expedite delivery, certain functionalities may be left out, and non-functional requirements, such as response time or memory usage, might be relaxed. Error handling and management may also be disregarded unless they are direct objectives of the prototype. The output of this stage is typically an outline definition.
+3. **Develop Prototype:** This involves the rapid, iterative construction of the prototype based on the defined functionality. The output of this stage is an executable prototype.
+4. **Evaluate Prototype:** This is the final stage where the prototype is assessed. It requires providing user training and developing an evaluation plan based on the prototype's initial objectives. Users need time to become comfortable with the system and use it naturally to discover requirements errors or omissions. A common issue is that users might adapt their usage patterns to accommodate a slow prototype, which may not reflect how they would use the final system. The outcome of this stage is an evaluation report.
+
+The process continues in a cycle, allowing for refinement and evolution based on feedback until the desired system understanding or requirements are achieved.
