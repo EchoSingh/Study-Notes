@@ -409,3 +409,28 @@ The incremental delivery process is a cyclical activity designed to iteratively 
 ---
 
 12. Explain the principles of agile methods.
+
+  Agile methods are a set of software development approaches designed to produce useful software quickly and efficiently, especially in environments where requirements are expected to change rapidly. The philosophy behind agile methods is articulated in the Agile Manifesto, which prioritizes certain values over others.
+
+The core principles of agile methods, as outlined in the sources, include:
+
+- **Customer involvement:** Customers should be closely involved throughout the development process. Their role is to provide and prioritize new system requirements and to evaluate the iterations of the system. This continuous engagement ensures rapid feedback on changing requirements.
+- **Embrace change:** Agile methods anticipate that system requirements will change, and therefore, the system is designed to accommodate these changes. This principle means that rapid changes are expected and are a fundamental part of the development process.
+- **Incremental delivery:** The software is developed and delivered in small increments, with the customer specifying the requirements to be included in each increment. New releases of the system are typically created and made available to customers every two or three weeks. This approach allows for early delivery of fully functional components and immediate value to the customer.
+- **Maintain simplicity:** There is a focus on simplicity in both the software being developed and the development process itself. This is supported by continuous refactoring, which improves code quality and avoids structural deterioration, and by using simple designs that do not unnecessarily anticipate future changes.
+- **People, not process:** The skills and autonomy of the development team are recognized and exploited. Team members are encouraged to develop their own ways of working without overly prescriptive processes. This includes practices like pair programming, where developers work together, checking each other's work and providing mutual support. Agile methods emphasize informal communication over formal meetings and extensive documentation.
+
+In essence, agile methods value:
+
+- **Individuals and interactions** over processes and tools.
+- **Working software** over comprehensive documentation.
+- **Customer collaboration** over contract negotiation.
+- **Responding to change** over following a plan.
+
+While acknowledging the value of items on the right, agile principles place greater importance on the items on the left.
+
+---
+
+13. With a neat diagram, explain extreme programming release cycle. Also, discuss the
+extreme programming practices.
+
