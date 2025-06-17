@@ -373,3 +373,86 @@ The process continues in a cycle, allowing for refinement and evolution based on
 ---
 
 11. With a neat diagram, explain the incremental delivery model.
+
+The **incremental delivery model** is a software development approach where parts of the developed system, known as increments, are delivered to the customer and deployed for use in their working environment. This model contrasts with traditional approaches by ensuring that the software is used in real, operational processes, thereby providing realistic user feedback.
+
+This approach allows customers to gain value from the system early by receiving critical functionalities first, rather than waiting for the entire system to be completed. It is particularly useful for systems where requirements are not fully understood from the outset, enabling continuous refinement based on user experience.
+
+### Process Model for Incremental Delivery
+
+The incremental delivery process is a cyclical activity designed to iteratively build and deploy a software system. Its key stages are outlined below:
+
+```
++-----------------------------------+
+|   Define Outline Requirements     |
+|   (Customer prioritizes services) |
++------------+----------------------+
+             |
+             v
++-----------------------------------+
+|   Design System Architecture      |
++------------+----------------------+
+             |
+             v
++-----------------------------------+
+|   Assign Requirements             |
+|   to Increments                   |
++------------+----------------------+
+             |
+             v
++-----------------------------------+
+|   Develop System Increment        |
++------------+----------------------+
+             |
+             v
++-----------------------------------+
+|   Validate Increment              |
++------------+----------------------+
+             |
+             v
++-----------------------------------+
+|   Integrate Increment             |
++------------+----------------------+
+             |
+             v
++-----------------------------------+
+|   Deploy Increment                |
++------------+----------------------+
+             |
+             v
++-----------------------------------+
+|   System Incomplete?              |
+|   (Yes) ---+                      |
+|            |                      |
++------------+--+-------------------+
+             |  | (No)
+             |  v
+             +----->  Final System
+             ^
+             |
+             +-----------------------
+             |   (Loop back for next
+             |    increment if incomplete)
+```
+
+### Explanation of Stages:
+
+1. **Define Outline Requirements**: This initial step involves customers defining and prioritizing the services they need, from most to least important.
+2. **Design System Architecture**: An overall system architecture is designed, providing a foundational structure for the increments.
+3. **Assign Requirements to Increments**: Based on the prioritized services, specific delivery increments are defined. The highest priority services are allocated to earlier increments.
+4. **Develop System Increment**: Detailed requirements for the current increment are defined, and development proceeds. During this phase, new requirements for _later_ increments can still be analyzed, but changes to the _current_ increment are generally not accepted.
+5. **Validate Increment**: The newly developed increment undergoes validation to ensure it meets its defined requirements.
+6. **Integrate Increment**: Once validated, the new increment is integrated with any previously delivered increments. This process continually enhances the overall system functionality.
+7. **Deploy Increment**: The completed increment is installed in the customer's actual working environment. This allows users to experiment with the new functionality and provide feedback, which is crucial for clarifying requirements for subsequent increments.
+8. **System Completion Check**: After deployment, a check is performed to determine if the system is complete. If not, the process loops back to assign requirements for the next increment, continuing until the full system is delivered.
+
+### Advantages of Incremental Delivery:
+
+- **Early User Feedback and Experience**: Customers can use early increments as prototypes, gaining practical experience that informs and refines their requirements for later parts of the system. Unlike throwaway prototypes, these increments are part of the actual final system.
+- **Faster Value Delivery**: Customers do not have to wait for the entire system to be completed before they can benefit. The initial increments address their most critical needs, providing immediate value.
+- **Easier Change Incorporation**: The iterative nature of this model makes it relatively simple to incorporate changes into the system, as the scope of each increment is smaller compared to a monolithic development process.
+- **Improved Quality of Critical Services**: Since higher-priority services are delivered and integrated first, they receive the most testing and exposure to real-world use. This reduces the likelihood of critical software failures in the most important parts of the system.
+
+### Disadvantages of Incremental Delivery:
+
+- **Challenges in Replacing Existing Systems**: This model can be problematic when the new system is intended to replace an existing one. Users may require all functionalities of the old system immediately and might be unwilling to work with an incomplete new system. Running both old and new systems concurrently can also be impractical due to differences in databases and user interfaces.
