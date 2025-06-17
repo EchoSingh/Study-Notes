@@ -23,31 +23,7 @@ Systems engineering is an engineering discipline focused on the comprehensive de
 
 The lifetime of large, complex systems is typically structured into four overlapping stages, as illustrated by a general process model:
 
-```
-                                  +-----------------------+
-                                  |  Conceptual Design    |
-                                  | (System Vision,       |
-                                  |  High-Level Features) |
-                                  +-----------+-----------+
-                                              |
-                                              | (User Information)
-                                              v
-+-----------------------+        +-----------------------+
-|  Procurement          |<-------|  Development          |
-| (Supplier Selection,  | (Equipment & Software Updates) |
-|  Hardware/Software   |        | (Requirements, Design,|
-|  Acquisition)         |        |  HW/SW Eng,           |
-| (Outline Requirements)|        |  Integration, Testing,|
-+-----------+-----------+        |  Training)            |
-            |                        +-----------+-----------+
-            |                                    |
-            v                                    | (System Evolution)
-+-----------------------+                        v
-|  Operation            |<-----------------------+
-| (Deployment, Users    |
-|  Trained, Evolution)  |
-+-----------------------+
-```
+![](images/2)
 
 Below are the principal stages of systems engineering:
 
