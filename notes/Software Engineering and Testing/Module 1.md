@@ -576,4 +576,37 @@ To make non-functional requirements objectively testable, they should be defined
 These metrics allow for objective verification during testing, distinguishing a measurable requirement (e.g., "average number of errors made by experienced users shall not exceed two per hour") from a general goal (e.g., "the system should be easy to use").
 
 ---
-16. 
+16. With the help of an example, distinguish between user requirement and system
+requirement.
+
+Software system requirements are descriptions of the services a system should provide and the constraints on its operation. These requirements are essential for communicating the needs of a customer to the system developers. However, the term "requirement" is not always used consistently in the software industry, sometimes referring to a high-level abstract statement and other times to a detailed, formal definition. To address this, requirements are often categorized based on their level of detail and intended audience.
+
+The two main types of requirements, distinguished by their level of detail and purpose, are:
+
+1. **User Requirements:** These are high-level, abstract statements, usually expressed in natural language and diagrams, that describe the services the system is expected to provide to its users and the operational constraints. They can range from broad statements of system features to precise descriptions of functionality. User requirements are primarily intended for system customers and end-users who are not typically concerned with how the system will be implemented. They help clients understand and validate what the software will do.
+2. **System Requirements:** These are more detailed descriptions of the software system's functions, services, and operational constraints. They expand upon user requirements and are written for system developers. System requirements should define exactly what is to be implemented and may form part of the contract between the system buyer and software developers. They are used by system engineers, architects, and software developers who need precise details for implementation and to understand how the system will support business processes.
+
+**Distinction and Purpose:**
+
+The fundamental distinction lies in their audience and the level of technical detail they convey. User requirements serve as a common ground for understanding the overall needs, while system requirements translate those needs into a precise, actionable specification for development. Problems can arise if there isn't a clear separation between these different levels of description. For instance, imprecise requirements can lead to developers interpreting ambiguous statements in a way that simplifies implementation, which might not align with the customer's actual desires, leading to disputes, delays, and increased costs.
+
+**Example from the Mentcare System:**
+
+Consider the Mentcare system, designed to manage information about patients receiving mental health treatment.
+
+- **User Requirement:**
+    - "A user shall be able to search the appointments lists for all clinics."
+
+This user requirement is a general statement. However, its interpretation can be ambiguous. A medical staff member might expect the system to search for a patient's name across all appointments at all clinics automatically, while a developer might implement a simpler search that requires the user to first choose a clinic before searching. To avoid such misinterpretations and ensure the system behaves as expected, this high-level user requirement is broken down into more specific system requirements:
+
+- **Corresponding System Requirements:**
+    - "The system shall provide an appointment list search facility that allows a user to search for appointments for a specified clinic or across all clinics."
+    - "The system shall provide a mechanism that allows a user to specify if the search is to be constrained by date (i.e., search only for appointments on a specified date)."
+    - "The system shall provide a mechanism that allows a user to specify if the search is to be constrained by the time of appointment (i.e., search only for appointments in a specified time range)."
+    - "The system shall display the results of a search as a list showing the patient name, the time of the appointment, and the clinic name."
+
+As this example illustrates, a single user requirement can lead to multiple, more detailed system requirements, which explicitly define the functionality, inputs, outputs, and constraints needed for implementation.
+
+---
+17. Give the IEEE standard format for Requirements Document.
+
