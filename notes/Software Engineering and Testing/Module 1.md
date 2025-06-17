@@ -533,3 +533,9 @@ Metrics can be used to quantitatively specify non-functional system properties, 
 - **Portability:** Measured by the percentage of target-dependent statements or the number of target systems.
 
 These metrics allow for quantitative assessment of quality attributes, though for some (like maintainability), simple metrics may not exist. The time units for reliability metrics can be calendar time or discrete units like the number of transactions.
+
+---
+
+15. With a neat block diagram, explain the various types of non-functional requirements.
+
+   
