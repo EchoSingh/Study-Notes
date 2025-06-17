@@ -139,7 +139,79 @@ The diagram below illustrates the general process model for incremental developm
 ```
 
   ---
-  5. With a neat diagram, explain the reuse-oriented software engineering.
+  5. Certainly! Here's a **university exam-ready answer** to the question:
 
-    Figure 2.3 shows a general process model for reuse-based development, based on integration and configuration. The stages in this process are: 1. Requirements specification The initial requirements for the system are proposed. These do not have to be elaborated in detail but should include brief descriptions of essential requirements and desirable system features. 2. Software discovery and evaluation Given an outline of the software requirements, a search is made for components and systems that provide the functionality required. Candidate components and systems are evaluated to see if
-    they meet the essential requirements and if they are generally suitable for use in the system. 3. Requirements refinement During this stage, the requirements are refined using information about the reusable components and applications that have been discovered. The requirements are modified to reflect the available components, and the system specification is re-defined. Where modifications are impossible, the component analysis activity may be reentered to search for alternative solutions. 4. Application system configuration If an off-the-shelf application system that meets the requirements is available, it may then be configured for use to create the new system. 5. Component adaptation and integration If there is no off-the-shelf system, individual reusable components may be modified and new components developed. These are then integrated to create the system. Reuse-oriented software engineering, based around configuration and integration, has the obvious advantage of reducing the amount of software to be developed and so reducing cost and risks. It usually also leads to faster delivery of the software. However, requirements compromises are inevitable, and this may lead to a system Software development tools Software development tools are programs that are used to support software engineering process activities. These tools include requirements management tools, design editors, refactoring support tools, compilers, debuggers, bug trackers, and system building tools. Software tools provide process support by automating some process activities and by providing information about the software that is being developed. For example: ■ The development of graphical system models as part of the requirements specification or the software design ■ The generation of code from these graphical models ■ The generation of user interfaces from a graphical interface description that is created interactively by the user ■ Program debugging through the provision of information about an executing program ■ The automated translation of programs written using an old version of a programming language to a more recent version Tools may be combined within a framework called an Interactive Development Environment or IDE. This provides a common set of facilities that tools can use so that it is easier for tools to communicate and operate in an integrated way. http://software-engineering-book.com/web/software-tools/ 2.1 ■  Software process models    53 54    Chapter 2 ■  Software processes that does not meet the real needs of users. Furthermore, some control over the system evolution is lost as new versions of the reusable components are not under the control of the organization using them. Software reuse is very important, and so several chapters in the third I have dedicated several chapters in the 3rd part of the book to this topic. General issues of software reuse are covered in Chapter 15, component-based software engineering in Chapters 16 and 17, and service-oriented systems in Chapter 18.
+
+### **Reuse-Oriented Software Engineering**
+
+**Definition:**  
+Reuse-Oriented Software Engineering (ROSE) is a software development approach that focuses on the integration and configuration of **existing reusable components** (like libraries, frameworks, and COTS systems) rather than developing the entire system from scratch.
+
+This approach helps in reducing development time, cost, and risks while improving overall software quality and reliability.
+
+
+### **Phases of Reuse-Oriented Software Engineering**
+
+According to Figure 2.3 (from standard texts like Sommerville), the general process model for reuse-based development includes the following stages:
+
+1. **Requirements Specification:**
+    
+    - Initial system requirements are proposed.
+        
+    - These requirements do not need to be very detailed but should include essential functionalities and desirable features.
+        
+2. **Software Discovery and Evaluation:**
+    
+    - Search for existing components or systems that meet the required functionality.
+        
+    - Evaluate whether these components satisfy the essential requirements and are suitable for integration.
+        
+3. **Requirements Refinement:**
+    
+    - Refine and modify the initial requirements based on available reusable components.
+        
+    - If suitable components are not found, return to the discovery phase to explore alternatives.
+        
+4. **Application System Configuration:**
+    
+    - If an off-the-shelf (COTS) system fits the requirements, it is configured and adapted for the new system.
+        
+5. **Component Adaptation and Integration:**
+    
+    - If no full system is available, individual components are adapted and integrated.
+        
+    - Some new components may be developed to complete the system.
+        
+
+
+### **Diagram: Reuse-Oriented Software Engineering Process**
+
+
+
+
+### **Advantages of Reuse-Oriented Software Engineering**
+
+- Reduces development time and cost.
+    
+- Enhances reliability due to reuse of tested components.
+    
+- Allows faster delivery of systems.
+    
+- Minimizes development effort.
+    
+
+
+### **Disadvantages**
+
+- May require compromises in requirements.
+    
+- Limited control over third-party component updates.
+    
+- Integration issues may arise due to incompatibility.
+    
+- Customization might be restricted.
+    
+
+---
+
+6. 
