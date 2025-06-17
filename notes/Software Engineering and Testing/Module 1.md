@@ -442,53 +442,7 @@ The XP release cycle illustrates the iterative and continuous nature of this dev
 
 **XP Release Cycle Diagram:**
 
-```
-               +-----------------------+
-               |     User Stories      |
-               +-----------+-----------+
-                           |
-                           v
-               +-----------------------+
-               |      Release Plan     |
-               | (Sequence of Iterations) |
-               +-----------+-----------+
-                           |
-                           v
-               +-----------------------+
-               |       Iteration       |
-               +-----------+-----------+
-                           |
-                           v
-               +-----------------------+
-               |     Iteration Plan    |
-               +-----------+-----------+
-                           |
-                           v
-               +-----------------------+
-               |      Pair Coding      |
-               +-----------+-----------+
-                           |
-                           v
-               +-----------------------+
-               |       Unit Test       |
-               +-----------+-----------+
-                           |
-                           v
-               +-----------------------+
-               |    Acceptance Test    |
-               +-----------+-----------+
-                           |
-                           v
-               +-----------------------+
-               |      Small Release    |
-               +-----------+-----------+
-                           |
-                           v
-               +-----------------------+
-               |      (Repeat for      |
-               |     Next Iteration)   |
-               +-----------------------+
-```
+![](images/13.jpeg)
 
 **Explanation of the Cycle:**
 
