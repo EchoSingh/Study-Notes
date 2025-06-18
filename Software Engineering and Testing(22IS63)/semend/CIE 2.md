@@ -241,7 +241,86 @@ Here are the different steps involved in the test/debug cycle:
 
 6. **Bring out the differences between various types of Functional Testing versus the types of Structural Testing techniques.**
 
- ---
+ Software testing broadly categorizes techniques into **Functional Testing** and **Structural Testing**, also known as **Black-Box** and **White-Box testing**, respectively. While distinct in their approach and focus, these two types of testing are complementary and often used together to achieve comprehensive software quality.
+
+### Functional Testing (Black-Box Testing)
+
+Functional testing focuses on the external behavior of a program, verifying that it performs as expected according to its requirements or specifications, without any knowledge of its internal code structure.
+
+**Key Characteristics:**
+
+- **Source of Test Cases:** Tests are generated directly from informal or formal requirements, specifications, or models of expected behavior.
+- **Purpose:** To demonstrate that the software meets its stated functional and non-functional requirements and to find failures. It validates "what the system does".
+- **Fault Detection:** Primarily effective at uncovering "faults of omission"—specified behaviors that were not implemented.
+- **Timing:** Test case development can occur in parallel with the implementation, potentially reducing the overall project development interval.
+
+**Types of Functional Testing Techniques:**
+
+- **Boundary Value Analysis (BVA):** Focuses on testing at and near the extreme values of input variables. It aims to find errors that occur at the boundaries of valid input ranges. It has variations such as Normal, Robust, Worst-Case, and Robust Worst-Case BVA.
+- **Equivalence Partitioning:** Divides the input domain into partitions or "equivalence classes" where the program is expected to behave similarly. It includes Weak Normal, Strong Normal, Weak Robust, and Strong Robust forms.
+- **Cause-Effect Graphing:** A visual method for capturing requirements as logical conditions (causes) and their corresponding actions (effects) to systematically generate test cases.
+- **Decision Table-Based Testing:** Rigorous method for testing based on decision tables, which map conditions to actions. It is particularly useful for applications with complex logical relationships among input variables.
+- **Model-Based/Specification-Based Testing:** Involves generating tests from formal models or specifications of the system's behavior (e.g., Finite State Machines, Statecharts, Petri nets).
+- **Combinatorial Designs (e.g., Pairwise Testing, Orthogonal Arrays):** Aims to select a small subset of factor combinations from a large set, particularly effective for detecting interaction faults among variables.
+- **Random Testing:** Uses a systematic method to generate tests by randomly sampling data from the input space to avoid bias.
+- **Interface Testing:** A form of black-box testing that specifically focuses on testing a program via its interfaces.
+- **Goal-Directed Testing:** Categorized by specific goals like security testing, robustness testing (testing against unintended inputs), performance testing (stress, load, capacity), compatibility testing, and acceptance testing.
+- **Scenario-Based Testing:** Involves inventing typical usage scenarios to derive test cases, replicating the practical use of the system.
+
+**Limitations of Functional Testing:**
+
+- May lead to significant redundancies among test cases and can have gaps of untested software.
+- Cannot recognize if specified behaviors have not been implemented.
+- It is difficult to trace test cases back to requirements, making it hard to know which requirements are fully tested.
+
+### Structural Testing (White-Box Testing)
+
+Structural testing, or white-box testing, analyzes and tests the internal structure, design, and implementation of a program.
+
+**Key Characteristics:**
+
+- **Source of Test Cases:** Tests are generated based on knowledge of the program's source code, its control flow, and data flow.
+- **Purpose:** To discover defects by exercising different paths, statements, or data interactions within the code and to measure how much of the code has been tested (coverage). It reveals "how a system is built".
+- **Fault Detection:** Effective at finding "faults of commission"—programmed behaviors that were not specified—and implementation errors, including subtle flaws.
+- **Timing:** Typically performed after some code has been written, often interleaved with debugging. However, methodologies like Test-Driven Development integrate code writing and testing tightly.
+
+**Types of Structural Testing Techniques:**
+
+- **Control Flow-Based Testing:** Measures test adequacy based on the flow of control in a program. Examples include:
+    - **Statement Coverage:** Ensures every executable statement in the code is executed at least once.
+    - **Branch/Decision Coverage:** Ensures every outcome of a decision (true/false branches) is exercised.
+    - **Condition Coverage:** Ensures each simple condition within a compound condition is evaluated to both true and false.
+    - **Multiple Condition Coverage:** Requires all possible combinations of truth values for simple conditions within a compound condition to be exercised.
+    - **Modified Condition/Decision Coverage (MC/DC):** A strong criterion where each condition in a decision takes on all possible outcomes independently of other conditions, and each entry/exit point is traversed.
+    - **Path Testing:** Aims to exercise every independent execution path through a component or program. Basis path testing, derived from cyclomatic complexity, provides a baseline for necessary testing paths.
+- **Data Flow-Based Testing:** Focuses on the definition and use of variables within a program, aiming to test the flow of data. Examples include:
+    - **Define/Use (DU) Testing:** Tests paths from where a variable is defined to where it is used.
+    - **Slice-Based Testing:** Focuses on program slices, which are subsets of a program that affect the values of variables at specific points.
+- **Mutation Testing:** A powerful technique for assessing test adequacy and enhancing test sets. It involves creating small, syntactic changes (mutants) in the program and then using test cases to "kill" these mutants by causing them to produce different output than the original program.
+
+**Limitations of Structural Testing:**
+
+- Cannot reveal missing functionality that is specified in the requirements.
+- Can be affected by infeasible paths, which are paths that are topologically possible but cannot be executed in reality.
+- May create a "false sense of stability and quality" if testing only covers existing code paths without validating the completeness of use cases.
+
+### Differences and Complementarity
+
+The fundamental differences between functional and structural testing are summarized below:
+
+|Feature|Functional Testing (Black-Box)|Structural Testing (White-Box)|
+|:--|:--|:--|
+|**Basis for Design**|External requirements, specifications, and desired behavior.|Internal code structure, logic, and paths.|
+|**Knowledge Required**|No knowledge of internal code or implementation details.|Requires in-depth knowledge of source code, algorithms, and data structures.|
+|**Primary Purpose**|To validate that the system meets user and system requirements; demonstrate correct execution.|To discover defects and measure code coverage; ensure all parts of the code are exercised.|
+|**Faults Targeted**|Faults of omission (missing functionality).|Faults of commission (unspecified but implemented behavior) and implementation errors.|
+|**Timing in SDLC**|Can start early in the development cycle, in parallel with requirements definition.|Generally starts after code has been written, often during coding and unit testing phases.|
+|**Redundancy & Gaps**|Prone to redundancies and gaps if not supplemented.|Provides metrics (coverage) to identify gaps and redundancies in test suites, including those from functional testing.|
+|**"What" vs. "How"**|Focuses on "what the system does".|Focuses on "how the system is built" or "what it is" internally.|
+
+In practice, both approaches are crucial. Functional testing provides confidence that the software meets its specified purpose from a user's perspective, while structural testing ensures the internal robustness and completeness of the code, catching defects that might not be apparent from the external behavior alone. Structural testing can significantly enhance tests initially derived from functional requirements by identifying untested code portions and prompting the creation of additional test cases.
+
+---
  
 7. CompanyAB is one of the popular online shopping stores which is designed and developed exclusively for kids and ethnic sales. On all seasonal festival times, the store announces heavy discount sales apart from free delivery on all products and purchases of any amount. Due to the pandemic situation of COVID-19, the company decides to further increase the discount on all sales.
 
