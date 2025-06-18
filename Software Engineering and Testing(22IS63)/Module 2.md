@@ -234,7 +234,7 @@ For a simple microwave oven, the state diagram (as illustrated in source Figure 
 **Diagram (Textual Representation of Figure 5.16 from Source 3.pdf):**
 
 
-     ```
+![](images/27.jpeg)
 
 ---
 
@@ -268,35 +268,7 @@ However, challenges exist in practice:
 
 **MDA Transformations Diagram (Textual Representation of Figure 5.19 from Source 3.pdf):**
 
-```
-+---------------------------+
-| Computation Independent   |
-| Model (CIM)               |
-+---------------------------+
-       |
-       |  (Human Intervention /
-       |   Domain specific guidelines)
-       V
-+---------------------------+
-| Platform Independent      |
-| Model (PIM)               |
-+---------------------------+
-       |
-       |  (Translator /
-       |   Platform specific patterns and rules)
-       V
-+---------------------------+
-| Platform Specific Model   |
-| (PSM)                     |
-+---------------------------+
-       |
-       |  (Translator /
-       |   Language specific patterns)
-       V
-+---------------------------+
-| Executable Code           |
-+---------------------------+
-```
+![](images/28.jpeg)
 
 ---
 
@@ -315,34 +287,7 @@ These four views are connected by "use cases or scenarios," which serve as a cen
 
 **Diagram (Textual Representation of Figure 6.3 from Source 3.pdf):**
 
-```
-                  +-----------------+
-                  |                 |
-                  |  Logical View   |
-                  |                 |
-                  +--------+--------+
-                           |
-                           |  (Use Cases /
-                           |   Scenarios)
-                           |
-       +-------------------+-------------------+
-       |                   |                   |
-+------+------_     +------+------_     +------+------_
-|             |     |             |     |             |
-| Process View| <---| System      |---> | Development |
-|             |     | Architecture|     | View        |
-+-------------+     |             |     +-------------+
-       |             +------+------_
-       |                    |
-       |                    |
-       +--------+--------+
-                |         |
-                |         |
-                +---------+-------+
-                | Physical View   |
-                |                 |
-                +-----------------+
-```
+![](images/29.jpeg)
 
 ---
 10. With a neat diagram, explain the generic layered architecture.
@@ -369,21 +314,7 @@ The number of layers can vary, and any of these layers could be further subdivid
 
 **Generic Layered Architecture Diagram (based on Figure 6.8 in Source 3.pdf):**
 
-```
-+------------------------------------+
-|            User interface          |
-+------------------------------------+
-| User interface management          |
-| Authentication and authorization   |
-+------------------------------------+
-| Core business logic/               |
-| application functionality          |
-+------------------------------------+
-| System utilities                   |
-+------------------------------------+
-| System support (OS, database, etc.)|
-+------------------------------------+
-```
+![](images/30.jpeg)
 
 ---
 
