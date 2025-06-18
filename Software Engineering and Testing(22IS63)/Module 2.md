@@ -568,3 +568,89 @@ However, challenges exist in practice:
 
 9. Explain the four architectural views suggested by Krutchen.
 
+Krutchen's 4+1 view model of software architecture suggests four fundamental architectural views, which can be linked through common use cases or scenarios. This model acknowledges that it's impossible to represent all relevant information about a system's architecture in a single diagram, so multiple views are needed.
+
+The four views are:
+
+1. **Logical View:** This view illustrates the key abstractions within the system, typically represented as objects or object classes. Its purpose is to show how the system's requirements can be related to these logical entities.
+2. **Process View:** This view focuses on how the system is composed of interacting processes during runtime. It is particularly useful for evaluating non-functional system characteristics such as performance and availability.
+3. **Development View:** This view details how the software is broken down for development purposes. It shows the decomposition of the software into components that can be implemented by individual developers or development teams, making it valuable for software managers and programmers.
+4. **Physical View:** This view depicts the system hardware and how software components are distributed across the various processors in the system. It is essential for systems engineers who are planning the deployment of the system.
+
+These four views are connected by "use cases or scenarios," which serve as a central element to link and understand how these different perspectives relate to the system's behavior.
+
+**Diagram (Textual Representation of Figure 6.3 from Source 3.pdf):**
+
+```
+                  +-----------------+
+                  |                 |
+                  |  Logical View   |
+                  |                 |
+                  +--------+--------+
+                           |
+                           |  (Use Cases /
+                           |   Scenarios)
+                           |
+       +-------------------+-------------------+
+       |                   |                   |
++------+------_     +------+------_     +------+------_
+|             |     |             |     |             |
+| Process View| <---| System      |---> | Development |
+|             |     | Architecture|     | View        |
++-------------+     |             |     +-------------+
+       |             +------+------_
+       |                    |
+       |                    |
+       +--------+--------+
+                |         |
+                |         |
+                +---------+-------+
+                | Physical View   |
+                |                 |
+                +-----------------+
+```
+
+---
+10. With a neat diagram, explain the generic layered architecture.
+
+  A **layered architecture** organizes a system into layers, with related functionality associated with each layer. Each layer provides services to the layer immediately above it, meaning that the lowest-level layers represent core services likely to be used throughout the system.
+
+This architectural pattern supports the incremental development of systems. As a layer is developed, some of its services can be made available to users. The architecture is also adaptable and portable; if a layer's interface remains unchanged, a new layer with extended functionality can replace an existing one without affecting other parts of the system. Changes to layer interfaces or the addition of new facilities to a layer only impact the adjacent layer. Furthermore, since layered systems localize machine dependencies, it becomes easier to implement multi-platform versions of an application system, as only the machine-dependent layers require re-implementation to account for different operating system or database facilities.
+
+**Key aspects of Layered Architecture:**
+
+- **Description**: Organizes the system into layers, with each layer containing related functionality. A layer offers services to the layer above it, making the lowest layers essential core services.
+- **When used**: It is typically used when building new facilities on top of existing systems, when development is distributed across multiple teams (each responsible for a layer of functionality), or when a requirement for multi-level security exists.
+- **Advantages**: Allows for the replacement of entire layers as long as the interface is maintained. Redundant facilities (e.g., authentication) can be provided in each layer to enhance system dependability.
+- **Disadvantages**: It can be challenging in practice to achieve a clean separation between layers, sometimes leading to higher-level layers interacting directly with lower-level ones instead of through the immediately adjacent layer. Performance can also be an issue due to multiple levels of interpretation for a service request as it is processed at each layer.
+
+An example of a generic layered architecture often includes four layers:
+
+1. **User interface**: The top layer, providing user interface facilities.
+2. **User interface management, Authentication and authorization**: The third layer, managing the user interface and handling user authentication and authorization.
+3. **Core business logic/application functionality**: The second layer, containing components related to application functionality and utility components used by other application components.
+4. **System support (OS, database, etc.)**: The lowest layer, which typically includes system support software like database and operating system support.
+
+The number of layers can vary, and any of these layers could be further subdivided.
+
+**Generic Layered Architecture Diagram (based on Figure 6.8 in Source 3.pdf):**
+
+```
++------------------------------------+
+|            User interface          |
++------------------------------------+
+| User interface management          |
+| Authentication and authorization   |
++------------------------------------+
+| Core business logic/               |
+| application functionality          |
++------------------------------------+
+| System utilities                   |
++------------------------------------+
+| System support (OS, database, etc.)|
++------------------------------------+
+```
+
+---
+
+11. 
