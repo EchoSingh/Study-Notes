@@ -76,3 +76,56 @@ This process ensures that, regardless of the patient's immediate danger level or
   V
 (End)
 ```
+
+---
+
+2. With a neat diagram, explain the sequence diagram for View Patient Information of
+Mentcare Systems.
+
+Sequence diagrams, a type of diagram within the Unified Modeling Language (UML), are primarily used to model the interactions between actors and objects within a system, as well as the interactions between objects themselves. They illustrate the sequence of these interactions, read from top to bottom.
+
+The Mentcare system is a patient information system designed to support mental healthcare, maintaining patient information and treatment details for medical staff. One of its functions is to allow medical staff to view patient information.
+
+### Sequence Diagram for "View Patient Information"
+
+This sequence diagram (Figure 5.6 in the sources) models the interactions that occur when a medical receptionist views patient information within the Mentcare system.
+
+**Diagram Elements Explained:**
+
+- **Actors and Objects**: Listed along the top of the diagram. The "Medical Receptionist" is an actor, representing a human user. "P: PatientInfo" is an instance of a PatientInfo object class, likely a user interface component displayed as a form. "D: Mentcare-DB" represents the Mentcare database. "AS: Authorization" represents an authorization system.
+- **Lifelines**: Dotted lines extending vertically downwards from each actor and object indicate their existence over time during the interaction.
+- **Activation Bars**: Rectangles on the lifelines, such as on `P: PatientInfo`, indicate the period during which an object instance is actively involved in a computation.
+- **Messages**: Annotated arrows represent interactions between objects, indicating calls, parameters, and return values. The flow of these messages is read from top to bottom, showing the sequence of events.
+- **Alternatives (`alt`)**: A box labeled `alt` (alternative) is used to show conditional logic, where one of several interaction options will be executed based on a specified condition (shown in square brackets). Different options are separated by a dotted line within the `alt` box.
+
+**Step-by-Step Interaction Flow:**
+
+1. **Initiate ViewInfo**: The "Medical Receptionist" initiates the interaction by triggering the `ViewInfo` method on the `P: PatientInfo` object instance. The patient's identifier (`PID`) is supplied as a parameter to identify the required information.
+2. **Request Information from Database**: The `P` (PatientInfo) instance then calls the `D: Mentcare-DB` (Mentcare database) to retrieve the necessary patient information. It also supplies the receptionist’s identifier (`UID`) for security checking.
+3. **Authorize Request**: The `D: Mentcare-DB` checks with the `AS: Authorization` system to confirm that the receptionist is authorized to perform this action.
+4. **Conditional Outcome (Authorization)**:
+    - **Authorization OK**: If the authorization is successful (`[authorization OK]`), the patient information is returned from the `D: Mentcare-DB` to `P: PatientInfo` and subsequently displayed on the user's screen.
+    - **Authorization Fail**: If the authorization fails (`[authorization fail]`), an `Error (no access)` message is returned from the `AS: Authorization` system, indicating that the receptionist does not have permission to view the information.
+
+This diagram effectively illustrates the flow of control and data between the user, the application's user interface, the database, and the authorization system when patient information is accessed.
+
+```
+sequenceDiagram
+    actor MedicalReceptionist
+    participant P as PatientInfo
+    participant D as Mentcare-DB
+    participant AS as Authorization
+
+    MedicalReceptionist->>P: ViewInfo (PID)
+    P->>D: report (Info, PID, UID)
+    D->>AS: authorize (Info, UID)
+    alt authorization OK
+        AS-->>D: authorization
+        D-->>P: Patient info
+    else authorization fail
+        AS-->>D: Error (no access)
+    end
+```
+
+---
+
