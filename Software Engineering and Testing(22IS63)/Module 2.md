@@ -1146,4 +1146,52 @@ In this layered model:
 
 ---
 
-20. 
+20. With the help of a diagram, explain the various strategies adopted in maintaining
+legacy systems.
+
+Legacy systems are older software systems that continue to be vital to an organization's operations, despite being built with outdated technologies and methods. Over time, changes to these systems can degrade their structure, making them difficult and costly to maintain or adapt. Organizations face a decision about how to manage these systems, often due to high maintenance costs, skill shortages, or difficulties in integrating them with modern systems.
+
+When assessing legacy systems, organizations typically consider both their **business value** and **technical quality**. This assessment helps determine the most appropriate strategy for their evolution.
+
+There are four primary strategic options for maintaining or evolving legacy systems:
+
+1. **Scrap the system completely**: This option is chosen when a legacy system no longer contributes effectively to business processes, often because the processes themselves have changed and no longer rely on the system. These systems typically fall into the "low quality, low business value" category.
+2. **Leave the system unchanged and continue with regular maintenance**: This strategy is suitable for systems that are still required but are relatively stable, with infrequent change requests from users. These systems usually have "high quality, high business value".
+3. **Reengineer the system to improve its maintainability**: This approach is taken when the system's quality has deteriorated due to changes, but new changes are still being proposed. Reengineering aims to improve the system's structure and understandability, and may involve developing new interfaces for interoperability with newer systems. This applies to systems with "high business value, low quality".
+4. **Replace all or part of the system with a new system**: This option is considered when factors like obsolete hardware prevent the old system from continuing operation, or when commercial off-the-shelf (COTS) systems offer a cost-effective replacement. An evolutionary replacement strategy, where major components are replaced while others are reused, is often adopted. This also applies to systems with "high business value, low quality".
+
+The decisions are often influenced by a combination of business value (how much time and effort the system saves) and system quality (dependability, maintainability, documentation).
+
+The strategies can be illustrated based on the system's business value and quality:
+
+```
+                  High
+                 ^
+                 |
+         Business Value
+                 |
+                 |
+   Low Quality   |   High Quality
+   +-------------+-------------+
+   |             |             |
+   |   **3. Reengineer**   |   **2. Maintain**   |
+   |   (High value,      |   (High value,      |
+   |    Low quality)     |    High quality)    |
+   |             |             |
+   +-------------+-------------+
+   |             |             |
+   |   **1. Scrap**      |   **4. Replace**    |
+   |   (Low value,       |   (Low value,       |
+   |    Low quality)     |    High quality)    |
+   +-------------+-------------+
+                 |
+                 +-------------------> System Quality
+                                   Low             High
+```
+
+**Figure: Strategies for Legacy System Maintenance based on Business Value and System Quality**
+
+---
+
+21. Explain the different types of software maintenance.
+
