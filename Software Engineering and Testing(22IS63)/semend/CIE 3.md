@@ -168,6 +168,73 @@ Here are various methods used in Object-Oriented Testing:
 
 **5.** For the code given in **Question 3**, identify the **test cases** for verifying the **independent paths**.  
 
+**1. Identifying Independent Paths**
+
+The core logic that contains decision points and defines the independent paths is within the second `for` loop, specifically the `if-else if` structure:
+
+```
+if(a > A[i])
+    c++;
+else if(a < A[i])
+    b++;
+// Implicit: else (a == A[i])
+```
+
+For each iteration of this loop, there are three distinct logical outcomes (paths) for the comparison between `a` and `A[i]`:
+
+- **Path 1:** `a` is greater than `A[i]` (`a > A[i]`). In this path, `c` is incremented.
+- **Path 2:** `a` is less than `A[i]` (`a < A[i]`). In this path, `b` is incremented.
+- **Path 3:** `a` is equal to `A[i]` (`a == A[i]`). In this path, neither `b` nor `c` is incremented.
+
+According to McCabe's cyclomatic complexity, which measures the number of linearly independent paths, this `if-else if` structure (with two conditions) would yield 3 independent paths (number of conditions + 1). Since the outer `for` loop iterates a fixed 3 times, we need to ensure that each of these three paths is traversed at least once across the three iterations.
+
+**2. Designing the Test Case**
+
+To achieve basis path coverage for this code, we need to devise a single test case that, during its execution, causes each of the three identified paths (`a > A[i]`, `a < A[i]`, `a == A[i]`) to be taken at least once.
+
+Let's use simple integer values for `A` and `a` for clarity.
+
+**Test Case 1:**
+
+- **Input for array `A` (initial values read by `scanf("%d", A + i);` for `i=0, 1, 2`):** `10 20 30` (This sets `A=10`, `A=20`, `A=30`)
+    
+- **Input for `a` (subsequent values read by `scanf("%d", &a);` for `i=0, 1, 2` respectively):**
+    
+    - For `i=0` (to trigger `a > A[i]`): `11` (since `11 > A` which is `10`)
+    - For `i=1` (to trigger `a < A[i]`): `19` (since `19 < A` which is `20`)
+    - For `i=2` (to trigger `a == A[i]`): `30` (since `30 == A` which is `30`)
+
+**3. Expected Output and Verification Trace**
+
+Let's trace the execution of **Test Case 1** to demonstrate how each independent path is covered:
+
+1. **Initialization:** The array `A` is populated with `10, 20, 30`. Variables `b` and `c` are initialized to `0`.
+    
+2. **First Iteration (i = 0):**
+    
+    - `scanf("%d", &a);` reads `11`.
+    - `if (a > A)` (i.e., `11 > 10`) evaluates to `true`.
+    - `c++;` executes, so `c` becomes `1`. (`b` remains `0`).
+    - **Path 1 (`a > A[i]`) is covered.**
+3. **Second Iteration (i = 1):**
+    
+    - `scanf("%d", &a);` reads `19`.
+    - `if (a > A)` (i.e., `19 > 20`) evaluates to `false`.
+    - `else if (a < A)` (i.e., `19 < 20`) evaluates to `true`.
+    - `b++;` executes, so `b` becomes `1`. (`c` remains `1`).
+    - **Path 2 (`a < A[i]`) is covered.**
+4. **Third Iteration (i = 2):**
+    
+    - `scanf("%d", &a);` reads `30`.
+    - `if (a > A)` (i.e., `30 > 30`) evaluates to `false`.
+    - `else if (a < A)` (i.e., `30 < 30`) evaluates to `false`.
+    - Neither `b` nor `c` is incremented. (`b` remains `1`, `c` remains `1`).
+    - **Path 3 (`a == A[i]`) is covered.**
+5. **Final Output:** The program executes `printf("%d %d\n", b, c);`.
+    
+    - **Expected Output: `1 1`**
+
+This single, comprehensive test case is sufficient to verify all independent paths within the specified comparison logic. By covering all independent paths, this test case inherently also achieves **statement coverage** (every executable statement is run) and **decision coverage** (every branch outcome of a decision is taken).
 
 ---
 
