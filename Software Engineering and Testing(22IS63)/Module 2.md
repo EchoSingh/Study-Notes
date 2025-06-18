@@ -916,23 +916,23 @@ The key stages of object-oriented design are:
     - **Dynamic models** illustrate the system's runtime behavior, showing interactions between objects, such as sequences of service requests or state changes triggered by object interactions. Specifically, UML model types useful for adding detail include:
     - **Subsystem models**, which are structural models showing logical groupings of objects.
     - **Sequence models** (sequence or collaboration diagrams), which are dynamic models showing the order of object interactions for specific use cases.
-    - **State machine models** (state diagrams), which are dynamic models illustrating how objects change state in response to events. For example, a state diagram for a microwave oven shows its various states (Waiting, Half power, Full power, Set time, Operation, Disabled) and the stimuli that cause transitions between them [3, Figure 5.16, Figure 5.17].
+    - **State machine models** (state diagrams), which are dynamic models illustrating how objects change state in response to events. For example, a state diagram for a microwave oven shows its various states (Waiting, Half power, Full power, Set time, Operation, Disabled) and the stimuli that cause transitions between them 
+    
 5. **Specify Interfaces** A critical aspect of design is defining interfaces between components, which allows objects and subsystems to be designed and developed in parallel. An interface specifies the signatures and semantics of the services provided by an object or group of objects.
     
     - UML can define interfaces using the `«interface»` stereotype, without including details of data representation (attributes) but including operations for data access and updates. The Object Constraint Language (OCL) can be used to define the semantics of these interfaces.
-    - An example of weather station interfaces might specify `Reporting` services (e.g., `weatherReport`, `statusReport`) and `Remote Control` services (e.g., `startInstrument`, `stopInstrument`, `collectData`, `provideData`) [3, Figure 7.9].
+    - An example of weather station interfaces might specify `Reporting` services (e.g., `weatherReport`, `statusReport`) and `Remote Control` services (e.g., `startInstrument`, `stopInstrument`, `collectData`, `provideData`) 
 
 These stages are intertwined, reflecting that software design is not a purely sequential activity but rather a complex, creative endeavor.
 
-The question bank refers to "the process model of involuntary detention" and "sequence diagram for View Patient Information of Mentcare Systems" and "how classes and associations are represented in Mentcare Systems" and "an activity model of insulin pump’s operation" and "the state diagram of a microwave oven" as relevant diagrams, as well as general "architectural views" and "layered architecture" and "repository architecture" and "client-server architecture" and "pipe and filter architecture." While these are types of diagrams used in system modeling and design, the provided sources most directly tie the stages of object-oriented design to specific examples like the weather station and mention `use case diagrams`, `sequence diagrams`, `class diagrams`, and `state diagrams` as key UML models.
 
 Here are examples of relevant diagrams:
 
-- **Weather Station Use Case Model:** This diagram would show the weather station system and its interactions with external actors, like a "Weather Information System" for reporting data and a "Control System" for remote commands [3, Figure 7.2, 468].
-- **Sequence Diagram for Data Collection:** This illustrates the chronological flow of messages between objects, such as `Weather Information System` initiating a request to `SatComms`, which then interacts with `WeatherStation`, `Commslink`, and `WeatherData` objects to retrieve and send a report [3, Figure 7.7, 483-484].
-- **Weather Station Object Classes:** A class diagram depicting classes like `WeatherStation`, `GroundThermometer`, `Anemometer`, `Barometer`, and `WeatherData`, showing their attributes, operations, and relationships (e.g., `WeatherStation` contains instrument objects) [3, Figure 7.6, 474].
-- **Weather Station Interfaces:** A UML diagram showing the `«interface» Reporting` and `«interface» Remote Control` with their respective operations and parameters, without detailing their internal implementation [3, Figure 7.9, 489].
-- **State Diagram of a Microwave Oven:** This shows the various states of the microwave oven (e.g., `Waiting`, `Half power`, `Full power`, `Set time`, `Operation`, `Disabled`) and the events that trigger transitions between these states (e.g., `Full power button`, `Timer`, `Door open`, `Start`) [3, Figure 5.16, Figure 5.17, 400-402].
+- **Weather Station Use Case Model:** This diagram would show the weather station system and its interactions with external actors, like a "Weather Information System" for reporting data and a "Control System" for remote commands
+- **Sequence Diagram for Data Collection:** This illustrates the chronological flow of messages between objects, such as `Weather Information System` initiating a request to `SatComms`, which then interacts with `WeatherStation`, `Commslink`, and `WeatherData` objects to retrieve and send a report 
+- **Weather Station Object Classes:** A class diagram depicting classes like `WeatherStation`, `GroundThermometer`, `Anemometer`, `Barometer`, and `WeatherData`, showing their attributes, operations, and relationships (e.g., `WeatherStation` contains instrument objects) 
+- **Weather Station Interfaces:** A UML diagram showing the `«interface» Reporting` and `«interface» Remote Control` with their respective operations and parameters, without detailing their internal implementation
+- **State Diagram of a Microwave Oven:** This shows the various states of the microwave oven (e.g., `Waiting`, `Half power`, `Full power`, `Set time`, `Operation`, `Disabled`) and the events that trigger transitions between these states (e.g., `Full power button`, `Timer`, `Door open`, `Start`)
 
 ---
 
