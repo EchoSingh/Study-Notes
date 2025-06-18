@@ -71,8 +71,6 @@ The risk management process can be visualized as a cyclical flow, as shown in Fi
            +-----------> (Feedback loop to Risk Identification/Analysis)
 ```
 
-[Figure 22.2 from the source material shows "Risk identification" leading to "Risk analysis," which leads to "Risk planning," which then leads to "Risk monitoring." There's an arrow from "Risk monitoring" back to "Risk identification," indicating the cyclical nature of the process].
-
 ---
 
 2. Explain Maslow’s human needs hierary with an example. Also, explain the case study of individual motivation .
