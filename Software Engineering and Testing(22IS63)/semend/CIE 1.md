@@ -367,8 +367,8 @@ The integration and configuration model, also known as reuse-oriented software e
 
 The diagram below (Figure 2.3 from the sources) visually represents the "Reuse-oriented software engineering" process:
 
+![](images/5.jpeg)
 
-```
 
 _Figure 2.3: Reuse-oriented software engineering_
 
