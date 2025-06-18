@@ -184,7 +184,7 @@ These fundamental differences elevate software project management beyond a purel
 
 4. Project Managers need to understand what motivates people. **Maslow has suggested the Human Hierarchy of needs.** Illustrate it with a diagram. Also, discuss the case study of individual motivation.
     
-    Project managers need to understand what motivates people. Abraham Maslow proposed a theory known as the Human Hierarchy of Needs, suggesting that individuals are motivated by satisfying a series of needs arranged in hierarchical levels.
+Project managers need to understand what motivates people. Abraham Maslow proposed a theory known as the Human Hierarchy of Needs, suggesting that individuals are motivated by satisfying a series of needs arranged in hierarchical levels.
 
 ### Maslow's Hierarchy of Needs
 
@@ -225,6 +225,9 @@ A case study involving a software project manager named Alice and a team member 
 Alice investigated the problem, considering factors such as personal circumstances or the project taking an unexpected direction. Dorothy eventually admitted that she had lost interest because the work did not align with her desire to develop hardware interfacing skills, which she saw as crucial for her career progression. She was concerned that her current role as a C programmer on alarm system software was not helping her achieve her self-realization needs and that it would be difficult to find a future job in her desired area.
 
 Instead of letting Dorothy leave, Alice decided to address her motivation directly. Alice sought to re-motivate Dorothy by emphasizing that broadening her experience could be a positive career step. She provided Dorothy with more **design autonomy** and arranged **training courses in software engineering** to help her enhance her skills and future career prospects. This approach aimed to satisfy Dorothy's esteem and self-realization needs by recognizing her value, offering opportunities for professional growth, and aligning her work with her personal development goals.
+
+---
+
 4. **With a relevant diagram, explain the test/debug cycle** and elaborate on the different steps involved in the process.  
     **(OR)**
     
