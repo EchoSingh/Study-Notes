@@ -579,3 +579,108 @@ Here is the generation of test cases for each discount rule:
 ---
 
 8. Consider an application where email and password are used to login to the application. If the values of the email are **Blank / Valid / Invalid**, indicate how decisions can be taken up using **Decision Based Testing technique**.
+
+Decision Based Testing (DBT) is a rigorous functional testing method that uses decision tables to represent and analyze complex logical relationships. It is particularly well-suited for situations where multiple conditions lead to a combination of specific actions or outcomes. For test case identification, conditions are interpreted as inputs, and actions are interpreted as outputs, with each rule (column) in the table representing a potential test case.
+
+When considering a login application that uses email and password, decisions can be systematically determined using DBT by defining the relevant conditions, their possible states, and the corresponding actions.
+
+### Conditions and States
+
+For a login application, the primary inputs are email and password. Based on your query, the email can have three states: **Blank**, **Valid**, or **Invalid**. We can extend these states to the password as well, as its validity is equally critical for a successful login.
+
+Let's define the conditions and their possible states for an Extended Entry Decision Table (EEDT):
+
+- **Condition 1: Email Status**
+    
+    - **Valid**: The email adheres to a correct format (e.g., contains '@', a domain) and, if checked against a database, might correspond to an existing user.
+    - **Invalid**: The email format is incorrect (e.g., missing '@', invalid characters) or it does not correspond to a registered user.
+    - **Blank**: The email field is empty.
+- **Condition 2: Password Status**
+    
+    - **Valid**: The password meets format requirements (e.g., minimum length, character types) and, when combined with a valid email, matches the registered password for that user.
+    - **Invalid**: The password format is incorrect, or it does not match the registered password for a valid email/user.
+    - **Blank**: The password field is empty.
+
+### Actions/Outcomes
+
+The actions represent the program's response based on the combination of input conditions. These typically include a successful login or various error messages. For robustness testing, it's important to define clear error messages, especially for invalid or unexpected inputs.
+
+A common approach in login systems is to prioritize error messages, reporting the most critical issue first (e.g., a blank field before a format error). This also helps prevent information leakage (e.g., not distinguishing between "user does not exist" and "incorrect password"). Assuming a typical precedence where blank fields are checked first, then format, then credentials, the actions could be:
+
+- **Action A1: Login Successful**
+    - The user is granted access to the application.
+- **Action A2: Error: "Email is blank"**
+    - Displayed if the email field is empty.
+- **Action A3: Error: "Password is blank"**
+    - Displayed if the password field is empty (and email is not blank).
+- **Action A4: Error: "Invalid Email format"**
+    - Displayed if the email format is incorrect (and neither email nor password fields are blank).
+- **Action A5: Error: "Incorrect Password"**
+    - Displayed if the email is valid (i.e., exists and has a correct format) but the provided password does not match.
+
+### Decision Table for Login Application
+
+Using the conditions and actions defined above, we can construct the following decision table, which enumerates all nine possible combinations of Email Status and Password Status. Each column (rule) represents a distinct set of conditions leading to a specific action(s).
+
+| Rule # | R1 | R2 | R3 | R4 | R5 | R6 | R7 | R8 | R9 | | :----- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | | **Conditions** | | | | | | | | | | | Email Status | Valid | Valid | Valid | Invalid | Invalid | Invalid | Blank | Blank | Blank | | Password Status | Valid | Invalid | Blank | Valid | Invalid | Blank | Valid | Invalid | Blank | | **Actions** | | | | | | | | | | | A1: Login Successful | X | | | | | | | | | | A2: Error: "Email is blank" | | | | | | | X | X | X | | A3: Error: "Password is blank" | | | X | | | X | | | | | A4: Error: "Invalid Email format" | | | | X | X | X | | | | | A5: Error: "Incorrect Password" | | X | | | | | | | |
+
+- **Interpretation of the Table**:
+    - **R1 (Valid Email, Valid Password)**: Leads to successful login.
+    - **R2 (Valid Email, Invalid Password)**: Email format is correct, but the password provided does not match, resulting in an "Incorrect Password" error.
+    - **R3 (Valid Email, Blank Password)**: If the email is valid, but the password field is left empty, the "Password is blank" error is shown.
+    - **R4, R5, R6 (Invalid Email)**: Regardless of the password's status (Valid, Invalid, or Blank), if the email format itself is invalid, the "Invalid Email format" error takes precedence.
+    - **R7, R8, R9 (Blank Email)**: If the email field is blank, this error takes highest precedence, regardless of the password's status.
+
+This table ensures that all possible combinations of the defined conditions are considered, contributing to "complete testing" for this aspect of the application's behavior.
+
+### Deriving Test Cases
+
+Each rule in the decision table provides a blueprint for constructing a concrete test case. To create a test case, specific values for the email and password inputs are chosen that satisfy the conditions outlined in each rule.
+
+Here are the derived test cases:
+
+1. **Test Case for R1 (Login Successful)**
+    
+    - **Input**: Email = "user@example.com", Password = "CorrectPassword123"
+    - **Expected Output**: Login Successful
+2. **Test Case for R2 (Incorrect Password)**
+    
+    - **Input**: Email = "user@example.com", Password = "WrongPasswordABC"
+    - **Expected Output**: Error: "Incorrect Password"
+3. **Test Case for R3 (Password is blank)**
+    
+    - **Input**: Email = "user@example.com", Password = ""
+    - **Expected Output**: Error: "Password is blank"
+4. **Test Case for R4 (Invalid Email format, Valid Password)**
+    
+    - **Input**: Email = "invalid-email", Password = "AnyValidPassword"
+    - **Expected Output**: Error: "Invalid Email format"
+5. **Test Case for R5 (Invalid Email format, Invalid Password)**
+    
+    - **Input**: Email = "invalid_email.com", Password = "Short"
+    - **Expected Output**: Error: "Invalid Email format"
+6. **Test Case for R6 (Invalid Email format, Blank Password)**
+    
+    - **Input**: Email = "email@.com", Password = ""
+    - **Expected Output**: Error: "Invalid Email format"
+7. **Test Case for R7 (Email is blank, Valid Password)**
+    
+    - **Input**: Email = "", Password = "AnyValidPassword"
+    - **Expected Output**: Error: "Email is blank"
+8. **Test Case for R8 (Email is blank, Invalid Password)**
+    
+    - **Input**: Email = "", Password = "Short"
+    - **Expected Output**: Error: "Email is blank"
+9. **Test Case for R9 (Email is blank, Blank Password)**
+    
+    - **Input**: Email = "", Password = ""
+    - **Expected Output**: Error: "Email is blank"
+
+### Nuances and Benefits of DBT
+
+- **Completeness**: DBT ensures that all possible logical combinations of input conditions are considered, reducing the risk of overlooked scenarios.
+- **Clarity on Behavior**: It provides a clear and unambiguous specification of the expected system behavior for each combination of inputs.
+- **Robustness Testing**: By systematically including "Invalid" and "Blank" states for both email and password, DBT inherently supports robustness testing, forcing the application to handle unintended inputs gracefully with appropriate error messages.
+- **Identification of Impossible Combinations**: While not explicitly marked as "impossible" in this EEDT, this method can also identify logically impossible or irrelevant combinations of conditions, helping to clarify requirements or identify potential defects in design.
+- **Complementary to Other Techniques**: While DBT effectively covers logical relationships, other techniques like Boundary Value Analysis could be used to select specific values for "Valid" or "Invalid" states (e.g., very long valid emails, emails close to length limits for format validation).
+- **Automation**: The structured nature of decision tables makes it straightforward to convert them into automated test scripts, enabling efficient execution and verification of results.
