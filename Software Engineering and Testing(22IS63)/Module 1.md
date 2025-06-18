@@ -271,7 +271,7 @@ A software design outlines the software's structure, data models and structures,
 
 The general model of the design process involves inputs, activities, and outputs, as illustrated in the abstract model below:
 
-![](7.jpeg)
+![](images/7.jpeg)
 
 Figure 2.5 A general model of the design process
 
@@ -317,7 +317,7 @@ The relationship between these testing activities and the development phases in 
 
 The following diagram, derived from the sources, illustrates these testing phases in a plan-driven software process:
 
-![](8.jpeg)
+![](images/8.jpeg)
 
 Figure: Testing phases in a plan-driven software process
 
@@ -343,7 +343,7 @@ The entire process then iterates, with the new release often generating further 
 
 The diagram below illustrates the general model of the software evolution process:
 
-![](9.jpeg)
+![](images/9.jpeg)
 
 **Figure: A general model of the software evolution process**
 
@@ -359,7 +359,7 @@ The key stages in the prototype development process, as illustrated in the model
 
 **Process Model for Prototype Development**
 
-![](10.jpeg)
+![](images/10.jpeg)
 
 **Explanation of the Stages:**
 
@@ -382,7 +382,7 @@ This approach allows customers to gain value from the system early by receiving 
 
 The incremental delivery process is a cyclical activity designed to iteratively build and deploy a software system. Its key stages are outlined below:
 
-![](11.jpeg)
+![](images/11.jpeg)
 
 ### Explanation of Stages:
 
@@ -442,7 +442,7 @@ The XP release cycle illustrates the iterative and continuous nature of this dev
 
 **XP Release Cycle Diagram:**
 
-![](13.jpeg)
+![](images/13.jpeg)
 
 **Explanation of the Cycle:**
 
@@ -556,7 +556,7 @@ Non-functional requirements are typically classified into three main types:
 
 A block diagram illustrating the types of non-functional requirements would conceptually organize them as follows, echoing the structure presented in Figure 4.3 of the source:
 
-![](15.jpeg)
+![](images/15.jpeg)
 
 - **Main Block:** "Non-functional Requirements" at the top represents the overarching category.
 - **First Layer of Blocks:** Branching down, three distinct blocks (Product, Organizational, External) represent the primary classifications, indicating that all non-functional requirements fall into one of these categories.
@@ -720,7 +720,7 @@ This process typically involves three principal stages:
 
 The diagram below illustrates the iterative nature of the requirements change management process:
 
-![](20.jpeg)
+![](images/20.jpeg)
 
 **Explanation of the diagram:**
 
