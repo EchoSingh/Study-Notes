@@ -375,6 +375,9 @@ _Figure 2.3: Reuse-oriented software engineering_
 The diagram illustrates the flow from initial requirements to the final application system, highlighting the iterative nature of requirements refinement based on component discovery and evaluation, and the two parallel paths for system creation: configuring an existing application or adapting and integrating individual components.
 
 **Advantages and Disadvantages:** The main advantage of this approach is the reduction in the amount of software that needs to be developed, which translates to lower costs and risks, and often faster delivery. However, a significant disadvantage is that requirements compromises are inevitable, potentially leading to a system that doesn't perfectly meet the users' actual needs. Additionally, some control over the system's evolution is lost because new versions of reusable components are not controlled by the organization using them.
+
+---
+
 6. Differentiate between plan driven development and agile development. Illustrate the role of agile models in prescribing medication in a Healthcare system.  
     **(OR)**
 
