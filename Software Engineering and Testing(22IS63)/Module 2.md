@@ -380,7 +380,7 @@ The client program in this setup is typically an integrated user interface built
 
 **Client–Server Architecture for a Film Library Diagram (based on Figure 6.13 in Source 3.pdf):**
 
-![](images/)
+![](images/32.jpeg)
 
 ---
 
@@ -422,24 +422,7 @@ These filters are connected by "pipes" that pass the relevant data (invoices, pa
 
 **Pipe and Filter Architecture for Invoice Processing Diagram (based on Figure 6.15 in Source 3.pdf):**
 
-```
-+--------------------+       +--------------------+
-| Read Issued Invoices |----->|  Identify Payments   |
-+--------------------+       +--------------------+
-         | Payments                     | Invoices (Paid & Unpaid)
-         |                              |
-         V                              V
-+--------------------+       +--------------------+
-|  Find Payments Due   |<---- |    Invoices       |
-+--------------------+       |    (from previous  |
-         | Payments Due       |    stage)        |
-         |                     +--------------------+
-         V
-+--------------------+       +--------------------+
-|   Issue Receipts   |       |Issue Payment Reminder|
-|     (Receipts)     |<------|    (Reminders)     |
-+--------------------+       +--------------------+
-```
+![](images/33.jpeg)
 
 ---
 
@@ -470,41 +453,7 @@ This layered structure supports the system's requirements for privacy and safety
 
 **Diagram:**
 
-```
-+-------------------------------------------------+
-|                    Web Browser                  |
-|               (User Interface)                  |
-+-------------------------------------------------+
-        |
-        | Requests & Displays
-        V
-+-------------------------------------------------+
-|         User Interface Functionality            |
-|-------------------------------------------------|
-|  Login   |  Form and Menu  |  Data Validation  |
-|          |    Manager      |                   |
-|----------|-----------------|-------------------|
-|          |    Role Checking|                   |
-+-------------------------------------------------+
-        |
-        | Service Calls
-        V
-+-------------------------------------------------+
-|               System Functionality              |
-|-------------------------------------------------|
-| Security | Patient Info. | Data Import | Report |
-| Mgmt.    |   Manager     |  & Export   | Gen.   |
-+-------------------------------------------------+
-        |
-        | Database Operations
-        V
-+-------------------------------------------------+
-|               Patient Database                  |
-|-------------------------------------------------|
-| Transaction Management | Persistent Data Storage|
-| (Commercial DBMS)                              |
-+-------------------------------------------------+
-```
+![](images/34.jpeg)
 
 
 ---
@@ -608,17 +557,7 @@ The relationships among these levels of software reuse, as depicted in the sourc
 
 **Figure: Software Reuse Levels**
 
-```
-Software reuse
-└─── Abstraction
-     └─── Architectural and design patterns
-└─── System
-     └─── Application systems (COTS)
-└─── Component
-     └─── Component frameworks
-└─── Object
-     └─── Programming language libraries
-```
+![](images/)
 
 ---
 
