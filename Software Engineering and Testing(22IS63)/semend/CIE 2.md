@@ -622,11 +622,6 @@ A common approach in login systems is to prioritize error messages, reporting th
 
 Using the conditions and actions defined above, we can construct the following decision table, which enumerates all nine possible combinations of Email Status and Password Status. Each column (rule) represents a distinct set of conditions leading to a specific action(s).
 
-Here is your cleanly formatted **Login Validation Rule Table**:
-
----
-
-### Login Validation Rules
 
 |Rule #|R1|R2|R3|R4|R5|R6|R7|R8|R9|
 |---|---|---|---|---|---|---|---|---|---|
@@ -641,8 +636,6 @@ Here is your cleanly formatted **Login Validation Rule Table**:
 |A5: Error: "Incorrect Password"||X||||||||
 
 ---
-
-Would you like this rendered in HTML or exported as a CSV for use in a spreadsheet or app?
 
 - **Interpretation of the Table**:
     - **R1 (Valid Email, Valid Password)**: Leads to successful login.
