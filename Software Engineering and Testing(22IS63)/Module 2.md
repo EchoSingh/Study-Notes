@@ -557,7 +557,7 @@ The relationships among these levels of software reuse, as depicted in the sourc
 
 **Figure: Software Reuse Levels**
 
-![](images/)
+![](images/37.jpeg)
 
 ---
 
@@ -576,46 +576,7 @@ Configuration management involves four closely related fundamental activities:
 
 The relationships between these activities are illustrated in the diagram below:
 
-```
-+---------------------+
-| Configuration       |
-| Management          |
-| (CM)                |
-+---------------------+
-       |
-       | Supports
-       v
-+------------------+
-| Version Control  |
-| (Tracking changes|
-| to components)   |
-+------------------+
-       |
-       | Feeds into
-       v
-+------------------+
-| System Building  |
-| (Assembling &    |
-| compiling system)|
-+------------------+
-       |
-       | Feeds into
-       v
-+------------------+
-| Change Management|
-| (Assessing &     |
-| approving changes)|
-+------------------+
-       |
-       | Feeds into
-       v
-+------------------+
-| Release Management|
-| (Preparing &     |
-| distributing     |
-| releases)        |
-+------------------+
-```
+![](images/38.jpeg)
 
 **Figure: Configuration Management Activities**
 
@@ -632,33 +593,7 @@ Legacy systems are not merely software; they are complex sociotechnical systems 
 
 The logical parts of a legacy system and their interrelationships can be illustrated as follows:
 
-```
-+--------------------------+
-|      Socio-technical     |
-|         System           |
-+----------^---------------+
-           |  Uses
-+----------+------------+  Uses
-|  Business Policies &  |------------>+------------------+
-|      Rules            |            |  Business Processes|
-+-----------------------+            +--------^---------+
-           ^                                 | Runs-on
-           |  Embeds knowledge of            |
-+----------+------------+            +--------+---------+
-|    Application        |            | Application Data |
-|    Software           |------------>+--------+---------+
-+----------^------------+  Runs-on
-           |
-+----------+------------+
-|   Support Software    |
-| (OS, Utilities, etc.) |------------>+------------------+
-+----------^------------+  Runs-on   |   System Hardware|
-           |                         +------------------+
-           | Runs-on
-+----------+------------+
-|    System Hardware    |
-+-----------------------+
-```
+![](images/39.jpeg)
 
 **Figure: The Elements of a Legacy System**
 
@@ -721,26 +656,6 @@ The strategies can be illustrated based on the system's business value and quali
 ```
                   High
                  ^
-                 |
-         Business Value
-                 |
-                 |
-   Low Quality   |   High Quality
-   +-------------+-------------+
-   |             |             |
-   |   **3. Reengineer**   |   **2. Maintain**   |
-   |   (High value,      |   (High value,      |
-   |    Low quality)     |    High quality)    |
-   |             |             |
-   +-------------+-------------+
-   |             |             |
-   |   **1. Scrap**      |   **4. Replace**    |
-   |   (Low value,       |   (Low value,       |
-   |    Low quality)     |    High quality)    |
-   +-------------+-------------+
-                 |
-                 +-------------------> System Quality
-                                   Low             High
 ```
 
 **Figure: Strategies for Legacy System Maintenance based on Business Value and System Quality**
