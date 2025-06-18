@@ -653,10 +653,7 @@ The decisions are often influenced by a combination of business value (how much 
 
 The strategies can be illustrated based on the system's business value and quality:
 
-```
-                  High
-                 ^
-```
+![](images/40.jpeg)
 
 **Figure: Strategies for Legacy System Maintenance based on Business Value and System Quality**
 
@@ -691,21 +688,7 @@ Reengineering offers significant advantages over completely replacing a system, 
 
 A general model of the reengineering process is illustrated below, depicting the transformation of an original program into an improved and restructured version:
 
-```
-graph TD
-    A[Original Program] --> B[Source Code Translation]
-    B --> C[Reverse Engineering]
-    C --> D[Program Documentation]
-    C --> E[Program Structure Improvement]
-    E --> F[Program Modularization]
-    F --> G[Restructured Program]
-    A --> H[Original Data]
-    G --> I[Data Reengineering]
-    H --> I
-    I --> J[Reengineered Data]
-    G --> K[Reengineered Program]
-    J --> K
-```
+![](images/41.jpeg)
 
 **Figure: The Reengineering Process**
 
