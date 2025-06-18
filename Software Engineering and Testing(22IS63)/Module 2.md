@@ -28,54 +28,8 @@ This process ensures that, regardless of the patient's immediate danger level or
 
 **Figure 5.2: A process model of involuntary detention**
 
-```
-(Start)
-  |
-  V
-+-------------------------------+
-| Record detention decision     |
-| «system» Mentcare             |
-+-------------------------------+
-  |
-  | [dangerous]
-  V
-+-------------------------------+
-| Confirm detention decision    |
-+-------------------------------+
-  |
-  | [available]           [not available]
-  V                           V
-+-------------------+     +-------------------+
-| Find secure place |     | Transfer to police station|
-+-------------------+     +-------------------+
-  |                           |
-  V                           V
-+-------------------+     +-------------------+
-| Transfer to secure hospital |     | Admit to hospital   |
-+-------------------+     +-------------------+
-  |                           |
-  V                           V
-+-------------------+       +-------------------+
-|                   |       |                   |
-|                   |-------| Inform next of kin|
-|                   |       |                   |
-|                   |-------| Inform social care|
-|                   |       |                   |
-|                   |-------| Inform patient of |
-|                   |       | rights            |
-|                   |       +-------------------+
-+-------------------+
-  |  (Solid bar for coordination)
-  |
-  V
-+-------------------------------+
-| Update register               |
-| «system» Mentcare             |
-+-------------------------------+
-  |
-  V
-(End)
-```
+![](images/20)
+
 
 ---
 
