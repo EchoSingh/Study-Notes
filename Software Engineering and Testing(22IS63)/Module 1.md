@@ -24,7 +24,7 @@ Systems engineering is an engineering discipline focused on the comprehensive de
 
 The lifetime of large, complex systems is typically structured into four overlapping stages, as illustrated by a general process model:
 
-![](2.jpeg)
+![](images/2.jpeg)
 
 Below are the principal stages of systems engineering:
 
@@ -60,7 +60,7 @@ The principal stages are:
 
 A common representation of the waterfall model is shown below:
 
-![](3.jpeg)
+![](images/3.jpeg)
 
 ### Advantages
 
@@ -186,7 +186,7 @@ According to Figure 2.3 , the general process model for reuse-based development 
 
 ### **Diagram: Reuse-Oriented Software Engineering Process**
 
-![](5.jpeg)
+![](images/5.jpeg)
 
 
 ### **Advantages of Reuse-Oriented Software Engineering**
@@ -228,7 +228,7 @@ While these activities are often shown sequentially, in practice, requirements e
 
 The general process model for Requirements Engineering is illustrated in the following diagram:
 
-![](6.jpeg)
+![](images/6.jpeg)
 
 Figure 2.4 The requirements engineering process.
 
