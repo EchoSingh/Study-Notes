@@ -976,4 +976,91 @@ The Observer pattern is a well-known design pattern.
 
 17. Explain the various levels in which software can be reused with a neat diagram.
 
-  
+  Software reuse can occur at various levels, which represent different scales and types of software or knowledge that are utilized. This approach is widely adopted in modern software development to reduce costs, accelerate development, and enhance software quality.
+
+The different levels of software reuse are:
+
+- **Abstraction Level**: At this level, direct software code is not reused. Instead, the knowledge derived from successful abstract concepts, designs, or ways of working is applied. This includes the reuse of design patterns and architectural patterns, which provide a skeleton architecture for applications and encapsulate good design practices. This type of reuse involves adapting the implementation of an idea to suit the specific system being developed.
+    
+- **Object Level**: This level involves directly reusing individual objects or functions from programming language libraries. Developers find appropriate libraries and utilize their objects and methods to incorporate needed functionality, such as processing email messages using a JavaMail library. This form of reuse has been common for decades and is particularly cost-effective for specialized or complex algorithms where expert knowledge is required.
+    
+- **Component Level**: Components are collections of objects and object classes that work together to provide related functions and services. Reusing components often requires some adaptation and extension by adding custom code. An example is building a user interface using a framework that provides general object classes for event handling and display management, which are then specialized for the application. Component-based software engineering (CBSE) is an approach specifically built around the reuse of standardized, independent components.
+    
+- **System Level**: This is the highest level of reuse, involving the adoption of entire application systems, often referred to as Commercial Off-the-Shelf (COTS) products. This typically requires configuring these systems to meet specific needs without changing their source code. Examples include Enterprise Resource Planning (ERP) systems used by large companies. This approach offers significant benefits, such as rapid deployment and reliability, but may necessitate compromises in requirements to align with the existing system's assumptions.
+    
+
+The relationships among these levels of software reuse, as depicted in the source, are shown below:
+
+**Figure: Software Reuse Levels**
+
+```
+Software reuse
+└─── Abstraction
+     └─── Architectural and design patterns
+└─── System
+     └─── Application systems (COTS)
+└─── Component
+     └─── Component frameworks
+└─── Object
+     └─── Programming language libraries
+```
+
+---
+
+18. Explain configuration management with a neat diagram.
+
+Configuration management (CM) is a crucial process in software engineering that deals with the policies, processes, and tools for managing evolving software systems. Its primary aim is to support the system integration process by ensuring that all developers can access project code and documents in a controlled manner, track changes, and compile and link components to create a system. CM is essential for team projects, especially in distributed development environments, and is indispensable for agile development where components and systems are frequently changed.
+
+Due to the large volume of information to be managed and the complex relationships between configuration items, tool support is vital for effective configuration management. These tools store component versions, build systems, track releases, and manage change proposals.
+
+Configuration management involves four closely related fundamental activities:
+
+1. **Version Control**: This activity focuses on tracking the multiple versions of system components and ensuring that modifications made by different developers do not conflict with each other. It involves managing "codelines" (sequences of versions of source code) and "baselines" (definitions of specific system versions). Version control systems also record the history of changes made to components.
+2. **System Building**: This is the process of assembling program components, data, and libraries, and then compiling and linking them to create an executable system. System building is typically automated to minimize recompilation. It is recommended that software be frequently rebuilt and tested immediately to detect bugs and problems introduced since the last build.
+3. **Change Management**: This involves keeping track of requests for changes to delivered software from both customers and developers. It includes evaluating the costs and impact of making these changes, and deciding if and when the changes should be implemented. The process is initiated by change requests, which can be bug reports or requests for new functionality.
+4. **Release Management**: This activity involves preparing software for external release and keeping track of the system versions that have been made available for customer use. A software product release not only includes the executable code but also configuration files, data files, installation programs, documentation, and marketing materials.
+
+The relationships between these activities are illustrated in the diagram below:
+
+```
++---------------------+
+| Configuration       |
+| Management          |
+| (CM)                |
++---------------------+
+       |
+       | Supports
+       v
++------------------+
+| Version Control  |
+| (Tracking changes|
+| to components)   |
++------------------+
+       |
+       | Feeds into
+       v
++------------------+
+| System Building  |
+| (Assembling &    |
+| compiling system)|
++------------------+
+       |
+       | Feeds into
+       v
++------------------+
+| Change Management|
+| (Assessing &     |
+| approving changes)|
++------------------+
+       |
+       | Feeds into
+       v
++------------------+
+| Release Management|
+| (Preparing &     |
+| distributing     |
+| releases)        |
++------------------+
+```
+
+**Figure: Configuration Management Activities**
