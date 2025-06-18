@@ -24,7 +24,7 @@ Systems engineering is an engineering discipline focused on the comprehensive de
 
 The lifetime of large, complex systems is typically structured into four overlapping stages, as illustrated by a general process model:
 
-![](images/2.jpeg)
+![](2.jpeg)
 
 Below are the principal stages of systems engineering:
 
@@ -60,7 +60,7 @@ The principal stages are:
 
 A common representation of the waterfall model is shown below:
 
-![](images/3.jpeg)
+![](3.jpeg)
 
 ### Advantages
 
@@ -186,7 +186,7 @@ According to Figure 2.3 , the general process model for reuse-based development 
 
 ### **Diagram: Reuse-Oriented Software Engineering Process**
 
-![](images/5.jpeg)
+![](5.jpeg)
 
 
 ### **Advantages of Reuse-Oriented Software Engineering**
@@ -228,7 +228,7 @@ While these activities are often shown sequentially, in practice, requirements e
 
 The general process model for Requirements Engineering is illustrated in the following diagram:
 
-![](images/6.jpeg)
+![](6.jpeg)
 
 Figure 2.4 The requirements engineering process.
 
@@ -271,7 +271,7 @@ A software design outlines the software's structure, data models and structures,
 
 The general model of the design process involves inputs, activities, and outputs, as illustrated in the abstract model below:
 
-![](images/7.jpeg)
+![](7.jpeg)
 
 Figure 2.5 A general model of the design process
 
@@ -317,7 +317,7 @@ The relationship between these testing activities and the development phases in 
 
 The following diagram, derived from the sources, illustrates these testing phases in a plan-driven software process:
 
-![](images/8.jpeg)
+![](8.jpeg)
 
 Figure: Testing phases in a plan-driven software process
 
@@ -343,7 +343,7 @@ The entire process then iterates, with the new release often generating further 
 
 The diagram below illustrates the general model of the software evolution process:
 
-![](images/9.jpeg)
+![](9.jpeg)
 
 **Figure: A general model of the software evolution process**
 
@@ -359,7 +359,7 @@ The key stages in the prototype development process, as illustrated in the model
 
 **Process Model for Prototype Development**
 
-![](images/10.jpeg)
+![](10.jpeg)
 
 **Explanation of the Stages:**
 
@@ -382,7 +382,7 @@ This approach allows customers to gain value from the system early by receiving 
 
 The incremental delivery process is a cyclical activity designed to iteratively build and deploy a software system. Its key stages are outlined below:
 
-![](images/11.jpeg)
+![](11.jpeg)
 
 ### Explanation of Stages:
 
@@ -442,7 +442,7 @@ The XP release cycle illustrates the iterative and continuous nature of this dev
 
 **XP Release Cycle Diagram:**
 
-![](images/13.jpeg)
+![](13.jpeg)
 
 **Explanation of the Cycle:**
 
@@ -556,7 +556,7 @@ Non-functional requirements are typically classified into three main types:
 
 A block diagram illustrating the types of non-functional requirements would conceptually organize them as follows, echoing the structure presented in Figure 4.3 of the source:
 
-![](images/15.jpeg)
+![](15.jpeg)
 
 - **Main Block:** "Non-functional Requirements" at the top represents the overarching category.
 - **First Layer of Blocks:** Branching down, three distinct blocks (Product, Organizational, External) represent the primary classifications, indicating that all non-functional requirements fall into one of these categories.
@@ -720,7 +720,7 @@ This process typically involves three principal stages:
 
 The diagram below illustrates the iterative nature of the requirements change management process:
 
-![](images/20.jpeg)
+![](20.jpeg)
 
 **Explanation of the diagram:**
 
