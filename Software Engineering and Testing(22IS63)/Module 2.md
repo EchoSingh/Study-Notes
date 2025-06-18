@@ -969,8 +969,6 @@ The Observer pattern is a well-known design pattern.
     - **Advantages:** The `Subject` only knows the abstract `Observer`, resulting in minimal coupling between these objects. This allows for flexibility in adding or changing views without impacting the core data model.
     - **Disadvantages:** Due to this lack of knowledge, optimizations that enhance display performance may be impractical. Additionally, changes to the `Subject` may trigger a series of linked updates to `Observers`, some of which might be unnecessary.
 
-**UML Model of the Observer Pattern:** The UML model for the Observer pattern visually represents the relationships between the `Subject`, `Observer`, `ConcreteSubject`, and `ConcreteObserver` classes, showing operations like `Attach()`, `Detach()`, `Notify()` in the `Subject`, and `Update()` in the `Observer` [3, Figure 7.12]. It illustrates how `ConcreteSubject` holds `subjectState` and calls `o->Update()` for all observers, while `ConcreteObserver` updates its `observerState` from the subject's state [3, Figure 7.12]. An example demonstrating multiple graphical presentations of the same dataset using this pattern is also provided [3, Figure 7.11].
-
 ---
 
 17. Explain the various levels in which software can be reused with a neat diagram.
