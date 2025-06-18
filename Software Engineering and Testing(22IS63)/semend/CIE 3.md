@@ -40,26 +40,16 @@ int main() {
 
 ---
 
-**(OR)**
-
----
-
 **4.** Explain the various methods used in **Object Oriented Testing** with suitable examples.  
-**[10 marks]**
 
 ---
 
 **5.** For the code given in **Question 3**, identify the **test cases** for verifying the **independent paths**.  
-**[10 marks]**
 
----
-
-**(OR)**
 
 ---
 
 **6.** Explain **Regression Testing** along with its **different strategies**.  
-**[10 marks]**
 
 ---
 
@@ -80,17 +70,7 @@ int main() {
 }
 ```
 
-**[10 marks]**
-
----
-
-**(OR)**
 
 ---
 
 **8.** Explain **Prioritization** in Regression Testing with a suitable example.  
-**[10 marks]**
-
----
-
-Let me know if you'd like sample answers, Control Flow Graphs, DU pair analysis, or test case derivation!
