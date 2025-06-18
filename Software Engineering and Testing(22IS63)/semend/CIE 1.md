@@ -311,10 +311,46 @@ This iterative process allows the banking application to be delivered incrementa
 
 5. Differentiate between various types of non-functional requirements with suitable examples for each.  
     **(OR)**
+
+Non-functional requirements are constraints on the services or functions offered by a system, rather than direct statements of what the system should do. They typically apply to the system as a whole and often relate to emergent system properties such as reliability, response time, and memory usage. They can also define constraints on the system's implementation, for instance, specifying I/O device capabilities or data representations used in interfaces.
+
+These requirements are often more critical than individual functional requirements, as failing to meet a non-functional requirement can render the entire system unusable. For example, an aircraft system that does not meet its reliability requirements will not be certified as safe for operation. Their implementation may be spread throughout the system, affecting the overall architecture or generating related functional requirements. Ideally, non-functional requirements should be specified quantitatively so they can be objectively tested.
+
+Non-functional requirements can be differentiated into three main types based on their origin and the aspects of the system they constrain: Product Requirements, Organizational Requirements, and External Requirements.
+
+### Types of Non-Functional Requirements:
+
+1. **Product Requirements**
     
-6. Determine the role of integration and configuration model in software engineering. With a suitable diagram explain the steps involved.
+    - **Definition**: These requirements specify or constrain the runtime behavior of the software itself. They focus on how the system performs its functions.
+    - **Differentiation**: Product requirements directly address the quality attributes and characteristics of the software as a product, affecting its performance, reliability, security, and usability in operation.
+    - **Examples**:
+        - **Performance Requirements**: Dictate how fast the system must execute or how much memory it requires. For instance, "The Mentcare system shall be available to all clinics during normal working hours (Mon–Fri, 08:30–17:30). Downtime within normal working hours shall not exceed 5 seconds in any one day". Another example is a web service needing to process "up to 100 requests per second peak load".
+        - **Reliability Requirements**: Set out the acceptable failure rate or probability of product failure. This can be measured using metrics like "probability of failure on demand (POFOD)" or "rate of occurrence of failures (ROCOF)".
+        - **Security Requirements**: Specify how a system should protect itself against threats. For example, "Access to the catalog service shall be restricted to employees of accredited organizations" and "The prices and configurations offered to each customer shall be confidential, and access to these shall only be provided to employees of that customer".
+        - **Usability Requirements**: Define how easy the system is for users to learn and operate. An example could be, "Medical staff shall be able to use all the system functions after two hours of training. After this training, the average number of errors made by experienced users shall not exceed two per hour of system use".
+        - **Robustness**: Refers to how well the system handles unexpected inputs or failures.
+2. **Organizational Requirements**
     
-7. Differentiate between plan driven development and agile development. Illustrate the role of agile models in prescribing medication in a Healthcare system.  
+    - **Definition**: These are broad system requirements derived from the policies and procedures within both the customer's and the developer's organizations.
+    - **Differentiation**: Organizational requirements constrain the system's development process or its operational context within the organizational structure, reflecting internal standards and practices.
+    - **Examples**:
+        - **Operational Process Requirements**: Define how the system will be used within the organization.
+        - **Development Process Requirements**: Specify the programming language, development environment, or process standards to be adhered to during development. For example, "The system must be implemented in a safe subset of Ada and checked using static analysis".
+        - **Authentication Requirements**: Derived from company policy, such as "Users of the Mentcare system shall identify themselves using their health authority identity card".
+3. **External Requirements**
+    
+    - **Definition**: These requirements arise from factors external to the system and its development process, typically involving legal, regulatory, or ethical considerations.
+    - **Differentiation**: External requirements impose obligations on the system due to external laws, regulations, or public concerns, independent of the product's internal behavior or the organization's specific policies.
+    - **Examples**:
+        - **Regulatory Requirements**: Mandates what must be done for the system to be approved by a regulatory body.
+        - **Legislative Requirements**: Ensure the system operates within the law. For example, "The system shall implement patient privacy provisions as set out in HStan-03-2006-priv".
+        - **Ethical Requirements**: Ensure the system's acceptability to its users and the general public.
+
+In summary, product requirements focus on the system's performance and quality attributes, organizational requirements address internal policies and processes, and external requirements deal with external legal, regulatory, and ethical obligations.
+5. Determine the role of integration and configuration model in software engineering. With a suitable diagram explain the steps involved.
+    
+6. Differentiate between plan driven development and agile development. Illustrate the role of agile models in prescribing medication in a Healthcare system.  
     **(OR)**
     
-8. Explain the role of interaction models in software engineering. Consider an ATM application and generate sequence diagram for balance enquiry.
+7. Explain the role of interaction models in software engineering. Consider an ATM application and generate sequence diagram for balance enquiry.
