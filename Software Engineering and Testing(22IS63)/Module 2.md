@@ -104,33 +104,7 @@ The diagram (Figure 5.7 in the sources) illustrates the sequence of interactions
 
 This diagram comprehensively captures the user interaction, conditional logic, and system-to-system communication involved in the "Transfer Data" operation within the Mentcare system.
 
-```
-sequenceDiagram
-    actor MedicalReceptionist
-    participant PRS
-    participant P as PatientInfo
-    participant D as Mentcare-DB
-    participant AS as Authorization
-
-    MedicalReceptionist->>PRS: login ()
-    PRS-->>MedicalReceptionist: ok
-
-    alt sendInfo
-        MedicalReceptionist->>AS: authorize (TF, UID)
-        AS-->>MedicalReceptionist: authorization
-        P->>PRS: updateInfo ()
-    else sendSummary
-        MedicalReceptionist->>AS: authorize (TF, UID)
-        AS-->>MedicalReceptionist: authorization
-        P->>D: summarize (UID)
-        create participant summary
-        D-->>summary: :summary
-        summary->>PRS: UpdateSummary ()
-    end
-
-    PRS-->>MedicalReceptionist: update OKMessage (OK)
-    MedicalReceptionist->>PRS: logout ()
-```
+![](images/23.jpeg)
 
 ---
 
@@ -145,24 +119,7 @@ A **class** in a UML diagram represents a general definition of a type of system
 
 For example, a `Consultation` class in Mentcare might be detailed as follows:
 
-```
-class Consultation {
-    Doctors
-    Date
-    Time
-    Clinic
-    Medication prescribed
-    Treatment prescribed
-    Voice notes
-    Transcript
-    ..
-    New()
-    Prescribe()
-    RecordNotes()
-    Transcribe()
-    ..
-}
-```
+![](images/241.jpeg)
 
 ### Associations
 
@@ -192,53 +149,7 @@ The Mentcare system, a patient information system for mental healthcare, uses va
 
 The following diagram, based on Figure 5.9 from the sources, illustrates key classes and their associations within the Mentcare system, demonstrating how different types of relationships are modeled:
 
-```
-classDiagram
-    class Patient {
-    }
-    class GeneralPractitioner {
-    }
-    class HospitalDoctor {
-    }
-    class Consultant {
-    }
-    class TeamDoctor {
-    }
-    class TraineeDoctor {
-    }
-    class QualifiedDoctor {
-    }
-    class Doctor {
-    }
-    class Consultation {
-    }
-    class Medication {
-    }
-    class Treatment {
-    }
-    class Condition {
-    }
-    class PatientRecord {
-    }
-
-    Patient "1" -- "1..*" GeneralPractitioner : referred-by
-    Patient "1" -- "1..*" Consultant : referred-to
-    Patient "1" -- "1..*" Consultation : attends
-    Patient "1" -- "1..*" Condition : diagnosed-with
-    Doctor <|-- GeneralPractitioner
-    Doctor <|-- HospitalDoctor
-    HospitalDoctor <|-- Consultant
-    HospitalDoctor <|-- TeamDoctor
-    HospitalDoctor <|-- TraineeDoctor
-    HospitalDoctor <|-- QualifiedDoctor
-
-    Consultation "1..*" -- "1..*" Doctor : involves
-    Consultation "1..*" -- "1..*" Medication : prescribes
-    Consultation "1..*" -- "1..*" Treatment : prescribes
-
-    PatientRecord "1" o-- "1" Patient
-    PatientRecord "1" o-- "1..*" Consultation
-```
+![](images/242.jpeg)
 
 This diagram shows how various entities within the Mentcare system, such as patients, doctors, conditions, and treatments, are interconnected, providing a clear structural overview for system understanding and design.
 
