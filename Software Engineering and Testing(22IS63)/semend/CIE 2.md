@@ -214,9 +214,13 @@ Instead of letting Dorothy leave, Alice decided to address her motivation direct
 
 5. **With a relevant diagram, explain the test/debug cycle** and elaborate on the different steps involved in the process.  
     **(OR)**
-    
+
+---
+
 6. **Bring out the differences between various types of Functional Testing versus the types of Structural Testing techniques.**
-    
+
+ ---
+ 
 7. CompanyAB is one of the popular online shopping stores which is designed and developed exclusively for kids and ethnic sales. On all seasonal festival times, the store announces heavy discount sales apart from free delivery on all products and purchases of any amount. Due to the pandemic situation of COVID-19, the company decides to further increase the discount on all sales.
 
 **Discounts announced are as below:**
