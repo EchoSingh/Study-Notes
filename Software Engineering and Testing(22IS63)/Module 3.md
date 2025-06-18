@@ -277,4 +277,42 @@ graph TD
 
 ---
 
-8. 
+8. With a neat diagram, explain how the project schedule may be documented using a table or spreadsheet.
+
+  Project schedules can be documented using a table or spreadsheet, which provides a structured way to outline tasks, their estimated effort, duration, and dependencies. While this format is clear in listing individual task details, it can make it challenging to visualize the relationships and dependencies between different activities.
+
+Typically, a table or spreadsheet used for project scheduling will include the following information for each task:
+
+- **Task identifier**: A unique label for the task (e.g., T1, T2).
+- **Effort (person-days)**: The estimated total human effort required to complete the task, often measured in person-days or person-months.
+- **Duration (days)**: The estimated calendar time needed for the task to be completed. It's noted that tasks should generally last at least one week and no longer than two months, ideally 6 to 8 weeks, to avoid excessive re-planning. If a task's effort is less than its duration, it implies that allocated people are not working full-time on it; if effort exceeds duration, multiple team members are working on it concurrently.
+- **Dependencies**: Specifies which other tasks must be completed before the current task can begin. This is crucial for coordinating parallel tasks and optimizing workforce utilization. Milestones, which are logical end points for reviewing progress, are often associated with tasks or groups of activities and are sometimes used to mark dependencies.
+
+An initial project schedule is typically created during the project startup phase and is continuously refined as the project progresses. Project management tools can automate the generation of these tables and charts, populating them from a project database.
+
+### Example of a Project Schedule Table
+
+Below is an illustration of how a project schedule might be documented in a table, based on the information provided in the sources:
+
+**Table: Tasks, Durations, and Dependencies**
+
+|Task|Effort (person-days)|Duration (days)|Dependencies|
+|:--|:--|:--|:--|
+|T1|15|10||
+|T2|8|15||
+|T3|20|15|T1 (M1)|
+|T4|5|10||
+|T5|5|10|T2, T4 (M3)|
+|T6|10|5|T1, T2 (M4)|
+|T7|25|20|T1 (M1)|
+|T8|75|25|T4 (M2)|
+|T9|10|15|T3, T6 (M5)|
+|T10|20|15|T7, T8 (M6)|
+|T11|10|10|T9 (M7)|
+|T12|20|10|T10, T11 (M8)|
+
+This table shows that, for example, Task T3 can only start after Task T1 is completed (marked by Milestone M1). Similarly, Task T5 requires both T2 and T4 to be finished (marked by M3) before it can begin. This format explicitly lists the individual parameters for each task in the project schedule.
+
+---
+
+9. Explain the project activity bar chart with a diagram
