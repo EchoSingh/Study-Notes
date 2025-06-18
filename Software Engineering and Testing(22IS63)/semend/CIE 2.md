@@ -622,7 +622,27 @@ A common approach in login systems is to prioritize error messages, reporting th
 
 Using the conditions and actions defined above, we can construct the following decision table, which enumerates all nine possible combinations of Email Status and Password Status. Each column (rule) represents a distinct set of conditions leading to a specific action(s).
 
-| Rule # | R1 | R2 | R3 | R4 | R5 | R6 | R7 | R8 | R9 | | :----- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | | **Conditions** | | | | | | | | | | | Email Status | Valid | Valid | Valid | Invalid | Invalid | Invalid | Blank | Blank | Blank | | Password Status | Valid | Invalid | Blank | Valid | Invalid | Blank | Valid | Invalid | Blank | | **Actions** | | | | | | | | | | | A1: Login Successful | X | | | | | | | | | | A2: Error: "Email is blank" | | | | | | | X | X | X | | A3: Error: "Password is blank" | | | X | | | X | | | | | A4: Error: "Invalid Email format" | | | | X | X | X | | | | | A5: Error: "Incorrect Password" | | X | | | | | | | |
+Here is your cleanly formatted **Login Validation Rule Table**:
+
+---
+
+### Login Validation Rules
+
+|Rule #|R1|R2|R3|R4|R5|R6|R7|R8|R9|
+|---|---|---|---|---|---|---|---|---|---|
+|**Conditions**||||||||||
+|Email Status|Valid|Valid|Valid|Invalid|Invalid|Invalid|Blank|Blank|Blank|
+|Password Status|Valid|Invalid|Blank|Valid|Invalid|Blank|Valid|Invalid|Blank|
+|**Actions**||||||||||
+|A1: Login Successful|X|||||||||
+|A2: Error: "Email is blank"|||||||X|X|X|
+|A3: Error: "Password is blank"|||X|||X||||
+|A4: Error: "Invalid Email format"||||X|X|X||||
+|A5: Error: "Incorrect Password"||X||||||||
+
+---
+
+Would you like this rendered in HTML or exported as a CSV for use in a spreadsheet or app?
 
 - **Interpretation of the Table**:
     - **R1 (Valid Email, Valid Password)**: Leads to successful login.
@@ -684,3 +704,5 @@ Here are the derived test cases:
 - **Identification of Impossible Combinations**: While not explicitly marked as "impossible" in this EEDT, this method can also identify logically impossible or irrelevant combinations of conditions, helping to clarify requirements or identify potential defects in design.
 - **Complementary to Other Techniques**: While DBT effectively covers logical relationships, other techniques like Boundary Value Analysis could be used to select specific values for "Valid" or "Invalid" states (e.g., very long valid emails, emails close to length limits for format validation).
 - **Automation**: The structured nature of decision tables makes it straightforward to convert them into automated test scripts, enabling efficient execution and verification of results.
+
+---
