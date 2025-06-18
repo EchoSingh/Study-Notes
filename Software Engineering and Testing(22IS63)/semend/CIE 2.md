@@ -85,18 +85,69 @@ Let's consider a hypothetical project to develop an **Online University Accounti
 ---
     
 1. **Consider the case study of Triangle Problem** and generate Normal Boundary Value test cases and Worst Case Boundary Value test cases.
-    
-2. Using relevant examples, **demonstrate how the unique characteristics of software engineering**, as compared to other engineering disciplines, contribute to the complexities of software project management.  
+
+The Triangle Problem is a widely used case study in software testing to illustrate various unit testing methods due to its clear yet complex logic.
+
+**Case Study: The Triangle Problem** The triangle program accepts three integers, `a`, `b`, and `c`, as input, representing the lengths of the three sides of a triangle. The inputs `a`, `b`, and `c` must satisfy the following conditions:
+
+- `c1. 1 ≤ a ≤ 200`
+- `c2. 1 ≤ b ≤ 200`
+- `c3. 1 ≤ c ≤ 200`
+- `c4. a < b + c`
+- `c5. b < a + c`
+- `c6. c < a + b`
+
+The program's output should be the type of triangle: Equilateral, Isosceles, Scalene, or NotATriangle.
+
+- If an input value fails conditions `c1`, `c2`, or `c3`, the program should output a message like "Value of [variable] is not in the range of permitted values.".
+- If any of conditions `c4`, `c5`, and `c6` is not met, the output is "NotATriangle".
+- If all three sides are equal, the output is "Equilateral".
+- If exactly one pair of sides is equal, the output is "Isosceles".
+- If no pair of sides is equal, the output is "Scalene".
+
+For testing purposes, the lower bounds for side lengths are 1, and an arbitrary upper bound of 200 is used.
+
+---
+
+**1. Normal Boundary Value (NBV) Test Cases**
+
+Normal Boundary Value testing focuses on the boundary of the input space because errors tend to occur near the extreme values of an input variable, for example, due to "off by one" errors in loop conditions. This technique generates test cases using input variable values at their minimum (min), just above the minimum (min+), a nominal (nom) value, just below their maximum (max–), and at their maximum (max).
+
+For a function of `n` variables, Normal Boundary Value analysis generates `4n + 1` unique test cases. The method involves holding all but one variable at their nominal values, and letting the remaining variable assume its full set of test values (min, min+, nom, max–, max), repeating this for each variable.
+
+For the Triangle Problem with three variables (`a`, `b`, `c`), the test values for each side are typically {1 (min), 2 (min+), 100 (nom), 199 (max–), 200 (max)}. This results in `4*3 + 1 = 13` unique test cases.
+
+Here is a table of Normal Boundary Value test cases for the Triangle Problem, as derived in the sources:
+
+| Case | `a` | `b` | `c` | Expected Output | | :--- | :-- | :-- | :-- | :---------------- | | 1 | 100 | 100 | 1 | Isosceles | | 2 | 100 | 100 | 2 | Isosceles | | 3 | 100 | 100 | 100 | Equilateral | | 4 | 100 | 100 | 199 | Isosceles | | 5 | 100 | 100 | 200 | Not a triangle | | 6 | 100 | 1 | 100 | Isosceles | | 7 | 100 | 2 | 100 | Isosceles | | 8 | 100 | 100 | 100 | Equilateral | | 9 | 100 | 199 | 100 | Isosceles | | 10 | 100 | 200 | 100 | Not a triangle | | 11 | 1 | 100 | 100 | Isosceles | | 12 | 2 | 100 | 100 | Isosceles | | 13 | 100 | 100 | 100 | Equilateral | | 14 | 199 | 100 | 100 | Isosceles | | 15 | 200 | 100 | 100 | Not a triangle | _(Note: Test cases 3, 8, and 13 are identical and could be deleted, resulting in 13 unique test cases)._
+
+---
+
+**2. Worst-Case Boundary Value (WCBV) Test Cases**
+
+Worst-Case Boundary Value testing is used when the "single fault" assumption (that failures are rarely the result of simultaneous occurrences of multiple faults) is not warranted. It focuses on what happens when more than one variable has an extreme value. This technique generates test cases by taking the Cartesian product of the five-element set (min, min+, nom, max–, max) for each variable.
+
+For a function of `n` variables, Worst-Case Boundary Value testing generates `5^n` test cases. For the Triangle Problem with three variables, this results in `5^3 = 125` test cases. Due to the large number of test cases, only a selected portion is typically shown.
+
+Here is a selection of Worst-Case Boundary Value test cases for the Triangle Problem:
+
+| Case | `a` | `b` | `c` | Expected Output | | :--- | :-- | :-- | :-- | :--------------- | | 1 | 1 | 1 | 1 | Equilateral | | 2 | 1 | 1 | 2 | Not a triangle | | 3 | 1 | 1 | 100 | Not a triangle | | 4 | 1 | 1 | 199 | Not a triangle | | 5 | 1 | 1 | 200 | Not a triangle | | 6 | 1 | 2 | 1 | Not a triangle | | 7 | 1 | 2 | 2 | Isosceles | | 8 | 1 | 2 | 100 | Not a triangle | | 9 | 1 | 2 | 199 | Not a triangle | | 10 | 1 | 2 | 200 | Not a triangle | | 11 | 1 | 100 | 1 | Not a triangle | | 12 | 1 | 100 | 2 | Not a triangle | | 13 | 1 | 100 | 100 | Isosceles | | 14 | 1 | 100 | 199 | Not a triangle | | 15 | 1 | 100 | 200 | Not a triangle | | 16 | 1 | 199 | 1 | Not a triangle | | 17 | 1 | 199 | 2 | Not a triangle | | 18 | 1 | 199 | 100 | Not a triangle | | 19 | 1 | 199 | 199 | Isosceles | | 20 | 1 | 199 | 200 | Not a triangle | | 21 | 1 | 200 | 1 | Not a triangle | | 22 | 1 | 200 | 2 | Not a triangle | | 23 | 1 | 200 | 100 | Not a triangle | | 24 | 1 | 200 | 199 | Not a triangle | | 25 | 1 | 200 | 200 | Isosceles |
+
+These methods are rooted in the assumption that input variables are independent. However, the Triangle Problem inherently has logical dependencies among its input variables (e.g., `a`, `b`, and `c` must satisfy the triangle inequality to form a valid triangle). This can lead to the generation of "impossible" or "strange" test cases, as seen in some of the "Not a triangle" outputs, where the values chosen for `a`, `b`, and `c` do not form a geometrically possible triangle. While such cases are useful for testing robustness against invalid input combinations, they also highlight a limitation of these methods when applied without considering semantic dependencies.
+
+---
+
+1. Using relevant examples, **demonstrate how the unique characteristics of software engineering**, as compared to other engineering disciplines, contribute to the complexities of software project management.  
     **(OR)**
     
-3. Project Managers need to understand what motivates people. **Maslow has suggested the Human Hierarchy of needs.** Illustrate it with a diagram. Also, discuss the case study of individual motivation.
+2. Project Managers need to understand what motivates people. **Maslow has suggested the Human Hierarchy of needs.** Illustrate it with a diagram. Also, discuss the case study of individual motivation.
     
-4. **With a relevant diagram, explain the test/debug cycle** and elaborate on the different steps involved in the process.  
+3. **With a relevant diagram, explain the test/debug cycle** and elaborate on the different steps involved in the process.  
     **(OR)**
     
-5. **Bring out the differences between various types of Functional Testing versus the types of Structural Testing techniques.**
+4. **Bring out the differences between various types of Functional Testing versus the types of Structural Testing techniques.**
     
-6. CompanyAB is one of the popular online shopping stores which is designed and developed exclusively for kids and ethnic sales. On all seasonal festival times, the store announces heavy discount sales apart from free delivery on all products and purchases of any amount. Due to the pandemic situation of COVID-19, the company decides to further increase the discount on all sales.
+5. CompanyAB is one of the popular online shopping stores which is designed and developed exclusively for kids and ethnic sales. On all seasonal festival times, the store announces heavy discount sales apart from free delivery on all products and purchases of any amount. Due to the pandemic situation of COVID-19, the company decides to further increase the discount on all sales.
 
 **Discounts announced are as below:**
 
