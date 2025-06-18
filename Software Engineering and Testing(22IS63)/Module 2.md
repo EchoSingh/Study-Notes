@@ -175,38 +175,7 @@ Furthermore, the `Hospital Doctor` class itself is further generalized into thre
 
 This hierarchy ensures that common attributes (like `name` and `phone number` for all `Doctor`s) and operations (like `register` and `deregister` a doctor with the system) are defined once at the most general level and inherited by more specific doctor types.
 
-```
-classDiagram
-    class Doctor
-    class GeneralPractitioner
-    class HospitalDoctor
-    class Consultant
-    class TeamDoctor
-    class TraineeDoctor
-    class QualifiedDoctor
-
-    Doctor <|-- GeneralPractitioner
-    Doctor <|-- HospitalDoctor
-    HospitalDoctor <|-- Consultant
-    HospitalDoctor <|-- TeamDoctor
-    HospitalDoctor <|-- TraineeDoctor
-    HospitalDoctor <|-- QualifiedDoctor
-
-    class Doctor {
-        +name
-        +phoneNumber
-        +register()
-        +deregister()
-    }
-    class HospitalDoctor {
-        +staffNumber
-        +pager
-    }
-    class GeneralPractitioner {
-        +individualPracticeName
-        +address
-    }
-```
+![](images/25.jpeg)
 
 This diagram illustrates how specialized doctor roles in the Mentcare system inherit common characteristics from more general `Doctor` classes, demonstrating the hierarchical and inheritance aspects of generalization.
 
@@ -229,32 +198,8 @@ The activity diagram below illustrates the data-driven process of the insulin pu
 
 The diagram visually represents the flow, showing processing steps as activities (rounded rectangles) and the data or objects flowing between these steps as rectangles.
 
-```
-graph TD
-    subgraph Data Flow
-        A[Blood sugar sensor] -- provides --> B(Get sensor value)
-        B -- outputs --> C[Sensor data]
-        C -- processed by --> D(Compute sugar level)
-        D -- results in --> E[Blood sugar level]
-        E -- used for --> F(Calculate insulin delivery)
-        F -- determines --> G[Insulin requirement]
-        G -- leads to --> H(Calculate pump commands)
-        H -- generates --> I[Pump control commands]
-        I -- sends to --> J(Control pump)
-        J -- interacts with --> K[Insulin pump]
-    end
-```
+![](images/26.jpeg)
 
-**Explanation of the Process:**
-
-1. **Blood sugar sensor** initiates the process by providing data [A].
-2. The `Get sensor value` activity [B] collects this data.
-3. The collected `Sensor data` [C] is then passed on.
-4. The `Compute sugar level` activity [D] processes the sensor data to determine the current `Blood sugar level` [E].
-5. This `Blood sugar level` [E] is then fed into the `Calculate insulin delivery` activity [F].
-6. The result of this calculation is the `Insulin requirement` [G].
-7. Based on the `Insulin requirement`, the `Calculate pump commands` activity [H] generates specific `Pump control commands` [I].
-8. These commands are sent to the `Control pump` activity [J], which directs the `Insulin pump` [K] to deliver the correct dose of insulin.
 
 ---
 
@@ -288,68 +233,8 @@ For a simple microwave oven, the state diagram (as illustrated in source Figure 
 
 **Diagram (Textual Representation of Figure 5.16 from Source 3.pdf):**
 
-```
-                     +-------------------+
-             +-----> |   Waiting         |
-             |       | do: display 'Ready'|
-             |       +-------------------+
-             |       /  \    /  \
-             |      /    \  /    \
-             |     /      \/      \
-     "Timer" |    "Half power"  "Full power"
-             |   /        \    /
-             |  /          \  /
-             | /            \/
-+------------+--------------------+------------+
-| Half power   |                 | Full power |
-| do: set power = 300 |                 | do: set power = 600|
-+------------+--------------------+------------+
-      \            /
-       \          /
-        \        /
-         "Number"
-             |
-             V
-+-------------------+
-|   Set time        |
-| do: get number    |
-| exit: set time    |
-| do: display time  |
-+-------------------+
-             |
-             | "Door closed"
-             V
-+-------------------+
-|   Enabled         |
-| do: display 'Ready'|
-+-------------------+
-             |
-             | "Start"
-             V
-+-------------------+
-|   Operation       | <------------------+
-| do: run generator |                    | "Door open"
-| do: display time  |                    | (from anywhere in Operation)
-+-------------------+                    |
-             |                           |
-             | "Timer"                   |
-             V                           |
-+-------------------+                    |
-|   Done            |                    |
-| do: buzzer on for |                    |
-|     5 secs.       |                    |
-+-------------------+                    |
-             |                           |
-             |                           |
-             +---------------------------> |
-                                           |
-                                           V
-                                     +-------------------+
-                                     |   Disabled        |
-                                     | do: display event |
-                                     | do: check status  |
-                                     +-------------------+
-```
+
+     ```
 
 ---
 
