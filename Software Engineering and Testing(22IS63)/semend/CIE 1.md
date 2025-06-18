@@ -461,67 +461,13 @@ Let's consider a simplified Automated Teller Machine (ATM) application, such as 
 
 Here is a sequence diagram illustrating the process for a balance inquiry:
 
-```
-@startuml
-actor "Customer" as C
-participant "ATM Terminal" as ATM
-participant "ATM Controller" as Controller
-participant "Bank Server" as Server
-database "Customer Account DB" as DB
-
-C -> ATM: Insert Card
-activate ATM
-ATM -> Controller: Card Inserted
-activate Controller
-Controller -> ATM: Request PIN
-deactivate Controller
-
-C -> ATM: Enter PIN (****)
-activate ATM
-ATM -> Controller: PIN Entered(PIN)
-activate Controller
-Controller -> Server: Verify PIN(PIN)
-activate Server
-Server --> Controller: PIN Verified (True/False)
-deactivate Server
-Controller -> ATM: Display Transaction Options
-deactivate Controller
-deactivate ATM
-
-C -> ATM: Select "Balance Inquiry"
-activate ATM
-ATM -> Controller: Balance Inquiry Request
-activate Controller
-Controller -> Server: Get Balance(AccountID)
-activate Server
-Server -> DB: Query Balance(AccountID)
-activate DB
-DB --> Server: Return Balance
-deactivate DB
-Server --> Controller: Return Balance(Amount)
-deactivate Server
-Controller -> ATM: Display Balance(Amount)
-deactivate Controller
-deactivate ATM
-
-C -> ATM: Acknowledge/Next Transaction
-activate ATM
-ATM -> Controller: Acknowledge
-activate Controller
-Controller -> ATM: Print Receipt (optional)
-Controller -> ATM: Eject Card
-deactivate Controller
-deactivate ATM
-
-C -> C: Take Receipt and Card
-@enduml
-```
+![](images/cie1.png)
 
 **Explanation of the Sequence Diagram:**
 
 1. **Insert Card**: The `Customer` (Actor) initiates the interaction by inserting their card into the `ATM Terminal` [C->ATM].
 2. **Request PIN**: The `ATM Terminal`'s internal `ATM Controller` (Participant) requests the customer's Personal Identification Number (PIN) [ATM->Controller, Controller->ATM].
-3. **Enter and Verify PIN**: The `Customer` enters their PIN. The `ATM Terminal` sends this to the `ATM Controller`, which then communicates with the `Bank Server` (Participant) to verify the PIN. The `Bank Server` consults the `Customer Account DB` (Database) for this verification [C->ATM, ATM->Controller, Controller->Server, Server->DB, DB-->Server, Server-->Controller].
+3. **Enter and Verify PIN**: The `Customer` enters their PIN. The `ATM Terminal` sends this to the `ATM Controller`, which then communicates with the `Bank Server` (Participant) to verify the PIN. The `Bank Server` consults the `Customer Account DB` (Database) for this verification.
 4. **Transaction Options**: Once the PIN is verified, the `ATM Controller` instructs the `ATM Terminal` to display the available transaction options to the `Customer` [Controller->ATM].
 5. **Select Balance Inquiry**: The `Customer` selects "Balance Inquiry" [C->ATM].
 6. **Get Balance**: The `ATM Terminal` sends this request to the `ATM Controller`, which then sends a "Get Balance" request along with the `AccountID` to the `Bank Server`. The `Bank Server` queries the `Customer Account DB` to retrieve the balance and returns it to the `ATM Controller` [ATM->Controller, Controller->Server, Server->DB, DB-->Server, Server-->Controller].
