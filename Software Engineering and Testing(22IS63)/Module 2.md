@@ -1195,3 +1195,16 @@ The strategies can be illustrated based on the system's business value and quali
 
 21. Explain the different types of software maintenance.
 
+Software maintenance involves changing a system after it has been delivered. These changes can range from simple corrections of coding errors to extensive enhancements that accommodate new requirements or fix design flaws.
+
+There are three distinct types of software maintenance:
+
+- **Fault Repairs** This type of maintenance involves fixing bugs and vulnerabilities within the software. Correcting coding errors is generally less expensive, while rectifying design errors can be more costly, potentially requiring the rewriting of several program components. Requirements errors are the most expensive to repair, as they might necessitate extensive system redesign.
+- **Environmental Adaptation** This refers to modifying the software to function with new platforms and environments. This becomes necessary when aspects of a system's environment, such as hardware, operating systems, or other supporting software, undergo changes.
+- **Functionality Addition** This type of maintenance focuses on adding new features to the system and supporting new requirements. It is often triggered by changes in organizational or business needs, and the scale of these changes can frequently be more significant than those for other types of maintenance.
+
+While these three types are generally recognized, it's important to note that there isn't always a clear distinction between them in practice. For instance, adapting a system to a new environment might also involve adding new functionality to take advantage of new environmental features. Similarly, software faults can be exposed when users interact with the system in unexpected ways, and modifying the system to accommodate their workflow might be the most effective way to resolve these faults. Terms like "corrective maintenance" (for fault repair), "adaptive maintenance" (which can refer to environmental adaptation or new requirements), and "perfective maintenance" (which can mean adding new requirements or improving system structure/performance) exist, but their specific meanings can be uncertain.
+
+---
+
+22. 
