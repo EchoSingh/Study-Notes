@@ -892,4 +892,5 @@ This layered structure supports the system's requirements for privacy and safety
 
 ---
 
-17. 
+15. Explain the various stages of object-oriented design with relevant diagrams.
+
