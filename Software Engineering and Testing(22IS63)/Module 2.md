@@ -347,31 +347,7 @@ All these tools interact with a central **Project Repository**. This repository 
 
 **Diagram (Textual Representation of Figure 6.11 from Source 3.pdf):**
 
-```
-+------------------------------------+
-|                                    |
-|         Project Repository         |
-|                                    |
-+------------+-----------+-----------+
-|            |           |           |
-|            |           |           |
-|            |           |           |
-|            V           V           V
-+-----------------+ +-----------------+ +-----------------+
-| Design Translator | |    Java Editor    | |   UML Editors   |
-+-----------------+ +-----------------+ +-----------------+
-|            ^           ^           ^
-|            |           |           |
-|            |           |           |
-+-----------------+ +-----------------+ +-----------------+
-|  Code Generators  | |  Design Analyzer  | |  Report Generator |
-+-----------------+ +-----------------+ +-----------------+
-|            ^
-|            |
-+-----------------+
-|   Python Editor   |
-+-----------------+
-```
+![](images/31.jpeg)
 
 ---
 
@@ -404,30 +380,7 @@ The client program in this setup is typically an integrated user interface built
 
 **Client–Server Architecture for a Film Library Diagram (based on Figure 6.13 in Source 3.pdf):**
 
-```
-+-----------------+           +-----------------+
-|   Catalog Server|           |   Video Server  |
-| (Library catalog)|           |    (Film store) |
-+--------+--------+           +--------+--------+
-         |                             |
-         |                             |
-         |                             |
-+--------+--------+           +--------+--------+
-|   Picture Server|           |    Web Server   |
-|   (Photo store) |           | (Film & photo   |
-+--------+--------+           |      info)      |
-         |                             |
-         |                             |
-         |                             |
-         +-------------+-------------+
-                       |
-                       | Internet
-                       |
-+-------------------------------------------------+
-|                        Clients                  |
-|          (Client 1, Client 2, Client 3, Client 4)|
-+-------------------------------------------------+
-```
+![](images/)
 
 ---
 
