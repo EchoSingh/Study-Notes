@@ -2,19 +2,6 @@
 
 This is my personal knowledge base where I organize and store notes from various subjects and topics I'm learning or revising. Everything is neatly placed inside the `notes/` folder.
 
-## Folder Structure
-
-```
-
-.
-├── notes/
-│   └── ...
-└── README.md
-
-````
-
-All notes are kept inside the `notes/` directory and categorized by subject or topic. Each `.md` file represents notes for a specific concept or area.
-
 ##  Purpose
 
 -  Keep track of everything needed a night before exam
