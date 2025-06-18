@@ -28,7 +28,7 @@ This process ensures that, regardless of the patient's immediate danger level or
 
 **Figure 5.2: A process model of involuntary detention**
 
-![](images/20)
+![](images/21.jpeg)
 
 
 ---
@@ -63,23 +63,7 @@ This sequence diagram (Figure 5.6 in the sources) models the interactions that o
 
 This diagram effectively illustrates the flow of control and data between the user, the application's user interface, the database, and the authorization system when patient information is accessed.
 
-```
-sequenceDiagram
-    actor MedicalReceptionist
-    participant P as PatientInfo
-    participant D as Mentcare-DB
-    participant AS as Authorization
-
-    MedicalReceptionist->>P: ViewInfo (PID)
-    P->>D: report (Info, PID, UID)
-    D->>AS: authorize (Info, UID)
-    alt authorization OK
-        AS-->>D: authorization
-        D-->>P: Patient info
-    else authorization fail
-        AS-->>D: Error (no access)
-    end
-```
+![](images/22.jpeg)
 
 ---
 
