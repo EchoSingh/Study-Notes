@@ -448,4 +448,80 @@ This chart illustrates how different team members are allocated to various tasks
 
 11. Explain the agile methods of extreme programming and scrum.
 
+  Agile methods are a set of software development approaches designed for rapid software development and delivery, emphasizing flexibility and responsiveness to changing requirements. They interleave the processes of specification, design, and implementation, typically developing the system in small, frequent increments. The core philosophy of agile methods, as articulated in the Agile Manifesto, values individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan.
+
+Two prominent agile methodologies are Extreme Programming (XP) and Scrum.
+
+### Extreme Programming (XP)
+
+Extreme Programming (XP) was first applied in a documented project in 1996 by Kent Beck at Chrysler Corporation. XP pushes recognized good practices, such as iterative development, to "extreme" levels. For instance, multiple new versions of a system may be developed, integrated, and tested within a single day.
+
+**Core Practices of Extreme Programming:** XP is characterized by a set of interconnected practices that support its principles:
+
+- **User Stories**: Requirements are expressed as short, simple scenarios (user stories) written on cards, which are then broken down into tasks. These stories guide what functionality should be included in a system increment.
+- **Test-First Development (TDD)**: Before any code is written for a task, the developer decides how it will be tested, and the tests themselves become the specification. These tests are run on non-existent code, fail, and then just enough code is written to make them pass. This practice, along with automated testing frameworks like JUnit, greatly simplifies fault isolation.
+- **Pair Programming**: Two developers work closely together at the same computer, often sharing a single development computer and keyboard. One person works at the code level, while the other takes a slightly higher view, effectively conducting a continuous code review. This practice supports collective ownership and responsibility for the system.
+- **Refactoring**: Developers continuously improve the design of existing code without changing its external behavior. This keeps the code simple and maintainable, preventing structural deterioration that often occurs as software is changed.
+- **Continuous Integration**: As soon as work on a task is complete, it is integrated into the whole system. After each integration, all unit tests in the system must pass.
+- **Small Releases**: The project delivers minimal, useful sets of functionality frequently, incrementally adding more features with each release.
+- **On-site Customer**: A customer representative is an integral part of the development team, available full-time to clarify requirements and define acceptance tests.
+- **Simple Design**: Only enough design is carried out to meet the current requirements, avoiding unnecessary anticipation of future changes.
+- **Sustainable Pace**: The methodology discourages large amounts of overtime to maintain code quality and medium-term productivity.
+
+**Extreme Programming Release Cycle:** The XP release cycle involves selecting user stories for a release, breaking them into tasks, planning the iteration, pair coding, unit testing, and acceptance testing, leading to small, frequent releases.
+
+```
+graph TD
+    A[User Stories] --> B{Release Plan};
+    B --> C[Iteration];
+    C --> D[Iteration Plan];
+    D --> E[Pair Coding];
+    E --> F[Unit Test];
+    F --> G[Acceptance Test];
+    G --> H[Small Release];
+    H --> B; % Loop back for next release
+```
+
+_Figure: The Extreme Programming Life Cycle (Adapted from source)_
+
+### Scrum
+
+Scrum is an agile method that provides a framework for organizing agile projects, focusing on project management rather than mandating specific development practices like pair programming or test-first development. This flexibility has made Scrum the most widely used agile method.
+
+**Key Concepts and Process:** Scrum uses a distinct set of terms and follows a cyclical process:
+
+- **Product Backlog**: This is the input to the Scrum process, an ordered list of all known product features, requirements, and engineering improvements. It is prioritized by the Product Owner.
+- **Product Owner**: An individual (or small group) responsible for identifying and prioritizing product features and continuously reviewing the product backlog to ensure the project meets business needs.
+- **Development Team**: A self-organizing group of software developers (ideally up to seven people) responsible for developing the software and other essential project documents.
+- **Sprint**: A fixed-time development iteration, typically lasting 2 to 4 weeks. During a sprint, the team selects items from the product backlog to work on, forming the **Sprint Backlog**.
+- **Daily Scrum**: Short (daily) meetings where the Scrum team reviews progress, identifies problems, and plans the work for the day. This fosters collective awareness and short-term re-planning without top-down direction.
+- **Potentially Shippable Product Increment**: The output of each sprint. This is a deliverable product that is usable by the customer, representing the integrated work of the team.
+- **ScrumMaster**: Responsible for ensuring the Scrum process is followed and guiding the team. They interface with the rest of the company and protect the team from outside interference.
+- **Velocity**: An estimate of how much product backlog effort a team can cover in a single sprint, used for estimating future sprint capacity.
+
+**Scrum Process (Sprint Cycle):** The Scrum process begins with a product backlog, from which items are selected for a sprint. Daily Scrums manage work within the sprint, culminating in a potentially shippable product increment and a review meeting to refine the product backlog for the next sprint.
+
+```
+graph LR
+    A[Product Backlog] --> B[Sprint Definition];
+    B --> C[Sprint Backlog];
+    C --> D[Daily Standup Meeting];
+    D --> E[Design];
+    E --> F[Coding];
+    F --> G[Test];
+    G --> H[Small Release / Potentially Shippable Increment];
+    H --> I[Sprint Test];
+    I --> B; % Loop back for next sprint/iteration
+```
+
+_Figure: The Scrum Life Cycle (Adapted from source)_
+
+Testing in Scrum occurs at two levels: daily unit testing within the sprint and integration/system testing of the small release at the end of a sprint. Scrum, initially designed for co-located teams, has also evolved to support distributed development environments through specific requirements like videoconferencing, common development environments, and frequent product owner visits.
+
+Both XP and Scrum represent bottom-up development approaches with a strong emphasis on customer involvement and continuous adaptation to change. While XP defines specific engineering practices, Scrum provides a flexible management framework that can incorporate various development techniques.
+
+---
+
+12. Explain algorithmic cost modelling.
+
   
