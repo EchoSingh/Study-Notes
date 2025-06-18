@@ -56,7 +56,7 @@ Let's consider a hypothetical project to develop an **Online University Accounti
     - **Contingency**: For critical roles, have a succession plan or a pre-vetted list of potential external hires or contractors who could quickly step in. If a key staff member leaves, immediately initiate the recruitment process and reallocate tasks to other team members while the replacement is being onboarded. Regularly monitor staff morale and workload to identify potential issues before they lead to turnover.
 ---
     
-1. **Consider the case study of Triangle Problem** and generate Normal Boundary Value test cases and Worst Case Boundary Value test cases.
+2. **Consider the case study of Triangle Problem** and generate Normal Boundary Value test cases and Worst Case Boundary Value test cases.
 
 The Triangle Problem is a widely used case study in software testing to illustrate various unit testing methods due to its clear yet complex logic.
 
@@ -119,7 +119,34 @@ For a function of `n` variables, Worst-Case Boundary Value testing generates `5^
 
 Here is a selection of Worst-Case Boundary Value test cases for the Triangle Problem:
 
-| Case | `a` | `b` | `c` | Expected Output | | :--- | :-- | :-- | :-- | :--------------- | | 1 | 1 | 1 | 1 | Equilateral | | 2 | 1 | 1 | 2 | Not a triangle | | 3 | 1 | 1 | 100 | Not a triangle | | 4 | 1 | 1 | 199 | Not a triangle | | 5 | 1 | 1 | 200 | Not a triangle | | 6 | 1 | 2 | 1 | Not a triangle | | 7 | 1 | 2 | 2 | Isosceles | | 8 | 1 | 2 | 100 | Not a triangle | | 9 | 1 | 2 | 199 | Not a triangle | | 10 | 1 | 2 | 200 | Not a triangle | | 11 | 1 | 100 | 1 | Not a triangle | | 12 | 1 | 100 | 2 | Not a triangle | | 13 | 1 | 100 | 100 | Isosceles | | 14 | 1 | 100 | 199 | Not a triangle | | 15 | 1 | 100 | 200 | Not a triangle | | 16 | 1 | 199 | 1 | Not a triangle | | 17 | 1 | 199 | 2 | Not a triangle | | 18 | 1 | 199 | 100 | Not a triangle | | 19 | 1 | 199 | 199 | Isosceles | | 20 | 1 | 199 | 200 | Not a triangle | | 21 | 1 | 200 | 1 | Not a triangle | | 22 | 1 | 200 | 2 | Not a triangle | | 23 | 1 | 200 | 100 | Not a triangle | | 24 | 1 | 200 | 199 | Not a triangle | | 25 | 1 | 200 | 200 | Isosceles |
+|Case|`a`|`b`|`c`|Expected Output|
+|:--|:--|:--|:--|:--|
+|1|1|1|1|Equilateral|
+|2|1|1|2|Not a triangle|
+|3|1|1|100|Not a triangle|
+|4|1|1|199|Not a triangle|
+|5|1|1|200|Not a triangle|
+|6|1|2|1|Not a triangle|
+|7|1|2|2|Isosceles|
+|8|1|2|100|Not a triangle|
+|9|1|2|199|Not a triangle|
+|10|1|2|200|Not a triangle|
+|11|1|100|1|Not a triangle|
+|12|1|100|2|Not a triangle|
+|13|1|100|100|Isosceles|
+|14|1|100|199|Not a triangle|
+|15|1|100|200|Not a triangle|
+|16|1|199|1|Not a triangle|
+|17|1|199|2|Not a triangle|
+|18|1|199|100|Not a triangle|
+|19|1|199|199|Isosceles|
+|20|1|199|200|Not a triangle|
+|21|1|200|1|Not a triangle|
+|22|1|200|2|Not a triangle|
+|23|1|200|100|Not a triangle|
+|24|1|200|199|Not a triangle|
+|25|1|200|200|Isosceles|
+
 
 These methods are rooted in the assumption that input variables are independent. However, the Triangle Problem inherently has logical dependencies among its input variables (e.g., `a`, `b`, and `c` must satisfy the triangle inequality to form a valid triangle). This can lead to the generation of "impossible" or "strange" test cases, as seen in some of the "Not a triangle" outputs, where the values chosen for `a`, `b`, and `c` do not form a geometrically possible triangle. While such cases are useful for testing robustness against invalid input combinations, they also highlight a limitation of these methods when applied without considering semantic dependencies.
 
