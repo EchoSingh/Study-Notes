@@ -768,3 +768,128 @@ The client program in this setup is typically an integrated user interface built
 
 13. Explain the pipe and filter architecture with an example.
 
+The **Pipe and Filter architectural pattern** is a model of a system's runtime organization where functional transformations process their inputs and produce outputs. In this pattern, data flows from one component to another and is progressively transformed as it moves through a sequence of processing steps. Each processing step is implemented as a _transform_, also known as a _filter_. The name "pipe and filter" originates from the Unix system, where processes can be linked using "pipes" that pass text streams, and a "filter" processes data from its input stream.
+
+**Key Aspects of Pipe and Filter Architecture:**
+
+- **Description**: Data is transformed sequentially as it flows through a series of processing components. Each component (filter) is discrete and performs a single type of data transformation. Data is passed from one filter to the next via "pipes".
+- **Components**:
+    - **Filters**: Individual processing components that perform a specific data transformation. They read data from an input pipe, process it, and write the transformed data to an output pipe.
+    - **Pipes**: Connectors that serve as channels for data flow between filters. They transmit data streams from the output of one filter to the input of another.
+- **Operation**: Transformations can execute sequentially or in parallel. Data can be processed item by item or in a single batch by each transform.
+- **When Used**: This pattern is commonly applied in data-processing applications, including both batch and transaction-based systems, where inputs are processed in distinct stages to generate related outputs. It is also suitable for embedded systems, where a process pipeline can execute concurrently. Variants, such as the batch sequential model, are common for data-processing systems like billing systems.
+- **Advantages**:
+    - **Ease of Understanding**: The sequential workflow style readily matches the structure of many business processes.
+    - **Transformation Reuse**: Individual filters are self-contained and can be easily reused in different processing pipelines.
+    - **Evolution**: Adding new transformations to the pipeline is straightforward.
+    - **Flexibility**: Can be implemented as either a sequential or a concurrent system.
+- **Disadvantages**:
+    - **Data Format Agreement**: All communicating transformations must agree on a common data transfer format.
+    - **Overhead**: Each transformation needs to parse its input and unparse its output to conform to the agreed format, which can increase system overhead and may hinder the reuse of architectural components with incompatible data structures.
+    - **Limited Interactivity**: This model is less effective for interactive systems (especially those with graphical user interfaces) due to the need for a continuous data stream and event-based control, which doesn't fit the sequential stream model well.
+
+**Example: Invoice Processing System**
+
+An organization uses a pipe and filter architecture for its invoice processing system. Weekly, payments received are reconciled with issued invoices. For paid invoices, a receipt is issued, while for unpaid invoices that have exceeded the payment deadline, a reminder is issued.
+
+This process can be broken down into the following filters:
+
+1. **Read Issued Invoices**: Reads the raw invoice data.
+2. **Identify Payments**: Processes payment records to match them with invoices.
+3. **Find Payments Due**: Determines which invoices are still outstanding after considering payments.
+4. **Issue Receipts**: Generates receipts for paid invoices.
+5. **Issue Payment Reminder**: Generates reminder notices for overdue invoices.
+
+These filters are connected by "pipes" that pass the relevant data (invoices, payments, receipts, reminders) from one stage to the next, transforming it at each step.
+
+**Pipe and Filter Architecture for Invoice Processing Diagram (based on Figure 6.15 in Source 3.pdf):**
+
+```
++--------------------+       +--------------------+
+| Read Issued Invoices |----->|  Identify Payments   |
++--------------------+       +--------------------+
+         | Payments                     | Invoices (Paid & Unpaid)
+         |                              |
+         V                              V
++--------------------+       +--------------------+
+|  Find Payments Due   |<---- |    Invoices       |
++--------------------+       |    (from previous  |
+         | Payments Due       |    stage)        |
+         |                     +--------------------+
+         V
++--------------------+       +--------------------+
+|   Issue Receipts   |       |Issue Payment Reminder|
+|     (Receipts)     |<------|    (Reminders)     |
++--------------------+       +--------------------+
+```
+
+---
+
+14. ​Explain the layered architecture of the Mentcare system with a diagram.
+
+The **layered architecture** is an architectural pattern that organizes a system into distinct layers, where related functionality is associated with each layer. Each layer provides services to the layer immediately above it, with the lowest-level layers representing core services used throughout the system. This approach facilitates incremental system development, allows for the replacement of entire layers if the interface is maintained, and localizes machine dependencies, simplifying multi-platform implementations. A disadvantage can be the difficulty in maintaining a clean separation between layers, and performance issues may arise due to multiple levels of interpretation of service requests.
+
+### Layered Architecture of the Mentcare System
+
+The Mentcare system, a patient information system designed to support mental health care, utilizes a layered architecture. This architecture is an instantiation of a general information system model, adapting its structure to the specific needs of managing patient information. The system is built with four distinct layers:
+
+1. **Web Browser (Top Layer)**: This layer serves as the user interface, providing a browser-based means for clinicians and other authorized staff to interact with the system.
+2. **User Interface Functionality (Second Layer)**: This layer is responsible for delivering the user interface functions through the web browser. It includes several key components:
+    - **Login**: Manages user authentication to the system.
+    - **Form and Menu Manager**: Presents information to users and handles form and menu interactions.
+    - **Data Validation**: Checks the consistency of data entered by users.
+    - **Role Checking**: Ensures that users' operations are consistent with their assigned roles and permissions.
+3. **System Functionality (Third Layer)**: This layer implements the core business logic and functionalities of the Mentcare system:
+    - **Security Management**: Handles overall system security beyond basic role checking.
+    - **Patient Info. Manager**: Manages the creation and updating of patient information records.
+    - **Data Import and Export**: Facilitates the transfer of patient data to and from other databases.
+    - **Report Generation**: Creates management reports, such as monthly reports on patients treated, new patients, sectioned patients, and drug costs.
+4. **Patient Database (Lowest Layer)**: This foundational layer is built using a commercial database management system. Its primary responsibilities are:
+    - **Transaction Management**: Ensures the integrity and consistency of database operations.
+    - **Persistent Data Storage**: Stores all patient information and other system data reliably.
+
+This layered structure supports the system's requirements for privacy and safety, allowing for the potential trade-offs between availability and data confidentiality, which are critical in medical systems.
+
+**Diagram:**
+
+```
++-------------------------------------------------+
+|                    Web Browser                  |
+|               (User Interface)                  |
++-------------------------------------------------+
+        |
+        | Requests & Displays
+        V
++-------------------------------------------------+
+|         User Interface Functionality            |
+|-------------------------------------------------|
+|  Login   |  Form and Menu  |  Data Validation  |
+|          |    Manager      |                   |
+|----------|-----------------|-------------------|
+|          |    Role Checking|                   |
++-------------------------------------------------+
+        |
+        | Service Calls
+        V
++-------------------------------------------------+
+|               System Functionality              |
+|-------------------------------------------------|
+| Security | Patient Info. | Data Import | Report |
+| Mgmt.    |   Manager     |  & Export   | Gen.   |
++-------------------------------------------------+
+        |
+        | Database Operations
+        V
++-------------------------------------------------+
+|               Patient Database                  |
+|-------------------------------------------------|
+| Transaction Management | Persistent Data Storage|
+| (Commercial DBMS)                              |
++-------------------------------------------------+
+```
+
+[Figure 6.19 in Source 3.pdf, adapted]
+
+---
+
+17. 
