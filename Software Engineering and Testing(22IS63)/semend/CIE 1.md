@@ -351,7 +351,30 @@ This iterative process allows the banking application to be delivered incrementa
 
 6. Determine the role of integration and configuration model in software engineering. With a suitable diagram explain the steps involved.
 
-     
+The integration and configuration model, also known as reuse-oriented software engineering, is a software development approach that emphasizes the reuse of existing software components or systems. This model is predicated on the availability of a base of reusable software components and an integrating framework designed for composing these components. It has become widely used, especially since 2000.
+
+**Role of the Integration and Configuration Model:** The primary role of this model is to reduce the amount of new software that needs to be developed, thereby reducing development costs and risks, and typically leading to faster software delivery. This approach focuses on configuring existing components for use in a new setting and integrating them into a complete system.
+
+**Steps Involved in Reuse-Oriented Software Engineering:** The general process model for reuse-based development, as illustrated in Figure 2.3 in the sources, involves several key stages:
+
+1. **Requirements Specification**: The process begins with the proposal of initial requirements for the system. These requirements do not need to be highly detailed but should include brief descriptions of essential requirements and desired system features.
+2. **Software Discovery and Evaluation**: Given an outline of the software requirements, a search is conducted for existing components and systems that can provide the necessary functionality. Candidate components and systems are then evaluated to determine if they meet the essential requirements and are generally suitable for integration into the system.
+3. **Requirements Refinement**: During this stage, the initial requirements are refined using the information gathered about the discovered reusable components and applications. The requirements are modified to reflect the available components, and the system specification is redefined. If modifications are not possible, the component analysis activity (step 2) may be re-entered to search for alternative solutions.
+4. **Application System Configuration**: If a suitable off-the-shelf application system that meets the refined requirements is identified, it may then be configured for use to create the new system.
+5. **Component Adaptation and Integration**: If no single off-the-shelf system is available, individual reusable components may be modified, and new components may be developed if needed. These adapted and new components are then integrated to create the final system.
+
+**Diagram:**
+
+The diagram below (Figure 2.3 from the sources) visually represents the "Reuse-oriented software engineering" process:
+
+
+```
+
+_Figure 2.3: Reuse-oriented software engineering_
+
+The diagram illustrates the flow from initial requirements to the final application system, highlighting the iterative nature of requirements refinement based on component discovery and evaluation, and the two parallel paths for system creation: configuring an existing application or adapting and integrating individual components.
+
+**Advantages and Disadvantages:** The main advantage of this approach is the reduction in the amount of software that needs to be developed, which translates to lower costs and risks, and often faster delivery. However, a significant disadvantage is that requirements compromises are inevitable, potentially leading to a system that doesn't perfectly meet the users' actual needs. Additionally, some control over the system's evolution is lost because new versions of reusable components are not controlled by the organization using them.
 6. Differentiate between plan driven development and agile development. Illustrate the role of agile models in prescribing medication in a Healthcare system.  
     **(OR)**
 
