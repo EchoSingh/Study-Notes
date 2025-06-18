@@ -378,7 +378,7 @@ The diagram illustrates the flow from initial requirements to the final applicat
 
 ---
 
-6. Differentiate between plan driven development and agile development. Illustrate the role of agile models in prescribing medication in a Healthcare system.  
+7. Differentiate between plan driven development and agile development. Illustrate the role of agile models in prescribing medication in a Healthcare system.  
     **(OR)**
 
 Plan-driven development and agile development represent distinct approaches to software engineering, differing in their planning, requirements handling, and overall process.
@@ -438,3 +438,5 @@ The Mentcare system is a mental health care patient information system that mana
 ---
     
 8. Explain the role of interaction models in software engineering. Consider an ATM application and generate sequence diagram for balance enquiry.
+
+ 
