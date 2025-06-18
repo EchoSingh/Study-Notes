@@ -343,6 +343,239 @@ In practice, both approaches are crucial. Functional testing provides confidence
 
 **(OR)**
 
- ---
- 
+
+Here is the generation of test cases for each discount rule:
+
+---
+
+### Discount Rule 1: Kids wear (shirt and pants)
+
+- **Parameters:** Type of Dress: Kids wear (shirt and pants), Gender: Boys
+- **Age Range:** years
+    - Min Age: 1, Min+ Age: 2, Nom Age: 3, Max- Age: 4, Max Age: 5
+- **Cost Range:** [Rs. 100, Rs. 1,000]
+    - Min Cost: 100, Min+ Cost: 101, Nom Cost: 550, Max- Cost: 999, Max Cost: 1,000
+- **Expected Discount:** 5%
+
+|Test Case #|Type of Dress|Age|Gender|Cost (Rs.)|Expected Discount (%)|Comment (BVA point varied)|
+|:--|:--|:--|:--|:--|:--|:--|
+|1.1|Kids wear (shirt and pants)|3|Boys|550|5|Nominal Age & Cost|
+|1.2|Kids wear (shirt and pants)|1|Boys|550|5|Age - Minimum|
+|1.3|Kids wear (shirt and pants)|2|Boys|550|5|Age - Just above minimum|
+|1.4|Kids wear (shirt and pants)|4|Boys|550|5|Age - Just below maximum|
+|1.5|Kids wear (shirt and pants)|5|Boys|550|5|Age - Maximum|
+|1.6|Kids wear (shirt and pants)|3|Boys|100|5|Cost - Minimum|
+|1.7|Kids wear (shirt and pants)|3|Boys|101|5|Cost - Just above minimum|
+|1.8|Kids wear (shirt and pants)|3|Boys|999|5|Cost - Just below maximum|
+|1.9|Kids wear (shirt and pants)|3|Boys|1,000|5|Cost - Maximum|
+
+---
+
+### Discount Rule 2: Kids wear (Skirts and frocks)
+
+- **Parameters:** Type of Dress: Kids wear (Skirts and frocks), Gender: Girls
+- **Age Range:** years
+    - Min Age: 1, Min+ Age: 2, Nom Age: 3, Max- Age: 4, Max Age: 5
+- **Cost Range:** [Rs. 100, Rs. 1,000]
+    - Min Cost: 100, Min+ Cost: 101, Nom Cost: 550, Max- Cost: 999, Max Cost: 1,000
+- **Expected Discount:** 5%
+
+|Test Case #|Type of Dress|Age|Gender|Cost (Rs.)|Expected Discount (%)|Comment (BVA point varied)|
+|:--|:--|:--|:--|:--|:--|:--|
+|2.1|Kids wear (Skirts and frocks)|3|Girls|550|5|Nominal Age & Cost|
+|2.2|Kids wear (Skirts and frocks)|1|Girls|550|5|Age - Minimum|
+|2.3|Kids wear (Skirts and frocks)|2|Girls|550|5|Age - Just above minimum|
+|2.4|Kids wear (Skirts and frocks)|4|Girls|550|5|Age - Just below maximum|
+|2.5|Kids wear (Skirts and frocks)|5|Girls|550|5|Age - Maximum|
+|2.6|Kids wear (Skirts and frocks)|3|Girls|100|5|Cost - Minimum|
+|2.7|Kids wear (Skirts and frocks)|3|Girls|101|5|Cost - Just above minimum|
+|2.8|Kids wear (Skirts and frocks)|3|Girls|999|5|Cost - Just below maximum|
+|2.9|Kids wear (Skirts and frocks)|3|Girls|1,000|5|Cost - Maximum|
+
+---
+
+### Discount Rule 3: Kids wear (special dresses like Spiderman, police dress, etc.)
+
+- **Parameters:** Type of Dress: Kids wear (special dresses), Gender: Any child
+- **Age Range:** years
+    - Min Age: 1, Min+ Age: 2, Nom Age: 3, Max- Age: 4, Max Age: 5
+- **Cost Range:** [Rs. 2,500, Rs. 5,000]
+    - Min Cost: 2,500, Min+ Cost: 2,501, Nom Cost: 3,750, Max- Cost: 4,999, Max Cost: 5,000
+- **Expected Discount:** 10%
+
+|Test Case #|Type of Dress|Age|Gender|Cost (Rs.)|Expected Discount (%)|Comment (BVA point varied)|
+|:--|:--|:--|:--|:--|:--|:--|
+|3.1|Kids wear (special dresses)|3|Any|3,750|10|Nominal Age & Cost|
+|3.2|Kids wear (special dresses)|1|Any|3,750|10|Age - Minimum|
+|3.3|Kids wear (special dresses)|2|Any|3,750|10|Age - Just above minimum|
+|3.4|Kids wear (special dresses)|4|Any|3,750|10|Age - Just below maximum|
+|3.5|Kids wear (special dresses)|5|Any|3,750|10|Age - Maximum|
+|3.6|Kids wear (special dresses)|3|Any|2,500|10|Cost - Minimum|
+|3.7|Kids wear (special dresses)|3|Any|2,501|10|Cost - Just above minimum|
+|3.8|Kids wear (special dresses)|3|Any|4,999|10|Cost - Just below maximum|
+|3.9|Kids wear (special dresses)|3|Any|5,000|10|Cost - Maximum|
+
+---
+
+### Discount Rule 4: Kurtha and Pyjama (Age 6–16 years, Girls)
+
+- **Parameters:** Type of Dress: Kurtha and Pyjama, Gender: Girls
+- **Age Range:** years
+    - Min Age: 6, Min+ Age: 7, Nom Age: 11, Max- Age: 15, Max Age: 16
+- **Cost Range:** [Rs. 1,500, Rs. 10,000]
+    - Min Cost: 1,500, Min+ Cost: 1,501, Nom Cost: 5,750, Max- Cost: 9,999, Max Cost: 10,000
+- **Expected Discount:** 15%
+
+|Test Case #|Type of Dress|Age|Gender|Cost (Rs.)|Expected Discount (%)|Comment (BVA point varied)|
+|:--|:--|:--|:--|:--|:--|:--|
+|4.1|Kurtha and Pyjama|11|Girls|5,750|15|Nominal Age & Cost|
+|4.2|Kurtha and Pyjama|6|Girls|5,750|15|Age - Minimum|
+|4.3|Kurtha and Pyjama|7|Girls|5,750|15|Age - Just above minimum|
+|4.4|Kurtha and Pyjama|15|Girls|5,750|15|Age - Just below maximum|
+|4.5|Kurtha and Pyjama|16|Girls|5,750|15|Age - Maximum|
+|4.6|Kurtha and Pyjama|11|Girls|1,500|15|Cost - Minimum|
+|4.7|Kurtha and Pyjama|11|Girls|1,501|15|Cost - Just above minimum|
+|4.8|Kurtha and Pyjama|11|Girls|9,999|15|Cost - Just below maximum|
+|4.9|Kurtha and Pyjama|11|Girls|10,000|15|Cost - Maximum|
+
+---
+
+### Discount Rule 5: Lehenga, Anarkali suit type of dresses (Age 6–16 years, Girls)
+
+- **Parameters:** Type of Dress: Lehenga, Anarkali suit type of dresses, Gender: Girls
+- **Age Range:** years
+    - Min Age: 6, Min+ Age: 7, Nom Age: 11, Max- Age: 15, Max Age: 16
+- **Cost Range:** [Rs. 1,000, Rs. 7,000]
+    - Min Cost: 1,000, Min+ Cost: 1,001, Nom Cost: 4,000, Max- Cost: 6,999, Max Cost: 7,000
+- **Expected Discount:** 12%
+
+|Test Case #|Type of Dress|Age|Gender|Cost (Rs.)|Expected Discount (%)|Comment (BVA point varied)|
+|:--|:--|:--|:--|:--|:--|:--|
+|5.1|Lehenga, Anarkali suit type of dresses|11|Girls|4,000|12|Nominal Age & Cost|
+|5.2|Lehenga, Anarkali suit type of dresses|6|Girls|4,000|12|Age - Minimum|
+|5.3|Lehenga, Anarkali suit type of dresses|7|Girls|4,000|12|Age - Just above minimum|
+|5.4|Lehenga, Anarkali suit type of dresses|15|Girls|4,000|12|Age - Just below maximum|
+|5.5|Lehenga, Anarkali suit type of dresses|16|Girls|4,000|12|Age - Maximum|
+|5.6|Lehenga, Anarkali suit type of dresses|11|Girls|1,000|12|Cost - Minimum|
+|5.7|Lehenga, Anarkali suit type of dresses|11|Girls|1,001|12|Cost - Just above minimum|
+|5.8|Lehenga, Anarkali suit type of dresses|11|Girls|6,999|12|Cost - Just below maximum|
+|5.9|Lehenga, Anarkali suit type of dresses|11|Girls|7,000|12|Cost - Maximum|
+
+---
+
+### Discount Rule 6: Sherwani, Dhoti type dresses (Age 6–16 years, Boys)
+
+- **Parameters:** Type of Dress: Sherwani, Dhoti type dresses, Gender: Boys
+- **Age Range:** years
+    - Min Age: 6, Min+ Age: 7, Nom Age: 11, Max- Age: 15, Max Age: 16
+- **Cost Range:** [Rs. 1,000, Rs. 7,000]
+    - Min Cost: 1,000, Min+ Cost: 1,001, Nom Cost: 4,000, Max- Cost: 6,999, Max Cost: 7,000
+- **Expected Discount:** 10%
+
+|Test Case #|Type of Dress|Age|Gender|Cost (Rs.)|Expected Discount (%)|Comment (BVA point varied)|
+|:--|:--|:--|:--|:--|:--|:--|
+|6.1|Sherwani, Dhoti type dresses|11|Boys|4,000|10|Nominal Age & Cost|
+|6.2|Sherwani, Dhoti type dresses|6|Boys|4,000|10|Age - Minimum|
+|6.3|Sherwani, Dhoti type dresses|7|Boys|4,000|10|Age - Just above minimum|
+|6.4|Sherwani, Dhoti type dresses|15|Boys|4,000|10|Age - Just below maximum|
+|6.5|Sherwani, Dhoti type dresses|16|Boys|4,000|10|Age - Maximum|
+|6.6|Sherwani, Dhoti type dresses|11|Boys|1,000|10|Cost - Minimum|
+|6.7|Sherwani, Dhoti type dresses|11|Boys|1,001|10|Cost - Just above minimum|
+|6.8|Sherwani, Dhoti type dresses|11|Boys|6,999|10|Cost - Just below maximum|
+|6.9|Sherwani, Dhoti type dresses|11|Boys|7,000|10|Cost - Maximum|
+
+---
+
+### Discount Rule 7: Kurtha and Pyjama (Age 17–30 years, Girls)
+
+- **Parameters:** Type of Dress: Kurtha and Pyjama, Gender: Girls
+- **Age Range:** years
+    - Min Age: 17, Min+ Age: 18, Nom Age: 23, Max- Age: 29, Max Age: 30
+- **Cost Range:** [Rs. 800, Rs. 15,000]
+    - Min Cost: 800, Min+ Cost: 801, Nom Cost: 7,900, Max- Cost: 14,999, Max Cost: 15,000
+- **Expected Discount:** 20%
+
+|Test Case #|Type of Dress|Age|Gender|Cost (Rs.)|Expected Discount (%)|Comment (BVA point varied)|
+|:--|:--|:--|:--|:--|:--|:--|
+|7.1|Kurtha and Pyjama|23|Girls|7,900|20|Nominal Age & Cost|
+|7.2|Kurtha and Pyjama|17|Girls|7,900|20|Age - Minimum|
+|7.3|Kurtha and Pyjama|18|Girls|7,900|20|Age - Just above minimum|
+|7.4|Kurtha and Pyjama|29|Girls|7,900|20|Age - Just below maximum|
+|7.5|Kurtha and Pyjama|30|Girls|7,900|20|Age - Maximum|
+|7.6|Kurtha and Pyjama|23|Girls|800|20|Cost - Minimum|
+|7.7|Kurtha and Pyjama|23|Girls|801|20|Cost - Just above minimum|
+|7.8|Kurtha and Pyjama|23|Girls|14,999|20|Cost - Just below maximum|
+|7.9|Kurtha and Pyjama|23|Girls|15,000|20|Cost - Maximum|
+
+---
+
+### Discount Rule 8: Lehenga, Anarkali suit type of dresses (Age 17–30 years, Girls)
+
+- **Parameters:** Type of Dress: Lehenga, Anarkali suit type of dresses, Gender: Girls
+- **Age Range:** years
+    - Min Age: 17, Min+ Age: 18, Nom Age: 23, Max- Age: 29, Max Age: 30
+- **Cost Range:** [Rs. 2,000, Rs. 20,000]
+    - Min Cost: 2,000, Min+ Cost: 2,001, Nom Cost: 11,000, Max- Cost: 19,999, Max Cost: 20,000
+- **Expected Discount:** 25%
+
+|Test Case #|Type of Dress|Age|Gender|Cost (Rs.)|Expected Discount (%)|Comment (BVA point varied)|
+|:--|:--|:--|:--|:--|:--|:--|
+|8.1|Lehenga, Anarkali suit type of dresses|23|Girls|11,000|25|Nominal Age & Cost|
+|8.2|Lehenga, Anarkali suit type of dresses|17|Girls|11,000|25|Age - Minimum|
+|8.3|Lehenga, Anarkali suit type of dresses|18|Girls|11,000|25|Age - Just above minimum|
+|8.4|Lehenga, Anarkali suit type of dresses|29|Girls|11,000|25|Age - Just below maximum|
+|8.5|Lehenga, Anarkali suit type of dresses|30|Girls|11,000|25|Age - Maximum|
+|8.6|Lehenga, Anarkali suit type of dresses|23|Girls|2,000|25|Cost - Minimum|
+|8.7|Lehenga, Anarkali suit type of dresses|23|Girls|2,001|25|Cost - Just above minimum|
+|8.8|Lehenga, Anarkali suit type of dresses|23|Girls|19,999|25|Cost - Just below maximum|
+|8.9|Lehenga, Anarkali suit type of dresses|23|Girls|20,000|25|Cost - Maximum|
+
+---
+
+### Discount Rule 9: Sherwani, Dhoti type dresses (Age 17–30 years, Boys)
+
+- **Parameters:** Type of Dress: Sherwani, Dhoti type dresses, Gender: Boys
+- **Age Range:** years
+    - Min Age: 17, Min+ Age: 18, Nom Age: 23, Max- Age: 29, Max Age: 30
+- **Cost Range:** [Rs. 2,000, Rs. 10,000]
+    - Min Cost: 2,000, Min+ Cost: 2,001, Nom Cost: 6,000, Max- Cost: 9,999, Max Cost: 10,000
+- **Expected Discount:** 15%
+
+|Test Case #|Type of Dress|Age|Gender|Cost (Rs.)|Expected Discount (%)|Comment (BVA point varied)|
+|:--|:--|:--|:--|:--|:--|:--|
+|9.1|Sherwani, Dhoti type dresses|23|Boys|6,000|15|Nominal Age & Cost|
+|9.2|Sherwani, Dhoti type dresses|17|Boys|6,000|15|Age - Minimum|
+|9.3|Sherwani, Dhoti type dresses|18|Boys|6,000|15|Age - Just above minimum|
+|9.4|Sherwani, Dhoti type dresses|29|Boys|6,000|15|Age - Just below maximum|
+|9.5|Sherwani, Dhoti type dresses|30|Boys|6,000|15|Age - Maximum|
+|9.6|Sherwani, Dhoti type dresses|23|Boys|2,000|15|Cost - Minimum|
+|9.7|Sherwani, Dhoti type dresses|23|Boys|2,001|15|Cost - Just above minimum|
+|9.8|Sherwani, Dhoti type dresses|23|Boys|9,999|15|Cost - Just below maximum|
+|9.9|Sherwani, Dhoti type dresses|23|Boys|10,000|15|Cost - Maximum|
+
+---
+
+### Discount Rule 10: Kurtha and Pyjama (Age 17–30 years, Boys)
+
+- **Parameters:** Type of Dress: Kurtha and Pyjama, Gender: Boys
+- **Age Range:** years
+    - Min Age: 17, Min+ Age: 18, Nom Age: 23, Max- Age: 29, Max Age: 30
+- **Cost Range:** [Rs. 1,000, Rs. 15,000]
+    - Min Cost: 1,000, Min+ Cost: 1,001, Nom Cost: 8,000, Max- Cost: 14,999, Max Cost: 15,000
+- **Expected Discount:** 18%
+
+|Test Case #|Type of Dress|Age|Gender|Cost (Rs.)|Expected Discount (%)|Comment (BVA point varied)|
+|:--|:--|:--|:--|:--|:--|:--|
+|10.1|Kurtha and Pyjama|23|Boys|8,000|18|Nominal Age & Cost|
+|10.2|Kurtha and Pyjama|17|Boys|8,000|18|Age - Minimum|
+|10.3|Kurtha and Pyjama|18|Boys|8,000|18|Age - Just above minimum|
+|10.4|Kurtha and Pyjama|29|Boys|8,000|18|Age - Just below maximum|
+|10.5|Kurtha and Pyjama|30|Boys|8,000|18|Age - Maximum|
+|10.6|Kurtha and Pyjama|23|Boys|1,000|18|Cost - Minimum|
+|10.7|Kurtha and Pyjama|23|Boys|1,001|18|Cost - Just above minimum|
+|10.8|Kurtha and Pyjama|23|Boys|14,999|18|Cost - Just below maximum|
+|10.9|Kurtha and Pyjama|23|Boys|15,000|18|Cost - Maximum| ---
+
+---
+
 8. Consider an application where email and password are used to login to the application. If the values of the email are **Blank / Valid / Invalid**, indicate how decisions can be taken up using **Decision Based Testing technique**.
