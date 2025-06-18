@@ -222,35 +222,7 @@ Below is a diagram illustrating the test and debug cycle, followed by an elabora
 
 **Figure 1.4 A test and debug cycle.**
 
-```
-                                 Test plan
-                                 Specification
-                                     |
-                                     V
-        Input domain  <----------->  Construct test input
-             ^                         |
-             |                         V
-             Use                      Execute program
-             |                         |
-             V                         V
-  Is behavior as expected?           Use (Test case)
-      /       \                         /       \
-    Yes        No (Behavior)           Yes       No (Error to be fixed now?)
-     |          |                     /             \
-     V          V                   Use             No
-Testing to be  Determine             /                 \
-terminated?    Cause of error now?   V                 V
- /       \                         Fix error       File pending error report
-Yes       No
- |         V
- |         File test session report
- |
- V
-Debug the program
- Update?
-  /  \
-Yes   No
-```
+![]
 
 Here are the different steps involved in the test/debug cycle:
 
