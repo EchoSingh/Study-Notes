@@ -465,13 +465,15 @@ Here is a sequence diagram illustrating the process for a balance inquiry:
 
 **Explanation of the Sequence Diagram:**
 
-1. **Insert Card**: The `Customer` (Actor) initiates the interaction by inserting their card into the `ATM Terminal` [C->ATM].
-2. **Request PIN**: The `ATM Terminal`'s internal `ATM Controller` (Participant) requests the customer's Personal Identification Number (PIN) [ATM->Controller, Controller->ATM].
+1. **Insert Card**: The `Customer` (Actor) initiates the interaction by inserting their card into the `ATM Terminal` .
+2. **Request PIN**: The `ATM Terminal`'s internal `ATM Controller` (Participant) requests the customer's Personal Identification Number (PIN) .
 3. **Enter and Verify PIN**: The `Customer` enters their PIN. The `ATM Terminal` sends this to the `ATM Controller`, which then communicates with the `Bank Server` (Participant) to verify the PIN. The `Bank Server` consults the `Customer Account DB` (Database) for this verification.
-4. **Transaction Options**: Once the PIN is verified, the `ATM Controller` instructs the `ATM Terminal` to display the available transaction options to the `Customer` [Controller->ATM].
-5. **Select Balance Inquiry**: The `Customer` selects "Balance Inquiry" [C->ATM].
-6. **Get Balance**: The `ATM Terminal` sends this request to the `ATM Controller`, which then sends a "Get Balance" request along with the `AccountID` to the `Bank Server`. The `Bank Server` queries the `Customer Account DB` to retrieve the balance and returns it to the `ATM Controller` [ATM->Controller, Controller->Server, Server->DB, DB-->Server, Server-->Controller].
-7. **Display Balance**: The `ATM Controller` then instructs the `ATM Terminal` to display the balance to the `Customer` [Controller->ATM].
-8. **Session Closure/Next Transaction**: The `Customer` acknowledges or chooses another transaction. The system may then print a receipt and eject the card [C->ATM, ATM->Controller, Controller->ATM]. The `Customer` then takes their receipt and card [C->C].
+4. **Transaction Options**: Once the PIN is verified, the `ATM Controller` instructs the `ATM Terminal` to display the available transaction options to the `Customer` .
+5. **Select Balance Inquiry**: The `Customer` selects "Balance Inquiry" .
+6. **Get Balance**: The `ATM Terminal` sends this request to the `ATM Controller`, which then sends a "Get Balance" request along with the `AccountID` to the `Bank Server`. The `Bank Server` queries the `Customer Account DB` to retrieve the balance and returns it to the `ATM Controller`.
+7. **Display Balance**: The `ATM Controller` then instructs the `ATM Terminal` to display the balance to the `Customer`.
+8. **Session Closure/Next Transaction**: The `Customer` acknowledges or chooses another transaction. The system may then print a receipt and eject the card . The `Customer` then takes their receipt and card .
 
 This diagram visually represents the flow of messages and the sequence of operations between different system components and external actors involved in a balance inquiry, aligning with the principles of interaction modeling.
+
+---
