@@ -92,6 +92,25 @@ int main() {
 
 ![](images/cie3.svg)
 
+|Node|Code|Case|
+|---|---|---|
+|**Start**|_Entry point_|**Distinguished Node**|
+|**Block 1**|`int i = 0;` _(implicit in for-loop init)_|**Computation Block**|
+|**Block 2**|`i < 3`|**Decision Block**|
+|**Block 3**|`scanf("%d", A + i);`|**Computation Block**|
+|**Block 4**|`i++` (part of loop structure)|**Computation Block**|
+|**Block 5**|`int a, b = 0, c = 0; int i = 0;`|**Computation Block**|
+|**Block 6**|`i < 3` _(second for-loop condition)_|**Decision Block**|
+|**Block 7**|`scanf("%d", &a);`|**Computation Block**|
+|**Block 8**|`if (a > A[i])`|**Decision Block**|
+|**Block 9**|`c++;`|**Computation Block**|
+|**Block 10**|`else if (a < A[i])`|**Decision Block**|
+|**Block 11**|`b++;`|**Computation Block**|
+|**Block 12**|_(Join node after if-else-if)_|**Join Block**|
+|**Block 13**|`i++` (increment for second loop)|**Computation Block**|
+|**Block 14**|`printf("%d %d", b, c);`|**Computation Block**|
+|**Block 15**|`return 0;`|**Computation Block**|
+|**End**|_Exit point_|**Distinguished Node**|
 
 ---
 
