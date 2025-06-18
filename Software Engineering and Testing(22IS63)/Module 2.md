@@ -129,3 +129,73 @@ sequenceDiagram
 
 ---
 
+3. With a neat diagram, explain the sequence diagram for Transfer Data of Mentcare
+Systems.
+
+A sequence diagram is a Unified Modeling Language (UML) diagram primarily used to model the interactions between actors and objects within a system, illustrating the chronological sequence of these interactions from top to bottom.
+
+The Mentcare system, a patient information system for mental healthcare, often needs to transfer patient data to a more general Patient Records System (PRS) maintained by a health authority. This "Transfer Data" functionality involves a medical receptionist transferring updated personal information or a summary of a patient's diagnosis and treatment.
+
+### Sequence Diagram for "Transfer Data" of Mentcare Systems
+
+The diagram (Figure 5.7 in the sources) illustrates the sequence of interactions when a medical receptionist performs a data transfer from the Mentcare system to a Patient Records System (PRS).
+
+**Diagram Elements and Flow:**
+
+- **Actors and Objects**: Listed horizontally at the top, including "Medical Receptionist," "PRS" (Patient Records System), "P: PatientInfo" (a PatientInfo object instance, likely a user interface component), "D: Mentcare-DB" (the Mentcare database), "AS: Authorization" (the authorization system), and `:summary` (a Summary object instance created during the process).
+- **Lifelines**: Dotted vertical lines extending downwards from each actor and object, representing their existence during the interaction.
+- **Activation Bars**: Rectangles on the lifelines, indicating when an object instance is actively performing an operation.
+- **Messages**: Annotated arrows showing calls, parameters, and return values, read from top to bottom to indicate the sequence of events.
+- **Alternatives (`alt`)**: A box that encloses conditional logic. Different interaction paths are separated by a dotted line within the `alt` box, with conditions in square brackets.
+
+**Step-by-Step Interaction Flow:**
+
+1. **Receptionist Login**: The `Medical Receptionist` initiates the process by logging into the `PRS`.
+2. **Transfer Options**: After logging in, the receptionist has two main options, represented by the `alt` box:
+    - **Direct Transfer of Updated Patient Information (`[sendInfo]`)**:
+        - The `Medical Receptionist`'s permissions are checked by calling `authorize (TF, UID)` on the `AS: Authorization` system.
+        - If authorization is successful, the `P: PatientInfo` object calls `updateInfo()` to directly transfer updated personal information to the `PRS`.
+    - **Transfer of Summary Health Data (`[sendSummary]`)**:
+        - The `Medical Receptionist`'s permissions are checked by calling `authorize (TF, UID)` on the `AS: Authorization` system.
+        - If authorization is successful, a new `:summary` object instance is created.
+        - The `P: PatientInfo` object calls `summarize (UID)` on the `D: Mentcare-DB` to retrieve summary data, which is then passed to the `:summary` object.
+        - The `:summary` object calls `UpdateSummary()` on the `PRS` to transfer the summarized data.
+3. **Completion and Logout**:
+    - Upon successful completion of either transfer option, the `PRS` sends an `update OKMessage (OK)` status message.
+    - Finally, the `Medical Receptionist` logs out of the `PRS`.
+
+This diagram comprehensively captures the user interaction, conditional logic, and system-to-system communication involved in the "Transfer Data" operation within the Mentcare system.
+
+```
+sequenceDiagram
+    actor MedicalReceptionist
+    participant PRS
+    participant P as PatientInfo
+    participant D as Mentcare-DB
+    participant AS as Authorization
+
+    MedicalReceptionist->>PRS: login ()
+    PRS-->>MedicalReceptionist: ok
+
+    alt sendInfo
+        MedicalReceptionist->>AS: authorize (TF, UID)
+        AS-->>MedicalReceptionist: authorization
+        P->>PRS: updateInfo ()
+    else sendSummary
+        MedicalReceptionist->>AS: authorize (TF, UID)
+        AS-->>MedicalReceptionist: authorization
+        P->>D: summarize (UID)
+        create participant summary
+        D-->>summary: :summary
+        summary->>PRS: UpdateSummary ()
+    end
+
+    PRS-->>MedicalReceptionist: update OKMessage (OK)
+    MedicalReceptionist->>PRS: logout ()
+```
+
+---
+
+4. With a neat diagram, explain how classes and associations are represented in
+Mentcare Systems.
+
