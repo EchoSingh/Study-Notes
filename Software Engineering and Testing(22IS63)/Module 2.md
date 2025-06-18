@@ -894,3 +894,47 @@ This layered structure supports the system's requirements for privacy and safety
 
 15. Explain the various stages of object-oriented design with relevant diagrams.
 
+Object-oriented design involves a creative, iterative process where solutions are proposed and refined as new information becomes available, often requiring backtracking and re-evaluation. It integrates system modeling and architectural design into practice. This process can involve using formal notations like UML precisely or informally to facilitate discussion.
+
+The key stages of object-oriented design are:
+
+1. **Understand and Define the Context and External Interactions** This initial stage focuses on understanding the relationships between the software being designed and its external environment. This understanding is crucial for determining the system's functionality and structuring it to communicate effectively with its environment, as well as establishing system boundaries.
+    
+    - **Use case models** are used to define system interactions, identifying actors (human users or other systems) and the types of interactions. For example, a weather station interacts with a weather information system to report data and status, and with a control system for commands. These use cases are typically described in structured natural language, listing information exchanged, interaction initiation, and responses to stimuli.
+    - **Sequence diagrams** model interactions between actors and system objects, as well as interactions between objects themselves, showing the temporal sequence of these interactions. They can detail high-level use cases. For instance, a sequence diagram might illustrate the flow when an external system requests summarized data from a weather station [3, 483, Figure 7.7].
+2. **Design the System Architecture** Following the definition of external interactions, this stage involves designing the system's overall structure by identifying its major components and their interactions. This process combines knowledge of architectural design principles with specific domain knowledge. Architectural patterns, such as layered or client-server models, may be used to organize the system.
+    
+    - An architectural model for a weather mapping system might show how data collection, processing, and display components interact [3, Figure 7.4]. Another example could be the architecture for a data collection system with a transmitter, receiver, and weather data component [3, Figure 7.5].
+3. **Identify the Principal Objects** At this stage, designers refine their understanding of the system's essential objects, often aided by use case descriptions which help pinpoint objects and their operations. Various methods can be employed for object identification:
+    
+    - **Grammatical analysis** of natural language descriptions, where nouns suggest objects and attributes, and verbs suggest operations.
+    - Identifying **tangible entities** (e.g., hardware), roles, events, interactions, locations, or organizational units within the application domain.
+    - **Scenario-based analysis**, where individual scenarios of system use are analyzed to identify necessary objects, attributes, and operations. In practice, a combination of these knowledge sources is used, often starting with objects identified from informal system descriptions and refining them with domain or scenario analysis. For a wilderness weather station, objects might be identified based on its hardware, such as a ground thermometer, anemometer, barometer, and the system's overall `WeatherStation` and `WeatherData` objects [3, 474, Figure 7.6].
+4. **Develop Design Models** Design models serve as a bridge between system requirements and implementation. They must be abstract enough to show key relationships without excessive detail, yet contain enough information for programmers to make implementation decisions. The level of detail depends on the chosen development process, with agile methods often relying on informal sketches, while plan-based processes may require more detailed models for communication across teams. Two main types of design models are produced in UML:
+    
+    - **Structural models** describe the static organization of the system using object classes and their relationships, including generalization (inheritance), uses/used-by, and composition.
+    - **Dynamic models** illustrate the system's runtime behavior, showing interactions between objects, such as sequences of service requests or state changes triggered by object interactions. Specifically, UML model types useful for adding detail include:
+    - **Subsystem models**, which are structural models showing logical groupings of objects.
+    - **Sequence models** (sequence or collaboration diagrams), which are dynamic models showing the order of object interactions for specific use cases.
+    - **State machine models** (state diagrams), which are dynamic models illustrating how objects change state in response to events. For example, a state diagram for a microwave oven shows its various states (Waiting, Half power, Full power, Set time, Operation, Disabled) and the stimuli that cause transitions between them [3, Figure 5.16, Figure 5.17].
+5. **Specify Interfaces** A critical aspect of design is defining interfaces between components, which allows objects and subsystems to be designed and developed in parallel. An interface specifies the signatures and semantics of the services provided by an object or group of objects.
+    
+    - UML can define interfaces using the `«interface»` stereotype, without including details of data representation (attributes) but including operations for data access and updates. The Object Constraint Language (OCL) can be used to define the semantics of these interfaces.
+    - An example of weather station interfaces might specify `Reporting` services (e.g., `weatherReport`, `statusReport`) and `Remote Control` services (e.g., `startInstrument`, `stopInstrument`, `collectData`, `provideData`) [3, Figure 7.9].
+
+These stages are intertwined, reflecting that software design is not a purely sequential activity but rather a complex, creative endeavor.
+
+The question bank refers to "the process model of involuntary detention" and "sequence diagram for View Patient Information of Mentcare Systems" and "how classes and associations are represented in Mentcare Systems" and "an activity model of insulin pump’s operation" and "the state diagram of a microwave oven" as relevant diagrams, as well as general "architectural views" and "layered architecture" and "repository architecture" and "client-server architecture" and "pipe and filter architecture." While these are types of diagrams used in system modeling and design, the provided sources most directly tie the stages of object-oriented design to specific examples like the weather station and mention `use case diagrams`, `sequence diagrams`, `class diagrams`, and `state diagrams` as key UML models.
+
+Here are examples of relevant diagrams:
+
+- **Weather Station Use Case Model:** This diagram would show the weather station system and its interactions with external actors, like a "Weather Information System" for reporting data and a "Control System" for remote commands [3, Figure 7.2, 468].
+- **Sequence Diagram for Data Collection:** This illustrates the chronological flow of messages between objects, such as `Weather Information System` initiating a request to `SatComms`, which then interacts with `WeatherStation`, `Commslink`, and `WeatherData` objects to retrieve and send a report [3, Figure 7.7, 483-484].
+- **Weather Station Object Classes:** A class diagram depicting classes like `WeatherStation`, `GroundThermometer`, `Anemometer`, `Barometer`, and `WeatherData`, showing their attributes, operations, and relationships (e.g., `WeatherStation` contains instrument objects) [3, Figure 7.6, 474].
+- **Weather Station Interfaces:** A UML diagram showing the `«interface» Reporting` and `«interface» Remote Control` with their respective operations and parameters, without detailing their internal implementation [3, Figure 7.9, 489].
+- **State Diagram of a Microwave Oven:** This shows the various states of the microwave oven (e.g., `Waiting`, `Half power`, `Full power`, `Set time`, `Operation`, `Disabled`) and the events that trigger transitions between these states (e.g., `Full power button`, `Timer`, `Door open`, `Start`) [3, Figure 5.16, Figure 5.17, 400-402].
+
+---
+
+16. What are design patterns. Explain the observer design pattern.
+
