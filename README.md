@@ -1,6 +1,6 @@
 # Study Notes
 
-This is my personal knowledge base where I organize and store notes from various subjects and topics I'm learning or revising. Everything is neatly placed inside the `notes/` folder.
+This is my personal knowledge base where I organize and store notes from various subjects and topics I'm learning or revising. 
 
 ##  Purpose
 
