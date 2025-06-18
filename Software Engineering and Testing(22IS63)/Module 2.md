@@ -653,4 +653,62 @@ The number of layers can vary, and any of these layers could be further subdivid
 
 ---
 
-11. 
+11. With a neat diagram, explain the repository architecture for an IDE.
+
+  The **Repository architectural pattern** describes a system where all data is managed in a central repository, which is accessible to all system components. Components interact indirectly through this repository, rather than communicating directly with each other.
+
+**Key Aspects of Repository Architecture:**
+
+- **Description**: The pattern organizes a system around a shared central database or repository where all system data is managed. Components do not interact directly but through this repository.
+- **When Used**: This pattern is suitable for systems that generate large volumes of information that need to be stored for extended periods. It's also applicable in data-driven systems where the addition of data to the repository triggers actions or tools. Examples include command and control systems, management information systems, and Computer-Aided Design (CAD) systems.
+- **Advantages**: Components can operate independently, without needing to know about other components. Changes made by one component are easily propagated to all other components. All data can be managed consistently, for instance, through simultaneous backups, because it's centralized.
+- **Disadvantages**: The repository can become a single point of failure, meaning issues within it can affect the entire system. There might also be inefficiencies if all communication has to go through the repository. Distributing the repository across multiple machines can be challenging. Components must adhere to an agreed-upon repository data model, which might be a compromise and difficult for integrating new components if their models don't fit.
+
+**Repository Architecture for an IDE (Integrated Development Environment):**
+
+An Integrated Development Environment (IDE) is a prime example of a system that can effectively utilize a repository architecture. In such a setup, the IDE includes various tools that support development activities. These tools generate information that is then made available for use by other tools through a central project repository.
+
+For instance, an IDE supporting model-driven development might have components like:
+
+- **Design Translator**: Translates design models.
+- **Java Editor**: For writing Java code.
+- **UML Editors**: For creating and modifying Unified Modeling Language (UML) diagrams.
+- **Code Generators**: Generates code from models.
+- **Design Analyzer**: Analyzes system designs.
+- **Report Generator**: Creates reports.
+- **Python Editor**: For writing Python code.
+
+All these tools interact with a central **Project Repository**. This repository acts as a version-controlled environment that tracks changes to software artifacts and allows for rollback to earlier versions. The repository makes it efficient to share large amounts of data, as explicit data transmission between components is not required.
+
+**Diagram (Textual Representation of Figure 6.11 from Source 3.pdf):**
+
+```
++------------------------------------+
+|                                    |
+|         Project Repository         |
+|                                    |
++------------+-----------+-----------+
+|            |           |           |
+|            |           |           |
+|            |           |           |
+|            V           V           V
++-----------------+ +-----------------+ +-----------------+
+| Design Translator | |    Java Editor    | |   UML Editors   |
++-----------------+ +-----------------+ +-----------------+
+|            ^           ^           ^
+|            |           |           |
+|            |           |           |
++-----------------+ +-----------------+ +-----------------+
+|  Code Generators  | |  Design Analyzer  | |  Report Generator |
++-----------------+ +-----------------+ +-----------------+
+|            ^
+|            |
++-----------------+
+|   Python Editor   |
++-----------------+
+```
+
+---
+
+12. With a neat diagram, explain the client-server architecture for a film library.
+
