@@ -222,7 +222,7 @@ Below is a diagram illustrating the test and debug cycle, followed by an elabora
 
 **Figure 1.4 A test and debug cycle.**
 
-![]
+![](images/cie_2_2.jpeg)
 
 Here are the different steps involved in the test/debug cycle:
 
