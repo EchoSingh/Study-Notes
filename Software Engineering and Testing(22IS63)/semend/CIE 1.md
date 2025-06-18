@@ -312,13 +312,13 @@ This iterative process allows the banking application to be delivered incrementa
 5. Differentiate between various types of non-functional requirements with suitable examples for each.  
     **(OR)**
 
-Non-functional requirements are constraints on the services or functions offered by a system, rather than direct statements of what the system should do. They typically apply to the system as a whole and often relate to emergent system properties such as reliability, response time, and memory usage. They can also define constraints on the system's implementation, for instance, specifying I/O device capabilities or data representations used in interfaces.
+   Non-functional requirements are constraints on the services or functions offered by a system, rather than direct statements of what the system should do. They typically apply to the system as a whole and often relate to emergent system properties such as reliability, response time, and memory usage. They can also define constraints on the system's implementation, for instance, specifying I/O device capabilities or data representations used in interfaces.
 
-These requirements are often more critical than individual functional requirements, as failing to meet a non-functional requirement can render the entire system unusable. For example, an aircraft system that does not meet its reliability requirements will not be certified as safe for operation. Their implementation may be spread throughout the system, affecting the overall architecture or generating related functional requirements. Ideally, non-functional requirements should be specified quantitatively so they can be objectively tested.
+   These requirements are often more critical than individual functional requirements, as failing to meet a non-functional requirement can render the entire system unusable. For example, an aircraft system that does not meet its reliability requirements will not be certified as safe for operation. Their implementation may be spread throughout the system, affecting the overall architecture or generating related functional requirements. Ideally, non-functional requirements should be specified quantitatively so they can be objectively tested.
 
-Non-functional requirements can be differentiated into three main types based on their origin and the aspects of the system they constrain: Product Requirements, Organizational Requirements, and External Requirements.
+   Non-functional requirements can be differentiated into three main types based on their origin and the aspects of the system they constrain: Product Requirements, Organizational Requirements, and External Requirements.
 
-### Types of Non-Functional Requirements:
+##### Types of Non-Functional Requirements:
 
 1. **Product Requirements**
     
@@ -347,10 +347,12 @@ Non-functional requirements can be differentiated into three main types based on
         - **Legislative Requirements**: Ensure the system operates within the law. For example, "The system shall implement patient privacy provisions as set out in HStan-03-2006-priv".
         - **Ethical Requirements**: Ensure the system's acceptability to its users and the general public.
 
-In summary, product requirements focus on the system's performance and quality attributes, organizational requirements address internal policies and processes, and external requirements deal with external legal, regulatory, and ethical obligations.
-5. Determine the role of integration and configuration model in software engineering. With a suitable diagram explain the steps involved.
-    
+---
+
+6. Determine the role of integration and configuration model in software engineering. With a suitable diagram explain the steps involved.
+
+     
 6. Differentiate between plan driven development and agile development. Illustrate the role of agile models in prescribing medication in a Healthcare system.  
     **(OR)**
-    
+
 7. Explain the role of interaction models in software engineering. Consider an ATM application and generate sequence diagram for balance enquiry.
