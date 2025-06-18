@@ -214,7 +214,57 @@ Instead of letting Dorothy leave, Alice decided to address her motivation direct
 
 5. **With a relevant diagram, explain the test/debug cycle** and elaborate on the different steps involved in the process.  
     **(OR)**
+The test/debug cycle is a process where testing and debugging are used as two related and often cyclic activities in software development. Testing aims to uncover errors in a program by sampling the input domain and checking program behavior, while debugging focuses on determining the cause of these errors and removing them.
 
+This cycle begins with the construction of a non-empty set of test cases, usually derived from the program's requirements. The program is then executed against these test cases, and any observed failures lead to debugging, where the source of the failure is identified and removed. The cycle continues until the test set is deemed adequate according to a chosen criterion.
+
+Below is a diagram illustrating the test and debug cycle, followed by an elaboration of its steps:
+
+**Figure 1.4 A test and debug cycle.**
+
+```
+                                 Test plan
+                                 Specification
+                                     |
+                                     V
+        Input domain  <----------->  Construct test input
+             ^                         |
+             |                         V
+             Use                      Execute program
+             |                         |
+             V                         V
+  Is behavior as expected?           Use (Test case)
+      /       \                         /       \
+    Yes        No (Behavior)           Yes       No (Error to be fixed now?)
+     |          |                     /             \
+     V          V                   Use             No
+Testing to be  Determine             /                 \
+terminated?    Cause of error now?   V                 V
+ /       \                         Fix error       File pending error report
+Yes       No
+ |         V
+ |         File test session report
+ |
+ V
+Debug the program
+ Update?
+  /  \
+Yes   No
+```
+
+Here are the different steps involved in the test/debug cycle:
+
+- **Preparing a Test Plan** A test cycle is typically guided by a test plan. This plan helps in defining what is to be tested, the testing schedule, and how results will be recorded. For smaller programs, this plan might be informal or even non-existent. The program requirements and the test plan are crucial for constructing test data.
+    
+- **Defining the Input Domain** The input domain, also known as input space, is an essential source for generating test cases. While requirements help in deriving input domains, the incompleteness of requirements often necessitates more careful thought to define them completely.
+    
+- **Constructing Test Input (Test Data)** A test case is defined as a pair consisting of input data and its corresponding program output. Test data itself is a set of values for each input variable. A collection of test cases forms a "test set" or "test suite". Test data construction is guided by program requirements and the test plan. Testers might generate a few test cases, execute them, and then decide whether to construct more or proceed to debugging based on the results.
+    
+- **Executing the Program** After test cases are constructed, the program is executed using this test data. The complexity of executing a program varies significantly depending on the program itself. For intricate systems, thousands of tests may need to be executed. A "test harness" can be used to facilitate this step by initializing variables, inputting test cases, and saving the program's output for later examination.
+    
+- **Assessing Program Correctness (Is Behavior as Expected?)** This is a critical step where the tester determines if the observed behavior of the program is correct. This involves observing the behavior and then analyzing it for correctness. The entity responsible for checking this correctness is called an **oracle**. An oracle can be a program or a human. The output from an oracle can be a simple "Yes" or "No," or a more complex explanation of why the observed behavior matches or differs from the expected behavior.
+    
+- **Debugging** If the observed behavior is _not_ as expected, implying a failure has occurred, the process transitions into debugging. Debugging is the subsequent step where the cause of the detected error is determined and then removed. While testing identifies the presence of defects, debugging is concerned with _locating and correcting_ them. This process can involve generating hypotheses about the program's observable behavior, manually tracing the code, using new test cases to pinpoint the problem, and employing interactive debugging tools that show intermediate variable values and execution traces. Debugging may require modifications to the program, and after a fix, the test and debug cycle often repeats to ensure the program now behaves as expected and no new issues have been introduced.
 ---
 
 6. **Bring out the differences between various types of Functional Testing versus the types of Structural Testing techniques.**
@@ -242,5 +292,6 @@ Instead of letting Dorothy leave, Alice decided to address her motivation direct
 
 **(OR)**
 
+ ---
  
 8. Consider an application where email and password are used to login to the application. If the values of the email are **Blank / Valid / Invalid**, indicate how decisions can be taken up using **Decision Based Testing technique**.
