@@ -381,4 +381,60 @@ The diagram illustrates the flow from initial requirements to the final applicat
 6. Differentiate between plan driven development and agile development. Illustrate the role of agile models in prescribing medication in a Healthcare system.  
     **(OR)**
 
-7. Explain the role of interaction models in software engineering. Consider an ATM application and generate sequence diagram for balance enquiry.
+Plan-driven development and agile development represent distinct approaches to software engineering, differing in their planning, requirements handling, and overall process.
+
+### Differentiation Between Plan-Driven Development and Agile Development
+
+**Plan-Driven Development** Plan-driven processes meticulously plan all activities in advance, with progress measured against a predefined plan. These are often referred to as "traditional" ways of managing large software development projects.
+
+- **Characteristics**:
+    - **Sequential Phases**: Activities such as specification, development, validation, and evolution are represented as separate, sequential phases (e.g., requirements specification, software design, implementation, testing).
+    - **Up-front Planning**: Planning and scheduling of all process activities occur before software development begins. Early decisions are made, which are then refined and followed.
+    - **Detailed Documentation**: Formal documents are produced at each stage, serving as inputs for subsequent phases and for communication between teams.
+    - **Suitability**: Best suited for systems with stable requirements, such as embedded systems interfacing with hardware, or critical systems requiring extensive safety and security analysis and certification. They are also often used for large software systems developed by several partner companies where complete specifications are needed for independent subsystem development.
+- **Examples**: The Waterfall model and the V-model are prime examples. The V-model explicitly specifies testing activities associated with each development phase, beginning from the start and continuing until the end of the life cycle.
+- **Disadvantages**: Often results in a long feedback cycle between requirements specification and system testing, as the customer is typically absent during intermediate phases. Defects introduced early can be costly to correct if discovered later. The approach emphasizes analysis over synthesis, which first occurs at integration testing. It can also be very lengthy, leading to software delivery long after original specification, which can be problematic in fast-moving business environments where requirements change rapidly.
+
+**Agile Development** Agile methods are iterative and incremental approaches focused on rapid software development and delivery, particularly designed to accommodate changing requirements.
+
+- **Characteristics**:
+    - **Iterative and Incremental**: Development occurs in small increments or versions, with new releases often created and made available to customers every few weeks.
+    - **Customer-Driven**: Customers are closely involved throughout the development process, providing and prioritizing new requirements and evaluating system iterations. Requirements are often expressed as "user stories".
+    - **Flexibility**: Aims to be flexible with respect to changing requirements, with iterations occurring across activities, meaning requirements and design evolve together.
+    - **Minimal Documentation**: Process documentation and bureaucracy are minimized, focusing instead on the code itself and informal communications among team members.
+    - **Extensive Tool Support**: Relies heavily on tools for automated testing, configuration management, and system integration.
+- **Principles (Agile Manifesto)**:
+    - Individuals and interactions over processes and tools.
+    - Working software over comprehensive documentation.
+    - Customer collaboration over contract negotiation.
+    - Responding to change over following a plan.
+- **Examples**: Extreme Programming (XP), Scrum, and Test-Driven Development (TDD) are key agile methods.
+- **Advantages**: Reduces the cost of implementing requirements changes and makes it easier to get customer feedback. Enables early delivery and deployment of useful software. Promotes continuous integration and refactoring to maintain code quality and structure. TDD, in particular, offers excellent fault isolation.
+- **Challenges**: The process may not be visible to managers. System structure can degrade with continuous changes if not refactored. Informality can be incompatible with legal contract definitions for large companies. It is most appropriate for new software development, but less so for maintenance, where lack of documentation and team continuity can be problems. Scaling agile methods to large, distributed, or highly regulated projects often requires integrating some plan-based practices.
+
+### Role of Agile Models in Prescribing Medication in a Healthcare System (Mentcare System)
+
+The Mentcare system is a mental health care patient information system that manages information about patients attending clinics and their treatments. In an agile development environment, the design and implementation of features like prescribing medication would leverage agile models such as user stories and test-driven development.
+
+1. **User Stories for Requirements Definition**:
+    
+    - In agile methods, requirements are expressed as "user stories," which are scenarios of use experienced by a system user. These are concise descriptions of customer needs.
+    - For the Mentcare system, a user story like "Prescribing medication" would be developed through close collaboration between the system customer (e.g., a medical staff member or doctor) and the development team.
+    - This story would outline the process: a prescriber chooses a drug, inputs the dose, and confirms the prescription. Critically, it would also include system checks, such as ensuring the dose is within an approved range and issuing warnings for known patient allergies.
+    - These user stories are then broken down into smaller "task cards" by the development team, with effort estimates. For the "Prescribing medication" story, tasks could include "Check the prescribed dose against the minimum and maximum" or "Issue an error message if outside range".
+2. **Test-First Development (TDD) for Implementation and Verification**:
+    
+    - Test-driven development (TDD), a core practice in agile methods like Extreme Programming, mandates writing executable tests _before_ writing the program code.
+    - For the Mentcare system's medication prescription feature, developers would write automated tests based on the task cards derived from the user stories.
+    - **Example: Dose Checking and Allergy Warnings**:
+        - Based on the requirement "If a patient is known to be allergic to any particular medication, then prescription of that medication shall result in a warning message being issued to the system user," specific test cases would be written _before_ the code to implement this logic.
+        - Examples of such test cases include:
+            - Setting up a patient record with no known allergies and prescribing medication to ensure no warning is issued.
+            - Setting up a patient record with a known allergy and prescribing that medication to verify the warning is issued.
+            - Testing multiple allergies to ensure correct warnings for each drug.
+        - A specific test case description for dose checking might include steps like checking the prescribed dose against minimum/maximum limits and enabling a 'Confirm' button if within range, or issuing an error message if not.
+    - These tests are initially run on non-existent code, causing them to fail, which then drives the development of "just enough" code to make the tests pass.
+    - **Benefits in Mentcare**: This approach ensures that critical functional and non-functional requirements (like patient safety through correct dose checking and allergy warnings) are precisely met. Automated testing allows for continuous verification: whenever new functionality is added, all existing tests can be quickly rerun, immediately catching any regressions or new problems introduced. This also helps developers and testers to deeply understand the requirements early in the process.
+---
+    
+8. Explain the role of interaction models in software engineering. Consider an ATM application and generate sequence diagram for balance enquiry.
