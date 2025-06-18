@@ -888,7 +888,6 @@ This layered structure supports the system's requirements for privacy and safety
 +-------------------------------------------------+
 ```
 
-[Figure 6.19 in Source 3.pdf, adapted]
 
 ---
 
@@ -901,15 +900,15 @@ The key stages of object-oriented design are:
 1. **Understand and Define the Context and External Interactions** This initial stage focuses on understanding the relationships between the software being designed and its external environment. This understanding is crucial for determining the system's functionality and structuring it to communicate effectively with its environment, as well as establishing system boundaries.
     
     - **Use case models** are used to define system interactions, identifying actors (human users or other systems) and the types of interactions. For example, a weather station interacts with a weather information system to report data and status, and with a control system for commands. These use cases are typically described in structured natural language, listing information exchanged, interaction initiation, and responses to stimuli.
-    - **Sequence diagrams** model interactions between actors and system objects, as well as interactions between objects themselves, showing the temporal sequence of these interactions. They can detail high-level use cases. For instance, a sequence diagram might illustrate the flow when an external system requests summarized data from a weather station [3, 483, Figure 7.7].
+    - **Sequence diagrams** model interactions between actors and system objects, as well as interactions between objects themselves, showing the temporal sequence of these interactions. They can detail high-level use cases. For instance, a sequence diagram might illustrate the flow when an external system requests summarized data from a weather station 
 2. **Design the System Architecture** Following the definition of external interactions, this stage involves designing the system's overall structure by identifying its major components and their interactions. This process combines knowledge of architectural design principles with specific domain knowledge. Architectural patterns, such as layered or client-server models, may be used to organize the system.
     
-    - An architectural model for a weather mapping system might show how data collection, processing, and display components interact [3, Figure 7.4]. Another example could be the architecture for a data collection system with a transmitter, receiver, and weather data component [3, Figure 7.5].
+    - An architectural model for a weather mapping system might show how data collection, processing, and display components interact . Another example could be the architecture for a data collection system with a transmitter, receiver, and weather data component 
 3. **Identify the Principal Objects** At this stage, designers refine their understanding of the system's essential objects, often aided by use case descriptions which help pinpoint objects and their operations. Various methods can be employed for object identification:
     
     - **Grammatical analysis** of natural language descriptions, where nouns suggest objects and attributes, and verbs suggest operations.
     - Identifying **tangible entities** (e.g., hardware), roles, events, interactions, locations, or organizational units within the application domain.
-    - **Scenario-based analysis**, where individual scenarios of system use are analyzed to identify necessary objects, attributes, and operations. In practice, a combination of these knowledge sources is used, often starting with objects identified from informal system descriptions and refining them with domain or scenario analysis. For a wilderness weather station, objects might be identified based on its hardware, such as a ground thermometer, anemometer, barometer, and the system's overall `WeatherStation` and `WeatherData` objects [3, 474, Figure 7.6].
+    - **Scenario-based analysis**, where individual scenarios of system use are analyzed to identify necessary objects, attributes, and operations. In practice, a combination of these knowledge sources is used, often starting with objects identified from informal system descriptions and refining them with domain or scenario analysis. For a wilderness weather station, objects might be identified based on its hardware, such as a ground thermometer, anemometer, barometer, and the system's overall `WeatherStation` and `WeatherData` objects 
 4. **Develop Design Models** Design models serve as a bridge between system requirements and implementation. They must be abstract enough to show key relationships without excessive detail, yet contain enough information for programmers to make implementation decisions. The level of detail depends on the chosen development process, with agile methods often relying on informal sketches, while plan-based processes may require more detailed models for communication across teams. Two main types of design models are produced in UML:
     
     - **Structural models** describe the static organization of the system using object classes and their relationships, including generalization (inheritance), uses/used-by, and composition.
