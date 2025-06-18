@@ -1064,3 +1064,86 @@ The relationships between these activities are illustrated in the diagram below:
 ```
 
 **Figure: Configuration Management Activities**
+
+---
+
+19. What are legacy systems. Explain the elements of legacy system with a neat diagram.
+Also explain the layered architecture of legacy system.
+
+Legacy systems are older software systems that remain useful or essential to an organization, despite being developed using obsolete software and hardware technologies or methods. They are often critical business systems that have been maintained over a long period, which may have led to a degradation of their original structure. Such systems can be expensive to change, and their replacement can be both costly and risky. Many organizations would prefer to integrate them with more modern systems rather than replace them entirely.
+
+Legacy systems are not merely software; they are complex sociotechnical systems comprising several interdependent elements.
+
+### Elements of a Legacy System
+
+The logical parts of a legacy system and their interrelationships can be illustrated as follows:
+
+```
++--------------------------+
+|      Socio-technical     |
+|         System           |
++----------^---------------+
+           |  Uses
++----------+------------+  Uses
+|  Business Policies &  |------------>+------------------+
+|      Rules            |            |  Business Processes|
++-----------------------+            +--------^---------+
+           ^                                 | Runs-on
+           |  Embeds knowledge of            |
++----------+------------+            +--------+---------+
+|    Application        |            | Application Data |
+|    Software           |------------>+--------+---------+
++----------^------------+  Runs-on
+           |
++----------+------------+
+|   Support Software    |
+| (OS, Utilities, etc.) |------------>+------------------+
++----------^------------+  Runs-on   |   System Hardware|
+           |                         +------------------+
+           | Runs-on
++----------+------------+
+|    System Hardware    |
++-----------------------+
+```
+
+**Figure: The Elements of a Legacy System**
+
+The key elements of a legacy system are:
+
+- **System Hardware**: Legacy systems may run on hardware that is no longer readily available, costly to maintain, or incompatible with current IT policies.
+- **Support Software**: These systems often rely on a range of support software, including obsolete operating systems and compilers, which may no longer be supported by their original providers.
+- **Application Software**: This comprises the core application programs that provide business services, often developed at different times and potentially integrated with other application systems.
+- **Application Data**: A significant volume of data accumulates over the system's lifetime. This data can be inconsistent, duplicated, or spread across various files and databases.
+- **Business Processes**: Business processes may be designed around and constrained by the functionality of the legacy system, making it difficult to adopt more effective modern processes.
+- **Business Policies and Rules**: Definitions of how the business operates and its constraints may be embedded within the legacy application system.
+
+### Layered Architecture of a Legacy System
+
+An alternative way to visualize the components of a legacy system is as a series of layers, where each layer depends on the one immediately below it.
+
+```
++-----------------------------------+
+|      Socio-technical System       |  (Broader context including human operators and organization)
++-----------------------------------+
+|        Business Processes         |  (Activities performed to achieve business objectives)
++-----------------------------------+
+|        Application Software       |  (Programs providing specific business services)
++-----------------------------------+
+|   Platform and Infrastructure     |  (Operating system, middleware, and other supporting software)
+|             Software              |
++-----------------------------------+
+|             Hardware              |  (Physical computing equipment)
++-----------------------------------+
+```
+
+**Figure: Legacy System Layers**
+
+In this layered model:
+
+- Each layer relies on the facilities and services provided by the layer directly beneath it.
+- Theoretically, if interfaces are consistently maintained, changes within one layer should not impact adjacent layers.
+- However, in practice, this encapsulation is often an oversimplification, and modifications to one layer can necessitate corresponding changes in both the layers above and below it. This can happen because the program style and usage conventions are inconsistent, parts of the system may be implemented in obsolete languages, documentation is inadequate, the system structure degrades over time, or the system was optimized for older hardware.
+
+---
+
+20. 
