@@ -29,35 +29,7 @@ The risk management process is typically a **four-stage iterative cycle** that c
 
 The diagram below illustrates this cyclical process:
 
-```
-        +-------------------------+
-        |     Risk Identification   |
-        |  (Potential Risks List) |
-        +-----------+-------------+
-                    |
-                    V
-        +-----------+-------------+
-        |        Risk Analysis      |
-        |    (Prioritized Risk List) |
-        +-----------+-------------+
-                    |
-                    V
-        +-----------+-------------+
-        |         Risk Planning     |
-        |  (Avoidance & Contingency) |
-        +-----------+-------------+
-                    |
-                    V
-        +-----------+-------------+
-        |       Risk Monitoring     |
-        |     (Risk Assessment)   |
-        +-----------+-------------+
-                    |
-                    | (Feedback loop for
-                    |  continuous improvement
-                    |  and adaptation)
-                    +--------------------+
-```
+![](images/cie_2.jpeg)
 
 _Figure: The Risk Management Process_
 
