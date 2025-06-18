@@ -99,7 +99,7 @@ The Triangle Problem is a widely used case study in software testing to illustra
 
 The program's output should be the type of triangle: Equilateral, Isosceles, Scalene, or NotATriangle.
 
-- If an input value fails conditions `c1`, `c2`, or `c3`, the program should output a message like "Value of [variable] is not in the range of permitted values.".
+- If an input value fails conditions `c1`, `c2`, or `c3`, the program should output a message like "Value of variable is not in the range of permitted values.".
 - If any of conditions `c4`, `c5`, and `c6` is not met, the output is "NotATriangle".
 - If all three sides are equal, the output is "Equilateral".
 - If exactly one pair of sides is equal, the output is "Isosceles".
