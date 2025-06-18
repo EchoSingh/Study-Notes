@@ -4,8 +4,7 @@
 **1.** In how many ways can **structural testing** be conducted?  
 Explain **any four** of such techniques along with stating their significance.  
 
-Structural testing, also known as white-box or clear-box testing, is a fundamental approach to test case identification where the implementation of the software (its source code) is known and used to identify tests. It focuses on _how_ the program is actually implemented. This approach lends itself to defining and using test coverage metrics, which explicitly measure the extent to which a software item has been tested.
-
+Structural testing is a software testing approach that tests the code structure and intended system flows. It is also known as structure-based, glass-box, clear-box, and white box testing. In this type of testing, the testers are required to know the internal implementations of the code, like how the software is implemented and how it works.
 Structural testing can be conducted in numerous ways, typically categorized by the specific aspects of the code that are targeted for coverage. These techniques fall under code-based test generation. The methods available include:
 
 - **Control flow-based criteria**: These focus on covering different execution paths and logic within the program. Examples include statement coverage, block coverage, condition coverage, decision coverage, condition/decision coverage, multiple condition coverage, Linear Code Sequence and Jump (LCSAJ) coverage, and Modified Condition/Decision Coverage (MC/DC).
