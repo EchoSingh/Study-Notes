@@ -91,7 +91,23 @@ For the Triangle Problem with three variables (`a`, `b`, `c`), the test values f
 
 Here is a table of Normal Boundary Value test cases for the Triangle Problem, as derived in the sources:
 
-| Case | `a` | `b` | `c` | Expected Output | | :--- | :-- | :-- | :-- | :---------------- | | 1 | 100 | 100 | 1 | Isosceles | | 2 | 100 | 100 | 2 | Isosceles | | 3 | 100 | 100 | 100 | Equilateral | | 4 | 100 | 100 | 199 | Isosceles | | 5 | 100 | 100 | 200 | Not a triangle | | 6 | 100 | 1 | 100 | Isosceles | | 7 | 100 | 2 | 100 | Isosceles | | 8 | 100 | 100 | 100 | Equilateral | | 9 | 100 | 199 | 100 | Isosceles | | 10 | 100 | 200 | 100 | Not a triangle | | 11 | 1 | 100 | 100 | Isosceles | | 12 | 2 | 100 | 100 | Isosceles | | 13 | 100 | 100 | 100 | Equilateral | | 14 | 199 | 100 | 100 | Isosceles | | 15 | 200 | 100 | 100 | Not a triangle | _(Note: Test cases 3, 8, and 13 are identical and could be deleted, resulting in 13 unique test cases)._
+|Case|`a`|`b`|`c`|Expected Output|
+|:--|:--|:--|:--|:--|
+|1|100|100|1|Isosceles|
+|2|100|100|2|Isosceles|
+|3|100|100|100|Equilateral|
+|4|100|100|199|Isosceles|
+|5|100|100|200|Not a triangle|
+|6|100|1|100|Isosceles|
+|7|100|2|100|Isosceles|
+|8|100|199|100|Isosceles|
+|9|100|200|100|Not a triangle|
+|10|1|100|100|Isosceles|
+|11|2|100|100|Isosceles|
+|12|199|100|100|Isosceles|
+|13|200|100|100|Not a triangle|
+
+
 
 ---
 
