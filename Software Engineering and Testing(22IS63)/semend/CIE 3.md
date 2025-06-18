@@ -90,6 +90,7 @@ int main() {
 }
 ```
 
+![](images/cie3.svg)
 
 
 ---
