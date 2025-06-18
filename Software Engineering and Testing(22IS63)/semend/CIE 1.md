@@ -113,7 +113,7 @@ This diagram shows how specification, development, and validation activities are
 3. Consider the case study of an online library management system and write the software requirement specification document for the same.  
     **(OR)**
     
-    Based on the sources, a Software Requirement Specification (SRS) document for an online library management system would typically follow a structured format, such as the IEEE standard mentioned in the sources. This document aims to define the services the system should provide and the constraints on its operation, acting as a bridge between customer needs and system development.
+Based on the sources, a Software Requirement Specification (SRS) document for an online library management system would typically follow a structured format, such as the IEEE standard mentioned in the sources. This document aims to define the services the system should provide and the constraints on its operation, acting as a bridge between customer needs and system development.
 
 Here is a proposed structure and content for the SRS document:
 
@@ -261,14 +261,14 @@ This architecture supports scalability and modularity, allowing for independent 
 **Index** A comprehensive index would be included for easy navigation of the document, listing key terms, concepts, and figures.
 
 ---
-3. Identify the software process model suitable for Banking applications. Illustrate the identified process model with suitable steps.
+4. Identify the software process model suitable for Banking applications. Illustrate the identified process model with suitable steps.
     
-4. Differentiate between various types of non-functional requirements with suitable examples for each.  
+5. Differentiate between various types of non-functional requirements with suitable examples for each.  
     **(OR)**
     
-5. Determine the role of integration and configuration model in software engineering. With a suitable diagram explain the steps involved.
+6. Determine the role of integration and configuration model in software engineering. With a suitable diagram explain the steps involved.
     
-6. Differentiate between plan driven development and agile development. Illustrate the role of agile models in prescribing medication in a Healthcare system.  
+7. Differentiate between plan driven development and agile development. Illustrate the role of agile models in prescribing medication in a Healthcare system.  
     **(OR)**
     
-7. Explain the role of interaction models in software engineering. Consider an ATM application and generate sequence diagram for balance enquiry.
+8. Explain the role of interaction models in software engineering. Consider an ATM application and generate sequence diagram for balance enquiry.
