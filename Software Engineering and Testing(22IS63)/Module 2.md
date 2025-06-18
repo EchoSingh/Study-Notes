@@ -712,3 +712,59 @@ All these tools interact with a central **Project Repository**. This repository 
 
 12. With a neat diagram, explain the client-server architecture for a film library.
 
+The **Client–Server architectural pattern** describes a system organized as a set of services and associated servers, with clients that access and use these services. This pattern is commonly used for distributed systems, but the logical model of independent services running on separate servers can also be implemented on a single computer.
+
+**Key aspects of Client–Server Architecture:**
+
+- **Description**: The system is structured into a set of services, with each service delivered by a separate server. Clients are users of these services and access the servers.
+- **Components**:
+    1. **Servers**: Offer services to other components, such as print, file, or compilation services. Servers are software components, and multiple servers can run on the same computer.
+    2. **Clients**: Call on the services provided by servers. Multiple instances of client programs can execute concurrently on different computers.
+    3. **Network**: Connects clients to access these services, typically using Internet protocols.
+- **Communication**: Clients access server services through remote procedure calls using a request–reply protocol (like HTTP), where a client makes a request and waits for a reply.
+- **Advantages**: The main advantage is that servers can be distributed across a network, allowing general functionality (e.g., printing) to be available to all clients without needing to be implemented by each client. It's easy to add new servers or upgrade existing ones transparently.
+- **Disadvantages**: Each service can be a single point of failure, making it vulnerable to denial-of-service attacks or server failure. Performance can be unpredictable, relying on both the network and the system. Management issues may arise if servers are owned by different organizations.
+- **When Used**: It's typically used when data in a shared database needs to be accessed from various locations or when system load is variable, as servers can be replicated.
+
+**Client–Server Architecture for a Film Library:**
+
+A multi-user, web-based system for a film and photograph library can be based on the client–server model. In this system, different types of media are managed and displayed by several specialized servers:
+
+- **Video Server**: Manages video frames, which need to be transmitted quickly and synchronously, often at lower resolution. This server can also handle video compression and decompression in various formats.
+- **Picture Server**: Maintains still pictures at high resolution.
+- **Catalog Server**: Manages the library catalog, handling a variety of queries and providing links to web information systems that include data about films and video clips, as well as an e-commerce system for sales.
+- **Web Server**: Responsible for serving film and photo information over the Internet.
+
+The client program in this setup is typically an integrated user interface built using a web browser, designed to access these various services.
+
+**Client–Server Architecture for a Film Library Diagram (based on Figure 6.13 in Source 3.pdf):**
+
+```
++-----------------+           +-----------------+
+|   Catalog Server|           |   Video Server  |
+| (Library catalog)|           |    (Film store) |
++--------+--------+           +--------+--------+
+         |                             |
+         |                             |
+         |                             |
++--------+--------+           +--------+--------+
+|   Picture Server|           |    Web Server   |
+|   (Photo store) |           | (Film & photo   |
++--------+--------+           |      info)      |
+         |                             |
+         |                             |
+         |                             |
+         +-------------+-------------+
+                       |
+                       | Internet
+                       |
++-------------------------------------------------+
+|                        Clients                  |
+|          (Client 1, Client 2, Client 3, Client 4)|
++-------------------------------------------------+
+```
+
+---
+
+13. Explain the pipe and filter architecture with an example.
+
