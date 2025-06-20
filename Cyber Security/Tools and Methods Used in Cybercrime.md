@@ -355,3 +355,59 @@ Both viruses and worms are typically delivered as E-Mail attachments or download
 
 ---
 
+## 
+Trojan Horses and Backdoors are both types of malicious software (malware) used by cybercriminals to gain unauthorized access and control over computer systems.
+
+**Trojan Horses** A Trojan Horse is a type of malware that disguises itself as, or is contained within, seemingly harmless programming or data. Its primary goal is to gain control of a system and cause harm once activated. Unlike viruses, Trojan Horses do not self-replicate; they require a user to execute them, often by being enticed to open an attachment or download a file. They can be delivered via web browsers, email attachments, or downloaded software.
+
+**Typical actions of a Trojan Horse include:**
+
+- Erasing, overwriting, or corrupting data on the computer.
+- Helping to spread other malware.
+- Deactivating or interfering with antivirus software and firewalls.
+- Allowing remote access to your computer.
+- Uploading and downloading files without the user's knowledge.
+- Gathering email addresses and using them for spam.
+- Causing the system to slow down, restart, or shut down.
+- Reinstalling themselves after being disabled.
+- Disabling the task manager or control panel.
+- Copying fake links to false websites.
+- Displaying pornographic sites, playing sounds/videos, or displaying images.
+- Logging keystrokes to steal information such as passwords or credit card numbers.
+
+Trojan Horses are often delivered as email attachments or can be installed by hackers to commandeer a computer. Some phishing techniques, like Gillnet, can inject a Trojan Horse into a system, which then logs user actions and sends stolen data to the phisher. Blended threats can bundle Trojan Horses with other malware like viruses and worms.
+
+**Backdoors** A backdoor is a method of accessing a computer program or system that bypasses normal security mechanisms or authentication procedures. Programmers might initially create backdoors for troubleshooting, but attackers can detect or install them as part of an exploit. Backdoors operate in the background, remain hidden from the user, and are considered highly dangerous because they allow a malicious person to perform virtually any action on the compromised system.
+
+**A backdoor can enable an attacker to perform various actions, such as:**
+
+- Creating, deleting, renaming, copying, or editing files.
+- Changing system settings and altering the Windows registry.
+- Running, controlling, and terminating applications.
+- Installing arbitrary software.
+- Controlling computer hardware devices and modifying related settings.
+- Shutting down or restarting a computer without user permission.
+- Stealing sensitive personal information.
+- Logging user activity and tracking web browsing habits.
+- Recording keystrokes and capturing screenshots.
+- Sending all gathered data to a predefined email address.
+- Infecting files, corrupting installed applications, and damaging the entire system.
+- Distributing infected files to remote computers and performing attacks against hacker-defined remote hosts.
+- Installing hidden FTP servers that malicious persons can use.
+- Degrading Internet connection speed and overall system performance.
+- Providing uninstall features and hiding processes, files, and other objects to complicate its removal.
+
+**Examples of Backdoor Trojans include:**
+
+- **Back Orifice:** Enables a user to control a computer running Microsoft Windows OS from a remote location.
+- **Bifrost:** Infects Windows 95 through Vista.
+- **SAP backdoors:** Exploits vulnerabilities in SAP (Enterprise Resource Planning) systems, which are central to business processes.
+- **Onapsis Bizploit:** An open-source ERP penetration testing framework that assists security professionals in discovering and exploiting ERP vulnerabilities.
+
+**Distinction and Relationship:** While backdoors are a method of access, Trojan Horses are a _delivery mechanism_ that often _contain_ or _install_ backdoors. A Trojan Horse brings the malicious payload (which could be a backdoor) into the system, and once executed, that payload can then create persistent unauthorized access via a backdoor.
+
+**Protection against Trojan Horses and Backdoors:** To protect against these threats, it is recommended to:
+
+- **Avoid suspect websites and weblinks:** Do not download free or pirated software from untrusted sources, as these often contain Trojans.
+- **Surf the web cautiously:** Be careful when connecting to or downloading information from peer-to-peer (P2P) networks, as they are known to spread malicious software like Trojans.
+- **Install and maintain antivirus/Trojan remover software:** Antivirus software often has built-in features to protect against various malware, including Trojans.
