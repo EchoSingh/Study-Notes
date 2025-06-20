@@ -172,7 +172,7 @@ Although not always criminal, the misuse of these platforms can contribute to cy
 
 #####  **2. Classification Based on the Role of the Computer**
 
-Cybercrimes can also be understood based on how the computer is involved in the crime. Table 1.6 in the divides cybercrimes into the following:
+Cybercrimes can also be understood based on how the computer is involved in the crime. Table 1.1 in the divides cybercrimes into the following:
 
 ### **2.1 Computer as a Target (Narrow Sense)**
 
@@ -214,4 +214,7 @@ In this classification, the computer plays a supporting or peripheral role. It i
 |**Computer as an Object**|Target of the attack (e.g., hacking, DDoS attacks)||
 |**Computer as a Tool**|Medium to perform crimes (e.g., fraud, child porn)||
 |**Computer as Environment/Context**|Not central to the crime, but part of it (e.g., murder, drug trade using tech)|Contains evidence or aids investigation|
-Table : 1.1
+Table : 1.1 : Broad vs. Narrow Classification
+
+---
+
