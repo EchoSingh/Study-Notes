@@ -1,6 +1,6 @@
 # Study Notes
 
-This is my personal knowledge base where I organize and store notes from various subjects and topics I'm learning or revising. 
+This include my 6th semester (VTU) notes .
 
 ##  Purpose
 
@@ -9,7 +9,7 @@ This is my personal knowledge base where I organize and store notes from various
 
 ## How to Use
 
-1. Browse the `notes/` folder to explore different topics.
+1. Browse the `subject-name/` folder to explore topics.
 2. Open any `.md` file to read the notes.
 3. Clone the repo if you want a local copy:
    ```bash
