@@ -262,3 +262,102 @@ This comprehensive approach, combining individual protective measures with suppo
 
 ---
 
+Cybercriminals plan their attacks through a series of phases, often employing social engineering tactics, engaging in cyberstalking, and leveraging locations like cybercafes for their illicit activities.
+
+### How Criminals Plan the Attacks
+
+Cybercrime planning typically involves five phases:
+
+1. **Reconnaissance**: This initial phase, also known as "footprinting" or "reconnoitering," involves exploring to gather information about the target. The objective is to understand the system, its networking ports and services, computer architecture, and other security aspects needed to launch an attack. This phase can involve both passive and active attacks.
+    
+    - **Passive Attacks**: Involve gathering information about the target without their knowledge. This can include:
+        - Searching on Google or Yahoo for information about employees.
+        - Surfing online community groups like Facebook to gain information about an individual.
+        - Examining an organization's website for personal or key employee information that can be used in social engineering attacks.
+        - Monitoring blogs, newsgroups, and press releases.
+        - Going through job postings.
+        - Network sniffing to gather information on internet protocol address ranges, hidden servers, or services on the system. Passive attacks primarily breach confidentiality and do not alter information. The victim typically remains unaware of the attack, making detection the focus of security measures.
+    - **Active Attacks**: Involve actively probing the network to discover individual hosts and confirm information gathered during the passive phase, such as IP addresses, operating system types and versions, and network services. These are also called "Rattling the Doorknobs" or Active Reconnaissance. Active attacks can affect the availability, integrity, and authenticity of data, and the information is modified. The victim is often informed, and prevention is the primary security focus. Examples include session hijacking, Man-in-the-Middle (MITM) attacks, impersonation, Denial of Service (DoS), and Distributed Denial of Service (DDoS) attacks.
+2. **Scanning and Scrutinizing the Gathered Information**: This phase involves intelligently examining the collected information about the target. The objectives are port scanning, network scanning, and vulnerability scanning.
+    
+    - **Port Scanning**: Systematically scans computer ports to identify "open doors" or vulnerable access points. It's like checking every door and window of a house to see which ones are open. The response received from a port indicates if it's used and if it has weaknesses. Ports can be "Open or accepted," "Closed or not listening," or "Filtered or blocked". Common ports include FTP (20, 21), SMTP (25), Telnet (23), and HTTP (80).
+    - **Scrutinizing Phase (Enumeration)**: Aims to identify valid user accounts or groups, network resources or shared resources, and the operating system (OS) and applications running on the OS.
+3. **Validity of Information and Identifying Vulnerabilities**: After data collection, this phase focuses on validating the acquired information and identifying existing vulnerabilities.
+    
+4. **Launching an Attack and Gaining and Maintaining System Access**: This is where the attack is executed. Steps include:
+    
+    - Cracking passwords.
+    - Exploiting privileges.
+    - Executing malicious commands or applications.
+    - Hiding files.
+    - Covering tracks by deleting access logs to avoid detection.
+
+### Social Engineering
+
+Social engineering is a technique used to influence and persuade people to obtain information or perform actions against their own security policies or practices. It exploits human trust, desire to be helpful, and fear of trouble. The goal is to trick individuals into providing valuable information or access.
+
+**Classification of Social Engineering:**
+
+1. **Human-based Social Engineering**: Involves person-to-person interaction.
+    
+    - **Impersonating an employee or valid user**: Attackers pose as employees to deceive people, leveraging the fact that most people are helpful. They might pretend to be lost and ask for directions to a computer room, or act as an employee/user on the system.
+    - **Posing as an important user**: Attackers pretend to be a high-level manager or CEO needing immediate assistance to gain system access.
+    - **Using a third person**: An attacker claims to have permission from an authorized source to use a system, often when the legitimate personnel are on vacation or unavailable.
+    - **Calling technical support**: A classic social engineering example where help-desk personnel, trained to assist users, become targets.
+    - **Shoulder surfing**: Gathering information like usernames and passwords by watching someone type them in, often over their shoulder.
+    - **Dumpster diving**: Rummaging through commercial or residential trash for discarded documents containing sensitive information (e.g., SSN, credit card numbers).
+2. **Computer-based Social Engineering**: Uses computer software or the internet to gather information.
+    
+    - **Fake E-Mails (Phishing)**: Attackers send emails that appear legitimate to trick users into disclosing confidential information. This is known as "phishing" and is designed to capture sensitive data. Phishing often involves false emails, chats, or websites impersonating real systems.
+    - **E-Mail attachments**: Malicious code (e.g., keyloggers, viruses, Trojans, worms) is embedded in email attachments to entice victims to open them, leading to automatic execution of the malicious code.
+    - **Pop-up windows**: Used to encourage users to unintentionally install malicious software, often by offering special deals or free items.
+
+### Cyberstalking
+
+Cyberstalking is the use of the Internet or other electronic means to stalk or harass an individual, group, or organization. It can involve false accusations, defamation, slander, libel, monitoring, identity theft, threats, vandalism, solicitation of minors for sex, or gathering information to harass or threaten a person. It's also referred to as Internet stalking, e-stalking, or online stalking. Cyberstalking is a punishable offense under Indian law (Section 354(D), 509 IPC, and Section 67 under I.T. Amendment Act 2008).
+
+**Types of Stalkers:** Both types are criminal offenses driven by a desire to control, intimidate, or influence a victim. Stalkers can be anonymous online strangers or known individuals.
+
+1. **Online Stalkers**: Initiate interaction directly with the victim via the Internet, commonly using email and chat rooms. They ensure the victim recognizes the attack and may use third parties to harass.
+2. **Offline Stalkers**: Begin with traditional methods like following the victim or watching their daily routine. They then use the Internet (message boards, newsgroups, personal websites, people-finding services) to gather information about the victim, who may be unaware the Internet is being used against them.
+
+**How Stalking Works (Steps):**
+
+1. **Personal information gathering**: Collecting data about the victim.
+2. **Establishing contact and initial threats**: Contacting the victim via phone or cell phone and beginning to threaten or harass.
+3. **Email contact**: Establishing contact through email.
+4. **Repeated malicious emails**: Continuously sending emails with various favors or threats.
+5. **Posting personal information**: Disclosing the victim's personal data on illicit service websites.
+6. **Encouraging others to harass**: Other individuals, upon seeing the posted information, begin calling the victim for sexual services.
+7. **Subscribing to illicit content**: Cyberstalkers may subscribe the victim's email account to numerous pornographic and sex sites, leading to unsolicited emails.
+
+**Real-life Incident of Cyberstalking:** An Indian police case in Delhi involved Mrs. Joshi receiving nearly 40 calls over three days from locations like Kuwait, Cochin, Bombay, and Ahmedabad. A person used Mrs. Joshi's ID to chat obscenely on www.mirc.com for four consecutive days, giving out her name, address, and phone number, and encouraging others to call her. This was the first registered cyberstalking case of its kind.
+
+### Cybercafe and Cybercrimes
+
+Cybercafes, which offer public internet access for a fee, can inadvertently facilitate cybercrimes.
+
+- A Nielsen Survey in India indicated that 37% of the total population uses cybercafes, with 90% being males aged 15-35, 52% graduates/postgraduates, and over 50% students. This highlights the importance of IT security and governance in these places.
+- Cybercafes are used for various illicit activities, including real or false terrorist communication, stealing bank passwords, fraudulent money withdrawals, and deploying keyloggers or spyware. Shoulder surfing is also a risk.
+- Cybercafes are often not classified as Network Service Providers (NSPs) under the IT Act 2000, raising questions about their responsibility for "due diligence".
+
+**Illegal Activities Observed in Cybercafes:**
+
+- Pirated software, operating systems, and office applications.
+- Outdated antivirus software.
+- Use of "deep freeze" software that clears all activity upon restart, making it difficult for police or crime investigators to trace victims.
+- Lack of Annual Maintenance Contracts (AMCs), allowing criminals to install malicious code without interaction.
+- Unblocked pornographic and other indecent content websites.
+- Lack of awareness among cybercafe owners regarding IT security and governance guidelines.
+- Infrequent or non-existent periodic visits by cyber-cell wings (state police) or cybercafe associations.
+
+**Survival Mantra for Netizens (Safety and Security Measures in Cybercafes):**
+
+1. **Always Logout**: Do not use automatic login. Always click "logout" or "sign out" from emails, chat services, or any password-protected site. Simply closing the browser window is insufficient as it allows subsequent users easy access to your account.
+2. **Stay with the Computer**: Do not leave the system unattended while surfing or browsing. Log out and close all browser windows if you must step away.
+3. **Clear History and Temporary Files**: Internet Explorer, for example, saves visited pages and passwords in history and temporary files. Before browsing, deselect checkboxes for saved passwords in AutoComplete settings. After browsing, clear history, temporary Internet files, and delete cookies.
+4. **Be Alert (Avoid Shoulder Surfing)**: Remain vigilant and aware of your surroundings to prevent others from snooping your username and password.
+5. **Avoid Online Financial Transactions**: Ideally, avoid online banking, shopping, or any transactions requiring sensitive personal information like credit card or bank account details. If urgent, change all passwords on a more trusted computer (e.g., at home or office) immediately after the transaction.
+6. **Change Passwords**: Regularly change bank account and transaction passwords, especially after using public computers for online banking.
+7. **Virtual Keyboard**: Utilize virtual keyboards provided by banks on their websites to prevent keylogger attacks.
+8. **Security Warnings**: Pay utmost attention to security warnings displayed when accessing banking or financial institution websites from cybercafes.
