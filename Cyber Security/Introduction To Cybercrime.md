@@ -42,8 +42,8 @@ The challenge of information security in the age of cybercrime is significant du
 
 Cybercriminals are individuals or groups who commit illegal acts involving computers and the Internet12. Their activities can range from identity theft and financial fraud to malicious operations like selling contraband or stalking victims.
 
-Cybercrime involves such activities as child pornography; credit card fraud; cyberstalking; defaming another online; gaining unauthorized access to computer systems; ignoring copyright, software licensing and trademark protection; overriding encryption to make illegal copies; software piracy and stealing another's identity (known as identity theft) to perform criminal acts (see detailed discussion on identity theft in Chapter 5).  
-Cybercriminals are those who conduct such acts. They can be categorized into three groups that reflect their motivation (see Ref. #2, Books, Further Reading):
+Cybercrime involves such activities as child pornography,credit card fraud,cyberstalking,defaming another online; gaining unauthorized access to computer systems; ignoring copyright, software licensing and trademark protection; overriding encryption to make illegal copies; software piracy and stealing another's identity (known as identity theft) to perform criminal acts.
+Cybercriminals are those who conduct such acts. They can be categorized into three groups that reflect their motivation:
 
 1. **Type I: Cybercriminals – hungry for recognition**
     
