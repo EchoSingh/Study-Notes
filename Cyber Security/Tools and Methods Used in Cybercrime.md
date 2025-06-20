@@ -304,3 +304,49 @@ Keyloggers and Spywares are significant tools and methods used in cybercrime, pr
 
 ## **Virus and Worms**
 
+Viruses and worms are both types of malicious software (malware) designed to infiltrate computer systems. They are often used by criminals for various attacks.
+
+**Computer Viruses** A computer virus is a program that "infects" legitimate programs by modifying them to include a copy of itself, which can then "evolve". Viruses spread without the user's knowledge or permission. They contain malicious instructions that can cause damage or annoyance. A virus passes from computer to computer similar to how a biological virus spreads from person to person. They can be triggered by specific events (e.g., after a certain number of executions), time-driven effects (e.g., a specific date like Friday the 13th), or occur randomly.
+
+**Typical actions of a virus include:**
+
+- Displaying a message to prompt an action that may set off the virus.
+- Deleting files within the infected system.
+- Scrambling data on a hard disk.
+- Causing erratic screen behavior.
+- Halting the system (PC).
+- Replicating themselves to propagate further harm.
+- Modifying themselves to potentially escape detection.
+
+**Types of Viruses:** Viruses can be categorized based on their attack methods on various system elements:
+
+- **Boot Sector Viruses:** These infect the storage media where the operating system (OS) is stored and used to start the computer. They spread to other systems through shared infected disks and pirated software.
+- **Program Viruses:** These become active when program files (usually with extensions like .bin, .com, .exe, .ovl, .drv) are executed, and they make copies of themselves.
+- **Multipartite Viruses:** A hybrid of boot sector and program viruses, infecting program files along with the boot record when the infected program is active.
+- **Stealth Viruses:** These camouflage or mask themselves, making detection difficult for antivirus software. An example is the Brain virus.
+- **Polymorphic Viruses:** These act like "chameleons," changing their binary pattern (signature) each time they spread (multiply and infect new files), making them hard for antivirus programs to detect. Polymorphic generators are routines that link with existing viruses to hide them under polymorphism.
+- **Macro Viruses:** These are programmed as macros embedded in documents and spread when the document is opened. Once on a victim's computer, every document produced will become infected.
+- **Active X Java Control:** Web browsers have settings for Active X and Java Commands; unawareness of managing these settings can invite threats from unwanted software.
+
+**Examples of Viruses:** Conficker, INF/AutoRun, Win32 PSW, OnLineGames, Win32/Agent (Trojan), Win32/FlyStudio (Trojan with backdoor characteristics), Win32/Pacex.Gen, Win32/Qhost, WMA/TrojanDownloader.GetCodec.
+
+**Computer Worms** A computer worm is a self-replicating malware program that spreads through a network without needing a host program. Unlike viruses, worms do not need to attach themselves to an existing program. They can send copies of themselves to other nodes on the network without user intervention. Worms typically cause some harm to the network, often by consuming bandwidth, while viruses tend to corrupt or modify files on a targeted computer.
+
+**Examples of Worms:** Morris Worm, ILOVEYOU, Nimda, Code Red, Melissa, MSBlast, Sobig, Storm Worm, Michelangelo, Jerusalem.
+
+**Distinction between Viruses and Worms** The sources highlight key differences between viruses and worms:
+
+|Facet|Virus|Worm|
+|:--|:--|:--|
+|**Different types**|Stealth virus, self-modified virus, encryption with variable key virus, polymorphic code virus, metamorphic code virus.|E-Mail worms, instant messaging worms, Internet worms, IRC worms, file-sharing, networks worms.|
+|**Spread mode**|Needs a host program to spread.|Self-spreading, without user intervention.|
+|**What is it?**|A software program that copies itself and infects data or information without user knowledge; needs a host program to carry it for spreading.|A self-replicating software program that spreads through a network; can send copies through the network.|
+|**Inception**|Creeper virus (early 1970s, ARPANET).|Shockwave Rider (science fiction novel, 1975).|
+|**Prevalence**|Very high.|Moderate.|
+
+Both viruses and worms are typically delivered as E-Mail attachments or downloaded files. Worms specifically use holes in network protocols directly for propagation.
+
+
+
+---
+
