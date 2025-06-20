@@ -306,7 +306,7 @@ Social engineering is a technique used to influence and persuade people to obtai
     - **Calling technical support**: A classic social engineering example where help-desk personnel, trained to assist users, become targets.
     - **Shoulder surfing**: Gathering information like usernames and passwords by watching someone type them in, often over their shoulder.
 
-     ![](1.1.png)
+     ![](images/1.1.png)
 
     - **Dumpster diving**: Rummaging through commercial or residential trash for discarded documents containing sensitive information (e.g., SSN, credit card numbers).
 
@@ -314,7 +314,7 @@ Social engineering is a technique used to influence and persuade people to obtai
     
     - **Fake E-Mails (Phishing)**: Attackers send emails that appear legitimate to trick users into disclosing confidential information. This is known as "phishing" and is designed to capture sensitive data. Phishing often involves false emails, chats, or websites impersonating real systems.
 
-     ![](1.2.png)
+     ![](images/1.2.png)
 
     - **E-Mail attachments**: Malicious code (e.g., keyloggers, viruses, Trojans, worms) is embedded in email attachments to entice victims to open them, leading to automatic execution of the malicious code.
     - **Pop-up windows**: Used to encourage users to unintentionally install malicious software, often by offering special deals or free items.
@@ -340,7 +340,7 @@ Cyberstalking is the use of the Internet or other electronic means to stalk or h
 
 **Real-life Incident of Cyberstalking:** An Indian police case in Delhi involved Mrs. Joshi receiving nearly 40 calls over three days from locations like Kuwait, Cochin, Bombay, and Ahmedabad. A person used Mrs. Joshi's ID to chat obscenely on www.mirc.com for four consecutive days, giving out her name, address, and phone number, and encouraging others to call her. This was the first registered cyberstalking case of its kind.
 
-![](1.3.png)
+![](images/1.3.png)
 
 ### Cybercafe and Cybercrimes
 
@@ -371,9 +371,9 @@ Cybercafes, which offer public internet access for a fee, can inadvertently faci
 7. **Virtual Keyboard**: Utilize virtual keyboards provided by banks on their websites to prevent keylogger attacks.
 8. **Security Warnings**: Pay utmost attention to security warnings displayed when accessing banking or financial institution websites from cybercafes.
 
-    ![](1.4.png)
+    ![](images/1.4.png)
 
-    ![](1.5.png)
+    ![](images/1.5.png)
 
 ---
 
@@ -391,7 +391,7 @@ Botnets are used for various gainful purposes by cybercriminals, effectively fue
 - **Spamdexing**: Manipulating search engine rankings.
 - **Selling internet services and shop accounts**: Monetizing hijacked resources.
 
-  ![](1.6.png)
+  ![](images/1.6.png)
 
 To mitigate the risk from botnets, security measures include using up-to-date antivirus and anti-spyware, regularly installing security patches, using firewalls, disconnecting from the internet when not in use, avoiding untrustworthy free downloads, regularly checking email inboxes and sent items for suspicious activity, and taking immediate action if a system is infected.
 
