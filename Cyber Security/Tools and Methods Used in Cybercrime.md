@@ -445,3 +445,85 @@ An advanced form of information hiding mentioned is using Sudoku puzzles and SMS
 
 ---
 
+## Denial of Service (DoS) and Distributed Denial of Service (DDoS) attacks
+
+Denial of Service (DoS) and Distributed Denial of Service (DDoS) attacks are significant cyber threats aimed at disrupting the availability of services.
+
+### Denial of Service (DoS) Attacks
+
+DoS is a criminal act where an attacker aims to flood the victim's network bandwidth or fill their email inbox with spam, thereby depriving legitimate users of access to services. The primary purpose of a DoS attack is not to gain unauthorized access to systems or data, but rather to prevent intended users from utilizing a service.
+
+![](images/2.4.png)
+
+**How DoS Attacks Work** DoS attacks can achieve their goal through various methods:
+
+- **Resource Consumption** Attackers often target high-profile web servers that host services like bank credit card payment gateways, mobile phone networks, and even root name servers. They might employ techniques such as buffer overflows.
+- **IP Spoofing and Flooding** The attacker spoofs their IP address and floods the victim's network with repeated requests. Because the IP address is fake, the victim's machine continuously waits for a response, which consumes significant network bandwidth and ultimately leads to system breakdown.
+
+**Symptoms of a DoS Attack** The US Computer Emergency Response Team identifies several symptoms of a DoS attack:
+
+- Unusually slow network performance, such as when opening files or accessing websites.
+- Unavailability of a specific website.
+- Inability to access any website.
+- A dramatic increase in the volume of spam emails received, often referred to as an "E-mail Bomb".
+
+**What a DoS Attack Does** A DoS attack fundamentally aims to prevent service usage. It accomplishes this by:
+
+- Flooding a network with excessive traffic to prevent legitimate communication.
+- Disrupting connections between two systems, thereby blocking service access.
+- Preventing a specific individual from accessing a service.
+- Disrupting service to a particular system or person.
+
+**Classification of DoS Attacks** DoS attacks are classified into several types:
+
+- **Bandwidth Attacks** These attacks involve heavily loading websites, which consumes significant memory and bandwidth, eventually causing the site to become unavailable.
+- **Logic Attacks** These attacks exploit vulnerabilities found in network software, such as web servers or the TCP/IP stack.
+- **Protocol Attacks** These attacks leverage specific features or implementation bugs within protocols installed on the victim's system to consume an excessive amount of its resources.
+- **Unintentional DoS Attacks** Unlike deliberate attacks, these occur when an enormous, sudden surge in popularity overloads a website, rather than a malicious act by an individual or group.
+
+**Types or Levels of DoS Attacks** Specific types of DoS attacks include:
+
+- **Flood Attack (Ping Flood)** This is one of the earliest forms of DoS. An attacker sends a large number of ping packets to overwhelm the victim's network. While simple to launch, it is difficult to prevent and requires the attacker to have a faster network connection than the victim.
+- **Ping of Death Attack** This attack involves sending oversized Internet Control Message Protocol (ICMP) packets, which is a core protocol of the IP Suite. When received, these malformed packets can crash, freeze, or reboot the victim's system, leading to a DoS.
+- **SYN Attack (TCP SYN Flooding)** In this attack, the attacker initiates a TCP connection with a SYN (synchronize) message, possibly using a legitimate or spoofed source address. The server responds with a SYN-ACK, but the client never sends the final ACK. This causes the server to allocate memory for pending connections, filling its buffer space and preventing other legitimate systems from communicating.
+- **Teardrop Attack** This attack involves forging fragmented packets that overlap, confusing the receiving host when it attempts to reassemble them. This can cause the system to hang or crash due to a bug in its TCP/IP fragmentation reassembly code. Operating systems like Windows 3.1x, 95, NT, and specific Linux versions have been vulnerable.
+- **Smurf Attack** This attack generates significant computer network traffic by flooding a victim's network with spoofed broadcast ping messages. The attacker sends an ICMP echo request to a network's broadcast address with the victim's spoofed IP as the source. All hosts on that network reply to the victim, overwhelming it. Internet Relay Chat (IRC) servers are often primary targets.
+- **Nuke** An older DoS attack that uses fragmented or invalid ICMP packets sent to a target. It often leverages a modified ping utility to repeatedly send corrupt data, eventually bringing the affected computer to a halt. It exploits vulnerabilities such as the NetBIOS handler in Windows 95 (targeting TCP port 139), which can cause the system to lock up and display a Blue Screen of Death (BSOD).
+
+**Tools Used to Launch DoS Attacks** Several tools can be used to launch DoS attacks:
+
+- **Jolt2** Attacks Windows-based machines, consuming 100% of CPU time by processing illegal packets.
+- **Nemesy** Generates random packets with spoofed source IP addresses.
+- **Targa** Capable of running 8 different types of DoS attacks.
+- **Crazy Pinger** Sends large ICMP packets.
+- **SomeTrouble** A remote flooder and bomber tool developed in Delhi.
+
+### Distributed Denial of Service (DDoS) Attacks
+
+A DDoS attack is an advanced form of DoS where an attacker uses multiple compromised computers to attack a single target system. By exploiting security vulnerabilities, the attacker takes control of numerous computers, forcing them to send massive amounts of data to a website or to send spam to specific email addresses.
+
+The key distinction of DDoS is its distributed nature; the attack originates from multiple machines simultaneously. These compromised computers are often referred to as "zombie systems" or "secondary victims," while the intended target is known as the "primary victim".
+
+### Protection and Countermeasures for DoS/DDoS Attacks
+
+Protecting against DoS and DDoS attacks requires a multi-layered approach:
+
+- **Implement Router Filters** Router filters can reduce exposure to certain attacks.
+- **Install Patches** Apply patches to guard against vulnerabilities like TCP SYN flooding if such filters are available in your system.
+- **Disable Unused Services** Limit an attacker's ability to execute a DoS attack by disabling any network services that are unused or inessential.
+- **Enable Quota Systems** Utilize quota systems on your operating system to manage resource consumption.
+- **Monitor System Performance** Regularly observe system performance and establish baselines for normal activity to detect anomalies.
+- **Examine Physical Security** Routinely check the physical security of your systems.
+- **Use Configuration Monitoring Tools** Employ tools (e.g., Tripwire) to detect any changes in configuration information or other files that could indicate a compromise.
+- **Maintain Hot Spares** Invest in and maintain "hot spares"—machines that can be quickly deployed if a similar machine is disabled by an attack.
+- **Redundant Network Configuration** Invest in redundant and fault-tolerant network configurations to ensure continuous availability.
+- **Backup Schedules and Policies** Establish and maintain regular backup schedules and policies for critical configuration information.
+- **Strong Password Policies** Implement and enforce appropriate password policies, particularly for highly privileged accounts like Unix root or Microsoft Windows NT Administrator.
+
+**Tools for Detecting DoS/DDoS Attacks** Several tools can help detect DoS/DDoS attacks:
+
+- **Zombie Zapper**: A free open-source tool designed to stop zombie flooding packets.
+- **Remote Intrusion Detector (RID)**: A computer language tool that detects common vulnerabilities and exposures (CVEs).
+- **Security Auditor's Research Assistant (SARA)**: Gathers information about hosts and networks and detects network services.
+- **Find_DDoS**: Scans for systems that are likely to contain DDoS programs.
+- **DDoS Ping**: Detects zombie and Tribe Flood Network programs.
