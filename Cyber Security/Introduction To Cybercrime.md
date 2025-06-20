@@ -174,7 +174,7 @@ Although not always criminal, the misuse of these platforms can contribute to cy
 
 Cybercrimes can also be understood based on how the computer is involved in the crime. Table 1.1 in the divides cybercrimes into the following:
 
-### **2.1 Computer as a Target (Narrow Sense)**
+######  **2.1 Computer as a Target (Narrow Sense)**
 
 In these cases, the computer or the data stored on it is the direct target of the crime. Examples include:
 
@@ -187,7 +187,7 @@ In these cases, the computer or the data stored on it is the direct target of th
 - Virtual child pornography
     
 
-### **2.2 Computer as a Tool**
+###### **2.2 Computer as a Tool**
 
 Here, the computer is used as a medium or instrument to commit the crime. The device stores information or aids in executing the illegal act. Examples include:
 
@@ -198,7 +198,7 @@ Here, the computer is used as a medium or instrument to commit the crime. The de
 - Distribution of child pornography
     
 
-### **2.3 Computer as the Environment or Context**
+###### **2.3 Computer as the Environment or Context**
 
 In this classification, the computer plays a supporting or peripheral role. It is not directly used to commit the crime but may help in planning, organizing, or recording evidence. Examples include:
 
