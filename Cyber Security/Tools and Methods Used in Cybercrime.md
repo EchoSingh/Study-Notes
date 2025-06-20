@@ -530,4 +530,51 @@ Protecting against DoS and DDoS attacks requires a multi-layered approach:
 
 ---
 
+##  **SQL injection**
+
+SQL Injection is a type of computer language attack designed for relational database management systems (RDBMS). It exploits a security vulnerability in the database language, where the vulnerability is present if input is filtered incorrectly for string literal escape characters embedded in SQL statements or if user input is not strongly typed and thereby unexpectedly executed. This allows malicious attackers to inject client-side script into webpages viewed by other users. Essentially, an attacker can use this vulnerability to manipulate the database or execute unwanted programming or scripting commands.
+
+### How SQL Injection Attacks Work
+
+The attacker's objective is to gain unauthorized access to a database by inserting or "injecting" malicious SQL code into input fields of an application, which is then executed by the database. This can lead to the database performing actions unintended by the application's developer.
+
+The typical steps for an SQL Injection attack are:
+
+1. **Input validation**: The attacker looks for webpages that display HTML commands such as `POST` or `GET` or `FORM`.
+2. **Source code checking**: The attacker attempts to check the source code of the webpage.
+3. **Vulnerability exploitation**: The attacker inserts a single quote character `'` into a text box, which is then transmitted to the web server. The server, attempting to interpret the malformed SQL query, may display an error message that indicates an SQL injection vulnerability. This error often provides clues about the type of database and structure, which the attacker can exploit further.
+4. **Database query manipulation**: The attacker sends `SELECT` statements or `SQL` commands to the database via a web form. A legitimate user might enter queries and additions through the `SQL` statement. An attacker, however, can command a `SQL` prompt or display a table from the database. This allows the attacker to gain a high-value target and potentially steal sensitive data. For instance, a user can enter a username and password, and an SQL query determines if the user has a valid username and password. The attacker can then inject SQL to bypass authentication.
+
+Some variations of SQL Injection attacks include:
+
+- **Blind SQL Injection**: This is used when a web application is vulnerable to SQL injection, but the vulnerability does not directly display the data. Instead, the attacker deduces information based on the application's responses, which might include error messages, different content, or time delays.
+
+### Tools Used for SQL Server Penetration
+
+Several tools can be used for SQL Server penetration, which might involve SQL Injection attacks:
+
+- **AppDetectivePro**: A network-based, discovery, and vulnerability assessment scanner that discovers database applications within the infrastructure and assesses security strength. It gathers information about hosts and networks and detects network services. It integrates database asset management, regulatory compliance, and vulnerability management.
+- **DbProtect**: It enables organizations to manage database security, manage risk, and bolster regulatory compliance. It integrates database asset management, vulnerability management, audit, and threat management.
+- **Database Scanner (ISS)**: An integrated part of Internet Security Systems' Database Scanner. It is a dynamic threat protection platform that assesses online business risks by identifying security exposures in the database. The database scanner detects functionality, monitors compliance, and generates detailed reports.
+- **SQL Invoker**: An NT-based tool that locates Microsoft SQL (MSSQL) servers and tries to connect with the default System Administrator (SA) account. It lists SQL commands that are executed if the connection is successful.
+- **NGSSQLCrack**: A password cracking tool for MSSQL servers that can bypass weak passwords. It recovers user accounts with weak passwords, identifies strong ones, and provides the overall vulnerability assessment.
+- **Microsoft SQL Fingerprint (MSSQLFP) Tool**: Identifies MSSQL servers, versions, builds, and vulnerable versions of Microsoft SQL Server.
+
+### How to Protect from SQL Injection Attacks
+
+Preventing SQL Injection attacks requires several steps:
+
+1. **Input validation**:
+    - Replace all single quotes (`'`).
+    - Sanitize user input to ensure that characters that might be interpreted as SQL commands are handled correctly. This includes managing special characters, sequences, and character repetition.
+    - Validate numerical inputs for integrity and ensure that numeric values are checked using query string validation.
+    - Keep all text box and form fields short to limit user input.
+2. **Error reporting**: SQL errors should not be displayed to outside users to prevent attackers from gaining information about the system. Developers should handle and control error reporting to prevent full query syntax errors or other file errors that can be used by attackers.
+3. **Other preventions**:
+    - The default system accounts for SQL Server should never be used.
+    - Isolate database servers and web servers. Both should reside on different machines.
+    - Most often, attackers may use several extended stored procedures (such as `xp_cmdshell` and `xp_grantlogin`) in SQL injection attacks. In such extended stored procedures, user-defined functions, etc., are not allowed or are unused, and these features must be removed.
+    - Technocrimanals need to know more on this topic, as mentioned in References.
+
+---
 
