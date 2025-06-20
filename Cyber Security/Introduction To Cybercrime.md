@@ -40,4 +40,7 @@ The challenge of information security in the age of cybercrime is significant du
 
 **Who are Cyber Criminals**
 
+Cybercriminals are individuals or groups who commit illegal acts involving computers and the Internet12. Their activities can range from identity theft and financial fraud to malicious operations like selling contraband or stalking victims.
+
+---
 
