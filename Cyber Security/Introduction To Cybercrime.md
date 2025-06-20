@@ -340,6 +340,8 @@ Cyberstalking is the use of the Internet or other electronic means to stalk or h
 
 **Real-life Incident of Cyberstalking:** An Indian police case in Delhi involved Mrs. Joshi receiving nearly 40 calls over three days from locations like Kuwait, Cochin, Bombay, and Ahmedabad. A person used Mrs. Joshi's ID to chat obscenely on www.mirc.com for four consecutive days, giving out her name, address, and phone number, and encouraging others to call her. This was the first registered cyberstalking case of its kind.
 
+![](images/1.3.png)
+
 ### Cybercafe and Cybercrimes
 
 Cybercafes, which offer public internet access for a fee, can inadvertently facilitate cybercrimes.
