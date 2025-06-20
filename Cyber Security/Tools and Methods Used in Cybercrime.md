@@ -299,3 +299,6 @@ Keyloggers and Spywares are significant tools and methods used in cybercrime, pr
 **Examples** Examples of spyware include 007 Spy, Spector Pro, eBlaster, Remotespy, Stealth Recorder Pro, Stealth Website Logger, Flexispy, Wiretap Professional, PC PhoneHome, and SpyArsenal Print Monitor Pro.
 
 **Relationship with Malware** Keyloggers and Spyware fall under the broader category of "malware" (malicious software), which is designed to infiltrate a computer system without the owner's informed consent. Malware represents various forms of hostile, intrusive, or annoying software or program code.
+
+---
+
