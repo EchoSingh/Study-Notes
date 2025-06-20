@@ -439,11 +439,9 @@ Steganography is an art and science that focuses on "sheltered writing," meaning
 - MP3Stego: http://compression.ru/video/stego_video/index_en.html
 
 An advanced form of information hiding mentioned is using Sudoku puzzles and SMS. Messages can be concealed within a Sudoku puzzle image and communicated via SMS; the recipient solves the puzzle to extract the hidden data.
-
-![]()
 #### simple code implementation :-
 
-![kaggle link](https://www.kaggle.com/code/adi2606/image-steganography-lsb)
+[Kaggle Link](https://www.kaggle.com/code/adi2606/image-steganography-lsb)
 
 ---
 
