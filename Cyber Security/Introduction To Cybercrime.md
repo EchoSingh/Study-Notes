@@ -42,5 +42,37 @@ The challenge of information security in the age of cybercrime is significant du
 
 Cybercriminals are individuals or groups who commit illegal acts involving computers and the Internet12. Their activities can range from identity theft and financial fraud to malicious operations like selling contraband or stalking victims.
 
+Cybercrime involves such activities as child pornography; credit card fraud; cyberstalking; defaming another online; gaining unauthorized access to computer systems; ignoring copyright, software licensing and trademark protection; overriding encryption to make illegal copies; software piracy and stealing another's identity (known as identity theft) to perform criminal acts (see detailed discussion on identity theft in Chapter 5).  
+Cybercriminals are those who conduct such acts. They can be categorized into three groups that reflect their motivation (see Ref. #2, Books, Further Reading):
+
+1. **Type I: Cybercriminals – hungry for recognition**
+    
+    - Hobby hackers;
+        
+    - IT professionals (social engineering is one of the biggest threats);
+        
+    - Politically motivated hackers;
+        
+    - Terrorist organizations.
+        
+2. **Type II: Cybercriminals – not interested in recognition**
+    
+    - Psychological perverts;
+        
+    - Financially motivated hackers (corporate espionage);
+        
+    - State-sponsored hacking (national espionage, sabotage);
+        
+    - Organized criminals.
+        
+3. **Type III: Cybercriminals – the insiders**
+    
+    - Disgruntled or former employees seeking revenge;
+        
+    - Competing companies using employees to gain economic advantage through damage and/or theft.
+        
+
+Thus, the typical "motives" behind cybercrime seem to be greed, desire to gain power and/or publicity, desire for revenge, a sense of adventure, looking for thrill to access forbidden information, destructive mindset and desire to sell network security services. This is explained in Chapter 10. Cybercafes are known to play role in committing cybercrimes. A link about cybercrimes under ITA 2008 (amendment to Indian ITA 2000) is provided in Ref. #23, Additional Useful Web References, Further Reading. Another link, describing views if the amended ITA 2000 is stringent enough for cybercriminals, is provided in the same section as Ref. #24.
+
 ---
 
