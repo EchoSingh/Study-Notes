@@ -72,7 +72,5 @@ Cybercriminals are those who conduct such acts. They can be categorized into thr
     - Competing companies using employees to gain economic advantage through damage and/or theft.
         
 
-Thus, the typical "motives" behind cybercrime seem to be greed, desire to gain power and/or publicity, desire for revenge, a sense of adventure, looking for thrill to access forbidden information, destructive mindset and desire to sell network security services. This is explained in Chapter 10. Cybercafes are known to play role in committing cybercrimes. A link about cybercrimes under ITA 2008 (amendment to Indian ITA 2000) is provided in Ref. #23, Additional Useful Web References, Further Reading. Another link, describing views if the amended ITA 2000 is stringent enough for cybercriminals, is provided in the same section as Ref. #24.
-
 ---
 
