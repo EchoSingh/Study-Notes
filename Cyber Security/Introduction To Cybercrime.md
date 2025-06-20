@@ -76,3 +76,6 @@ Cybercriminals are those who conduct such acts. They can be categorized into thr
 
 ---
 
+**Classifications of Cybercrimes**
+
+
