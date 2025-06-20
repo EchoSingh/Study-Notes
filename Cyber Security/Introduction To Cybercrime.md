@@ -309,6 +309,7 @@ Social engineering is a technique used to influence and persuade people to obtai
      ![](images/1.1.png)
 
     - **Dumpster diving**: Rummaging through commercial or residential trash for discarded documents containing sensitive information (e.g., SSN, credit card numbers).
+
 2. **Computer-based Social Engineering**: Uses computer software or the internet to gather information.
     
     - **Fake E-Mails (Phishing)**: Attackers send emails that appear legitimate to trick users into disclosing confidential information. This is known as "phishing" and is designed to capture sensitive data. Phishing often involves false emails, chats, or websites impersonating real systems.
