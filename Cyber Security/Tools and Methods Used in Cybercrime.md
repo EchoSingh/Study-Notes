@@ -178,3 +178,75 @@ Several measures can be taken to prevent becoming a victim of phishing attacks:
 
 ---
 
+Password cracking is the process of recovering passwords that have been stored in or transmitted by a computer system. It is a key topic in cybersecurity, particularly within the context of cybercrime tools and methods.
+
+**Purpose of Password Cracking** The main purposes of password cracking include:
+
+1. **Recovering forgotten passwords**.
+2. **Preventive measure** by system administrators to identify easily crackable passwords.
+3. **Gaining unauthorized access** to a system.
+
+**Manual Password Cracking Steps** An attacker attempting to manually crack a password will typically follow these steps:
+
+1. Find a valid user account, such as an Administrator or Guest account.
+2. Create a list of possible passwords.
+3. Rank the passwords from high to low probability.
+4. Key-in each password.
+5. Repeat the process until a successful password is found.
+
+**Password Cracking Tools** Various tools are available for password cracking:
+
+- **Cain & Abel**: A password recovery tool for Microsoft Operating Systems that can recover many password types, decrypt scrambled passwords, and recover wireless network keys.
+- **John the Ripper**: A free and open-source software that detects weak Unix passwords.
+- **THC-Hydra**: A network logon cracker supporting many different protocols.
+- **Aircrack-ng**: A set of tools for wireless networks, enabling WEP key cracking.
+- **LOphtCrack**: A password auditing and recovery tool for Windows, allowing local password hashes to be retrieved and audited.
+- **AirSnort**: A wireless LAN (WLAN) tool for recovering encryption keys.
+- **Solar Winds**: Provides network discovery/monitoring/attack tools.
+- **Pwdump**: A Windows password recovery tool that can dump local and remote NT LAN Manager (NTLM) hashes.
+- **RainbowCrack**: A hash cracker that creates large-scale time-memory trade-offs.
+- **Brutus**: A fast, flexible remote password cracker.
+- **Solarwinds**: Tools for network discovery/monitoring/attack, designed to identify security vulnerabilities.
+- **Hash Crack**: A hash cracker for large-scale time-memory trade-offs.
+
+**Types of Password Cracking Attacks** Password cracking attacks can be classified into three main categories:
+
+1. **Online Attacks**: Involve executing an automated program to try each password in a list until a match is found.
+    
+    - **Man-in-the-middle (MITM) attack** (also known as "bucket-brigade attack" or "Janus attack"): The attacker establishes a connection between the victim and the server, intercepting communications, hashing passwords, and passing the connection to the legitimate server. This method is used to obtain passwords for email accounts on public websites (like Yahoo, Hotmail, Gmail) and financial websites to gain access to banking services.
+2. **Offline Attacks**: Performed from a location other than the target system, often requiring physical access to the computer to copy the password file onto removable media. The goal is to obtain passwords in clear text format.
+    
+    - **Dictionary Attack**: Attempts to match all words from a dictionary to crack the password (e.g., "Administrator").
+    - **Hybrid Attack**: Substitutes numbers and symbols to dictionary words (e.g., "Adm1n1strator").
+    - **Brute Force Attack**: Attempts all possible permutations and combinations of letters, numbers, and special characters (e.g., "Adm!n@09").
+3. **Non-electronic Attacks**: These include social engineering, shoulder surfing, and dumpster diving, which are explained in Chapter 2.
+    
+
+**Password Strength**
+
+- **Weak Passwords**: Easily guessed, short, common, or system default passwords. Examples include common personal names ("Susan"), repeated letters ("aaaa"), pet names ("rover"), simple sequences ("abc123", "1234"), common terms ("admin", "password"), keyboard sequences ("QWERTY"), dates ("12/3/75"), usernames ("nbusr123"), or simple letter substitutions ("p@S$V/ord").
+- **Strong Passwords**: Long, random, or otherwise difficult to guess. They are chosen by the user and their crack time varies based on the attacker's resources and the password's value. Examples include phrases ("Convert £100 to Euros!"), mixed numbers and letters used on mass user accounts ("382465304H"), or non-dictionary words with mixed alpha, numeric, and punctuation characters ("PIeai@3", "MoOoOfln245679", "t3wahSetyeT4").
+- **Random Passwords**: Stronger as they include a mix of upper and lower case letters, numbers, and other symbols. However, their difficulty in remembering increases the chance of users writing them down, making them vulnerable to other attacks.
+
+**Password Policies and Security Measures** General guidelines for password policies that can be implemented organization-wide include:
+
+- Passwords and user logon identities (IDs) should be unique for each authorized user.
+- Passwords should consist of a minimum of eight alphanumeric characters, avoiding common names or phrases.
+- Computer-controlled lists of prescribed password rules and periodic testing (e.g., for letter and number sequences, character repetition, initials, common words, and standard names) should be used to identify weaknesses.
+- Passwords should be kept private, not shared with friends or colleagues, and not coded into programs or written down anywhere.
+- Passwords should be changed every 30/45 days or less. Most operating systems (OS) can enforce automatic expiration and prevent reuse.
+- User accounts should be frozen after five failed logon attempts, and erroneous password entries should be recorded in an audit log.
+- Sessions should be suspended after 15 minutes (or a specified period) of inactivity, requiring re-entry of passwords.
+- Successful logons should display the date and time of the last logon/logoff.
+- Logon IDs and passwords should be suspended after a specified period of non-use.
+- For high-risk systems, excessive violations should trigger an alarm and allow for simulation of a continuing session with dummy data for the failed user.
+
+For netizens, specific advice to avoid falling victim to hacked email or financial accounts includes:
+
+- Keep business, personal, and banking email/financial accounts separate.
+- Passwords should not be shared with relatives or friends.
+- Do not reuse previously used passwords when renewing.
+- Do not store passwords on mobile phones or PDAs, as these devices are prone to cyberattacks.
+- Before clicking web links in emails from banking/financial institutions, ensure the email's legitimacy to avoid phishing attacks.
+- Similarly, for SMS from banking/financial institutions, ensure legitimacy to avoid smishing attacks.
+- If accounts are hacked, contact the respective agencies/institutes immediately.

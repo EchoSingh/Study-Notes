@@ -144,7 +144,7 @@ Organizations and companies are often the target of complex cyber-attacks that c
 - **Software Piracy**: The illegal copying, distribution, or use of licensed software without proper authorization.
     
 
-######## **1.4 Cybercrimes Against Society**
+####### **1.4 Cybercrimes Against Society**
 
 These crimes affect the broader society and may target social institutions, governments, or public well-being.
 
@@ -155,7 +155,7 @@ These crimes affect the broader society and may target social institutions, gove
 - **Web Jacking**: Gaining control over a website and modifying its content or redirecting its visitors to other malicious pages.
     
 
-####### **1.5 Crimes Emanating from Usenet Newsgroups**
+###### **1.5 Crimes Emanating from Usenet Newsgroups**
 
 Usenet groups can serve as platforms for offensive, false, or misleading information. Misuse of these platforms may involve:
 
