@@ -355,7 +355,8 @@ Both viruses and worms are typically delivered as E-Mail attachments or download
 
 ---
 
-## 
+## Trojan Horses and Backdoors
+
 Trojan Horses and Backdoors are both types of malicious software (malware) used by cybercriminals to gain unauthorized access and control over computer systems.
 
 **Trojan Horses** A Trojan Horse is a type of malware that disguises itself as, or is contained within, seemingly harmless programming or data. Its primary goal is to gain control of a system and cause harm once activated. Unlike viruses, Trojan Horses do not self-replicate; they require a user to execute them, often by being enticed to open an attachment or download a file. They can be delivered via web browsers, email attachments, or downloaded software.
@@ -411,3 +412,6 @@ Trojan Horses are often delivered as email attachments or can be installed by ha
 - **Avoid suspect websites and weblinks:** Do not download free or pirated software from untrusted sources, as these often contain Trojans.
 - **Surf the web cautiously:** Be careful when connecting to or downloading information from peer-to-peer (P2P) networks, as they are known to spread malicious software like Trojans.
 - **Install and maintain antivirus/Trojan remover software:** Antivirus software often has built-in features to protect against various malware, including Trojans.
+
+---
+
