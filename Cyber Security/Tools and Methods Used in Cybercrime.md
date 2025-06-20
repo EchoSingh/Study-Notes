@@ -257,3 +257,45 @@ For netizens, specific advice to avoid falling victim to hacked email or financi
 
 ---
 
+## Keyloggers and Spywares
+
+Keyloggers and Spywares are significant tools and methods used in cybercrime, primarily designed to intercept and collect information from computer systems.
+
+### Keyloggers
+
+**Definition and Purpose** Keystroke logging, commonly known as keylogging, is the practice of covertly noting or logging the keys struck on a keyboard without the user's awareness. Keyloggers offer a quick and easy way to capture passwords and monitor a victim's IT-savvy behavior. The purpose of keyloggers in cybercrime is to gain unauthorized access to systems by stealing credentials.
+
+**Classification** Keyloggers can be classified into two main types:
+
+1. **Software Keyloggers**
+    
+    - These are software programs installed on computer systems, typically located between the operating system (OS) and the keyboard hardware.
+    - They record every keystroke made by the user.
+    - Often, software keyloggers are installed onto a system by Trojans or viruses without the user's knowledge.
+    - Cybercriminals frequently install these tools on insecure public computers, such as those in cybercafes or libraries, to easily obtain information about victims.
+    - A typical software keylogger might consist of two files installed in the same directory: a Dynamic Link Library (DLL) file that performs the recording, and an executable (EXE) file that installs the DLL and triggers its operation.
+    - Examples include All-in-One Keylogger, Stealth Keylogger, Perfect Keylogger, KGB Spy, Spy Buddy, Elite Keylogger, Cyberspy, Powered Keylogger, XPC Spy, Spytech Spyagent, and Stealth.
+2. **Hardware Keyloggers**
+    
+    - These are small physical hardware devices that require physical access to the computer system for installation.
+    - They are connected to the PC and/or keyboard and save every keystroke to a file or the device's memory.
+    - Cybercriminals have been known to install these devices on ATM machines to capture ATM card PINs, as each keypress on the ATM keyboard is registered by the keylogger.
+    - These keyloggers are designed to look like an integrated part of the systems, making their presence unnoticed by users.
+    - Examples of websites providing information on hardware keyloggers include keyghost.com, keelog.com, keydevil.com, and keykatcher.com.
+
+**Anti-Keyloggers** Anti-keyloggers are tools designed to detect and remove keyloggers installed on a computer system. Their advantages include:
+
+- Firewalls typically cannot detect keylogger installations, whereas anti-keyloggers can.
+- Unlike some antivirus and anti-spyware programs, anti-keyloggers do not require regular updates of signature bases to function effectively.
+- They help prevent Internet banking fraud by thwarting password capture by keyloggers.
+- They aid in preventing identity (ID) theft and securing email and instant messaging/chatting.
+
+### Spywares
+
+**Definition and Function** Spyware is a type of malicious software (malware) that is installed on computers to collect information about users without their knowledge. Its presence is usually hidden from the user, and it is secretly installed on the user's personal computer. In some cases, spyware, including keyloggers, might be intentionally installed by the owner of a shared, corporate, or public computer to secretly monitor other users.
+
+**Information Collected and Impact** Spyware programs secretly monitor the user and collect personal information about the victim, such as Internet surfing habits, patterns, and visited websites. These programs can alter internet settings, leading users to complain about slower internet speeds.
+
+**Examples** Examples of spyware include 007 Spy, Spector Pro, eBlaster, Remotespy, Stealth Recorder Pro, Stealth Website Logger, Flexispy, Wiretap Professional, PC PhoneHome, and SpyArsenal Print Monitor Pro.
+
+**Relationship with Malware** Keyloggers and Spyware fall under the broader category of "malware" (malicious software), which is designed to infiltrate a computer system without the owner's informed consent. Malware represents various forms of hostile, intrusive, or annoying software or program code.
