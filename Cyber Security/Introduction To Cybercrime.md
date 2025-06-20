@@ -391,7 +391,7 @@ Botnets are used for various gainful purposes by cybercriminals, effectively fue
 - **Spamdexing**: Manipulating search engine rankings.
 - **Selling internet services and shop accounts**: Monetizing hijacked resources.
 
-  
+  ![](images/1.6.png)
 
 To mitigate the risk from botnets, security measures include using up-to-date antivirus and anti-spyware, regularly installing security patches, using firewalls, disconnecting from the internet when not in use, avoiding untrustworthy free downloads, regularly checking email inboxes and sent items for suspicious activity, and taking immediate action if a system is infected.
 
