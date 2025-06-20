@@ -306,7 +306,7 @@ Social engineering is a technique used to influence and persuade people to obtai
     - **Calling technical support**: A classic social engineering example where help-desk personnel, trained to assist users, become targets.
     - **Shoulder surfing**: Gathering information like usernames and passwords by watching someone type them in, often over their shoulder.
 
-     ![]()
+     ![](images/1.1.png)
 
     - **Dumpster diving**: Rummaging through commercial or residential trash for discarded documents containing sensitive information (e.g., SSN, credit card numbers).
 2. **Computer-based Social Engineering**: Uses computer software or the internet to gather information.
