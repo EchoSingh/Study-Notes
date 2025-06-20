@@ -631,5 +631,70 @@ Tools mentioned that can help defend against or detect buffer overflows include:
 
 ---
 
-## **Attacks on Wireless Networks **
+## **Attacks on Wireless Networks**
 
+Attacks on Wireless Networks are security breaches where penetration of a wireless network occurs through unauthorized access, often termed as wireless cracking.
+
+### Wireless Networks and Mobile Workers
+
+![](images/2.5.png)
+
+Wireless technologies are widely popular in daily business and personal lives, enabling handheld devices like PDAs, cell phones, and laptops to access calendars, emails, phone lists, and the Internet. These networks extend traditional wired networks by using radio waves to transmit data to wireless-enabled devices. Wireless networks typically consist of access points (APs) and other wireless-enabled devices such as laptops with radio transmitters and receivers.
+
+Different types of mobile workers utilize these networks:
+
+- **Tethered/Remote Worker**: An employee who generally works at a single location but is remote to the central company system, including home workers or tele-cottagers.
+- **Roaming User**: An employee who works in various environments (e.g., warehousing, shop floor) or multiple areas.
+- **Nomad**: This category includes employees who require solutions in hotel rooms and other semi-tethered environments, with an increasing use of wireless technologies and devices.
+- **Road Warrior**: The ultimate mobile user who spends little time in the office but requires regular access to data and collaborative functionality while in transit or in hotels.
+
+Wireless networking standards include 802.11 (a, b, g, n), 802.15 (Bluetooth), and 802.16 (WiMax). Key components of wireless security include Service Set Identifier (SSID), Wired Equivalent Privacy (WEP), Wi-Fi Protected Access (WPA and WPA2), and Media Access Control (MAC).
+
+### Traditional Techniques of Attacks on Wireless Networks
+
+Attackers employ various methods to exploit wireless network vulnerabilities:
+
+1. **Sniffing**: This involves passive scanning, detection of SSIDs and MAC addresses, and collecting frames to crack WEP encryption.
+2. **Spoofing**: The primary goal is to masquerade identity by falsifying data to gain illegitimate advantages.
+    - **MAC address Spoofing**: Changing a device's assigned MAC address to bypass access control lists on servers or routers, allowing impersonation of another network device or hiding a computer on the network.
+    - **IP Spoofing**: Creating IP packets with a forged source IP address to conceal the sender's identity or impersonate another computing system. Attackers find trusted IP addresses and modify packet headers to appear as if they are from a legitimate sender.
+    - **Frame Spoofing**: Injecting carefully spoofed frames that are valid according to 802.11 specifications. Since frames are not authenticated in 802.11 networks, this can go undetected unless the address is completely faked.
+3. **Denial of Service (DoS)**: In this criminal act, an attacker floods the victim's network bandwidth or fills their email inbox with spam, depriving them of services they are entitled to access. High-profile web servers, such as those for banks, credit card payment gateways, mobile phone networks, and root name servers, are typically targeted.
+4. **Man-in-the-Middle (MITM) attack**: This is a popular online attack, also known as a "bucket-brigade attack" or "Janus attack". It involves active eavesdropping where the attacker positions themselves between the user and the legitimate website or system. The phisher records the user's input but continues to pass it to the web server, so the user's transactions are not affected. The MITM server intercepts the call, hashes the password, and passes the connection to the victim server.
+5. **Encryption Cracking**: While WPA encryption is advised for wireless networks, attackers continuously develop new tools to deconstruct older encryption technologies like WEP due to ongoing research. Using a long and highly randomized encryption key is crucial to prevent cracking.
+
+### Theft of Internet Hours and Wi-Fi Based Frauds and Misuses
+
+Cybercriminals exploit wireless networks to steal Internet hours or commit Wi-Fi based frauds:
+
+- Attackers can find the IP address of a router and access its information to steal internet access.
+- **War driving**: The original term, derived from "wardialing".
+- **War walking/war jagging**: Similar to war driving but conducted on foot using Pocket PCs.
+- **War biking**: Similar to war driving but done with Wi-Fi capable devices on a bicycle or motorcycle.
+- **Warkitting**: Combines war driving with "rootkitting".
+- **WAPkitting**: An attack where external software gains control of a router's firmware by exploiting open administrative access. This can theoretically be achieved through traditional means like buffer overflow.
+- **WAPjacking**: Similar to a DNS poisoning attack, it changes firmware settings to direct users to malicious configurations.
+
+### How to Secure Wireless Networks
+
+To enhance wireless network security:
+
+1. **Change Default Settings**: Modify the default settings of all wireless network equipment and components.
+2. **Enable Encryption**: Use WPA (Wi-Fi Protected Access) or WEP (Wired Equivalent Privacy) encryption.
+3. **Change Default SSID**: Alter the default Service Set Identifier.
+4. **Enable MAC Address Filtering**: Restrict network access to devices with specific MAC addresses.
+5. **Disable Remote Login**: Prevent remote access to the network.
+6. **Disable SSID Broadcast**: Hide the network name from public view.
+7. **Disable Unused Features**: Turn off any unused features on the access point (AP), such as printing or music support.
+8. **Avoid Easily Identifiable Network Names**: Do not use obvious names like "My_Home_Wifi".
+9. **Connect to Secured Networks Only**: Only join wireless networks that are secured.
+10. **Upgrade Router Firmware Periodically**: Keep router firmware updated.
+11. **Assign Static IP Addresses**: Use static IP addresses for devices.
+12. **Enable Firewalls**: Implement firewalls on each computer and the router.
+13. **Position Router Safely**: Place the router or AP in a secure location.
+14. **Turn Off Network When Not in Use**: Disable the network during extended periods of inactivity.
+15. **Monitor Wireless Network Security Regularly**: Continuously assess and monitor the security of the wireless network.
+
+Tools that can help protect wireless networks include Zamzom Wireless Network Tool, AirDefense Guard, Wireless Intrusion Detection System (WIDZ), BSD-Airtools, and Google Secure Access.
+
+---
