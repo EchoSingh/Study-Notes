@@ -578,3 +578,56 @@ Preventing SQL Injection attacks requires several steps:
 
 ---
 
+## **Buffer Overflow**
+
+Buffer Overflow, or buffer overrun, is an anomaly where a process attempts to store data in a buffer outside the memory region that has been allocated for it. This type of error can occur when a program writes beyond the boundaries of a fixed-size buffer, overwriting adjacent memory. Such an overflow can corrupt program variables, program flow control data, including program variables and program flow control data.
+
+This vulnerability is present in many software vulnerabilities and operating systems, and it can be maliciously exploited. Exploiting a buffer overflow typically involves sending malformed input that causes the program to overwrite specific memory regions, which attackers can then use to execute unwanted programming or scripting commands.
+
+### How Buffer Overflows Occur
+
+A buffer overflow typically happens in C and C++ programming languages, which allow direct memory access and do not automatically check for boundaries within the data being written to any part of memory. This means that data written to a buffer (the buffer in C++ types) may exceed the boundaries of that array.
+
+When a program or process tries to store more data than a temporary data storage area can hold, a buffer overflow occurs. This extra data spills over into adjacent memory locations, overwriting existing data. This can result in:
+
+- Corruption of data.
+- Overwriting adjacent buffers.
+- Corrupting the valid data held in them.
+- Accidental program or script execution errors.
+
+The integrity of security-critical data depends heavily on controlling bounds checking.
+
+### Types of Buffer Overflow
+
+The sources identify the following types of buffer overflows:
+
+- **Stack-Based Buffer Overflow**: This occurs when a program writes to a memory region on the program's stack call out of the intended data structure, usually a fixed-length buffer. Stack is a memory space in which automatic variables and other function parameters are allocated. Function parameters are allocated on the stack (e.g., local variables) and are not automatically initialized by the system, unless they are initialized by the user in the program. When a function has completed its cycle, the variables and the return value to the variable in the stack is removed. Overwriting a local variable can modify the program's behavior, and overwriting the return address in the stack frame can cause the program to execute code at an attacker-controlled address.
+- **Heap Buffer Overflow**: This happens in the heap data area, a memory space where dynamic objects are allocated. In either case, the overflow occurs accidentally by an application programmer, or it may result from a deliberate exploit. A buffer is vulnerable to an overflow if it does not properly verify that the source will fit into the destination.
+
+### Attacker Exploitation
+
+Attackers can exploit stack-based buffer overflows to manipulate the program in various ways, including:
+
+1. Overwriting a local variable in the buffer's memory to change the program's behavior.
+2. Overwriting the return address in a stack frame, causing the program to execute at an attacker-controlled address.
+3. Exploiting the factors that contribute to overflows, such as null bytes in addresses, variability in the location of shellcode, and differences between environments.
+
+Attackers use various techniques to achieve unauthorized code execution through buffer overflows, including the use of "NOOP sleds" which are NOP (short form of no-operation) instructions used in assembly language programming. The idea is to bypass issues with memory alignment and ensure that the program counter hits the NOP sled, leading to the execution of the attacker's shellcode.
+
+### Preventing Buffer Overflow Attacks
+
+To minimize buffer overflow vulnerabilities:
+
+1. **Assessment of Secure Code**: Developers should be educated about minimizing data storage in C libraries and preventing unintended characters or any other special characters from causing memory overflows.
+2. **Disable Stack Execution**: This involves implementing mechanisms to prevent a program from executing code on the stack and non-terminated functions.
+3. **Compiler Checks**: Various compiler tools can check for integrity and detect functionality issues.
+4. **Dynamic Run-Time Checks**: Applications should be designed to prevent unauthorized access. This can include preloaded components that provide safer versions of standard unsafe functions.
+
+Tools mentioned that can help defend against or detect buffer overflows include:
+
+- **StackGuard**: Released in 1997, it's a compiler approach that provides buffer overflow protection and identifies security exposures in the database.
+- **ProPolice**: An enhancement of the Stack-smashing protector.
+- **LibSafe**: A system-wide and automatically attached library that intercepts all calls made to library functions vulnerable to buffer overflows.
+
+---
+
