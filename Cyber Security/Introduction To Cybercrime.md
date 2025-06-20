@@ -17,7 +17,7 @@ Cybercrime can be broadly classified in two ways:
 
 Examples of cybercrime in a narrow sense include hacking, computer sabotage, distributed denial-of-service (DDoS) attacks, and virtual child pornography. In a broad sense, examples include computer fraud, forgery, child pornography distribution, bank robbery, and drug trade.
 
-#### Cybercrime and Information Security
+##### Cybercrime and Information Security
 
 Information security is fundamentally about protecting information, equipment, devices, computers, and associated networks from unauthorized access, use, disclosure, disruption, modification, or destruction. Cybersecurity, as a broader term, emphasizes safeguarding information, equipment, devices, computers, and their associated networks.
 
@@ -36,4 +36,6 @@ The challenge of information security in the age of cybercrime is significant du
 - The difficulty in estimating financial losses from cybercrime, as some organizations may choose not to disclose such incidents.
 - The need for continuous vigilance and adaptation of security practices to combat new forms of attacks.
 
-The sources emphasize that effective information security involves understanding cyber threats, implementing preventative measures, and having a robust incident response capability to deal with cybercriminal activities.
+---
+
+
