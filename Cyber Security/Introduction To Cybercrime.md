@@ -155,7 +155,7 @@ These crimes affect the broader society and may target social institutions, gove
 - **Web Jacking**: Gaining control over a website and modifying its content or redirecting its visitors to other malicious pages.
     
 
-### **1.5 Crimes Emanating from Usenet Newsgroups**
+####### **1.5 Crimes Emanating from Usenet Newsgroups**
 
 Usenet groups can serve as platforms for offensive, false, or misleading information. Misuse of these platforms may involve:
 
@@ -170,9 +170,9 @@ Although not always criminal, the misuse of these platforms can contribute to cy
 
 ---
 
-## **2. Classification Based on the Role of the Computer**
+#####  **2. Classification Based on the Role of the Computer**
 
-Cybercrimes can also be understood based on how the computer is involved in the crime. Table 1.6 in the textbook divides cybercrimes into the following:
+Cybercrimes can also be understood based on how the computer is involved in the crime. Table 1.6 in the divides cybercrimes into the following:
 
 ### **2.1 Computer as a Target (Narrow Sense)**
 
