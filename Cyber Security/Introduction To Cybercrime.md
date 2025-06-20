@@ -376,3 +376,58 @@ Cybercafes, which offer public internet access for a fee, can inadvertently faci
     ![](images/1.5.png)
 
 ---
+
+### Botnets: The Fuel for Cybercrime
+
+A botnet, also known as a "zombie army" or a group of compromised computers (zombie computers), is a network of internet-connected machines that are secretly controlled by cybercriminals. These infected devices are called "bots". The term "bot" refers to an automated program designed to perform specific tasks over a network. The owners of these computers are typically unaware that their machines are forwarding illicit transmissions, such as spam or viruses, at the command of a master cybercriminal. Many compromised computers are home-based. According to a report from Russian-based Kaspersky labs, botnets, rather than spam, viruses, or worms, posed the biggest threat to the internet at one point.
+
+Botnets are used for various gainful purposes by cybercriminals, effectively fueling cybercrime. These purposes include:
+
+- **DDoS attacks**: Launching Distributed Denial of Service attacks.
+- **Spam attacks/Spamming**: Sending large volumes of unsolicited emails.
+- **Malware and Spyware installation**: Distributing and installing malicious software.
+- **Stealing confidential information**: Acquiring sensitive data like credit card and bank account details, or personal identity information.
+- **Phishing attacks**: Facilitating phishing schemes.
+- **Spamdexing**: Manipulating search engine rankings.
+- **Selling internet services and shop accounts**: Monetizing hijacked resources.
+
+To mitigate the risk from botnets, security measures include using up-to-date antivirus and anti-spyware, regularly installing security patches, using firewalls, disconnecting from the internet when not in use, avoiding untrustworthy free downloads, regularly checking email inboxes and sent items for suspicious activity, and taking immediate action if a system is infected.
+
+### Attack Vector
+
+An attack vector is the path or means by which a hacker gains unauthorized access to a computer or network server to deliver a payload or malicious outcome. Attack vectors exploit system vulnerabilities, including the human element. While firewalls and antivirus software can block some attack vectors, no protection method is completely foolproof, as hackers constantly update their methods and seek new vulnerabilities. If a vulnerability exists at an entry point, attack vectors allow attacks to be launched. Malicious software like viruses, Trojan horses, worms, and spyware can function as attack vectors.
+
+Different ways to launch an attack using attack vectors include:
+
+1. **Attack by E-mail**: Hostile content is embedded in messages or linked within them. Spam is often a carrier for scams, fraud, or other malicious actions, with suspicious links offering "free" or "tempting" items.
+2. **Attachments**: Malicious computer code (e.g., viruses, Trojan horses, spyware, malware) is embedded in email attachments and executes when opened.
+3. **Attacks by Deception (Social Engineering/Hoaxes)**: These exploit human vulnerability. Fraud, scams, and hoaxes, along with viruses, worms, and other malicious software, often require the unwitting cooperation of the victim's computer operator to succeed. Social engineering and hoaxes are significant forms of deception used as attack vectors. Hackers use these techniques, along with hacking tools and heuristics, to gain access to computers and online accounts. They may also install Trojan Horses to commandeer systems.
+4. **Heedless Guests (Attack by Webpages)**: Counterfeit websites are used to extract personal information by appearing legitimate. These sites often mimic genuine ones and are used in conjunction with spam. Pop-up webpages can install spyware, adware, or Trojans.
+5. **Attack of the Worms**: Many worms are delivered via email attachments, but network worms directly exploit vulnerabilities in network protocols. Remote access services, like file sharing, are often susceptible. Firewalls typically block system worms, but successful worms can infect a computer and then spread rapidly by scanning the internet for other vulnerable machines, creating thousands of "zombie" computers for malicious use.
+6. **Malicious Macros**: Macros in applications like Microsoft Word and Excel can be used for malicious purposes, automating actions that lead to system compromise. Internet services, including instant messaging and P2P file-sharing networks, can also facilitate the spread of malicious macros.
+7. **Foistware/Sneakware**: This software adds hidden components to a system subtly. Spyware is a common form of foistware, often bundled with other software, hijacking browsers or diverting users to "revenue opportunities".
+8. **Viruses**: Malicious computer codes that carry a payload, delivered via email attachments, downloaded files, or worms.
+
+### Cloud Computing
+
+Cloud computing is a growing field that leverages computing and virtualization services to deliver measurable benefits and cost savings. It allows organizations to move servers, storage, and applications outside their own data centers. The cloud is broadly defined as the internet, or more specifically, "cloud-based" web servers.
+
+Cloud computing services can be categorized into three main types:
+
+1. **Infrastructure-as-a-service (IaaS)**: This service, exemplified by Amazon Web Services, provides virtual servers with unique IP addresses and allows customers to pay for computing, storage, and network services based on usage.
+2. **Platform-as-a-service (PaaS)**: This includes software development and deployment tools hosted by third-party providers. Salesforce.com's platform is an example, allowing developers to create applications using specific APIs and development tools.
+3. **Software-as-a-service (SaaS)**: This is the broadest market, where the software interacts with the user through a web browser. Applications like Microsoft Live Mesh or Adobe Flash are examples.
+
+The increasing use of cloud computing introduces new security risks. Potential risks in a cloud computing environment include:
+
+- **Elevated user access**: Data residing outside the organization in outsourced services can lead to potential risks if the cloud service provider's personnel, physical, and logical controls do not adequately control user access.
+- **Regulatory compliance**: Cloud service providers need to meet external compliance requirements like HIPAA, Sarbanes-Oxley, and PCI DSS.
+- **Location of the data**: Organizations need to be aware of where their data is stored, as it might reside in a country with different legal frameworks.
+- **Segregation of data**: Data from different organizations must be securely separated within the cloud environment.
+- **Recovery of the data**: Business continuity plans (BCP/DDRP) are essential to ensure data recovery after any disaster or disruption.
+- **Information security violation reports**: Tracking legitimate and illicit activities, and documenting security violation reports, can be complex.
+- **Long-term viability**: Mergers or partnerships in the cloud computing industry can affect the long-term viability of services.
+
+The Internet has generally made it easier for criminals to conduct illicit activities by making information acquisition simpler. It has also created a new form of "digital anonymity" where attackers are less traceable. Public networks and cybercafes are noted as places criminals use for gathering information and launching attacks, highlighting the importance of IT security and governance in these public spaces. Cybercriminals seek out security weaknesses in systems to exploit them, and often operate from locations where their identity is obscured, like cybercafes.
+
+---
