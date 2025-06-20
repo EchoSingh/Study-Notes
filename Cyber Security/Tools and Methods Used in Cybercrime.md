@@ -44,6 +44,8 @@ Proxy servers and anonymizers are crucial tools for cybercriminals to obscure th
 
 ---
 
+## 
+
 Phishing is a deceptive cybercrime technique primarily aimed at tricking individuals into revealing sensitive information, such as usernames, passwords, and credit card details. It was introduced around 1996.
 
 ### Definition and Purpose

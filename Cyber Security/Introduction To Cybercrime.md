@@ -83,7 +83,7 @@ Cybercrime encompasses a wide range of illegal activities that involve the use o
 
 ###### **1. Classification Based on Victim**
 
-######## **1.1 Cybercrimes Against Individuals**
+######  **1.1 Cybercrimes Against Individuals**
 
 These crimes are targeted at specific persons, often with the aim of exploiting personal data, damaging reputation, or causing psychological harm. Common types include:
 
@@ -104,7 +104,7 @@ These crimes are targeted at specific persons, often with the aim of exploiting 
 - **Password Sniffing**: Illegally capturing passwords through network monitoring tools to gain unauthorized access to systems.
     
 
-####### **1.2 Cybercrimes Against Property**
+#####  **1.2 Cybercrimes Against Property**
 
 These crimes focus on damaging or stealing digital property, including financial data, software, or intellectual assets.
 
@@ -115,7 +115,7 @@ These crimes focus on damaging or stealing digital property, including financial
 - **Internet Time Theft**: The unauthorized use of an organization’s or individual’s internet service for personal purposes, without permission.
     
 
-####### **1.3 Cybercrimes Against Organizations**
+###### **1.3 Cybercrimes Against Organizations**
 
 Organizations and companies are often the target of complex cyber-attacks that can result in data breaches, financial loss, or damage to reputation.
 
