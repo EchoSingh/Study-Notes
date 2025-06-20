@@ -44,7 +44,7 @@ Proxy servers and anonymizers are crucial tools for cybercriminals to obscure th
 
 ---
 
-## 
+## Phishing
 
 Phishing is a deceptive cybercrime technique primarily aimed at tricking individuals into revealing sensitive information, such as usernames, passwords, and credit card details. It was introduced around 1996.
 
@@ -180,6 +180,8 @@ Several measures can be taken to prevent becoming a victim of phishing attacks:
 
 ---
 
+## Password cracking
+
 Password cracking is the process of recovering passwords that have been stored in or transmitted by a computer system. It is a key topic in cybersecurity, particularly within the context of cybercrime tools and methods.
 
 **Purpose of Password Cracking** The main purposes of password cracking include:
@@ -252,3 +254,6 @@ For netizens, specific advice to avoid falling victim to hacked email or financi
 - Before clicking web links in emails from banking/financial institutions, ensure the email's legitimacy to avoid phishing attacks.
 - Similarly, for SMS from banking/financial institutions, ensure legitimacy to avoid smishing attacks.
 - If accounts are hacked, contact the respective agencies/institutes immediately.
+
+---
+
