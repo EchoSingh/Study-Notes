@@ -348,9 +348,9 @@ Both viruses and worms are typically delivered as E-Mail attachments or download
 
 ## Virus spread via :-
 
-![](images/2.1.png)
+![](2.1.png)
 
-![](images/2.2.png)
+![](2.2.png)
 
 
 ---
@@ -421,7 +421,7 @@ Steganography is an art and science that focuses on "sheltered writing," meaning
 
 **How Steganography Works** In steganography, a secret message is embedded within a "cover medium" in such a way that its presence is not obvious. The cover medium can be various forms of innocent data, such as audio, still images, or video. For example, in a digital image, the least significant bit of each word can be used to form a message without causing any noticeable change to the image. A "stegokey" or password is required for this process.
 
-![](images/2.3.png)
+![](2.3.png)
 
 **Purpose and Use** Steganography is used to embed a hidden "trademark" in images, music, and software, a technique also referred to as watermarking. This digital watermarking can be used to detect illegal copying of digital images.
 
@@ -453,7 +453,7 @@ Denial of Service (DoS) and Distributed Denial of Service (DDoS) attacks are sig
 
 DoS is a criminal act where an attacker aims to flood the victim's network bandwidth or fill their email inbox with spam, thereby depriving legitimate users of access to services. The primary purpose of a DoS attack is not to gain unauthorized access to systems or data, but rather to prevent intended users from utilizing a service.
 
-![](images/2.4.png)
+![](2.4.png)
 
 **How DoS Attacks Work** DoS attacks can achieve their goal through various methods:
 
@@ -637,7 +637,7 @@ Attacks on Wireless Networks are security breaches where penetration of a wirele
 
 ### Wireless Networks and Mobile Workers
 
-![](images/2.5.png)
+![](2.5.png)
 
 Wireless technologies are widely popular in daily business and personal lives, enabling handheld devices like PDAs, cell phones, and laptops to access calendars, emails, phone lists, and the Internet. These networks extend traditional wired networks by using radio waves to transmit data to wireless-enabled devices. Wireless networks typically consist of access points (APs) and other wireless-enabled devices such as laptops with radio transmitters and receivers.
 
