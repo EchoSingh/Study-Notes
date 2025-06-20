@@ -432,11 +432,11 @@ Steganography is an art and science that focuses on "sheltered writing," meaning
 **Tools for Steganography** The sources provide a list of websites that offer steganography tools:
 
 - [DiSi-Steganograph](http://www.securityfocus.com)
-- [Invisible Folders](http://www.brothersoft.com/invisible-folders/
-- [Invisible Secrets](http://www.programurl.com/stealth-files.htm
-- [Stealth Files](http://www.programurl.com/hermetic-stego.htm
-- [DriveCrypt Plus (DCPP)](http://www.petitcolas.net/fabien/steganography/mp3stego
-- [MP3Stego]() http://compression.ru/video/stego_video/index_en.html
+- [Invisible Folders](http://www.brothersoft.com/invisible-folders/)
+- [Invisible Secrets](http://www.programurl.com/stealth-files.htm)
+- [Stealth Files](http://www.programurl.com/hermetic-stego.htm)
+- [DriveCrypt Plus (DCPP)](http://www.petitcolas.net/fabien/steganography/mp3stego)
+- [MP3Stego](http://compression.ru/video/stego_video/index_en.html)
 
 An advanced form of information hiding mentioned is using Sudoku puzzles and SMS. Messages can be concealed within a Sudoku puzzle image and communicated via SMS; the recipient solves the puzzle to extract the hidden data.
 #### simple code implementation :-
