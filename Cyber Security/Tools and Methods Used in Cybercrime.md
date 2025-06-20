@@ -346,7 +346,7 @@ Viruses and worms are both types of malicious software (malware) designed to inf
 
 Both viruses and worms are typically delivered as E-Mail attachments or downloaded files. Worms specifically use holes in network protocols directly for propagation.
 
-
+![](ima)
 
 ---
 
