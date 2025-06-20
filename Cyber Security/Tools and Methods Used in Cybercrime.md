@@ -527,3 +527,7 @@ Protecting against DoS and DDoS attacks requires a multi-layered approach:
 - **Security Auditor's Research Assistant (SARA)**: Gathers information about hosts and networks and detects network services.
 - **Find_DDoS**: Scans for systems that are likely to contain DDoS programs.
 - **DDoS Ping**: Detects zombie and Tribe Flood Network programs.
+
+---
+
+
