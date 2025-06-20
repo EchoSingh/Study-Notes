@@ -443,7 +443,7 @@ An advanced form of information hiding mentioned is using Sudoku puzzles and SMS
 ![]()
 #### simple code implementation :-
 
-![kaggle link]()
+![kaggle link](https://www.kaggle.com/code/adi2606/image-steganography-lsb)
 
 ---
 
