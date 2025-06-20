@@ -371,6 +371,8 @@ Cybercafes, which offer public internet access for a fee, can inadvertently faci
 7. **Virtual Keyboard**: Utilize virtual keyboards provided by banks on their websites to prevent keylogger attacks.
 8. **Security Warnings**: Pay utmost attention to security warnings displayed when accessing banking or financial institution websites from cybercafes.
 
-   ![](images/1.4.png)
+    ![](images/1.4.png)
+
+    ![](images/1.5.png)
 
 ---
