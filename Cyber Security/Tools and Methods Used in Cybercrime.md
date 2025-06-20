@@ -415,3 +415,31 @@ Trojan Horses are often delivered as email attachments or can be installed by ha
 
 ---
 
+## Steganography
+
+Steganography is an art and science that focuses on "sheltered writing," meaning it involves hiding the existence of a message or communication. The term originates from two Greek words: "Steganos," meaning "covered," and "graphein," meaning "to write" or "concealed writing". It is a method of attempting to conceal information.
+
+**How Steganography Works** In steganography, a secret message is embedded within a "cover medium" in such a way that its presence is not obvious. The cover medium can be various forms of innocent data, such as audio, still images, or video. For example, in a digital image, the least significant bit of each word can be used to form a message without causing any noticeable change to the image. A "stegokey" or password is required for this process.
+
+![](images/2.3.png)
+
+**Purpose and Use** Steganography is used to embed a hidden "trademark" in images, music, and software, a technique also referred to as watermarking. This digital watermarking can be used to detect illegal copying of digital images.
+
+**Steganalysis** Steganalysis is the art and science of detecting messages that have been hidden using steganography. Its primary goal is to identify suspected packages and determine whether they contain an encoded payload, and if possible, to recover that payload. Automated tools are available to help detect steganographed data/information hidden in image, audio, and video files.
+
+**Relationship with Cryptography** The source material does not explicitly detail the _difference_ between steganography and cryptography in a dedicated section, but it can be inferred that while cryptography focuses on securing the _content_ of a message, steganography focuses on securing its _existence_.
+
+**Tools for Steganography** The sources provide a list of websites that offer steganography tools:
+
+- DiSi-Steganograph: http://www.securityfocus.com
+- Invisible Folders: http://www.brothersoft.com/invisible-folders/
+- Invisible Secrets: http://www.programurl.com/stealth-files.htm
+- Stealth Files: http://www.programurl.com/hermetic-stego.htm
+- DriveCrypt Plus (DCPP): http://www.petitcolas.net/fabien/steganography/mp3stego
+- MP3Stego: http://compression.ru/video/stego_video/index_en.html
+
+An advanced form of information hiding mentioned is using Sudoku puzzles and SMS. Messages can be concealed within a Sudoku puzzle image and communicated via SMS; the recipient solves the puzzle to extract the hidden data.
+
+![]()
+---
+
