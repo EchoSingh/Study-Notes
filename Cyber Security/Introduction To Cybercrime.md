@@ -144,7 +144,7 @@ Organizations and companies are often the target of complex cyber-attacks that c
 - **Software Piracy**: The illegal copying, distribution, or use of licensed software without proper authorization.
     
 
-####### **1.4 Cybercrimes Against Society**
+###### **1.4 Cybercrimes Against Society**
 
 These crimes affect the broader society and may target social institutions, governments, or public well-being.
 
