@@ -209,21 +209,9 @@ In this classification, the computer plays a supporting or peripheral role. It i
 - Bank robbery assisted by digital surveillance tools
     
 
----
-
-## **Conclusion**
-
-Understanding the classifications of cybercrimes helps in:
-
-- Identifying and analyzing the nature and scope of digital threats
-    
-- Applying appropriate legal and technical countermeasures
-    
-- Enhancing awareness among individuals and organizations
-    
-
-As cyber threats continue to evolve, recognizing the categories and techniques involved in cybercrimes becomes essential for cybersecurity professionals, legal authorities, and general users alike.
-
----
-
-Would you like this note formatted into a Word or PDF file for download or printing?
+|**Role of Computer**|**Cybercrime in Narrow Sense**|**Cybercrime in Broad Sense**|
+|---|---|---|
+|**Computer as an Object**|Target of the attack (e.g., hacking, DDoS attacks)||
+|**Computer as a Tool**|Medium to perform crimes (e.g., fraud, child porn)||
+|**Computer as Environment/Context**|Not central to the crime, but part of it (e.g., murder, drug trade using tech)|Contains evidence or aids investigation|
+Table : 1.1
