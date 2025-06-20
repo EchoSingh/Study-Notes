@@ -314,7 +314,7 @@ Social engineering is a technique used to influence and persuade people to obtai
     
     - **Fake E-Mails (Phishing)**: Attackers send emails that appear legitimate to trick users into disclosing confidential information. This is known as "phishing" and is designed to capture sensitive data. Phishing often involves false emails, chats, or websites impersonating real systems.
 
-     
+     ![](images/)
 
     - **E-Mail attachments**: Malicious code (e.g., keyloggers, viruses, Trojans, worms) is embedded in email attachments to entice victims to open them, leading to automatic execution of the malicious code.
     - **Pop-up windows**: Used to encourage users to unintentionally install malicious software, often by offering special deals or free items.
