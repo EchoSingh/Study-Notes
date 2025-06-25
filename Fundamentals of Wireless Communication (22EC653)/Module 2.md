@@ -31,6 +31,34 @@
    - (b) **Total number of voice channels available in the cellular system**  
    _Comment on the results obtained._
 
+
+**Given Information:**
+
+- Initial service area covered by a single high-power transmitter = **140 km²**.
+- Initial total voice channels supported by the single high-power transmitter = **40**.
+- The area is divided into **seven smaller cells**.
+- Each smaller cell supports **30% of the original channels**.
+
+**Calculations:**
+
+**(a) Coverage area of each cell:**
+
+- To find the coverage area of each cell, divide the total service area by the number of smaller areas (cells).
+- **Coverage area of each cell = 140 km² / 7 cells = 20 km²**.
+
+**(b) Total number of voice channels available in the cellular system:**
+
+- First, determine the number of voice channels supported by _each_ smaller cell:
+    - Channels per cell = 30% of 40 channels = 0.3 × 40 = **12 channels/cell**.
+- Next, calculate the total number of voice channels available in the entire cellular system by multiplying the channels per cell by the total number of cells.
+- **Total number of voice channels = 12 channels/cell × 7 cells = 84 channels**.
+
+**Comment on the results obtained:**
+
+- **Significant Increase in Channels**: As observed from these results, the total number of available channels in the cellular system (84 channels) is significantly higher compared to the non-cellular system (40 channels) that originally covered the same area with a single high-power transmitter.
+- **Increased System Capacity**: This demonstrates that the **system capacity is increased** by dividing a large geographical area into smaller cells and reusing frequencies. The core concept of cellular communication is designed to enhance spectrum efficiency and system capacity while maintaining desired signal quality.
+- **Interference Management**: However, it is crucial to manage the allocation of channels carefully among the various cells to prevent interference between channels, especially in adjacent cells. Cells that are physically distant enough can reuse the same set of frequencies without causing cochannel interference, while adjacent cells within a cluster must operate on different frequencies.
+
 ---
 
 8. **Calculate the number of times the cluster of size 4 has to be replicated in order to approximately cover the entire service area of 1765 km² with the adequate number of uniform-sized cells of 7 km² each.**
