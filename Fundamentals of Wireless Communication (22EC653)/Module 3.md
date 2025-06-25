@@ -149,6 +149,9 @@ GSM's modular structure supports continuous evolution and enhancements, such as 
 
 The Global System for Mobile (GSM) is a widely adopted digital cellular communication standard initiated by the European Telecommunications Standardisation Institute (ETSI). It is considered the first digital cellular system and is used in various frequency bands across Europe, Asia, and North America, including 900 MHz, 1800 MHz, and 1900 MHz. GSM's fundamental purpose is to manage communication between mobile stations, base stations, and switching systems.
 
+![](https://www.tutorialspoint.com/gsm/images/gsm_elements.gif)
+
+
 The GSM network architecture is typically comprised of four major subsystems:
 
 - **Mobile Station (MS)**
@@ -177,6 +180,7 @@ Here's a detailed breakdown of each subsystem:
         - **Base Station Controller (BSC)**: May be co-located with a BTS or control multiple BTS units (and thus multiple cells). The BSC is responsible for reserving radio frequencies, managing **hand-offs** of mobile units within the BSS, and controlling paging. It also maintains appropriate signal power levels.
     - The interface connecting a BTS to a BSC is called the **A-bis interface**. The interface between a BSC and an MSC is called the **A interface**, which is standardized within GSM.
     ![](https://www.tutorialspoint.com/gsm/images/base_station_subsystem.jpg)
+    ![](https://www.tutorialspoint.com/gsm/images/base_transceiver_station.jpg)
     
 - **Network and Switching Subsystem (NSS)**:
     
