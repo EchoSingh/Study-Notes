@@ -320,7 +320,7 @@ Whether a call is initiated by a mobile subscriber (mobile-originated) or from a
 
 **I. Mobile-Originated Call Procedure**
 
-When a mobile subscriber initiates a call, the process involves the following key steps and interactions between GSM subsystems and channels [659, 661-663, 11.4]:
+When a mobile subscriber initiates a call, the process involves the following key steps and interactions between GSM subsystems and channels :
 
 1. **Initialisation and System Lock-on**:
     
