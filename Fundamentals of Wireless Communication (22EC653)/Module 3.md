@@ -442,7 +442,9 @@ This comprehensive interplay ensures that calls are established efficiently and 
 
 GSM (Global System for Mobile) cellular systems have evolved through different generations, with UMTS (Universal Mobile Telecommunications System) representing a significant step as a 3G technology, and LTE (Long-Term Evolution) marking a major advancement to 4G capabilities. While both support mobile communication, they differ fundamentally in their architecture and performance to meet increasing demands for data services.
 
-!
+![](https://media.geeksforgeeks.org/wp-content/uploads/20240712171528/UMTS.webp)
+
+
 ### **I. Architectural Differences**
 
 **UMTS Architecture:** UMTS is a **3G mobile communication standard** that serves as an evolution from GSM networks. Its architecture is partly based on existing 2G network components, particularly inheriting functional elements from the GSM Core Network (CN).
