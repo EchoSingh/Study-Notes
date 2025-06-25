@@ -191,6 +191,24 @@ Key advantages of wireless communication include:
 
 8. **Explain the disadvantages of Wireless Communication.**
 
+Wireless Communication, despite its numerous advantages, also presents several disadvantages and concerns, particularly when compared to wired systems.
+
+Key disadvantages include:
+
+- **Radio Signal Interference**: Wireless communication is susceptible to interference. Signals from other wireless devices can disrupt radio transmissions, or a wireless device itself can be a source of interference for other devices. For example, common office devices like cordless telephones, microwave ovens, elevator motors, and heavy electrical manufacturing machines transmit radio signals that can interfere with wireless LAN (WLAN) operations, leading to errors. Bluetooth and WLAN devices, operating in the same 2.4 GHz radio frequency, can also interfere with each other. However, external interference from AM/FM radio, TV broadcast stations, or microwave and cellular transmitters typically does not occur because they operate at different frequencies and power levels than WLANs.
+    
+- **Security Concerns**: Wireless communication devices transmit radio signals over a wide, open area, inherently making them less secure than wired connections. There is a constant threat to the security of information exchanged through the air interface. This vulnerability increases the risk of malicious attacks and jamming. Although measures like authorization features and data encryption can be implemented to enhance security, the inherent broadcast nature of wireless signals presents a persistent challenge.
+    
+- **Health Hazards**: High levels of radio frequency (RF) energy can potentially cause biological damage. While the exact levels of RF that cause adverse health effects are not accurately established, continuous exposure, even at lower levels, could be harmful to sensitive body organs. Typically, wireless devices emit low levels of RF during use. Despite ongoing research, clear facts about the biological effects of these radiations have not yet emerged. It is generally advised to be aware of these concerns and monitor scientific research.
+    
+- **Limited Bandwidth and Data Rates**: For certain applications and earlier generations of wireless technology, bandwidth limitations are notable. For instance, WLAN technology may not adequately support applications requiring high data rates, such as video teleconferencing or real-time streaming, and may be slow for downloading or uploading large files. WLANs typically offer data rates of 1-10 Mbps, significantly lower than the 100-1,000 Mbps of wired LANs. The wireless medium itself is noted to have serious bandwidth limitations.
+    
+- **Incompatibility and Lack of Standardization**: WLAN devices from different manufacturers can often be incompatible with each other, as well as with other networks, due to the use of various standards. This lack of interoperability has been a problem. Broadly, the absence of a uniform set of standards, inconsistencies in quality of service, and diverse networking approaches make it challenging to achieve seamless mobility across different wireless networks.
+    
+- **Black or Dead Spots**: Due to environmental factors, such as the presence of steel reinforcing materials in buildings or high-power running machinery, there can be areas where radio signal strength is zero or very weak. These "black or dead spots" render services inaccessible in those locations.
+    
+- **Dependence on Wired Backbone**: Wireless transmissions are generally slower, less efficient, and less reliable than wired networks. Consequently, the operation of many wireless networks, such as WLANs, often relies on a reliable wired backbone network for their core functionality.
+
 ---
 
 9. **List the services required to improve the data rate in a 3G wireless communication system.**
