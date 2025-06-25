@@ -35,6 +35,27 @@
 
 8. **Calculate the number of times the cluster of size 4 has to be replicated in order to approximately cover the entire service area of 1765 km² with the adequate number of uniform-sized cells of 7 km² each.**
 
+To determine the number of times the cluster of size 4 would have to be replicated to cover the entire service area, we can follow the steps outlined in the sources, specifically `EXAMPLE 4.2 Number of clusters`.
+
+The given parameters are:
+
+- **Size of the cluster (K): 4**
+- **Area of a cell (Acell): 7 km²**
+- **Total service area (Asystem): 1765 km²**
+
+Here's the calculation:
+
+1. **Calculate the coverage area of a cluster (Acluster):** The coverage area of a cluster is found by multiplying the cluster size (K) by the area of a cell (Acell).
+    
+    - Acluster = K × Acell
+    - Acluster = 4 × 7 km² = **28 km²**
+2. **Calculate the number of clusters in the service area (M):** The number of times the cluster has to be replicated to cover the entire service area is determined by dividing the total service area (Asystem) by the area of one cluster (Acluster).
+    
+    - M = Asystem / Acluster
+    - M = 1765 km² / 28 km² ≈ **63 clusters**
+
+Therefore, the cluster of size 4 would have to be replicated approximately **63 times** to cover the entire service area of 1765 km² with uniform-sized cells of 7 km² each.
+
 ---
 
 9. **A mobile communication system is allocated RF spectrum of 25 MHz and uses RF channel bandwidth of 25 kHz so that a total number of 1000 voice channels can be supported in the system.**  
