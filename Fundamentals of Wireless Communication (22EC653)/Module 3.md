@@ -167,6 +167,8 @@ Here's a detailed breakdown of each subsystem:
     - The MS has two main elements:
         - **Mobile Equipment (ME)**: This is the physical device, including the transceiver, digital signal processors, and antenna. The ME is generic and not assigned to a specific subscriber.
         - **Subscriber Identity Module (SIM)**: This is a smart card that stores user-specific information such as a unique identification number, privacy keys, and authorized cellular networks/regions. The **SIM card is unique to the GSM system** and allows a subscriber to use any GSM mobile phone worldwide where services are available, simply by inserting the SIM. It also provides security mechanisms against fraudulent use. Calls in GSM are directed to the SIM.
+    ![](https://www.tutorialspoint.com/gsm/images/ms_functions.jpg)
+    
 - **Base Station Subsystem (BSS)**:
     
     - The BSS manages the **radio interface** between the Mobile Stations (MSs) and other GSM subsystems, like the MSC. It translates between the wireless-interface and fixed wired infrastructure protocols, as the wireless medium is unreliable and bandwidth-limited.
@@ -174,6 +176,8 @@ Here's a detailed breakdown of each subsystem:
         - **Base Transceiver Station (BTS)**: Defines a single cell and can have a radius between 100 meters and 35 km, depending on the environment. The BTS typically includes the radio equipment and antennas.
         - **Base Station Controller (BSC)**: May be co-located with a BTS or control multiple BTS units (and thus multiple cells). The BSC is responsible for reserving radio frequencies, managing **hand-offs** of mobile units within the BSS, and controlling paging. It also maintains appropriate signal power levels.
     - The interface connecting a BTS to a BSC is called the **A-bis interface**. The interface between a BSC and an MSC is called the **A interface**, which is standardized within GSM.
+    ![](https://www.tutorialspoint.com/gsm/images/base_station_subsystem.jpg)
+    
 - **Network and Switching Subsystem (NSS)**:
     
     - The NSS is responsible for the overall network operation and provides the link between the cellular network and Public Switched Telecommunications Networks (PSTN, ISDN, or Data Networks).
@@ -202,6 +206,7 @@ The architecture defines specific interfaces for communication between its eleme
 - **A Interface**: Connects the BSC to the MSC, standardized within GSM and using SS7 protocols.
 
 The transition from analog to digital systems, with GSM being the first digital cellular system, was driven by the need to cope with increasing system capacity demands, improve signal quality (by transforming signals into bits), and ensure compatibility with other digital systems like ISDN.
+
 ---
 
 6. **Describe the need for LTE in modern mobile communication.**  
