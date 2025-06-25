@@ -203,6 +203,8 @@ This process ensures that each layer can perform its specialized tasks, allowing
 4. **Explain the TCP/IP protocol suite. Describe the functions of each layer and list the common protocols associated with each layer.**  
    
    The TCP/IP (Transmission Control Protocol/Internet Protocol) model is a **fundamental framework for computer networking** that defines how data is transmitted reliably over networks. Developed by the Department of Defense (DoD) in the 1970s, it is a more practical and widely implemented model compared to the OSI model, especially on the Internet. It works by dividing data into packets at the sender's end and recombining them at the receiver's end to ensure accuracy during transfer. The TCP/IP model is flexible and adaptable, as it does not specify a particular physical layer, allowing it to work with various physical media and network technologies.
+   
+   ![](https://imgs.search.brave.com/0CkOuOMbzgtNpKrUBqHAC-RSPf3ZlgsRE-xlGZfN3HE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/d2hhdGlzbXlpcC5j/b20vc3RhdGljL2Uz/YzJkMzc1YjIxOWU2/NGY2N2M4YmMxNTdi/MjAzZjgzL3RjcC1p/cC1tb2RlbC53ZWJw)
 
 The TCP/IP model consists of four layers: the Network Access Layer, the Internet Layer, the Transport Layer, and the Application Layer.
 
