@@ -304,7 +304,102 @@ In essence, while LTE laid the groundwork for modern mobile broadband, LTE-Advan
 
 ---
 
-9. **Illustrate how a call is established in a GSM network using various subsystems.**  
+9. **Illustrate how a call is established in a GSM network using various subsystems.** 
+
+In a GSM (Global System for Mobile Communication) network, call establishment is a sophisticated process involving several interconnected subsystems and various logical channels. GSM operates using a combination of Frequency-Division Duplexing (FDD) and Time Division Multiple Access (TDMA) and Frequency Hopping Multiple Access (FHMA) techniques to provide multiple access to mobile subscriber units.
+
+The GSM network architecture is broadly divided into three major subsystems:
+
+- **Mobile Station (MS)**
+- **Base Station Subsystem (BSS)**
+- **Network and Switching Subsystem (NSS)**
+
+**The Process of Call Establishment in a GSM Network**
+
+Whether a call is initiated by a mobile subscriber (mobile-originated) or from a landline network to a mobile subscriber (network-originated), the overall process relies on the seamless interaction and signaling between these subsystems, facilitated by various logical channels.
+
+**I. Mobile-Originated Call Procedure**
+
+When a mobile subscriber initiates a call, the process involves the following key steps and interactions between GSM subsystems and channels [659, 661-663, 11.4]:
+
+1. **Initialisation and System Lock-on**:
+    
+    - Upon being switched on, the **Mobile Station (MS)** first scans the group of forward control channels to **select the strongest one**, typically belonging to the nearest cell-site. This strongest control channel helps the MS to synchronize.
+    - The MS continuously monitors this control channel until its received signal level drops below a pre-defined threshold.
+    - It identifies itself to the system and verifies its Location Area Identity (LAI) to determine if it's in a new area.
+    - The MS receives essential system parameters, such as the operating frequency, operator identifiers, cell ID, and available services, broadcasted by the Base Transceiver Station (BTS) via the **Broadcast Control Channel (BCCH)**. It also synchronizes to the network using the **Frequency Correction Channel (FCCH)** and **Synchronisation Channel (SCH)** bursts. This establishes the MS's "lock-on" to the system.
+2. **Call Initiation Request**:
+    
+    - The mobile subscriber dials the called number and presses "send".
+    - The MS transmits a **Random Access Channel (RACH)** burst on the reverse link to the BTS, requesting a channel for call establishment. RACH operates using a slotted-ALOHA protocol for contention among multiple MSs.
+3. **Channel Assignment**:
+    
+    - The BTS, part of the **Base Station Subsystem (BSS)**, receives the RACH request and responds with an **Access Grant Channel (AGCH)** message on the Common Control Channel (CCCH). This message assigns the MS to a new channel, specifically a **Stand-alone Dedicated Control Channel (SDCCH)**, for signaling during call setup.
+    - The MS then immediately shifts to the assigned new ARFCN (Absolute Radio Frequency Channel Number) and time slot.
+4. **Authentication and Ciphering**:
+    
+    - Once on the SDCCH, the **Network and Switching Subsystem (NSS)**, specifically the **Mobile Switching Centre (MSC)** and the **Home Location Register (HLR)/Visitor Location Register (VLR)**, initiates an authentication process to verify the mobile subscriber's identity. A unique secret key stored on the **Subscriber Identity Module (SIM)** card is used in algorithms (A3 and A8) for this purpose.
+    - After successful authentication, a ciphering (encryption) process is initiated to secure the communication link over the air interface.
+5. **Call Routing and Traffic Channel Assignment**:
+    
+    - The MS sends the called subscriber number to the MSC via the SDCCH.
+    - The MSC, which is the core switching element, validates the call request and routes the call to the destination (another mobile, or a landline subscriber via the Public Switched Telephone Network (PSTN)).
+    - The MSC instructs the **Base Station Controller (BSC)** (part of the BSS) to assign an available **Traffic Channel (TCH)**, which carries the actual voice or data. This assignment involves a command sent via the SDCCH to retune to a new ARFCN and time slot.
+    - The MS moves to the assigned TCH. The **Slow Associated Control Channel (SACCH)**, associated with the TCH, is used by the MS to report measurements of signal strength from adjacent cells for potential future hand-off decisions. The **Fast Associated Control Channel (FACCH)** can "steal" bits from the voice signal for urgent messages like hand-off instructions.
+6. **Conversation**:
+    
+    - Once the TCH is established, two-way voice communication begins between the calling and called parties. The SDCCH is then released.
+
+**II. Network-Originated Call Procedure**
+
+When a call originates from a landline telephone subscriber and is directed to a mobile subscriber, the sequence of events is as follows:
+
+1. **Call Initiation and Paging**:
+    
+    - A landline subscriber dials the mobile subscriber's number. This request is received by the **Gateway MSC (GMSC)**, which is an MSC that interfaces with external networks like the PSTN.
+    - The GMSC queries the called mobile subscriber's **Home Location Register (HLR)** to determine the current location of the mobile subscriber.
+    - The HLR provides the serving **VLR/MSC** address where the mobile subscriber is currently registered.
+    - The serving MSC/VLR then initiates a paging procedure, broadcasting a **Paging Channel (PCH)** message over the **Forward Control Channel (FCCH)** through the BTSs in the relevant Location Area(s). The PCH transmits the International Mobile Subscriber Identity (IMSI) of the target subscriber.
+2. **Mobile Response and Channel Assignment**:
+    
+    - The mobile subscriber's phone, which continuously monitors the forward control channels, receives the paging message and matches the received IMSI with its own.
+    - The MS responds by identifying itself over the **Random Access Channel (RACH)** on the reverse control channel.
+    - The BTS relays this acknowledgment to the MSC. The **Access Grant Channel (AGCH)** is then used by the base station to provide forward link communication to the mobile for assignment to an **SDCCH** (and associated SACCH).
+3. **Authentication and Traffic Channel Assignment**:
+    
+    - Similar to mobile-originated calls, authentication takes place on the SDCCH to verify the mobile subscriber's identity and establish a secure connection.
+    - Once authentication and timing advance (if needed, to synchronize the MS's transmission with the BTS) are established on the SDCCH, the base station assigns a **Traffic Channel (TCH)** for the call.
+4. **Call Completion and Conversation**:
+    
+    - The MSC connects the called mobile subscriber with the calling landline phone on the PSTN. The mobile subscriber receives an audible call progress tone (ring-back), causing it to ring.
+    - When the called mobile subscriber answers, the call-progress tones are terminated, and a two-way voice conversation begins on the forward voice channel and reverse voice channel.
+
+**Key Channels and Subsystem Roles During Call Setup**:
+
+- **Mobile Station (MS)**: The user's terminal, which identifies itself to the network, initiates call requests, responds to pages, and tunes to assigned channels. It houses the Mobile Equipment (ME) and the Subscriber Identity Module (SIM).
+- **Base Transceiver Station (BTS)**: The radio equipment at the center of each cell, responsible for radio transmission and reception with the MS. It handles the physical layer and some data link layer functions.
+- **Base Station Controller (BSC)**: Controls multiple BTSs, managing radio frequencies, handling hand-offs within the BSS, and controlling paging. It translates between wireless and wired infrastructure protocols.
+- **Mobile Switching Centre (MSC)**: The central coordinating element of the cellular network. It controls channel assignment, call setup, call processing, and call termination, and interfaces with the PSTN and other MSCs. It contains or interfaces with databases like the HLR, VLR, AuC, and EIR.
+- **Home Location Register (HLR)**: A permanent database that stores subscriber information, service profiles, and current location (usually the serving VLR address). It's crucial for routing incoming calls.
+- **Visitor Location Register (VLR)**: A temporary database associated with an MSC that stores information about mobile subscribers currently located within that MSC's service area. It works in conjunction with the HLR for call routing, especially for roaming users.
+- **Authentication Centre (AuC)**: Stores authentication and ciphering keys for security purposes, working closely with the HLR and VLR.
+- **Equipment Identity Register (EIR)**: (Optional) A database that stores IMEI numbers to identify valid, stolen, or faulty mobile equipment.
+
+**Logical Channels involved**:
+
+- **Broadcast Control Channel (BCCH)**: Broadcasts system-specific information (e.g., frequencies in use, cell ID) to all mobile stations in a cell.
+- **Frequency Correction Channel (FCCH)**: Provides frequency synchronization information for the mobile station.
+- **Synchronization Channel (SCH)**: Provides frame synchronization and timing information to the mobile station.
+- **Paging Channel (PCH)**: A downlink channel used by the BTS to notify a specific mobile station of an incoming call.
+- **Random Access Channel (RACH)**: An uplink channel used by the mobile station to request access to the network for call establishment or to acknowledge a page.
+- **Access Grant Channel (AGCH)**: A downlink channel used by the BTS to assign a dedicated signaling channel (SDCCH) to the mobile station after a successful RACH attempt.
+- **Stand-alone Dedicated Control Channel (SDCCH)**: A two-way channel used for call establishment and mobility management signaling (e.g., authentication, location updates) before a traffic channel is assigned.
+- **Slow Associated Control Channel (SACCH)**: Carries measurement reports (e.g., signal strength of neighboring cells) from the mobile station to the network, primarily for hand-off decisions. It's always associated with a TCH or SDCCH.
+- **Fast Associated Control Channel (FACCH)**: Carries urgent messages (e.g., hand-off commands) by stealing bits from the traffic channel, causing a momentary interruption of voice.
+- **Traffic Channel (TCH)**: The main channel that carries digitally encoded user speech or data during an active call.
+
+This comprehensive interplay ensures that calls are established efficiently and securely within the GSM network.
+
 ---
 
 10. **Demonstrate how GSM channel types support both user communication and control.**  
