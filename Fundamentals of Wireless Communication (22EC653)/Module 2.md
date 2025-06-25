@@ -35,8 +35,6 @@
 
 8. **Calculate the number of times the cluster of size 4 has to be replicated in order to approximately cover the entire service area of 1765 km² with the adequate number of uniform-sized cells of 7 km² each.**
 
-To determine the number of times the cluster of size 4 would have to be replicated to cover the entire service area, we can follow the steps outlined in the sources, specifically `EXAMPLE 4.2 Number of clusters`.
-
 The given parameters are:
 
 - **Size of the cluster (K): 4**
