@@ -444,7 +444,8 @@ GSM (Global System for Mobile) cellular systems have evolved through different g
 
 ![](https://media.geeksforgeeks.org/wp-content/uploads/20240712171528/UMTS.webp)
 
-
+![](https://www.tutorialspoint.com/lte/images/lte_architecture.jpg)
+_LTE_
 ### **I. Architectural Differences**
 
 **UMTS Architecture:** UMTS is a **3G mobile communication standard** that serves as an evolution from GSM networks. Its architecture is partly based on existing 2G network components, particularly inheriting functional elements from the GSM Core Network (CN).
