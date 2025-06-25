@@ -71,6 +71,35 @@ The evolution of next-generation wireless networks is driven by the increasing d
 ---
 
 3. **Compare the different wireless communication modes (Simplex, Half-Duplex, and Full-Duplex).**
+
+Wireless communication systems can be broadly categorized into three distinct modes based on their transmission capabilities: Simplex, Half-Duplex, and Full-Duplex.
+
+Here's a comparison of these modes:
+
+- **Simplex Wireless Systems**
+    
+    - **Direction of Communication**: Communication is possible in **only one direction** from the transmitter to the receiver at any given time.
+    - **Frequency Usage**: Separate transmitters and receivers operate at the **same frequency**.
+    - **Acknowledgement**: Received messages are **not acknowledged**.
+    - **Examples**: Paging and messaging systems, where fixed paging transmitters send short text or alphanumeric messages to pagers.
+- **Half-Duplex Wireless Systems**
+    
+    - **Direction of Communication**: Allow **two-way communication**, but a subscriber can **only transmit or receive** voice information at any given time, not simultaneously.
+    - **Frequency Usage**: The **same frequency** is used for both transmission and reception.
+    - **Control Mechanism**: Typically use a **"push-to-talk"** feature to enable transmission.
+    - **Examples**: Walkie-talkie sets used by police and paramilitary forces.
+- **Full-Duplex Wireless Systems**
+    
+    - **Direction of Communication**: Allow **simultaneous radio transmission and reception** between the calling and called subscribers of the system, either directly or via a base station. Mobile communication systems are predominantly full-duplex.
+    - **Methods for Simultaneous Communication**:
+        - **Frequency Division Duplexing (FDD)**: Uses **separate frequency channels** for communication to and from the subscriber.
+            - At the base station, separate transmit and receive antennas are used to accommodate the forward (base station to mobile) and reverse (mobile to base station) frequency channels.
+            - In the subscriber unit (e.g., mobile phone), a device called a **duplexer** is used to enable the same antenna for simultaneous transmission and reception.
+            - Examples include the US AMPS standard and European GSM cellular standards, which define a specific radio channel using a pair of simplex RF channels with a fixed frequency separation (e.g., 45 MHz in AMPS).
+        - **Time Division Duplexing (TDD)**: Uses **different time slots on a single radio channel** for communication.
+            - A portion of the time is allocated for data transfer from the base station to the mobile subscriber, and the remaining time is used for data transfer from the mobile subscriber to the base station on the _same frequency channel_.
+    - **Examples**: Standard telephone voice communication and cellular mobile communication systems.
+
 ---
 
 
