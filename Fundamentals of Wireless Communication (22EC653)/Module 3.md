@@ -195,11 +195,14 @@ Here's a detailed breakdown of each subsystem:
         - **Interworking Function (IWF)**: A subsystem that enables non-speech communication between GSM and other networks by adapting transmission parameters and protocol conversion.
         - **Gateway MSC (GMSC)**: An MSC that interfaces with the external network for gatewaying, routing calls initially to find the correct HLR.
         - **Signaling Transfer Point (STP)**: Optimizes the cost of signaling transport among MSC/VLR, GMSC, and HLR.
+        ![](https://www.tutorialspoint.com/gsm/images/msc.jpg)
+        
 - **Operation Subsystem (OSS)**:
     
     - The OSS supports the operation and maintenance of the entire GSM system.
     - It includes Operation Maintenance Centres (OMCs) used to monitor and maintain the performance of each MS, BS, BSC, and MSC.
     - Its main functions are maintaining telecommunications hardware and network operations, managing mobile equipment, and handling charging and billing procedures.
+    ![](https://www.tutorialspoint.com/gsm/images/omc.jpg)
 
 **Key Architectural Features and Interfaces:** GSM employs a combination of **Frequency-Division Multiple Access (FDMA)** and **Time-Division Multiple Access (TDMA)** techniques to allow simultaneous access for multiple mobile subscribers. The available frequency bands (e.g., 25 MHz for uplink and 25 MHz for downlink) are divided into 200 kHz wide channels, known as **ARFCNs (Absolute Radio Frequency Channel Numbers)**. Each ARFCN channel is then time-shared among up to **eight subscribers** using TDMA. The system also uses Frequency-Division Duplexing (FDD), where uplink and downlink transmissions occur on separate frequency bands.
 
