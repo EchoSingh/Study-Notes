@@ -15,9 +15,10 @@ In a cellular system, frequency reuse involves selecting and allocating channel 
 
 A common and often-used frequency reuse pattern is the **7-cell cluster**.
 
+![](images/3.1.jpeg)
 #### Illustration of a Cellular Network with a 7-Cell Cluster and Frequency Reuse
 
-A typical cluster of seven cells, each designed for frequency reuse, can be **illustrated as shown in Figure 4.6** of the sources [fig 3.1].
+A typical cluster of seven cells, each designed for frequency reuse, can be **illustrated as shown in Figure 4.6** of the sources [fig 4.6].
 
 This illustration typically shows:
 
