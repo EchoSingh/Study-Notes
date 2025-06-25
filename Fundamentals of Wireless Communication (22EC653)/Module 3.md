@@ -619,6 +619,34 @@ Here's a justification of these design choices:
 ---
 
 16. **Assess the effectiveness of GSM services in the context of modern mobile data usage.**  
+
+Assessing the effectiveness of GSM services in the context of modern mobile data usage reveals significant limitations, as GSM was primarily designed for voice communication, with very constrained data capabilities.
+
+Here's an assessment:
+
+- **Initial GSM (2G) Data Capabilities:**
+    
+    - Original GSM technology supports **voice calls** and **data transfer speeds of up to 9.6 kbps**.
+    - A key data service in GSM is the **Short Message Service (SMS)**, which allows for the transmission of **alphanumeric pages of limited length, typically up to 160 7-bit ASCII characters**. SMS can be sent and received **simultaneously with voice, data, or fax calls** as it utilizes control channels, freeing up dedicated voice channels.
+    - This initial design was based on a **circuit-switched network** for voice.
+- **Inadequacy for Modern Mobile Data Usage:**
+    
+    - The data rates offered by original 2G GSM (up to 9.6 kbps) are **extremely low** compared to the demands of modern mobile internet usage. Users accustomed to wired LANs, ADSL, or cable modems would find this wireless access speed **"extremely slow and unsatisfactory"**.
+    - High-speed data applications prevalent today, such as **HD video streaming, online gaming, cloud applications, and video conferencing**, would be **impossible or severely impractical** with these speeds.
+    - Modern mobile data usage emphasizes the need for **"very high-speed and high-quality transmission"** capable of handling a **"large volume of multimedia information like downloading a full song or sending a complete data file or several video clips"**.
+- **Evolutionary Enhancements (2.5G GSM):**
+    
+    - To address the growing demand for mobile data, GSM evolved through **2.5G technologies** like **General Packet Radio Service (GPRS)** and **Enhanced Data Rates for GSM Evolution (EDGE)**.
+    - **GPRS** was an enhancement that enabled **packet-switched data services** as an overlay on the existing GSM physical layer and network. GPRS offered throughput rates of **up to 53.6 kbps**, which was comparable to a dial-up modem. While this was an improvement, it was still insufficient for the emerging multimedia needs.
+    - **EDGE**, a further upgrade (sometimes referred to as 2.5G+), significantly increased data capacity, offering **up to three times the data capacity of GPRS**. Theoretically, EDGE could provide raw peak throughput data rates of **up to 547.2 kbps**, with practical rates for a single dedicated user around **384 kbps**.
+    - These enhancements allowed for services such as **multimedia messaging, high-speed Internet access, and e-mail on the move**.
+- **Continued Limitations vs. 3G/4G Requirements:**
+    
+    - Despite these 2.5G advancements, even EDGE's practical speeds of around 384 kbps fall short of what defines "modern mobile data usage." The need for **3G cellular networks** arose specifically to deliver data rates of **up to 384 kbps for wide-area coverage and 2 Mbps for indoor or fixed applications**, enabling **multimedia applications**.
+    - The subsequent evolution to **LTE (Long-Term Evolution)** was driven by the demand for even faster data speeds and lower latency. LTE aims for **downlink speeds of up to 100 Mbps and uplink speeds of 50 Mbps** in ideal conditions, along with a latency of **around 10 ms**. These speeds and low latency are **crucial for real-time applications** like VoIP calls, online multiplayer games, and industrial automation.
+
+In conclusion, while original GSM (2G) was effective for basic voice communication and short text messaging, its **extremely limited data speeds (up to 9.6 kbps)** make it **highly ineffective for modern mobile data usage**. Even with **2.5G enhancements like GPRS (up to 53.6 kbps) and EDGE (up to 384 kbps practical)**, these services are **insufficient for the demands of bandwidth-intensive applications** that characterize current mobile internet, which require speeds in the tens or hundreds of Mbps and significantly lower latency, as provided by 3G and especially 4G LTE technologies.
+     
 ---
 
 17. **Design a simplified version of a mobile network using GSM architecture.**  
