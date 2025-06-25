@@ -151,6 +151,7 @@ The Global System for Mobile (GSM) is a widely adopted digital cellular communic
 
 ![](https://www.tutorialspoint.com/gsm/images/gsm_elements.gif)
 
+![](https://www.tutorialspoint.com/gsm/images/gsm_architecture.gif)
 
 The GSM network architecture is typically comprised of four major subsystems:
 
