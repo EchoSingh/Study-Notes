@@ -22,12 +22,13 @@ A typical cluster of seven cells, each designed for frequency reuse, can be **il
 This illustration typically shows:
 
 - A central cell, labeled '1' (or 'F1'), which represents a set of frequency channels .
-- Surrounding this central cell are six adjacent cells, labeled '2', '3', '4', '5', '6', and '7' (or 'F2' through 'F7'), each assigned a _different_ set of frequency channels from the central cell and from each other within the cluster [2, Fig. 4.6].
-- **The frequency reuse pattern is evident as this entire cluster of seven unique frequency sets (F1-F7) is then systematically repeated across the larger service area** [2, Fig. 4.6, 65]. For example, other cells labeled '1' in distant clusters would be reusing the same frequency channels as the central cell '1', and similarly for cells labeled '2' through '7' [2, Fig. 4.6].
+- Surrounding this central cell are six adjacent cells, labeled '2', '3', '4', '5', '6', and '7' (or 'F2' through 'F7'), each assigned a _different_ set of frequency channels from the central cell and from each other within the cluster .
+- **The frequency reuse pattern is evident as this entire cluster of seven unique frequency sets (F1-F7) is then systematically repeated across the larger service area** . For example, other cells labeled '1' in distant clusters would be reusing the same frequency channels as the central cell '1', and similarly for cells labeled '2' through '7' .
 
 The purpose of this pattern is to ensure that cells using the **same frequencies (cochannel cells)** are separated by a sufficient **reuse distance (D)** to minimize cochannel interference, which is a major concern in frequency reuse. Other adjacent cells within a cluster operate on different frequencies to avoid interference.
 
-While the sources describe the general principle and characteristics, Figure 4.6 specifically provides this visual representation of a 7-cell cluster [2, Fig. 4.6]. The Advanced Mobile Phone Service (AMPS) system, for instance, uses a **seven-cell reuse pattern**.
+_The Advanced Mobile Phone Service (AMPS) system, for instance, uses a **seven-cell reuse pattern**_.
+
 ---
 
 4. **Compare fixed channel assignment and dynamic channel assignment strategies, highlighting their advantages and disadvantages.**
