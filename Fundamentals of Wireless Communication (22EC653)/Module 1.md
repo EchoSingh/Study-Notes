@@ -138,6 +138,7 @@ Key advantages of 3G communication over 2G include:
     - 3G systems offer the **flexibility to introduce new services and technologies**.
     - They support **variable data rates** to match the requirements of different applications, which helps in efficient spectrum usage and battery conservation.
     - 3G technology can operate effectively across a **wide range of cell sizes and types**, including pico, micro, macro, and global cellular/satellite cells.
+
 ---
 
 5. **Briefly explain Radar Communication and Satellite Communication.**
