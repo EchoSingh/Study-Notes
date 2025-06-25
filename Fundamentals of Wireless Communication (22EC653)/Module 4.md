@@ -313,7 +313,7 @@ Here are the key types of addressing in networking:
         *   **Dynamic (or private) ports**: 49,152 to 65,535 (neither controlled nor registered; can be used by any process).
     *   **Examples**: Web applications typically use port 80. Protocols like DNS (Domain Name System), DHCP (Dynamic Host Configuration Protocol), NTP (Network Time Protocol), TFTP, RTSP, and RIP often use UDP (User Datagram Protocol) at the transport layer for their query/response messages, as these require quick response times and are tolerant of some packet loss.
 
-The term "specific addressing" is not a formally defined separate category of addressing in the sources, but rather a descriptor for how each of the above addressing types fulfills its role. Each type of address (physical, logical, and port) provides a **specific** way to identify a particular entity (node, host, or process) at its respective layer within the network hierarchy.
+*   **Specific addressing** , also known as application-specific addressing, provides an easy and human-understandable address for users. It is used at the application layer and can vary according to the port address and IP address. Specific addresses are often used in user interfaces to make it easier for users to interact with network services
 
 ---
 
