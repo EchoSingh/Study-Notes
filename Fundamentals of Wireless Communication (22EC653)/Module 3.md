@@ -4,6 +4,7 @@
 **GSM (Global System for Mobile communications)** is a **second-generation (2G) digital mobile cellular communication standard**. It was initiated by the **ETSI (European Telecommunications Standardisation Institute)** and is universally accepted. GSM utilizes **digital radio channeling** to provide audio, information, and multimedia communication systems. It operates as a mobile network that manages communication between mobile stations, base stations, and switching systems. The decision to adopt digital technology for GSM was made to ensure compatibility with systems like ISDN and to facilitate future improvements.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Gsm_structures.svg/800px-Gsm_structures.svg.png)
+
 Here are its main features:
 
 - **Network Architecture**
