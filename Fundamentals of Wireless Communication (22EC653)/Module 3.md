@@ -107,6 +107,42 @@ Additionally, the GSM Radio Subsystem utilizes FDMA and a combination of TDMA an
 ---
 
 4. **State the main services provided by GSM.**  
+
+The Global System for Mobile (GSM) provides a range of services and features, adhering to ISDN guidelines. These services are primarily classified into three main categories: **Telephonic Services (or Teleservices)**, **Bearer Services (or Data Services)**, and **Supplementary ISDN Services**.
+
+Here are the main services provided by GSM:
+
+- **Telephonic Services (Teleservices)**: These services provide mobile subscribers with the necessary capabilities to communicate with other subscribers.
+    
+    - **Telephony Voice**: GSM primarily supports **full-duplex voice communication** at 13 kbps (full rate).
+    - **Emergency Calls**: Support for calls to specific emergency numbers is included.
+    - **Short Messaging Service (SMS)**: This is a significant feature, allowing GSM subscribers and base stations to transmit **alphanumeric pages of limited length** (up to 160 7-bit ASCII characters). SMS can be point-to-point (sending messages between individual mobile phones) or cell broadcast. Cell broadcast allows base stations to repetitively transmit messages, such as highway traffic conditions or weather information, to all GSM subscribers within reception range. SMS can be transmitted and received simultaneously with voice, data, or fax calls, as it utilizes control channels rather than dedicated voice channels. It is a store-and-forward service, meaning messages can be stored if the recipient is unavailable for later delivery.
+    - **Message Handling and Storage Services**.
+    - **Videotext and Teletex/FAX Transmission**: While not an integral part of the GSM standard, GSM also supports these services.
+    - **Half-rate Speech Coder and Enhanced Full Rate**: These are optional implementations for speech encoding.
+- **Bearer Services (Data Services)**: These services provide the mobile subscribers with the capacity required to transmit appropriate signals between network access points.
+    
+    - They are limited to layers 1, 2, and 3 of the Open System Interconnection (OSI) reference model.
+    - **Data Transmission Rates**: GSM supports data rates ranging from **300 bps to approximately 9.6 kbps**.
+    - **Modes of Transmission**: Data can be transmitted in either a **transparent mode**, where GSM provides standard channel coding for user data, or a **non-transparent mode**, where GSM offers special coding efficiencies based on the particular data interface.
+    - **Access to Packet Switched Public Data Networks (PSPDN)** and **Circuit Switched Public Data Networks (CSPDN)** are supported.
+    - **Speech and Data Swapping during a call**.
+    - **Support of ARQ (Automatic Repeat Request) technique** for improved error rates.
+    - **Modem selection of 3.1 kHz audio service** when interworking with ISDN.
+- **Supplementary ISDN Services**: These are **digital signaling services** that supplement basic teleservices or data services and are not available in analog mobile networks.
+    
+    - **Call Forwarding/Diversion**: This includes forwarding all calls, or when the subscriber is busy, no reply, or not reachable.
+    - **Call Barring**: Allows specification for outgoing calls.
+    - **Caller/Calling Number Identification Presentation (CNIP)** or restriction of displaying the caller's ID (CNIR).
+    - **Connected Number ID Presentation (CNOP)** or restriction of displaying the called ID (CNOR).
+    - **Malicious Call Identification (MCI)**.
+    - **Call Transfer** to another mobile phone.
+    - **Mobile Access Hunting**: Allows multiple phones to be called in sequence.
+    - **Call Waiting**: Notifies of an incoming call during a current conversation.
+    - **User-to-user Signaling**: For sending user data to another GSM or ISDN phone.
+
+GSM's modular structure supports continuous evolution and enhancements, such as HSCSD, GPRS, and EDGE, which offer increased data transfer speeds. While GSM was primarily designed for voice transmission via a circuit-switched network, it has evolved to support more data-oriented transfer via GPRS using a packet-switched system.
+
 ---
 
 5. **Explain the architecture of GSM with a neat diagram.**  
