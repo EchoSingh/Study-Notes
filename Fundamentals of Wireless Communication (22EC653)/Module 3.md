@@ -650,6 +650,40 @@ In conclusion, while original GSM (2G) was effective for basic voice communicati
 ---
 
 17. **Design a simplified version of a mobile network using GSM architecture.**  
+    
+A simplified version of a mobile network using GSM (Global System for Mobile communications) architecture consists of three primary subsystems working together to enable mobile communication:
+
+- **Mobile Station (MS)**
+- **Base Station Subsystem (BSS)**
+- **Network and Switching Subsystem (NSS)**
+
+Here's a breakdown of each part and how they connect:
+
+**1. Mobile Station (MS)** The MS is essentially the **mobile phone** or user equipment. It has two main parts:
+
+- **Mobile Equipment (ME)**: This is the physical device itself, including the transceiver, digital signal processors, and antenna. It does not need to be personally assigned to one subscriber.
+- **Subscriber Identity Module (SIM)**: This is a smart card that stores all subscriber-related information. The SIM identifies the mobile subscriber and provides information about the services they should receive. A GSM mobile phone is useless without a valid SIM card. The SIM card allows a mobile subscriber to use any compatible mobile phone.
+
+**2. Base Station Subsystem (BSS)** The BSS manages the **radio interface** between the mobile stations and the rest of the GSM network. It handles the wireless connection and translates protocols between the wireless and fixed wired infrastructures. The BSS consists of two main elements:
+
+- **Base Transceiver Station (BTS)**: The BTS defines a single cell, with a radius that can vary from 100 meters to 35 kilometers depending on the environment. It is responsible for communication across the air interface with the MS in its cell. Many BTSs are typically deployed in a metropolitan city, usually placed at the center of a cell, and their transmitting power defines the cell's size.
+- **Base Station Controller (BSC)**: A BSC can control multiple BTS units (and thus multiple cells). It manages radio frequencies, handles hand-offs of mobile units between cells within its BSS, and controls paging.
+
+The wireless link interface (`Um` interface) is between the MS and the BTS. Messages between the BTS and BSC flow through the `A-bis` interface.
+
+**3. Network and Switching Subsystem (NSS)** The NSS is responsible for the **network operation** and provides the link between the cellular network and external public telecommunications networks (like PSTN, ISDN, or Data Networks). It controls hand-offs between cells in different BSSs, authenticates users, validates accounts, and enables worldwide roaming. Key components of the NSS include:
+
+- **Mobile Switching Centre (MSC)**: This is the main switching function of GSM, coordinating call setup to and from GSM users and managing communications between GSM users and other telecommunications network users. An MSC typically controls several BSCs. The interface between a BSC and an MSC is called the `A` interface.
+- **Home Location Register (HLR)**: This is a central database that stores all permanent subscriber information, including services subscribed to, subscriber status, and current location.
+- **Visitor Location Register (VLR)**: This database temporarily stores information about mobile subscribers who are currently located within the MSC's service area but whose HLR is elsewhere (i.e., roaming subscribers).
+- **Authentication Centre (AuC)**: Responsible for authentication and encryption parameters to ensure security.
+- **Equipment Identity Register (EIR)**: Stores information about the identity of mobile phone equipment, often used to identify stolen or unauthorized devices.
+- **Interworking Function (IWF)**: A gateway that allows non-speech communication between GSM and other networks, adapting transmission parameters and performing protocol conversions.
+
+The NSS (specifically the MSC) interfaces with the Public Switched Telephone Network (PSTN), allowing calls to be made between landline and mobile subscribers, as well as among mobile subscribers of different service providers.
+
+In essence, the **MS** connects wirelessly to the **BTS**, which is managed by the **BSC**. The **BSC** then connects to the **MSC**, which acts as the central switch, connecting to databases (HLR, VLR, AuC, EIR) for subscriber management and to the external telephone network (PSTN) for calls outside the cellular system.
+    
 ---
 
 18. **Propose a strategy to migrate a legacy GSM/UMTS network to LTE or LTE-A.**  
