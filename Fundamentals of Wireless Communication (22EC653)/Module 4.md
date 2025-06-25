@@ -23,6 +23,9 @@ The **advantages of using a layered model** in communication networks are signif
    
    The **OSI (Open Systems Interconnection) Model** is a **conceptual framework** developed by the International Organization for Standardization (ISO) that outlines how different computer systems communicate over a network. Its primary goal is to **understand and design the architecture of computer networks** by **breaking down the complex process of data communication into smaller, manageable, and standardized layers**. This layered approach fosters **interoperability** among hardware and software from various vendors and simplifies **troubleshooting** and **development**.
 
+![](https://infocellar.com/images/osi-model.jpg)
+
+
 The OSI Model consists of **seven distinct layers**, each with specific functions and responsibilities:
 
 - **Layer 1: Physical Layer**
