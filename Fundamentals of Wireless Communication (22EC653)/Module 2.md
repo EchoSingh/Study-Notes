@@ -4,7 +4,9 @@
 In a cellular network, several fundamental concepts are crucial for understanding its operation and design. Here are the definitions of the terms you've queried:
 
 - **Cell:** A **cell is the basic geographic unit of a cellular system**. It represents the radio area covered by a cell-site (or base station) located at its center. This coverage area is also referred to as a "footprint". Cells are typically depicted as **hexagons** in cellular system design because this shape simplifies showing adjacent cells without overlaps or gaps, ensuring continuous coverage. In reality, actual cell shapes can be more circular or irregular due to buildings and terrain. A basic cellular system consists of many low-power transmitters, each designed to serve a small area, which is a cell.
-    
+
+  ![](images/3.2.jpeg)
+
 - **Cluster:** A **cellular cluster is a group of cells that collectively use a different set of frequencies in each cell**. Within a cluster, there is **no reuse of channels**. The number of cells within a cluster is known as the **cluster size (K)**. All available channels (N) are allocated among the K cells in a single cluster. This cluster can then be **repeated multiple times in a systematic manner** to cover a designated large geographical service area.
     
 - **Co-channel Interference:** This type of interference arises because the **same frequency channel is used repeatedly in different, spatially separated cells**. Cells that use the same set of frequencies are termed **cochannel cells**. If a cellular system is not properly designed, **cochannel interference may occur due to the simultaneous use of the same channel** in these cochannel cells, leading to a degradation in received signal quality. In a fully equipped hexagonal cellular system, there are typically **six cochannel interfering cells in the first tier**. Interference is recognized as the major limiting factor in the performance of cellular communication systems.
