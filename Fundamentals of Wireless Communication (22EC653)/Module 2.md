@@ -42,6 +42,52 @@
    - (b) **The cell size is reduced so that the service area is now covered with 100 cells. Compute the system capacity while keeping the frequency reuse factor as 4.**  
    - (c) **The cell size is further reduced so the same service area is now covered with 700 cells and the frequency reuse factor is 7. Compute the system capacity.**
 
+
+The common parameters for this mobile communication system are:
+
+- **Total allocated RF spectrum: 25 MHz**
+- **RF channel bandwidth: 25 kHz**
+- **Total number of voice channels (N): 1000**.
+    - This is derived from the allocated spectrum and channel bandwidth: 25 MHz / 25 kHz = 1000 channels.
+- **Capacity of a cluster:** In a cellular system based on the frequency-reuse concept, all available channels (N) are allocated uniformly to each cluster. Therefore, the capacity of a cluster is **1000 channels**.
+
+Let's compute the system capacity for each scenario:
+
+**(a) If the service area is divided into 20 cells with a frequency reuse factor of 4:**
+
+1. **Number of cells covering the area:** 20 cells.
+2. **Frequency reuse factor (cluster size, K): 4**.
+3. **Determine the number of clusters (M):** The number of clusters is calculated by dividing the total number of cells by the cluster size.
+    - M = Number of cells / K = 20 / 4 = **5 clusters**.
+4. **Compute the system capacity (C):** The overall system capacity (C) is theoretically determined by multiplying the total number of channels allocated to a cluster (N) by the number of clusters in the system (M).
+    - C = N × M = 1000 channels/cluster × 5 clusters = **5000 channels**.
+
+**(b) The cell size is reduced so that the service area is now covered with 100 cells, keeping the frequency reuse factor as 4:**
+
+1. **Number of cells covering the area:** 100 cells.
+2. **Frequency reuse factor (cluster size, K): 4**.
+3. **Determine the new number of clusters (M):**
+    - M = Number of cells / K = 100 / 4 = **25 clusters**.
+4. **Compute the new system capacity (C):**
+    - C = N × M = 1000 channels/cluster × 25 clusters = **25,000 channels**.
+
+**(c) The cell size is further reduced so the same service area is now covered with 700 cells and the frequency reuse factor is 7:**
+
+1. **Number of cells covering the area:** 700 cells.
+2. **Frequency reuse factor (cluster size, K): 7**.
+3. **Determine the new number of clusters (M):**
+    - M = Number of cells / K = 700 / 7 = **100 clusters**.
+4. **Compute the new system capacity (C):**
+    - C = N × M = 1000 channels/cluster × 100 clusters = **100,000 channels**.
+
+**Comment on the results obtained:**
+
+The calculations demonstrate a clear relationship between the number of cells, cluster size, and overall system capacity. **Increasing the number of cells covering a given service area significantly increases the system capacity**. This is because a greater number of cells, for a given cluster size, allows for a greater number of clusters to be replicated across the service area. Each cluster contains the full set of available channels, so more clusters directly lead to higher overall capacity.
+
+For instance, by increasing the number of cells from 20 to 100 while keeping the cluster size at 4, the system capacity increased five-fold (from 5,000 to 25,000 channels). Further increasing the number of cells to 700, even with a larger cluster size of 7, resulted in a substantial increase to 100,000 channels, showing the dramatic impact of cell division and frequency reuse on system capacity.
+
+The principle of **frequency reuse** is core to this capacity enhancement. However, there is a trade-off: minimizing the cluster size (K) maximizes capacity, but it also increases **cochannel interference** because cochannel cells (cells using the same frequencies) are located closer together. Therefore, the selection of the frequency reuse factor (K) is a critical design trade-off, balancing the desire for high capacity with the need to maintain an acceptable level of signal-to-cochannel interference and ensure desired signal quality.
+
 ---
 
 10. **Consider that a geographical service area of a cellular system is 4200 km². A total of 1001 radio channels are available for handling traffic. Suppose the area of a cell is 12 km².**  
