@@ -519,6 +519,8 @@ Here are the key limitations of UMTS that necessitated the evolution to LTE:
 ---
 
 13. **Identify the components in the 3GPP architecture that improve data handling in LTE compared to UMTS.**  
+
+
 ---
 
 14. **Evaluate the impact of transitioning from UMTS to LTE on mobile service providers.**  
